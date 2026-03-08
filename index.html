@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viativity | Entspannt reisen ohne Übelkeit</title>
+    <style>
+        /* Grunddesign und Schriftart */
+        body, html { 
+            margin: 0; padding: 0; 
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; 
+            color: #333; height: 100%; 
+        }
+        
+        /* Der große sichtbare Bereich (Hero) */
+        .hero {
+            /* Hier binden wir das helle Reise-Bild von vorhin ein, mit einem leichten weißen Schleier für bessere Lesbarkeit */
+            background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.95)), url('https://c7.staticflickr.com/8/7313/27670845353_64559b329c_b.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        /* Text-Bereich */
+        .content { max-width: 800px; }
+        h1 { font-size: 3rem; color: #2c3e50; margin-bottom: 20px; line-height: 1.2; }
+        p.subtitle { font-size: 1.2rem; line-height: 1.6; color: #444; margin-bottom: 40px; }
+        
+        /* Buttons */
+        .buttons { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
+        .btn {
+            background-color: #2c3e50; color: white; padding: 15px 30px; 
+            text-decoration: none; border-radius: 30px; font-weight: bold; 
+            transition: background 0.3s, transform 0.2s;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .btn:hover { background-color: #1a252f; transform: translateY(-2px); }
+
+        /* Fusszeile (Footer) */
+        .footer { position: absolute; bottom: 20px; font-size: 0.9rem; color: #666; width: 100%; text-align: center; }
+        .footer a { color: #2c3e50; text-decoration: none; font-weight: bold; }
+        .footer a:hover { text-decoration: underline; }
+
+        /* Anpassung für kleine Handy-Bildschirme */
+        @media (max-width: 600px) {
+            h1 { font-size: 2.2rem; }
+            p.subtitle { font-size: 1rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="hero">
+        <div class="content">
+            <h1>Freue dich auf den Weg,<br>nicht nur auf das Ziel!</h1>
+            <p class="subtitle"><strong>Viativity™</strong> ist dein smarter Begleiter gegen Reiseübelkeit. Wissenschaftlich fundierte Soforthilfe, präventives Training und cleveres Reisewissen – alles in einer App.</p>
+            
+            <div class="buttons">
+                <a href="#" class="btn">🍏 Demnächst im App Store</a>
+                <a href="#" class="btn">🤖 Demnächst bei Google Play</a>
+            </div>
+        </div>
+
+        <div class="footer">
+            Kontakt: <a href="mailto:support@viativity.app">support@viativity.app</a> | 
+            <a href="#">Datenschutzerklärung</a>
+        </div>
+    </div>
+
+</body>
+</html>
