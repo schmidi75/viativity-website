@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viativity | Freue dich auf den Weg, nicht nur auf das Ziel</title>
+    <meta name="description" content="Deine App gegen Reiseübelkeit. Präventives Training, wissenschaftlich fundierte Soforthilfe und clevere Reisetipps.">
+    
+    <style>
+        /* --- CSS VARIABLEN (Farben & Fonts) --- */
+        :root {
+            --primary-color: #1A365D; /* Vertrauensvolles Dunkelblau */
+            --accent-color: #7DA2A9; /* Beruhigendes Salbeigrün */
+            --bg-color: #F7FAFC; /* Sehr helles Grau-Blau für weiche Kontraste */
+            --text-color: #2D3748; /* Dunkelgrau für gute Lesbarkeit */
+            --white: #FFFFFF;
+        }
+
+        /* --- RESET & BASICS --- */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+        }
+        h1, h2, h3 { color: var(--primary-color); line-height: 1.2; margin-bottom: 1rem; }
+        p { margin-bottom: 1rem; }
+        section { padding: 5rem 2rem; max-width: 1200px; margin: 0 auto; }
+        
+        /* --- HERO BEREICH --- */
+        .hero {
+            position: relative;
+            height: 80vh;
+            min-height: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--white);
+            /* HIER SPÄTER DEN LINK ZUM ZUG-BILD EINFÜGEN */
+            background: url('https://images.unsplash.com/photo-1515162816999-a0c47dc192f7?auto=format&fit=crop&q=80&w=2000') no-repeat center center/cover;
+            max-width: 100%;
+        }
+        /* Dunkles Overlay, damit der Text immer lesbar bleibt */
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(26, 54, 93, 0.6); 
+        }
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            padding: 0 2rem;
+        }
+        .hero h1 { color: var(--white); font-size: 3rem; margin-bottom: 1.5rem; }
+        .hero p { font-size: 1.2rem; margin-bottom: 2rem; }
+        .store-buttons { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+        .btn {
+            background: var(--white);
+            color: var(--primary-color);
+            padding: 0.8rem 1.5rem;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: transform 0.2s;
+        }
+        .btn:hover { transform: translateY(-2px); }
+
+        /* --- SEKTION 1: DAS PROBLEM --- */
+        .problem { text-align: center; max-width: 800px; }
+        .problem h2 { font-size: 2.5rem; }
+        .problem p { font-size: 1.1rem; color: #4A5568; }
+
+        /* --- SEKTION 2: DIE LÖSUNG (3 Säulen) --- */
+        .solution-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        .card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            text-align: left;
+            border-top: 4px solid var(--accent-color);
+        }
+        .science-badge {
+            background: #EDF2F7;
+            padding: 1rem;
+            border-radius: 8px;
+            margin-top: 3rem;
+            font-size: 0.9rem;
+            border-left: 4px solid var(--primary-color);
+        }
+
+        /* --- SEKTION 3: WERTE / FAIR PLAY --- */
+        .values {
+            background: var(--primary-color);
+            color: var(--white);
+            text-align: center;
+            max-width: 100%;
+            padding: 4rem 2rem;
+        }
+        .values-content { max-width: 800px; margin: 0 auto; }
+        .values h2 { color: var(--white); }
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .value-item h3 { color: var(--accent-color); font-size: 1.2rem; }
+
+        /* --- SEKTION 4: APP PREVIEW --- */
+        .preview { text-align: center; }
+        .mockup-container {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 3rem;
+            flex-wrap: wrap;
+        }
+        .mockup-placeholder {
+            width: 250px;
+            height: 500px;
+            background: #E2E8F0;
+            border-radius: 30px;
+            border: 8px solid #CBD5E0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #718096;
+            font-weight: bold;
+        }
+
+        /* --- FOOTER --- */
+        footer {
+            background: #2D3748;
+            color: var(--white);
+            text-align: center;
+            padding: 2rem;
+        }
+        footer a { color: var(--accent-color); text-decoration: none; margin: 0 1rem; }
+        footer a:hover { text-decoration: underline; }
+        .disclaimer-small { font-size: 0.8rem; color: #A0AEC0; margin-top: 1.5rem; }
+    </style>
+</head>
+<body>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Freue dich auf den Weg,<br>nicht nur auf das Ziel!</h1>
+            <p>Viativity™ ist dein smarter Begleiter für unbeschwertes Reisen. Wissenschaftlich fundierte Werkzeuge und präventives Training gegen Reiseübelkeit.</p>
+            <div class="store-buttons">
+                <a href="#" class="btn">App Store (iOS)</a>
+                <a href="#" class="btn" style="opacity: 0.7; cursor: not-allowed;">Play Store (Bald verfügbar)</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="problem" class="problem">
+        <h2>Kennst du das?</h2>
+        <p>Du freust dich auf den Urlaub, aber die Fahrt dorthin ist eine Qual. Kinetose (Reiseübelkeit) entsteht durch einen sensorischen Konflikt: Dein Auge meldet Stillstand, während dein Gleichgewichtsorgan Bewegung spürt. Das Resultat ist Stress für dein Gehirn – und Unwohlsein für dich.</p>
+        <p><strong>Viativity setzt genau hier an: Nicht mit Esoterik, sondern mit fundierten neurobiologischen Prinzipien.</strong></p>
+    </section>
+
+    <section id="solution">
+        <h2 style="text-align: center;">Deine Begleiterin für jede Fahrt</h2>
+        
+        <div class="solution-grid">
+            <div class="card">
+                <h3>1. Clevere Reisetipps</h3>
+                <p>Egal ob im Auto, Flugzeug oder auf dem Schiff – entdecke bewährte Strategien und verhaltensbasierte Tipps, noch bevor deine Reise überhaupt beginnt. Lerne, wie du dein Umfeld optimal anpasst.</p>
+            </div>
+            
+            <div class="card">
+                <h3>2. Soforthilfe für unterwegs</h3>
+                <p>Dir ist akut übel? Nutze digitale Helfer wie den künstlichen Horizont, die 4-2-6 Atmung oder die 100Hz-Klangmodulation zur schnellen Linderung der Symptome während der Reise.</p>
+            </div>
+            
+            <div class="card">
+                <h3>3. Training & Prävention</h3>
+                <p>Bereite dein Gehirn in Ruhe vor. Nutze Übungen wie das Fokus-Spiel, die Mentale Rotation oder das Körper-Lot einige Wochen vorab, um deine Widerstandsfähigkeit (Habituation) langfristig aufzubauen.</p>
+            </div>
+        </div>
+
+        <div class="science-badge">
+            <strong>Wissenschaftlich fundiert:</strong> Unsere Methoden basieren auf etablierten Ansätzen wie der "Postural Instability Theory" und dem Abbau sensorischer Konflikte. (Quellen u.a. TNO Human Factors, University of Warwick). 
+        </div>
+    </section>
+
+    <div class="values">
+        <div class="values-content">
+            <h2>Fair Play. Ohne Kompromisse.</h2>
+            <p>Dein Wohlbefinden steht im Fokus, nicht deine Daten. Wir glauben an transparente, faire Software.</p>
+            
+            <div class="values-grid">
+                <div class="value-item">
+                    <h3>Keine Abos</h3>
+                    <p>Einmal kaufen, immer nutzen. Keine versteckten Kosten oder monatlichen Gebühren.</p>
+                </div>
+                <div class="value-item">
+                    <h3>100% Datenschutz</h3>
+                    <p>Alle Sensordaten bleiben lokal auf deinem Gerät. Wir sammeln nichts und senden nichts.</p>
+                </div>
+                <div class="value-item">
+                    <h3>Werbefrei</h3>
+                    <p>Keine störenden Pop-ups oder Banner. Nur ein aufgeräumtes, ruhiges Design, das nicht zusätzlich stresst.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="preview" class="preview">
+        <h2>Aufgeräumt. Hell und Dunkel.</h2>
+        <p>Ein Design, das Ruhe ausstrahlt. Passe Viativity mit dem Tag- und Nachtmodus perfekt an deine Umgebung an.</p>
+        
+        <div class="mockup-container">
+            <div class="mockup-placeholder">Screenshot Tagmodus</div>
+            <div class="mockup-placeholder">Screenshot Nachtmodus</div>
+        </div>
+    </section>
+
+    <footer>
+        <div style="margin-bottom: 1rem;">
+            <a href="mailto:support@viativity.app">Support</a>
+            <a href="privacy.html">Datenschutz</a>
+            <a href="#">Impressum</a>
+        </div>
+        <p>© 2026 Viativity™. Entwickelt in der Schweiz.</p>
+        
+        <div class="disclaimer-small">
+            <strong>Wichtiger Hinweis:</strong> Diese App ist kein Medizinprodukt. Sie stellt keine Diagnosen und ersetzt keine ärztliche Behandlung. Die Nutzung erfolgt auf eigene Gefahr.
+        </div>
+    </footer>
+
+</body>
+</html>
