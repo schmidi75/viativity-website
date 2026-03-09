@@ -31,17 +31,20 @@
         /* --- HERO BEREICH --- */
         .hero {
             position: relative;
-            height: 80vh;
-            min-height: 600px;
+            /* WICHTIG: Die Höhe wurde hier reduziert! */
+            height: 60vh; /* Vorher 80vh. 60% der Bildschirmhöhe */
+            min-height: 450px; /* Vorher 600px. Die absolute Untergrenze */
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
             color: var(--white);
-            /* HIER SPÄTER DEN LINK ZUM ZUG-BILD EINFÜGEN */
-            background: url('Koffer_packen.jpg') no-repeat center center/cover;
+            /* Hier wird dein Bild geladen. Stelle sicher, dass der Dateiname stimmt. */
+            /* "center top" sorgt dafür, dass die Gesichter oben nicht abgeschnitten werden. */
+            background: url('hero-luggage.jpg') no-repeat center top/cover;
             max-width: 100%;
         }
+        
         /* Dunkles Overlay, damit der Text immer lesbar bleibt */
         .hero::before {
             content: '';
