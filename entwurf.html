@@ -31,7 +31,6 @@
         /* --- HERO BEREICH --- */
         .hero {
             position: relative;
-            /* Flexiblere Höhe, damit auf dem Handy nichts aus dem Bild geschoben wird */
             min-height: 60vh;
             padding: 6rem 0; 
             display: flex;
@@ -39,8 +38,8 @@
             justify-content: center;
             text-align: center;
             color: var(--white);
-            /* Center Center ist oft der beste Kompromiss für alle Geräte */
-            background: url('Koffer_packen.jpg') no-repeat center center/cover;
+            /* HIER IST DIE MAGIE: center 15% fokussiert das obere Viertel der Bildmitte */
+            background: url('Koffer_packen.jpg') no-repeat center 15% / cover;
             max-width: 100%;
         }
         
@@ -55,7 +54,7 @@
             z-index: 1;
             max-width: 800px;
             padding: 0 2rem;
-            width: 100%; /* Verhindert, dass der Inhalt breiter wird als der Bildschirm */
+            width: 100%;
         }
         .hero h1 { color: var(--white); font-size: 3rem; margin-bottom: 1.5rem; }
         .hero p { font-size: 1.2rem; margin-bottom: 2rem; }
@@ -155,32 +154,27 @@
            RESPONSIVE DESIGN (Für Smartphones & Tablets)
            ========================================================= */
         @media (max-width: 768px) {
-            /* Hero-Bereich auf mobilen Geräten anpassen */
             .hero {
-                padding: 4rem 0; /* Etwas weniger Abstand oben/unten */
+                padding: 4rem 0; 
                 min-height: 50vh;
             }
             .hero-content {
                 padding: 0 1.5rem;
             }
             .hero h1 {
-                font-size: 2rem; /* Schriftgröße deutlich verkleinern */
+                font-size: 2rem; 
                 margin-bottom: 1rem;
             }
             .hero p {
-                font-size: 1rem; /* Text leicht verkleinern */
+                font-size: 1rem; 
                 margin-bottom: 1.5rem;
             }
-            
-            /* Sektionen allgemein anpassen */
             section {
-                padding: 3rem 1.5rem; /* Weniger Rand auf kleinen Bildschirmen */
+                padding: 3rem 1.5rem; 
             }
             .problem h2 {
                 font-size: 2rem;
             }
-            
-            /* Preview-Kästen für ganz kleine Bildschirme anpassen */
             .mockup-placeholder {
                 width: 100%;
                 max-width: 280px;
