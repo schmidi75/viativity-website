@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tools | Viativity™</title>
+    <meta name="description" content="Discover the digital tools of Viativity. Immediate relief on the go and preventive training against motion sickness.">
+    
+    <link rel="alternate" hreflang="de" href="https://viativity.app/features.html" />
+    <link rel="alternate" hreflang="en" href="https://viativity.app/en/features.html" />
+    
+    <style>
+        /* --- CSS VARIABLES --- */
+        :root {
+            --primary-color: #1A365D;
+            --accent-color: #7DA2A9;
+            --bg-color: #F7FAFC;
+            --text-color: #2D3748;
+            --white: #FFFFFF;
+        }
+
+        /* --- BASICS --- */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+        }
+        h1, h2, h3 { color: var(--primary-color); line-height: 1.2; margin-bottom: 1rem; }
+        p { margin-bottom: 1rem; }
+        
+        /* --- NAVIGATION --- */
+        .navbar {
+            padding: 1rem 1.5rem;
+            background: var(--white);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            position: sticky; top: 0; z-index: 100;
+        }
+        .navbar-brand { font-weight: bold; color: var(--primary-color); font-size: 1.2rem; text-decoration: none; }
+        .nav-links { display: flex; align-items: center; }
+        .nav-links a { margin-left: 1rem; text-decoration: none; color: var(--text-color); font-weight: 500; }
+        .nav-links a:hover { color: var(--accent-color); }
+        
+        /* Language Switcher */
+        .lang-switcher {
+            margin-left: 1.5rem;
+            font-size: 0.9rem;
+            border-left: 1px solid #E2E8F0;
+            padding-left: 1rem;
+        }
+        .lang-switcher a { margin-right: 0.3rem; color: #A0AEC0; text-decoration: none; }
+        .lang-switcher a:hover { color: var(--primary-color); }
+        .lang-active { font-weight: bold; color: var(--primary-color); margin-left: 0.3rem; }
+        
+        /* --- HEADER --- */
+        .page-header {
+            background: var(--primary-color);
+            color: var(--white);
+            text-align: center;
+            padding: 4rem 1.5rem;
+        }
+        .page-header h1 { color: var(--white); font-size: 2.5rem; }
+        .page-header p { font-size: 1.1rem; opacity: 0.9; max-width: 600px; margin: 0 auto; }
+
+        /* --- ZIG-ZAG LAYOUT (Top Features) --- */
+        .feature-section {
+            padding: 4rem 1.5rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .feature-row {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            margin-bottom: 5rem;
+            align-items: center;
+        }
+        .feature-text { flex: 1; }
+        .feature-text h2 { font-size: 2rem; color: var(--primary-color); }
+        .feature-text h3 { font-size: 1.1rem; color: var(--accent-color); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; }
+        .feature-image-placeholder {
+            flex: 1;
+            width: 100%;
+            max-width: 350px;
+            height: 400px;
+            background: #E2E8F0;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #718096;
+            font-weight: bold;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .feature-image-placeholder img { width: 100%; height: 100%; object-fit: cover; }
+
+        /* --- FEATURE GRID (The Rest) --- */
+        .grid-section {
+            background: var(--white);
+            padding: 4rem 1.5rem;
+        }
+        .grid-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .grid-header { text-align: center; margin-bottom: 3rem; }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+        .grid-card {
+            background: var(--bg-color);
+            padding: 2rem;
+            border-radius: 16px;
+            border-left: 4px solid var(--accent-color);
+        }
+        .grid-card h3 { font-size: 1.3rem; margin-bottom: 0.5rem; }
+
+        /* --- FOOTER --- */
+        footer { background: #2D3748; color: var(--white); text-align: center; padding: 2rem 1.5rem; }
+        footer a { color: var(--accent-color); text-decoration: none; margin: 0 0.5rem; }
+        .disclaimer-small { font-size: 0.8rem; color: #A0AEC0; margin-top: 1.5rem; }
+
+        @media (min-width: 768px) {
+            .feature-row { flex-direction: row; gap: 4rem; margin-bottom: 8rem; }
+            .feature-row.reverse { flex-direction: row-reverse; }
+            .feature-text { padding: 0 2rem; }
+            .feature-image-placeholder { height: 500px; }
+            .feature-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="index.html" class="navbar-brand">Viativity™</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">Behind the Scenes</a>
+            <div class="lang-switcher">
+                <a href="../features.html" aria-label="Switch to German">DE</a> | <span class="lang-active">EN</span>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <h1>Digital Tools</h1>
+        <p>Prevention and immediate relief in one app. Discover tools that help you enjoy the ride again.</p>
+    </header>
+
+    <main class="feature-section">
+        
+        <div class="feature-row">
+            <div class="feature-text">
+                <h3>Immediate Relief</h3>
+                <h2>The Artificial Horizon</h2>
+                <p>Motion sickness often occurs when your eyes report a standstill – for example, when reading in a car or inside a windowless cruise ship cabin – while your balance organ simultaneously feels the movement. The artificial horizon resolves this conflict by making the real movement visible again.</p>
+                <p><strong>How to use it:</strong> On the screen, you see the bow of a ship and a background image (sea with a mountain range). While the bow remains fixed, the background tilts and moves exactly in sync with the vehicle's actual movements (rolling and pitching) based on your smartphone's sensor data. Your brain thus gets back the missing visual confirmation of the movement.</p>
+            </div>
+            <div class="feature-image-placeholder">
+                <span style="padding: 1rem; text-align: center;">Screenshot<br><strong>Ship Bow & Horizon</strong></span>
+            </div>
+        </div>
+
+        <div class="feature-row reverse">
+            <div class="feature-text">
+                <h3>Immediate Relief</h3>
+                <h2>4-2-6 Paced Breathing</h2>
+                <p>This breathing technique specifically activates the body's resting nerve (parasympathetic nervous system). The prolonged exhalation signals absolute safety to the brain and stops the 'fight-or-flight' reaction. This effectively reduces nausea and acute stress.</p>
+                <p><strong>How to use it:</strong> Viativity guides you visually and haptically through the rhythm: inhale for 4 seconds, hold for 2 seconds, exhale for 6 seconds. Apply this for at least 2 minutes when you feel unwell.</p>
+            </div>
+            <div class="feature-image-placeholder">
+                <span style="padding: 1rem; text-align: center;">Screenshot<br><strong>4-2-6 Breathing</strong></span>
+            </div>
+        </div>
+
+    </main>
+
+    <section class="grid-section">
+        <div class="grid-container">
+            <div class="grid-header">
+                <h2>Further Tools & Knowledge</h2>
+                <p>For long-term habituation, preparation, and gentle relief.</p>
+            </div>
+            
+            <div class="feature-grid">
+                <div class="grid-card">
+                    <h3>P6 Acupressure</h3>
+                    <p>Massaging the Nei-Kuan point is traditionally used to support stomach well-being. The app shows you exactly how to find the point on your wrist and guides you to massage it gently in circular motions.</p>
+                </div>
+                
+                <div class="grid-card">
+                    <h3>Body Plumb Line (Training)</h3>
+                    <p>According to the theory of postural instability, nausea is often preceded by an unstable stance. With this exercise, you train your core stability and balance – purely via audio feedback and with closed eyes.</p>
+                </div>
+                
+                <div class="grid-card">
+                    <h3>100Hz Sound Modulation</h3>
+                    <p>Specific acoustic frequencies can gently modulate the balance system via the inner ear and dampen overreactions. <strong>Important:</strong> You absolutely need headphones for the correct transmission of the deep 100 Hz frequency.</p>
+                </div>
+
+                <div class="grid-card">
+                    <h3>Situational Travel Tips</h3>
+                    <p>Knowledge is half the battle. Viativity contains an extensive library of specific, scientifically based tips and tricks for various means of transport: Whether in a car, on a ship, in an airplane, on a train, or in a cable car.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div style="margin-bottom: 1rem;">
+            <a href="index.html">Home</a>
+            <a href="features.html">Tools</a>
+            <a href="about.html">Behind the Scenes</a>
+            <a href="mailto:support@viativity.app">Support</a>
+            <a href="privacy.html">Privacy Policy</a>
+        </div>
+        <p>© 2026 Viativity™. Developed in Switzerland.</p>
+        
+        <div class="disclaimer-small">
+            <strong>NOT A MEDICAL DEVICE:</strong> This app is not a medical device. It does not provide diagnoses and does not replace medical treatment.
+        </div>
+    </footer>
+
+</body>
+</html>
