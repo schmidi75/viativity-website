@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Über Viativity | Hinter den Kulissen</title>
+    <title>Über Viativity™ | Hinter den Kulissen</title>
     <meta name="description" content="Wer steckt hinter Viativity? Ein Indie-Entwicklungsprojekt aus der Schweiz. Transparenz, Credits und Support.">
     
     <style>
@@ -38,8 +38,20 @@
             position: sticky; top: 0; z-index: 100;
         }
         .navbar-brand { font-weight: bold; color: var(--primary-color); font-size: 1.2rem; text-decoration: none; }
+        .nav-links { display: flex; align-items: center; }
         .nav-links a { margin-left: 1rem; text-decoration: none; color: var(--text-color); font-weight: 500; }
         .nav-links a:hover { color: var(--accent-color); }
+
+        /* Language Switcher */
+        .lang-switcher {
+            margin-left: 1.5rem;
+            font-size: 0.9rem;
+            border-left: 1px solid #E2E8F0;
+            padding-left: 1rem;
+        }
+        .lang-switcher a { margin-left: 0; color: #A0AEC0; }
+        .lang-switcher a:hover { color: var(--primary-color); }
+        .lang-active { font-weight: bold; color: var(--primary-color); }
 
         /* --- HEADER --- */
         .page-header {
@@ -122,10 +134,13 @@
 <body>
 
     <nav class="navbar">
-        <a href="entwurf.html" class="navbar-brand">Viativity</a>
+        <a href="entwurf.html" class="navbar-brand">Viativity™</a>
         <div class="nav-links">
             <a href="entwurf.html">Startseite</a>
             <a href="features.html">Werkzeuge</a>
+            <div class="lang-switcher">
+                <span class="lang-active">DE</span> | <a href="#" aria-label="Switch to English">EN</a>
+            </div>
         </div>
     </nav>
 
@@ -137,13 +152,13 @@
     <main class="content-section">
         
         <div class="developer-intro">
-            <h2>Hallo, ich bin Dieter.</h2>
-            <p>Viativity ist keine App eines riesigen Tech-Konzerns. Ich bin Solo-Entwickler und habe dieses Projekt komplett in meiner Freizeit aufgebaut. Mein Ziel war es, eine App zu erschaffen, die ich selbst auf Reisen nutzen möchte: Klar, wissenschaftlich fundiert, werbefrei und ohne Datenhunger.</p>
-            <p>Als Einzelperson habe ich nicht das Budget für riesige Marketingkampagnen. Mein Fokus liegt zu 100 % auf einem fairen, nützlichen Produkt, das den sensorischen Konflikt bei Reiseübelkeit mindert.</p>
+            <h2>Hallo, ich bin Dieter Schmidli.</h2>
+            <p>Viativity™ ist keine App eines riesigen Tech-Konzerns. Ich bin Solo-Entwickler und habe dieses Projekt komplett in meiner Freizeit aufgebaut. Mein Ziel war es, eine App zu erschaffen, die ich selbst auf Reisen nutzen möchte: Klar strukturiert, wissenschaftlich fundiert, komplett werbefrei und ohne Datenhunger.</p>
+            <p>Als Einzelperson habe ich kein Budget für riesige Marketingkampagnen. Mein Fokus liegt zu 100 % auf einem fairen, nützlichen Produkt, das den sensorischen Konflikt bei Reiseübelkeit mindert und deine Privatsphäre respektiert.</p>
         </div>
 
         <h2>Transparenz & Fairness</h2>
-        <p>Wenn man alleine an einer App arbeitet, ist man auf großartige Werkzeuge und Communities angewiesen. Es ist mir wichtig, ganz offen zu kommunizieren, wie Viativity entstanden ist:</p>
+        <p>Wenn man alleine an einer App arbeitet, ist man auf großartige Werkzeuge und Communities angewiesen. Es ist mir wichtig, ganz offen zu kommunizieren, wie Viativity™ entstanden ist:</p>
         
         <ul style="margin-left: 1.5rem; margin-bottom: 2rem; color: #4A5568;">
             <li style="margin-bottom: 0.5rem;"><strong>Visuelles (KI):</strong> Um dir eine moderne und ansprechende Oberfläche zu bieten, wurden die Illustrationen und Bilder auf dieser Webseite sowie innerhalb der App teilweise mit Hilfe von Künstlicher Intelligenz erstellt.</li>
@@ -172,13 +187,14 @@
         <div style="margin-bottom: 1rem;">
             <a href="entwurf.html">Startseite</a>
             <a href="features.html">Werkzeuge</a>
+            <a href="about.html">Über Viativity</a>
             <a href="mailto:support@viativity.app">Support</a>
             <a href="privacy.html">Datenschutz</a>
         </div>
         <p>© 2026 Viativity™. Entwickelt in der Schweiz.</p>
         
         <div class="disclaimer-small">
-            <strong>Wichtiger Hinweis:</strong> Diese App ist kein Medizinprodukt. Sie stellt keine Diagnosen und ersetzt keine ärztliche Behandlung.
+            <strong>KEIN MEDIZINPRODUKT:</strong> Diese App ist kein Medizinprodukt. Sie stellt keine Diagnosen und ersetzt keine ärztliche Behandlung.
         </div>
     </footer>
 
