@@ -76,10 +76,20 @@
             margin: 0 auto;   
         }
         
-        .hero h1 { color: var(--white); font-size: 2rem; margin-bottom: 1.5rem; }
+        /* Anpassung für Viativity Brand im Titel */
+        .hero-brand {
+            display: block;
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: var(--accent-color);
+            margin-bottom: 0.5rem;
+            letter-spacing: 0.05em;
+        }
+
+        .hero h1 { color: var(--white); font-size: 2rem; margin-bottom: 1.5rem; margin-top: 0; }
         .hero p { color: var(--white); font-size: 1rem; margin-bottom: 2rem; opacity: 0.9; }
         
-        /* Neuer Offline-Badge */
+        /* Offline-Badge (ohne Emoji, elegant) */
         .offline-badge {
             display: inline-block;
             background: rgba(255,255,255,0.1);
@@ -156,6 +166,7 @@
             section { padding: 6rem 2rem; }
             .hero-image { max-width: 900px; margin: 0 auto; border-radius: 0 0 24px 24px; box-shadow: 0 25px 50px rgba(0, 0, 0, 0.6); }
             .hero-content { padding: 4rem 2rem 5rem 2rem; }
+            .hero-brand { font-size: 1.8rem; margin-bottom: 0.8rem; }
             .hero h1 { font-size: 3.5rem; margin-bottom: 1.5rem; }
             .hero p { font-size: 1.25rem; margin-bottom: 2.5rem; }
             .store-buttons { flex-direction: row; justify-content: center; }
@@ -183,7 +194,10 @@
         <img src="Gemini_Reisen.jpg" alt="Unbeschwertes Reisen mit Viativity" class="hero-image">
         
         <div class="hero-content">
-            <h1>Viativity™:<br>Freu dich auf den Weg,<br>nicht nur auf das Ziel!</h1>
+            <h1>
+                <span class="hero-brand">Viativity™</span>
+                Freu dich auf den Weg,<br>nicht nur auf das Ziel!
+            </h1>
             
             <div class="offline-badge">100% Offline nutzbar – Ideal für Flugzeug, Schiff und in den Bergen</div>
             
@@ -212,7 +226,7 @@
 
         <section id="tools" class="text-center">
             <h2>Digitale Werkzeuge</h2>
-            <p class="max-w-800">Wähle ein Werkzeug aus, das deine aktuelle Situation am besten unterstützt: Egal ob akute Linderung der Symptome während der Reise oder präventives Training zur langfristigen Gewöhnung (Habituation).</p>
+            <p class="max-w-800">Wähle das Werkzeug aus, das deine aktuelle Situation am besten unterstützt. Egal ob akute Reiseübelkeit unterwegs oder präventives Training vorab: Viativity bietet dir die passende Lösung – fast so vielseitig wie ein Schweizer Taschenmesser.</p>
             
             <a href="features.html" style="color: var(--primary-color); font-weight: bold; text-decoration: underline; margin-top: 1rem; display: inline-block;">Alle Funktionen im Detail ansehen &rarr;</a>
 
@@ -231,7 +245,7 @@
             </div>
 
             <div style="margin-top: 3rem;">
-                <p style="font-size: 1.1rem; color: #4A5568; max-width: 600px; margin: 0 auto; padding: 1.5rem; background: var(--white); border-radius: 12px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);"><strong>Viativity™</strong> ist eine digitale Wellness-App gegen Reiseübelkeit. Sie trainiert dein Gleichgewichtssystem und bietet sanfte Soforthilfe – immer und überall griffbereit.</p>
+                <p style="font-size: 1.1rem; color: #4A5568; max-width: 600px; margin: 0 auto; padding: 1.5rem; background: var(--white); border-radius: 12px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);"><strong>Viativity™</strong> ist eine digitale Wellness-App gegen Reiseübelkeit. Ob sanfte Soforthilfe unterwegs oder präventives Training zu Hause – dein digitaler Begleiter ist immer und überall griffbereit.</p>
             </div>
 
         </section>
