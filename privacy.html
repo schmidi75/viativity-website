@@ -4,58 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Datenschutzerklärung | Viativity™</title>
+    
+    <link rel="alternate" hreflang="de" href="https://viativity.app/privacy.html" />
+    <link rel="alternate" hreflang="en" href="https://viativity.app/en/privacy.html" />
+    
     <style>
-        /* --- CSS VARIABLEN --- */
-        :root {
-            --primary-color: #1A365D;
-            --accent-color: #7DA2A9;
-            --bg-color: #F7FAFC;
-            --text-color: #2D3748;
-            --white: #FFFFFF;
-        }
-
-        /* --- BASICS --- */
+        :root { --primary-color: #1A365D; --accent-color: #7DA2A9; --bg-color: #F7FAFC; --text-color: #2D3748; --white: #FFFFFF; }
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            color: var(--text-color);
-            background-color: var(--bg-color);
-        }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: var(--text-color); background-color: var(--bg-color); }
         h1, h2, h3 { color: var(--primary-color); line-height: 1.2; margin-bottom: 1rem; }
         p { margin-bottom: 1rem; }
         
-        /* --- NAVIGATION --- */
-        .navbar {
-            padding: 1rem 1.5rem;
-            background: var(--white);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-            position: sticky; top: 0; z-index: 100;
-        }
+        .navbar { padding: 1rem 1.5rem; background: var(--white); display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 4px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 100; }
         .navbar-brand { font-weight: bold; color: var(--primary-color); font-size: 1.2rem; text-decoration: none; }
         .nav-links { display: flex; align-items: center; }
         .nav-links a { margin-left: 1rem; text-decoration: none; color: var(--text-color); font-weight: 500; }
         .nav-links a:hover { color: var(--accent-color); }
         
         .lang-switcher { margin-left: 1.5rem; font-size: 0.9rem; border-left: 1px solid #E2E8F0; padding-left: 1rem; }
-        .lang-switcher a { margin-left: 0; color: #A0AEC0; }
+        .lang-switcher a { margin-left: 0; color: #A0AEC0; text-decoration: none; }
         .lang-switcher a:hover { color: var(--primary-color); }
-        .lang-active { font-weight: bold; color: var(--primary-color); }
+        .lang-active { font-weight: bold; color: var(--primary-color); margin-right: 0.3rem;}
 
-        /* --- INHALT --- */
-        .content-section {
-            padding: 4rem 1.5rem;
-            max-width: 800px; 
-            margin: 0 auto;
-        }
-        
+        .content-section { padding: 4rem 1.5rem; max-width: 800px; margin: 0 auto; }
         h2 { margin-top: 2.5rem; font-size: 1.4rem; }
         ul { margin-left: 1.5rem; margin-bottom: 1rem; }
 
-        /* --- FOOTER --- */
         footer { background: #2D3748; color: var(--white); text-align: center; padding: 2rem 1.5rem; margin-top: 4rem; }
         footer a { color: var(--accent-color); text-decoration: none; margin: 0 0.5rem; }
         .disclaimer-small { font-size: 0.8rem; color: #A0AEC0; margin-top: 1.5rem; }
@@ -70,7 +44,7 @@
             <a href="features.html">Werkzeuge</a>
             <a href="about.html">Hinter den Kulissen</a>
             <div class="lang-switcher">
-                <span class="lang-active">DE</span> | <a href="#">EN</a>
+                <span class="lang-active">DE</span> | <a href="en/privacy.html" aria-label="Switch to English">EN</a>
             </div>
         </div>
     </nav>
