@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Behind the Scenes | Viativity™</title>
+    <meta name="description" content="Who is behind Viativity? An indie development project from Switzerland. Transparency, credits, and support.">
+    
+    <link rel="alternate" hreflang="de" href="https://viativity.app/about.html" />
+    <link rel="alternate" hreflang="en" href="https://viativity.app/en/about.html" />
+
+    <style>
+        /* --- CSS VARIABLES --- */
+        :root {
+            --primary-color: #1A365D;
+            --accent-color: #7DA2A9;
+            --bg-color: #F7FAFC;
+            --text-color: #2D3748;
+            --white: #FFFFFF;
+        }
+
+        /* --- BASICS --- */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.8; 
+            color: var(--text-color);
+            background-color: var(--bg-color);
+        }
+        h1, h2, h3 { color: var(--primary-color); line-height: 1.2; margin-bottom: 1rem; }
+        p { margin-bottom: 1.5rem; }
+        
+        /* --- NAVIGATION --- */
+        .navbar {
+            padding: 1rem 1.5rem;
+            background: var(--white);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            position: sticky; top: 0; z-index: 100;
+        }
+        .navbar-brand { font-weight: bold; color: var(--primary-color); font-size: 1.2rem; text-decoration: none; }
+        .nav-links { display: flex; align-items: center; }
+        .nav-links a { margin-left: 1rem; text-decoration: none; color: var(--text-color); font-weight: 500; }
+        .nav-links a:hover { color: var(--accent-color); }
+
+        .lang-switcher {
+            margin-left: 1.5rem;
+            font-size: 0.9rem;
+            border-left: 1px solid #E2E8F0;
+            padding-left: 1rem;
+        }
+        .lang-switcher a { margin-right: 0.3rem; color: #A0AEC0; text-decoration: none; }
+        .lang-switcher a:hover { color: var(--primary-color); }
+        .lang-active { font-weight: bold; color: var(--primary-color); margin-left: 0.3rem; }
+
+        /* --- HEADER --- */
+        .page-header {
+            background: var(--primary-color);
+            color: var(--white);
+            text-align: center;
+            padding: 4rem 1.5rem;
+        }
+        .page-header h1 { color: var(--white); font-size: 2.5rem; }
+
+        /* --- CONTENT --- */
+        .content-section {
+            padding: 4rem 1.5rem;
+            max-width: 800px; 
+            margin: 0 auto;
+        }
+        
+        .developer-box {
+            background: var(--white);
+            padding: 2.5rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            margin-bottom: 4rem;
+        }
+
+        /* --- GRID --- */
+        .support-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        .support-card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 16px;
+            border-top: 4px solid var(--primary-color);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        .btn-outline {
+            display: inline-block;
+            border: 2px solid var(--primary-color);
+            color: var(--primary-color);
+            padding: 0.6rem 1.2rem;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            margin-top: 0.5rem;
+            transition: all 0.2s ease;
+        }
+        .btn-outline:hover {
+            background: var(--primary-color);
+            color: var(--white);
+        }
+
+        /* --- FOOTER --- */
+        footer { background: #2D3748; color: var(--white); text-align: center; padding: 2rem 1.5rem; margin-top: 4rem; }
+        footer a { color: var(--accent-color); text-decoration: none; margin: 0 0.5rem; }
+        .disclaimer-small { font-size: 0.8rem; color: #A0AEC0; margin-top: 1.5rem; }
+
+        @media (min-width: 768px) {
+            .support-grid { grid-template-columns: 1fr 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="index.html" class="navbar-brand">Viativity™</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="features.html">Tools</a>
+            <a href="about.html">Behind the Scenes</a>
+            <div class="lang-switcher">
+                <a href="../about.html" aria-label="Switch to German">DE</a> | <span class="lang-active">EN</span>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <h1>Behind the Scenes</h1>
+        <p>An indie project from Switzerland</p>
+    </header>
+
+    <main class="content-section">
+        
+        <div class="developer-box">
+            <h2>Hi, I'm Dieter Schmidli.</h2>
+            <p>Viativity™ is not an app from a giant tech corporation. I am a solo developer and built this project entirely in my free time. My goal was to create an app that I would want to use myself when traveling: clearly structured, scientifically based, completely ad-free, and without data hunger.</p>
+            <p>As an individual, my focus is 100% on a fair product that helps reduce the sensory conflict of motion sickness and respects your privacy.</p>
+        </div>
+
+        <h2>Transparency & Cooperation</h2>
+        <p>A modern project like Viativity™ is created today through the combination of human creativity and innovative tools. It is important to me to communicate this openly:</p>
+        
+        <ul style="margin-left: 1.5rem; margin-bottom: 2rem; color: #4A5568;">
+            <li style="margin-bottom: 1rem;"><strong>Concept & Development:</strong> The ideas, scientific research, and overall concept come from me. I was supported by artificial intelligence in the technical implementation, programming, and copy design.</li>
+            <li style="margin-bottom: 1rem;"><strong>Design & Graphics:</strong> The illustrations and visual elements on this website and within the app were partially generated with AI support to create a consistent experience.</li>
+            <li><strong>Audio Content:</strong> While the technical frequencies (like 100Hz) are generated directly in the app, the atmospheric background sounds come from the open-source platform <strong>freesound.org</strong>.</li>
+        </ul>
+
+        <div class="support-grid">
+            <div class="support-card">
+                <h3>Support Viativity</h3>
+                <p>I believe in fair software without subscriptions. If the app helps you and you appreciate my work as an indie developer, I would be thrilled to receive a virtual coffee!</p>
+                <a href="#" class="btn-outline">☕ Support the project</a>
+            </div>
+
+            <div class="support-card" style="border-top-color: var(--accent-color);">
+                <h3>Donate to Freesound</h3>
+                <p>The community on Freesound.org is a goldmine for high-quality audio content. If you enjoy the sound of the app, consider supporting the platform with a small donation.</p>
+                <a href="https://freesound.org/donations/donate/" target="_blank" rel="noopener" class="btn-outline">🎵 Donate to Freesound</a>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div style="margin-bottom: 1rem;">
+            <a href="index.html">Home</a>
+            <a href="features.html">Tools</a>
+            <a href="about.html">Behind the Scenes</a>
+            <a href="mailto:support@viativity.app">Support</a>
+            <a href="privacy.html">Privacy Policy</a>
+        </div>
+        <p>© 2026 Viativity™. Developed in Switzerland.</p>
+        <div class="disclaimer-small">
+            <strong>NOT A MEDICAL DEVICE:</strong> This app is not a medical device. It does not provide diagnoses and does not replace medical treatment.
+        </div>
+    </footer>
+
+</body>
+</html>
