@@ -39,6 +39,7 @@
         }
         .navbar-brand { font-weight: bold; color: var(--primary-color); font-size: 1.2rem; text-decoration: none; }
         .nav-links a { margin-left: 1rem; text-decoration: none; color: var(--text-color); font-weight: 500; }
+        .nav-links a:hover { color: var(--accent-color); }
         
         /* --- HEADER --- */
         .page-header {
@@ -106,6 +107,7 @@
         /* --- FOOTER --- */
         footer { background: #2D3748; color: var(--white); text-align: center; padding: 2rem 1.5rem; }
         footer a { color: var(--accent-color); text-decoration: none; margin: 0 0.5rem; }
+        .disclaimer-small { font-size: 0.8rem; color: #A0AEC0; margin-top: 1.5rem; }
 
         /* =========================================================
            MEDIA QUERIES (Desktop - Mobile First)
@@ -133,9 +135,10 @@
 <body>
 
     <nav class="navbar">
-        <a href="index.html" class="navbar-brand">&larr; Viativity</a>
+        <a href="entwurf.html" class="navbar-brand">Viativity</a>
         <div class="nav-links">
-            <a href="index.html">Startseite</a>
+            <a href="entwurf.html">Startseite</a>
+            <a href="about.html">Über das Projekt</a>
         </div>
     </nav>
 
@@ -190,12 +193,22 @@
                     <h3>100Hz Klangmodulation</h3>
                     <p>Sanfte, tiefe Frequenzen, die über Kopfhörer abgespielt werden, können helfen, das Gleichgewichtsorgan im Innenohr zu beruhigen.</p>
                 </div>
-                </div>
+            </div>
         </div>
     </section>
 
     <footer>
+        <div style="margin-bottom: 1rem;">
+            <a href="entwurf.html">Startseite</a>
+            <a href="about.html">Über Viativity</a>
+            <a href="mailto:support@viativity.app">Support</a>
+            <a href="privacy.html">Datenschutz</a>
+        </div>
         <p>© 2026 Viativity™. Entwickelt in der Schweiz.</p>
+        
+        <div class="disclaimer-small">
+            <strong>Wichtiger Hinweis:</strong> Diese App ist kein Medizinprodukt. Sie stellt keine Diagnosen und ersetzt keine ärztliche Behandlung.
+        </div>
     </footer>
 
 </body>
