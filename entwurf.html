@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Viativity | Freue dich auf den Weg</title>
-    <meta name="description" content="Deine App gegen Reiseübelkeit. Präventives Training und Soforthilfe.">
+    <title>Viativity™ | Dein smarter Begleiter für unbeschwertes Reisen</title>
+    <meta name="description" content="Nutze digitale Werkzeuge zur Soforthilfe für unterwegs und als präventives Training für zu Hause.">
     
     <style>
         /* --- CSS VARIABLEN --- */
@@ -40,8 +40,20 @@
             position: sticky; top: 0; z-index: 100;
         }
         .navbar-brand { font-weight: bold; color: var(--primary-color); font-size: 1.2rem; text-decoration: none; }
+        .nav-links { display: flex; align-items: center; }
         .nav-links a { margin-left: 1rem; text-decoration: none; color: var(--text-color); font-weight: 500; }
         .nav-links a:hover { color: var(--accent-color); }
+        
+        /* Language Switcher */
+        .lang-switcher {
+            margin-left: 1.5rem;
+            font-size: 0.9rem;
+            border-left: 1px solid #E2E8F0;
+            padding-left: 1rem;
+        }
+        .lang-switcher a { margin-left: 0; color: #A0AEC0; }
+        .lang-switcher a:hover { color: var(--primary-color); }
+        .lang-active { font-weight: bold; color: var(--primary-color); }
 
         /* --- HERO LAYOUT (Mobile: Volle Breite) --- */
         .hero {
@@ -116,6 +128,13 @@
             font-size: 0.8rem;
             color: #718096;
             transition: transform 0.3s ease;
+            overflow: hidden; /* Für saubere Bildkanten */
+        }
+        /* Vorbereitung für echte Bilder */
+        .jass-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
         .card-left { transform: rotate(-22deg) translateX(-70px) translateY(20px); z-index: 1; }
         .card-center { transform: rotate(0deg); z-index: 3; box-shadow: 0 15px 35px rgba(0,0,0,0.25); }
@@ -127,12 +146,12 @@
         .disclaimer-small { font-size: 0.8rem; color: #A0AEC0; margin-top: 1.5rem; }
 
         /* =========================================================
-           MEDIA QUERIES (PC & Tablets - Die Lösung für das Bild!)
+           MEDIA QUERIES (PC & Tablets)
            ========================================================= */
         @media (min-width: 768px) {
             section { padding: 6rem 2rem; }
             
-            /* HERO PC-LAYOUT: Bild wird zentriert und begrenzt */
+            /* HERO PC-LAYOUT */
             .hero-image {
                 max-width: 900px; 
                 margin: 0 auto; 
@@ -146,7 +165,6 @@
             .hero h1 { font-size: 3.5rem; margin-bottom: 1.5rem; }
             .hero p { font-size: 1.25rem; margin-bottom: 2.5rem; }
             
-            /* Buttons nebeneinander auf dem PC */
             .store-buttons { flex-direction: row; justify-content: center; }
             
             .mockup-showcase { height: 500px; }
@@ -159,10 +177,13 @@
 <body>
 
     <nav class="navbar">
-        <a href="entwurf.html" class="navbar-brand">Viativity</a>
+        <a href="entwurf.html" class="navbar-brand">Viativity™</a>
         <div class="nav-links">
             <a href="features.html">Werkzeuge</a>
             <a href="about.html">Über das Projekt</a>
+            <div class="lang-switcher">
+                <span class="lang-active">DE</span> | <a href="#" aria-label="Switch to English">EN</a>
+            </div>
         </div>
     </nav>
 
@@ -170,8 +191,8 @@
         <img src="Gemini_Reisen.jpg" alt="Unbeschwertes Reisen mit Viativity" class="hero-image">
         
         <div class="hero-content">
-            <h1>Freue dich auf den Weg,<br>nicht nur auf das Ziel</h1>
-            <p>Viativity™ ist dein smarter Begleiter für unbeschwertes Reisen. Wissenschaftlich fundierte Werkzeuge und präventives Training gegen Reiseübelkeit.</p>
+            <h1>Freu dich auf den Weg,<br>nicht nur auf das Ziel!</h1>
+            <p>Dein smarter Begleiter für unbeschwertes Reisen. Nutze digitale Werkzeuge zur Soforthilfe für unterwegs und als präventives Training für zu Hause.</p>
             <div class="store-buttons">
                 <a href="#" class="btn btn-disabled"> App Store (bald erhältlich)</a>
                 <a href="#" class="btn btn-disabled">▶ Play Store (bald erhältlich)</a>
@@ -179,23 +200,33 @@
         </div>
     </header>
 
-    <section id="problem" class="text-center max-w-800">
-        <h2>Schluss mit dem sensorischen Konflikt</h2>
-        <p>Reiseübelkeit entsteht, wenn dein Gehirn widersprüchliche Signale von Auge und Gleichgewichtsorgan erhält. Viativity nutzt wissenschaftlich belegte Prinzipien, um genau diesen Stressor zu minimieren – komplett ohne Medikamente oder Esoterik.</p>
-    </section>
+    <main>
+        <section id="problem" class="text-center max-w-800">
+            <h2>Schluss mit dem sensorischen Konflikt</h2>
+            <p>Reiseübelkeit entsteht oft, wenn das Auge Stillstand meldet (z. B. im Fahrzeuginnenraum), das Gleichgewichtsorgan aber gleichzeitig Bewegung spürt. Viativity nutzt innovative Werkzeuge, um genau diesen Widerspruch aufzulösen und störende Reize sanft auszublenden – komplett ohne Medikamente.</p>
+        </section>
 
-    <section id="tools" class="text-center">
-        <h2>Deine digitale Reiseapotheke</h2>
-        <p class="max-w-800">Egal ob präventives Training vor dem Urlaub oder Soforthilfe im Auto. Entdecke Werkzeuge, die auf deine aktuelle Situation zugeschnitten sind.</p>
-        
-        <a href="features.html" style="color: var(--primary-color); font-weight: bold; text-decoration: underline; margin-top: 1rem; display: inline-block;">Alle Funktionen im Detail ansehen &rarr;</a>
+        <section id="tools" class="text-center">
+            <h2>Digitale Werkzeuge</h2>
+            <p class="max-w-800">Wähle ein Werkzeug aus, das deine aktuelle Situation am besten unterstützt: Egal ob akute Linderung der Symptome während der Reise oder präventives Training zur langfristigen Gewöhnung (Habituation).</p>
+            
+            <a href="features.html" style="color: var(--primary-color); font-weight: bold; text-decoration: underline; margin-top: 1rem; display: inline-block;">Alle Funktionen im Detail ansehen &rarr;</a>
 
-        <div class="mockup-showcase">
-            <div class="jass-card card-left">Modus: Auto</div>
-            <div class="jass-card card-center">Gyro-Horizont</div>
-            <div class="jass-card card-right">4-2-6 Atmung</div>
-        </div>
-    </section>
+            <div class="mockup-showcase">
+                <div class="jass-card card-left">
+                    <span style="padding: 1rem; text-align: center;">Screenshot<br><strong>Horizont</strong></span>
+                    </div>
+                
+                <div class="jass-card card-center">
+                    <span style="padding: 1rem; text-align: center;">Screenshot<br><strong>4-2-6 Atmung</strong></span>
+                    </div>
+                
+                <div class="jass-card card-right">
+                    <span style="padding: 1rem; text-align: center;">Screenshot<br><strong>100Hz Modulation</strong></span>
+                    </div>
+            </div>
+        </section>
+    </main>
 
     <footer>
         <div style="margin-bottom: 1rem;">
@@ -207,7 +238,7 @@
         <p>© 2026 Viativity™. Entwickelt in der Schweiz.</p>
         
         <div class="disclaimer-small">
-            <strong>Wichtiger Hinweis:</strong> Diese App ist kein Medizinprodukt. Sie stellt keine Diagnosen und ersetzt keine ärztliche Behandlung.
+            <strong>KEIN MEDIZINPRODUKT:</strong> Diese App ist kein Medizinprodukt. Sie stellt keine Diagnosen und ersetzt keine ärztliche Behandlung.
         </div>
     </footer>
 
