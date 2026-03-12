@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Werkzeuge | Viativity</title>
-    <meta name="description" content="Entdecke die wissenschaftlich fundierten Werkzeuge von Viativity gegen Reiseübelkeit.">
+    <title>Werkzeuge | Viativity™</title>
+    <meta name="description" content="Entdecke die digitalen Werkzeuge von Viativity. Soforthilfe für unterwegs und präventives Training gegen Reiseübelkeit.">
     
     <style>
-        /* --- CSS VARIABLEN (Identisch zur Landingpage) --- */
+        /* --- CSS VARIABLEN --- */
         :root {
             --primary-color: #1A365D;
             --accent-color: #7DA2A9;
@@ -38,8 +38,20 @@
             position: sticky; top: 0; z-index: 100;
         }
         .navbar-brand { font-weight: bold; color: var(--primary-color); font-size: 1.2rem; text-decoration: none; }
+        .nav-links { display: flex; align-items: center; }
         .nav-links a { margin-left: 1rem; text-decoration: none; color: var(--text-color); font-weight: 500; }
         .nav-links a:hover { color: var(--accent-color); }
+        
+        /* Language Switcher */
+        .lang-switcher {
+            margin-left: 1.5rem;
+            font-size: 0.9rem;
+            border-left: 1px solid #E2E8F0;
+            padding-left: 1rem;
+        }
+        .lang-switcher a { margin-left: 0; color: #A0AEC0; }
+        .lang-switcher a:hover { color: var(--primary-color); }
+        .lang-active { font-weight: bold; color: var(--primary-color); }
         
         /* --- HEADER --- */
         .page-header {
@@ -66,6 +78,7 @@
         }
         .feature-text { flex: 1; }
         .feature-text h2 { font-size: 2rem; color: var(--primary-color); }
+        .feature-text h3 { font-size: 1.1rem; color: var(--accent-color); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; }
         .feature-image-placeholder {
             flex: 1;
             width: 100%;
@@ -79,6 +92,12 @@
             color: #718096;
             font-weight: bold;
             box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            overflow: hidden; /* Für <img> */
+        }
+        .feature-image-placeholder img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
 
         /* --- FEATURE GRID (Der Rest) --- */
@@ -113,19 +132,17 @@
            MEDIA QUERIES (Desktop - Mobile First)
            ========================================================= */
         @media (min-width: 768px) {
-            /* Zick-Zack Layout für PC aktivieren */
             .feature-row {
                 flex-direction: row;
                 gap: 4rem;
                 margin-bottom: 8rem;
             }
             .feature-row.reverse {
-                flex-direction: row-reverse; /* Bild nach links, Text nach rechts */
+                flex-direction: row-reverse;
             }
             .feature-text { padding: 0 2rem; }
             .feature-image-placeholder { height: 500px; }
 
-            /* Grid Layout für PC (3 Spalten) */
             .feature-grid {
                 grid-template-columns: repeat(3, 1fr);
             }
@@ -135,40 +152,45 @@
 <body>
 
     <nav class="navbar">
-        <a href="entwurf.html" class="navbar-brand">Viativity</a>
+        <a href="entwurf.html" class="navbar-brand">Viativity™</a>
         <div class="nav-links">
             <a href="entwurf.html">Startseite</a>
             <a href="about.html">Über das Projekt</a>
+            <div class="lang-switcher">
+                <span class="lang-active">DE</span> | <a href="#" aria-label="Switch to English">EN</a>
+            </div>
         </div>
     </nav>
 
     <header class="page-header">
-        <h1>Deine digitale Reiseapotheke</h1>
-        <p>Prävention und Soforthilfe in einer App. Entdecke die Werkzeuge, die dir helfen, die Fahrt wieder zu genießen.</p>
+        <h1>Digitale Werkzeuge</h1>
+        <p>Prävention und Soforthilfe in einer App. Entdecke Werkzeuge, die dir helfen, die Fahrt wieder zu genießen.</p>
     </header>
 
     <main class="feature-section">
         
         <div class="feature-row">
             <div class="feature-text">
-                <h2>Der Gyro-Horizont</h2>
-                <p><strong>Soforthilfe im Auto.</strong> Wenn du hinten sitzt und das Smartphone oder ein Buch anschaust, entsteht der typische sensorische Konflikt. Dein Auge sieht Stillstand, dein Körper spürt die Kurven.</p>
-                <p>Der künstliche Horizont blendet sich über deinen Bildschirm und bewegt sich synchron zu den Fahrzeugbewegungen. So bekommt dein Gehirn die fehlende visuelle Bestätigung der Bewegung zurück.</p>
+                <h3>Soforthilfe</h3>
+                <h2>Der künstliche Horizont</h2>
+                <p>Reiseübelkeit entsteht oft, wenn das Auge Stillstand meldet (Innenraum), das Gleichgewichtsorgan aber Bewegung spürt. Der künstliche Horizont löst diesen Widerspruch (Konflikt) auf, indem er die echte Bewegung wieder sichtbar macht.</p>
+                <p><strong>Die Anwendung:</strong> Fixiere das Gerät vor dir oder halte es bequem in der Hand. Die Linie auf dem Bildschirm bleibt stabil zum Erdboden, während sich das Fahrzeug bewegt. Dein Gehirn erhält so die fehlenden visuellen Informationen zurück.</p>
             </div>
             <div class="feature-image-placeholder">
-                [Bild: Gyro-Horizont Screenshot]
-            </div>
+                <span style="padding: 1rem; text-align: center;">Screenshot<br><strong>Horizont</strong></span>
+                </div>
         </div>
 
         <div class="feature-row reverse">
             <div class="feature-text">
+                <h3>Soforthilfe</h3>
                 <h2>4-2-6 Taktatmung</h2>
-                <p><strong>Beruhigung des Nervensystems.</strong> Bei einsetzender Übelkeit schaltet der Körper oft in den Stressmodus. Die wissenschaftlich fundierte 4-2-6 Atmung stimuliert den Parasympathikus (den "Ruhe-Nerv").</p>
-                <p>Viativity leitet dich visuell, akustisch und haptisch (Vibration) durch die Atemzyklen, um deinen Puls zu senken und die aufkommende Übelkeit aktiv zu dämpfen.</p>
+                <p>Diese Atemtechnik aktiviert gezielt den Ruhe-Nerv des Körpers (Parasympathikus). Die verlängerte Ausatmung signalisiert dem Gehirn absolute Sicherheit und stoppt die 'Kampf-oder-Flucht'-Reaktion. Das senkt effektiv Übelkeit und akuten Stress (wie z.B. Flugangst).</p>
+                <p><strong>Die Anwendung:</strong> Viativity leitet dich visuell und haptisch durch den Rhythmus: 4 Sekunden einatmen, 2 Sekunden halten, 6 Sekunden ausatmen. Wende dies bei akutem Unwohlsein für mindestens 2 Minuten an.</p>
             </div>
             <div class="feature-image-placeholder">
-                [Bild: Atmung Screenshot]
-            </div>
+                <span style="padding: 1rem; text-align: center;">Screenshot<br><strong>4-2-6 Atmung</strong></span>
+                </div>
         </div>
 
     </main>
@@ -176,22 +198,24 @@
     <section class="grid-section">
         <div class="grid-container">
             <div class="grid-header">
-                <h2>Weitere clevere Werkzeuge</h2>
-                <p>Für die langfristige Gewöhnung (Habituation) und sanfte Soforthilfe.</p>
+                <h2>Weitere Werkzeuge</h2>
+                <p>Für die langfristige Gewöhnung und sanfte Linderung.</p>
             </div>
             
             <div class="feature-grid">
                 <div class="grid-card">
                     <h3>P6-Akupressur</h3>
-                    <p>Eine bewährte Methode aus der Seefahrt. Die App zeigt dir exakt, wie du den Nei-Kuan-Punkt am Handgelenk findest und massierst, um den Brechreiz zu lindern.</p>
+                    <p>Die Massage des Nei-Kuan-Punktes wird traditionell genutzt, um das Wohlbefinden des Magens zu unterstützen. Die App zeigt dir exakt, wie du den Punkt am Handgelenk findest und leitet dich an, diesen bei Unwohlsein oder präventiv für 2 Minuten sanft kreisend zu massieren.</p>
                 </div>
+                
                 <div class="grid-card">
-                    <h3>Körper-Lot</h3>
-                    <p>Ein präventives Training zur Verbesserung deiner Propriozeption (Körperwahrnehmung). Trainiere deinen Gleichgewichtssinn schon Wochen vor der Abreise.</p>
+                    <h3>Körper-Lot (Training)</h3>
+                    <p>Nach der Theorie der körperlichen Instabilität geht Übelkeit oft ein instabiler Stand voraus. Mit dieser Übung trainierst du deine Rumpfstabilität. Da du die Augen dabei schließt und nur auf das Audio-Feedback hörst, ist dies ein ideales Training ohne Sinneskonflikt.</p>
                 </div>
+                
                 <div class="grid-card">
                     <h3>100Hz Klangmodulation</h3>
-                    <p>Sanfte, tiefe Frequenzen, die über Kopfhörer abgespielt werden, können helfen, das Gleichgewichtsorgan im Innenohr zu beruhigen.</p>
+                    <p>Spezifische akustische Frequenzen können über das Innenohr das Gleichgewichtssystem sanft modulieren und Überreaktionen dämpfen. <strong>Wichtig:</strong> Für die korrekte Übertragung der tiefen 100 Hz Frequenz benötigst du zwingend Kopfhörer.</p>
                 </div>
             </div>
         </div>
@@ -207,7 +231,7 @@
         <p>© 2026 Viativity™. Entwickelt in der Schweiz.</p>
         
         <div class="disclaimer-small">
-            <strong>Wichtiger Hinweis:</strong> Diese App ist kein Medizinprodukt. Sie stellt keine Diagnosen und ersetzt keine ärztliche Behandlung.
+            <strong>KEIN MEDIZINPRODUKT:</strong> Diese App ist kein Medizinprodukt. Sie stellt keine Diagnosen und ersetzt keine ärztliche Behandlung.
         </div>
     </footer>
 
