@@ -6,147 +6,56 @@
     <title>Werkzeuge | Viativity™</title>
     <meta name="description" content="Entdecke die digitalen Werkzeuge von Viativity. Soforthilfe für unterwegs und präventives Training gegen Reiseübelkeit.">
     
+    <link rel="alternate" hreflang="de" href="https://viativity.app/features.html" />
+    <link rel="alternate" hreflang="en" href="https://viativity.app/en/features.html" />
+    
     <style>
-        /* --- CSS VARIABLEN --- */
-        :root {
-            --primary-color: #1A365D;
-            --accent-color: #7DA2A9;
-            --bg-color: #F7FAFC;
-            --text-color: #2D3748;
-            --white: #FFFFFF;
-        }
-
-        /* --- BASICS --- */
+        :root { --primary-color: #1A365D; --accent-color: #7DA2A9; --bg-color: #F7FAFC; --text-color: #2D3748; --white: #FFFFFF; }
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            color: var(--text-color);
-            background-color: var(--bg-color);
-        }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: var(--text-color); background-color: var(--bg-color); }
         h1, h2, h3 { color: var(--primary-color); line-height: 1.2; margin-bottom: 1rem; }
         p { margin-bottom: 1rem; }
         
-        /* --- NAVIGATION --- */
-        .navbar {
-            padding: 1rem 1.5rem;
-            background: var(--white);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-            position: sticky; top: 0; z-index: 100;
-        }
+        .navbar { padding: 1rem 1.5rem; background: var(--white); display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 4px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 100; }
         .navbar-brand { font-weight: bold; color: var(--primary-color); font-size: 1.2rem; text-decoration: none; }
         .nav-links { display: flex; align-items: center; }
         .nav-links a { margin-left: 1rem; text-decoration: none; color: var(--text-color); font-weight: 500; }
         .nav-links a:hover { color: var(--accent-color); }
         
-        /* Language Switcher */
-        .lang-switcher {
-            margin-left: 1.5rem;
-            font-size: 0.9rem;
-            border-left: 1px solid #E2E8F0;
-            padding-left: 1rem;
-        }
-        .lang-switcher a { margin-left: 0; color: #A0AEC0; }
+        .lang-switcher { margin-left: 1.5rem; font-size: 0.9rem; border-left: 1px solid #E2E8F0; padding-left: 1rem; }
+        .lang-switcher a { margin-left: 0; color: #A0AEC0; text-decoration: none; }
         .lang-switcher a:hover { color: var(--primary-color); }
-        .lang-active { font-weight: bold; color: var(--primary-color); }
+        .lang-active { font-weight: bold; color: var(--primary-color); margin-right: 0.3rem;}
         
-        /* --- HEADER --- */
-        .page-header {
-            background: var(--primary-color);
-            color: var(--white);
-            text-align: center;
-            padding: 4rem 1.5rem;
-        }
+        .page-header { background: var(--primary-color); color: var(--white); text-align: center; padding: 4rem 1.5rem; }
         .page-header h1 { color: var(--white); font-size: 2.5rem; }
         .page-header p { font-size: 1.1rem; opacity: 0.9; max-width: 600px; margin: 0 auto; }
 
-        /* --- ZICK-ZACK LAYOUT (Top Features) --- */
-        .feature-section {
-            padding: 4rem 1.5rem;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        .feature-row {
-            display: flex;
-            flex-direction: column;
-            gap: 2rem;
-            margin-bottom: 5rem;
-            align-items: center;
-        }
+        .feature-section { padding: 4rem 1.5rem; max-width: 1200px; margin: 0 auto; }
+        .feature-row { display: flex; flex-direction: column; gap: 2rem; margin-bottom: 5rem; align-items: center; }
         .feature-text { flex: 1; }
         .feature-text h2 { font-size: 2rem; color: var(--primary-color); }
         .feature-text h3 { font-size: 1.1rem; color: var(--accent-color); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; }
-        .feature-image-placeholder {
-            flex: 1;
-            width: 100%;
-            max-width: 350px;
-            height: 400px;
-            background: #E2E8F0;
-            border-radius: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #718096;
-            font-weight: bold;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-            overflow: hidden; /* Für <img> */
-        }
-        .feature-image-placeholder img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
+        .feature-image-placeholder { flex: 1; width: 100%; max-width: 350px; height: 400px; background: #E2E8F0; border-radius: 20px; display: flex; align-items: center; justify-content: center; color: #718096; font-weight: bold; box-shadow: 0 10px 25px rgba(0,0,0,0.1); overflow: hidden; }
+        .feature-image-placeholder img { width: 100%; height: 100%; object-fit: cover; }
 
-        /* --- FEATURE GRID (Der Rest) --- */
-        .grid-section {
-            background: var(--white);
-            padding: 4rem 1.5rem;
-        }
-        .grid-container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
+        .grid-section { background: var(--white); padding: 4rem 1.5rem; }
+        .grid-container { max-width: 1200px; margin: 0 auto; }
         .grid-header { text-align: center; margin-bottom: 3rem; }
-        .feature-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 2rem;
-        }
-        .grid-card {
-            background: var(--bg-color);
-            padding: 2rem;
-            border-radius: 16px;
-            border-left: 4px solid var(--accent-color);
-        }
+        .feature-grid { display: grid; grid-template-columns: 1fr; gap: 2rem; }
+        .grid-card { background: var(--bg-color); padding: 2rem; border-radius: 16px; border-left: 4px solid var(--accent-color); }
         .grid-card h3 { font-size: 1.3rem; margin-bottom: 0.5rem; }
 
-        /* --- FOOTER --- */
         footer { background: #2D3748; color: var(--white); text-align: center; padding: 2rem 1.5rem; }
         footer a { color: var(--accent-color); text-decoration: none; margin: 0 0.5rem; }
         .disclaimer-small { font-size: 0.8rem; color: #A0AEC0; margin-top: 1.5rem; }
 
-        /* =========================================================
-           MEDIA QUERIES (Desktop - Mobile First)
-           ========================================================= */
         @media (min-width: 768px) {
-            .feature-row {
-                flex-direction: row;
-                gap: 4rem;
-                margin-bottom: 8rem;
-            }
-            .feature-row.reverse {
-                flex-direction: row-reverse;
-            }
+            .feature-row { flex-direction: row; gap: 4rem; margin-bottom: 8rem; }
+            .feature-row.reverse { flex-direction: row-reverse; }
             .feature-text { padding: 0 2rem; }
             .feature-image-placeholder { height: 500px; }
-
-            /* Grid Layout für PC (2 Spalten für 4 Karten = 2x2 Grid) */
-            .feature-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
+            .feature-grid { grid-template-columns: repeat(2, 1fr); }
         }
     </style>
 </head>
@@ -156,9 +65,9 @@
         <a href="entwurf.html" class="navbar-brand">Viativity™</a>
         <div class="nav-links">
             <a href="entwurf.html">Startseite</a>
-            <a href="about.html">Über das Projekt</a>
+            <a href="about.html">Hinter den Kulissen</a>
             <div class="lang-switcher">
-                <span class="lang-active">DE</span> | <a href="#" aria-label="Switch to English">EN</a>
+                <span class="lang-active">DE</span> | <a href="en/features.html" aria-label="Switch to English">EN</a>
             </div>
         </div>
     </nav>
@@ -169,7 +78,6 @@
     </header>
 
     <main class="feature-section">
-        
         <div class="feature-row">
             <div class="feature-text">
                 <h3>Soforthilfe</h3>
@@ -179,7 +87,7 @@
             </div>
             <div class="feature-image-placeholder">
                 <span style="padding: 1rem; text-align: center;">Screenshot<br><strong>Schiffsbug & Horizont</strong></span>
-                </div>
+            </div>
         </div>
 
         <div class="feature-row reverse">
@@ -191,9 +99,8 @@
             </div>
             <div class="feature-image-placeholder">
                 <span style="padding: 1rem; text-align: center;">Screenshot<br><strong>4-2-6 Atmung</strong></span>
-                </div>
+            </div>
         </div>
-
     </main>
 
     <section class="grid-section">
@@ -230,7 +137,8 @@
     <footer>
         <div style="margin-bottom: 1rem;">
             <a href="entwurf.html">Startseite</a>
-            <a href="about.html">Über Viativity</a>
+            <a href="features.html">Werkzeuge</a>
+            <a href="about.html">Hinter den Kulissen</a>
             <a href="mailto:support@viativity.app">Support</a>
             <a href="privacy.html">Datenschutz</a>
         </div>
