@@ -3,43 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Datenschutz | Viativity™</title>
+    <title>Datenschutzerklärung | Viativity™</title>
     <style>
-        :root { --primary-color: #1A365D; --accent-color: #7DA2A9; --bg-color: #F7FAFC; --text-color: #2D3748; --white: #FFFFFF; }
+        /* --- CSS VARIABLEN --- */
+        :root {
+            --primary-color: #1A365D;
+            --accent-color: #7DA2A9;
+            --bg-color: #F7FAFC;
+            --text-color: #2D3748;
+            --white: #FFFFFF;
+        }
+
+        /* --- BASICS --- */
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: var(--text-color); background-color: var(--bg-color); }
-        .content-section { padding: 4rem 1.5rem; max-width: 800px; margin: 0 auto; background: var(--white); margin-top: 2rem; border-radius: 16px; }
-        h1, h2 { color: var(--primary-color); margin-top: 2rem; margin-bottom: 1rem; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+        }
+        h1, h2, h3 { color: var(--primary-color); line-height: 1.2; margin-bottom: 1rem; }
+        p { margin-bottom: 1rem; }
+        
+        /* --- NAVIGATION --- */
+        .navbar {
+            padding: 1rem 1.5rem;
+            background: var(--white);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            position: sticky; top: 0; z-index: 100;
+        }
+        .navbar-brand { font-weight: bold; color: var(--primary-color); font-size: 1.2rem; text-decoration: none; }
+        .nav-links { display: flex; align-items: center; }
+        .nav-links a { margin-left: 1rem; text-decoration: none; color: var(--text-color); font-weight: 500; }
+        .nav-links a:hover { color: var(--accent-color); }
+        
+        .lang-switcher { margin-left: 1.5rem; font-size: 0.9rem; border-left: 1px solid #E2E8F0; padding-left: 1rem; }
+        .lang-switcher a { margin-left: 0; color: #A0AEC0; }
+        .lang-switcher a:hover { color: var(--primary-color); }
+        .lang-active { font-weight: bold; color: var(--primary-color); }
+
+        /* --- INHALT --- */
+        .content-section {
+            padding: 4rem 1.5rem;
+            max-width: 800px; 
+            margin: 0 auto;
+        }
+        
+        h2 { margin-top: 2.5rem; font-size: 1.4rem; }
+        ul { margin-left: 1.5rem; margin-bottom: 1rem; }
+
+        /* --- FOOTER --- */
         footer { background: #2D3748; color: var(--white); text-align: center; padding: 2rem 1.5rem; margin-top: 4rem; }
         footer a { color: var(--accent-color); text-decoration: none; margin: 0 0.5rem; }
+        .disclaimer-small { font-size: 0.8rem; color: #A0AEC0; margin-top: 1.5rem; }
     </style>
 </head>
 <body>
+
+    <nav class="navbar">
+        <a href="entwurf.html" class="navbar-brand">Viativity™</a>
+        <div class="nav-links">
+            <a href="entwurf.html">Startseite</a>
+            <a href="features.html">Werkzeuge</a>
+            <a href="about.html">Hinter den Kulissen</a>
+            <div class="lang-switcher">
+                <span class="lang-active">DE</span> | <a href="#">EN</a>
+            </div>
+        </div>
+    </nav>
+
     <main class="content-section">
         <h1>Datenschutzerklärung</h1>
-        <p>Ich verfolge den Grundsatz der Datensparsamkeit: Nur was technisch zwingend nötig ist, wird verarbeitet.</p>
+        <p>Der Schutz deiner Privatsphäre ist mir ein zentrales Anliegen. Als Indie-Entwickler verfolge ich den Grundsatz der Datensparsamkeit: Ich sammle nur das absolute Minimum an Daten, das für den Betrieb der Webseite technisch zwingend erforderlich ist.</p>
 
         <h2>1. Verantwortlicher</h2>
-        <p>Dieter Schmidli<br>E-Mail: <a href="mailto:support@viativity.app">support@viativity.app</a></p>
+        <p>Verantwortlich für die Datenverarbeitung auf dieser Webseite und in der App ist:<br>
+        Dieter Schmidli<br>
+        E-Mail: <a href="mailto:support@viativity.app" style="color: var(--primary-color); font-weight: bold;">support@viativity.app</a></p>
 
         <h2>2. Webseiten-Hosting (GitHub Pages)</h2>
-        <p>Beim Besuch dieser Webseite werden durch den Host (GitHub Inc.) Server-Log-Files (z.B. IP-Adresse) erhoben. Dies dient der Sicherheit und Stabilität. Ich setze keine Marketing-Cookies oder Tracking-Tools ein.</p>
+        <p>Diese Webseite wird auf GitHub Pages gehostet (GitHub Inc., USA). Beim Besuch der Seite erhebt GitHub automatisch Informationen, die dein Browser übermittelt (Server-Log-Files). Dazu gehören:</p>
+        <ul>
+            <li>IP-Adresse deines Geräts</li>
+            <li>Datum und Uhrzeit des Zugriffs</li>
+            <li>Name und URL der abgerufenen Datei</li>
+            <li>Browsertyp und Betriebssystem</li>
+        </ul>
+        <p>Diese Daten dienen der Sicherheit und Stabilität der Seite. Ich nutze keine externen Tracking-Tools wie Google Analytics und setze keine Marketing-Cookies ein.</p>
 
         <h2>3. Viativity™ App (100% Offline)</h2>
-        <p>Die App Viativity™ arbeitet vollständig offline. Sämtliche Sensordaten werden ausschließlich in Echtzeit lokal auf deinem Gerät verarbeitet. Es findet keine Speicherung und kein Datentransfer an externe Server statt.</p>
+        <p>Die App Viativity™ respektiert deine Privatsphäre konsequent und funktioniert vollständig offline:</p>
+        <ul>
+            <li><strong>Sensordaten:</strong> Alle für die Funktionen (z.B. künstlicher Horizont) benötigten Sensordaten deines Smartphones werden ausschließlich in Echtzeit lokal auf deinem Gerät verarbeitet.</li>
+            <li><strong>Keine Speicherung:</strong> Es werden keine Bewegungs- oder Standortprofile erstellt oder gespeichert.</li>
+            <li><strong>Kein Cloud-Senden:</strong> Es findet absolut kein Datentransfer deiner Nutzungsdaten an externe Server statt.</li>
+        </ul>
 
         <h2>4. Kontaktaufnahme</h2>
-        <p>E-Mails an den Support werden nur zur Bearbeitung der Anfrage genutzt und nicht an Dritte weitergegeben.</p>
+        <p>Wenn du mich per E-Mail kontaktierst (support@viativity.app), verwende ich deine Angaben (E-Mail-Adresse, Name, Nachricht) ausschließlich zur Bearbeitung deiner Anfrage. Diese Daten werden nicht ohne deine Einwilligung an Dritte weitergegeben und nach Abschluss der Bearbeitung gelöscht.</p>
 
         <h2>5. Auskunft und Löschung</h2>
-        <p>Da ich weder auf der Webseite noch in der App personenbezogene Daten von dir erhebe oder speichere, gibt es systemseitig keine Daten, die eingesehen oder gelöscht werden könnten.</p>
+        <p>Da ich weder auf der Webseite noch in der App personenbezogene Daten von dir erhebe oder speichere, gibt es systemseitig auch keine Daten, die eingesehen, gesperrt oder gelöscht werden könnten.</p>
         
         <p style="margin-top: 3rem; font-size: 0.9rem; color: #718096;">Stand: März 2026</p>
     </main>
+
     <footer>
-        <a href="entwurf.html">Startseite</a>
-        <a href="privacy.html">Datenschutz</a>
-        <p>© 2026 Viativity™. Schweiz.</p>
+        <div style="margin-bottom: 1rem;">
+            <a href="entwurf.html">Startseite</a>
+            <a href="features.html">Werkzeuge</a>
+            <a href="about.html">Hinter den Kulissen</a>
+            <a href="mailto:support@viativity.app">Support</a>
+            <a href="privacy.html">Datenschutz</a>
+        </div>
+        <p>© 2026 Viativity™. Entwickelt in der Schweiz.</p>
+        
+        <div class="disclaimer-small">
+            <strong>KEIN MEDIZINPRODUKT:</strong> Diese App ist kein Medizinprodukt. Sie stellt keine Diagnosen und ersetzt keine ärztliche Behandlung.
+        </div>
     </footer>
+
 </body>
 </html>
