@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Werkzeuge | Viativity</title>
+    <meta name="description" content="Entdecke die wissenschaftlich fundierten Werkzeuge von Viativity gegen Reiseübelkeit.">
+    
+    <style>
+        /* --- CSS VARIABLEN (Identisch zur Landingpage) --- */
+        :root {
+            --primary-color: #1A365D;
+            --accent-color: #7DA2A9;
+            --bg-color: #F7FAFC;
+            --text-color: #2D3748;
+            --white: #FFFFFF;
+        }
+
+        /* --- BASICS --- */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+        }
+        h1, h2, h3 { color: var(--primary-color); line-height: 1.2; margin-bottom: 1rem; }
+        p { margin-bottom: 1rem; }
+        
+        /* --- NAVIGATION --- */
+        .navbar {
+            padding: 1rem 1.5rem;
+            background: var(--white);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            position: sticky; top: 0; z-index: 100;
+        }
+        .navbar-brand { font-weight: bold; color: var(--primary-color); font-size: 1.2rem; text-decoration: none; }
+        .nav-links a { margin-left: 1rem; text-decoration: none; color: var(--text-color); font-weight: 500; }
+        
+        /* --- HEADER --- */
+        .page-header {
+            background: var(--primary-color);
+            color: var(--white);
+            text-align: center;
+            padding: 4rem 1.5rem;
+        }
+        .page-header h1 { color: var(--white); font-size: 2.5rem; }
+        .page-header p { font-size: 1.1rem; opacity: 0.9; max-width: 600px; margin: 0 auto; }
+
+        /* --- ZICK-ZACK LAYOUT (Top Features) --- */
+        .feature-section {
+            padding: 4rem 1.5rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .feature-row {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            margin-bottom: 5rem;
+            align-items: center;
+        }
+        .feature-text { flex: 1; }
+        .feature-text h2 { font-size: 2rem; color: var(--primary-color); }
+        .feature-image-placeholder {
+            flex: 1;
+            width: 100%;
+            max-width: 350px;
+            height: 400px;
+            background: #E2E8F0;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #718096;
+            font-weight: bold;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        /* --- FEATURE GRID (Der Rest) --- */
+        .grid-section {
+            background: var(--white);
+            padding: 4rem 1.5rem;
+        }
+        .grid-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .grid-header { text-align: center; margin-bottom: 3rem; }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+        .grid-card {
+            background: var(--bg-color);
+            padding: 2rem;
+            border-radius: 16px;
+            border-left: 4px solid var(--accent-color);
+        }
+        .grid-card h3 { font-size: 1.3rem; margin-bottom: 0.5rem; }
+
+        /* --- FOOTER --- */
+        footer { background: #2D3748; color: var(--white); text-align: center; padding: 2rem 1.5rem; }
+        footer a { color: var(--accent-color); text-decoration: none; margin: 0 0.5rem; }
+
+        /* =========================================================
+           MEDIA QUERIES (Desktop - Mobile First)
+           ========================================================= */
+        @media (min-width: 768px) {
+            /* Zick-Zack Layout für PC aktivieren */
+            .feature-row {
+                flex-direction: row;
+                gap: 4rem;
+                margin-bottom: 8rem;
+            }
+            .feature-row.reverse {
+                flex-direction: row-reverse; /* Bild nach links, Text nach rechts */
+            }
+            .feature-text { padding: 0 2rem; }
+            .feature-image-placeholder { height: 500px; }
+
+            /* Grid Layout für PC (3 Spalten) */
+            .feature-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="index.html" class="navbar-brand">&larr; Viativity</a>
+        <div class="nav-links">
+            <a href="index.html">Startseite</a>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <h1>Deine digitale Reiseapotheke</h1>
+        <p>Prävention und Soforthilfe in einer App. Entdecke die Werkzeuge, die dir helfen, die Fahrt wieder zu genießen.</p>
+    </header>
+
+    <main class="feature-section">
+        
+        <div class="feature-row">
+            <div class="feature-text">
+                <h2>Der Gyro-Horizont</h2>
+                <p><strong>Soforthilfe im Auto.</strong> Wenn du hinten sitzt und das Smartphone oder ein Buch anschaust, entsteht der typische sensorische Konflikt. Dein Auge sieht Stillstand, dein Körper spürt die Kurven.</p>
+                <p>Der künstliche Horizont blendet sich über deinen Bildschirm und bewegt sich synchron zu den Fahrzeugbewegungen. So bekommt dein Gehirn die fehlende visuelle Bestätigung der Bewegung zurück.</p>
+            </div>
+            <div class="feature-image-placeholder">
+                [Bild: Gyro-Horizont Screenshot]
+            </div>
+        </div>
+
+        <div class="feature-row reverse">
+            <div class="feature-text">
+                <h2>4-2-6 Taktatmung</h2>
+                <p><strong>Beruhigung des Nervensystems.</strong> Bei einsetzender Übelkeit schaltet der Körper oft in den Stressmodus. Die wissenschaftlich fundierte 4-2-6 Atmung stimuliert den Parasympathikus (den "Ruhe-Nerv").</p>
+                <p>Viativity leitet dich visuell, akustisch und haptisch (Vibration) durch die Atemzyklen, um deinen Puls zu senken und die aufkommende Übelkeit aktiv zu dämpfen.</p>
+            </div>
+            <div class="feature-image-placeholder">
+                [Bild: Atmung Screenshot]
+            </div>
+        </div>
+
+    </main>
+
+    <section class="grid-section">
+        <div class="grid-container">
+            <div class="grid-header">
+                <h2>Weitere clevere Werkzeuge</h2>
+                <p>Für die langfristige Gewöhnung (Habituation) und sanfte Soforthilfe.</p>
+            </div>
+            
+            <div class="feature-grid">
+                <div class="grid-card">
+                    <h3>P6-Akupressur</h3>
+                    <p>Eine bewährte Methode aus der Seefahrt. Die App zeigt dir exakt, wie du den Nei-Kuan-Punkt am Handgelenk findest und massierst, um den Brechreiz zu lindern.</p>
+                </div>
+                <div class="grid-card">
+                    <h3>Körper-Lot</h3>
+                    <p>Ein präventives Training zur Verbesserung deiner Propriozeption (Körperwahrnehmung). Trainiere deinen Gleichgewichtssinn schon Wochen vor der Abreise.</p>
+                </div>
+                <div class="grid-card">
+                    <h3>100Hz Klangmodulation</h3>
+                    <p>Sanfte, tiefe Frequenzen, die über Kopfhörer abgespielt werden, können helfen, das Gleichgewichtsorgan im Innenohr zu beruhigen.</p>
+                </div>
+                </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Viativity™. Entwickelt in der Schweiz.</p>
+    </footer>
+
+</body>
+</html>
