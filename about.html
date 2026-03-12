@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Über Viativity | Hinter den Kulissen</title>
+    <meta name="description" content="Wer steckt hinter Viativity? Ein Indie-Entwicklungsprojekt aus der Schweiz. Transparenz, Credits und Support.">
+    
+    <style>
+        /* --- CSS VARIABLEN --- */
+        :root {
+            --primary-color: #1A365D;
+            --accent-color: #7DA2A9;
+            --bg-color: #F7FAFC;
+            --text-color: #2D3748;
+            --white: #FFFFFF;
+        }
+
+        /* --- BASICS (Mobile First) --- */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.8; /* Etwas höhere Zeilenhöhe für besseren Lesefluss bei Texten */
+            color: var(--text-color);
+            background-color: var(--bg-color);
+        }
+        h1, h2, h3 { color: var(--primary-color); line-height: 1.2; margin-bottom: 1rem; }
+        p { margin-bottom: 1.5rem; }
+        
+        /* --- NAVIGATION --- */
+        .navbar {
+            padding: 1rem 1.5rem;
+            background: var(--white);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            position: sticky; top: 0; z-index: 100;
+        }
+        .navbar-brand { font-weight: bold; color: var(--primary-color); font-size: 1.2rem; text-decoration: none; }
+        .nav-links a { margin-left: 1rem; text-decoration: none; color: var(--text-color); font-weight: 500; }
+        .nav-links a:hover { color: var(--accent-color); }
+
+        /* --- HEADER --- */
+        .page-header {
+            background: var(--primary-color);
+            color: var(--white);
+            text-align: center;
+            padding: 4rem 1.5rem;
+        }
+        .page-header h1 { color: var(--white); font-size: 2.5rem; margin-bottom: 0.5rem; }
+        .page-header p { font-size: 1.1rem; opacity: 0.9; }
+
+        /* --- INHALTSBEREICH --- */
+        .content-section {
+            padding: 4rem 1.5rem;
+            max-width: 800px; /* Schmaler als andere Seiten, perfekt für Text */
+            margin: 0 auto;
+        }
+        .developer-intro {
+            font-size: 1.15rem;
+            color: #4A5568;
+            margin-bottom: 4rem;
+        }
+
+        /* --- KARTEN-GRID (Credits & Support) --- */
+        .support-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        .support-card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 16px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border-top: 4px solid var(--primary-color);
+        }
+        /* Akzent-Farbe für die Freesound-Karte */
+        .support-card.secondary {
+            border-top-color: var(--accent-color);
+        }
+        
+        .support-card h3 { font-size: 1.3rem; margin-bottom: 1rem; }
+        
+        /* Buttons in den Karten */
+        .btn-outline {
+            display: inline-block;
+            border: 2px solid var(--primary-color);
+            color: var(--primary-color);
+            padding: 0.6rem 1.2rem;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: all 0.2s;
+            margin-top: 0.5rem;
+        }
+        .btn-outline:hover {
+            background: var(--primary-color);
+            color: var(--white);
+        }
+
+        /* --- FOOTER --- */
+        footer { background: #2D3748; color: var(--white); text-align: center; padding: 2rem 1.5rem; margin-top: 4rem; }
+        footer a { color: var(--accent-color); text-decoration: none; margin: 0 0.5rem; }
+
+        /* =========================================================
+           MEDIA QUERIES (Desktop)
+           ========================================================= */
+        @media (min-width: 768px) {
+            .page-header { padding: 5rem 2rem; }
+            .content-section { padding: 5rem 2rem; }
+            
+            /* Karten nebeneinander auf dem PC */
+            .support-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="index.html" class="navbar-brand">&larr; Viativity</a>
+        <div class="nav-links">
+            <a href="index.html">Startseite</a>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <h1>Hinter den Kulissen</h1>
+        <p>Ein Indie-Projekt aus der Schweiz.</p>
+    </header>
+
+    <main class="content-section">
+        
+        <div class="developer-intro">
+            <h2>Hallo, ich bin Dieter.</h2>
+            <p>Viativity ist keine App eines riesigen Tech-Konzerns. Ich bin Solo-Entwickler und habe dieses Projekt komplett in meiner Freizeit aufgebaut. Mein Ziel war es, eine App zu erschaffen, die ich selbst auf Reisen nutzen möchte: Klar, wissenschaftlich fundiert, werbefrei und ohne Datenhunger.</p>
+            <p>Als Einzelperson habe ich nicht das Budget für riesige Marketingkampagnen. Mein Fokus liegt zu 100 % auf einem fairen, nützlichen Produkt, das den sensorischen Konflikt bei Reiseübelkeit mindert.</p>
+        </div>
+
+        <h2>Transparenz & Fairness</h2>
+        <p>Wenn man alleine an einer App arbeitet, ist man auf großartige Werkzeuge und Communities angewiesen. Es ist mir wichtig, ganz offen zu kommunizieren, wie Viativity entstanden ist:</p>
+        
+        <ul style="margin-left: 1.5rem; margin-bottom: 2rem; color: #4A5568;">
+            <li style="margin-bottom: 0.5rem;"><strong>Visuelles (KI):</strong> Um dir eine moderne und ansprechende Oberfläche zu bieten, wurden die Illustrationen und Bilder auf dieser Webseite sowie innerhalb der App teilweise mit Hilfe von Künstlicher Intelligenz erstellt.</li>
+            <li><strong>Audio (CC0):</strong> Die beruhigenden Klänge und Audio-Modulationen in der App (wie die 100Hz-Töne) stammen aus der fantastischen Open-Source-Community von freesound.org.</li>
+        </ul>
+
+        <div class="support-grid">
+            
+            <div class="support-card">
+                <h3>Viativity unterstützen</h3>
+                <p>Ich glaube an faire Software: Einmal kaufen, immer nutzen. Ohne Abos, ohne verstecktes Tracking. Wenn dir die App hilft und du meine Arbeit als Indie-Entwickler wertschätzt, freue ich mich riesig über einen kleinen virtuellen Kaffee!</p>
+                <a href="#" class="btn-outline">☕ Entwickler unterstützen</a>
+            </div>
+
+            <div class="support-card secondary">
+                <h3>Freesound unterstützen</h3>
+                <p>Ohne die Plattform Freesound.org wären die Audio-Tools in dieser App nicht möglich gewesen. Alle Klänge sind "CC0" (Public Domain). Wenn dir der Sound der App gefällt, überlege dir, diese tolle Plattform mit einer kleinen Spende am Leben zu erhalten.</p>
+                <a href="https://freesound.org/donations/donate/" target="_blank" rel="noopener noreferrer" class="btn-outline">🎵 An Freesound spenden</a>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <div style="margin-bottom: 1rem;">
+            <a href="index.html">Startseite</a>
+            <a href="features.html">Werkzeuge</a>
+            <a href="privacy.html">Datenschutz</a>
+        </div>
+        <p>© 2026 Viativity™. Entwickelt in der Schweiz.</p>
+    </footer>
+
+</body>
+</html>
