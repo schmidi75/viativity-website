@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Über Viativity™ | Hinter den Kulissen</title>
+    <title>Hinter den Kulissen | Viativity™</title>
     <meta name="description" content="Wer steckt hinter Viativity? Ein Indie-Entwicklungsprojekt aus der Schweiz. Transparenz, Credits und Support.">
     
     <style>
@@ -16,7 +16,7 @@
             --white: #FFFFFF;
         }
 
-        /* --- BASICS (Mobile First) --- */
+        /* --- BASICS --- */
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -42,7 +42,6 @@
         .nav-links a { margin-left: 1rem; text-decoration: none; color: var(--text-color); font-weight: 500; }
         .nav-links a:hover { color: var(--accent-color); }
 
-        /* Language Switcher */
         .lang-switcher {
             margin-left: 1.5rem;
             font-size: 0.9rem;
@@ -50,7 +49,6 @@
             padding-left: 1rem;
         }
         .lang-switcher a { margin-left: 0; color: #A0AEC0; }
-        .lang-switcher a:hover { color: var(--primary-color); }
         .lang-active { font-weight: bold; color: var(--primary-color); }
 
         /* --- HEADER --- */
@@ -60,22 +58,24 @@
             text-align: center;
             padding: 4rem 1.5rem;
         }
-        .page-header h1 { color: var(--white); font-size: 2.5rem; margin-bottom: 0.5rem; }
-        .page-header p { font-size: 1.1rem; opacity: 0.9; }
+        .page-header h1 { color: var(--white); font-size: 2.5rem; }
 
-        /* --- INHALTSBEREICH --- */
+        /* --- CONTENT --- */
         .content-section {
             padding: 4rem 1.5rem;
             max-width: 800px; 
             margin: 0 auto;
         }
-        .developer-intro {
-            font-size: 1.15rem;
-            color: #4A5568;
+        
+        .developer-box {
+            background: var(--white);
+            padding: 2.5rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
             margin-bottom: 4rem;
         }
 
-        /* --- KARTEN-GRID (Credits & Support) --- */
+        /* --- GRID --- */
         .support-grid {
             display: grid;
             grid-template-columns: 1fr;
@@ -86,16 +86,9 @@
             background: var(--white);
             padding: 2rem;
             border-radius: 16px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
             border-top: 4px solid var(--primary-color);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
         }
-        .support-card.secondary {
-            border-top-color: var(--accent-color);
-        }
-        
-        .support-card h3 { font-size: 1.3rem; margin-bottom: 1rem; }
-        
-        /* Buttons in den Karten */
         .btn-outline {
             display: inline-block;
             border: 2px solid var(--primary-color);
@@ -104,12 +97,7 @@
             text-decoration: none;
             border-radius: 8px;
             font-weight: bold;
-            transition: all 0.2s;
             margin-top: 0.5rem;
-        }
-        .btn-outline:hover {
-            background: var(--primary-color);
-            color: var(--white);
         }
 
         /* --- FOOTER --- */
@@ -117,17 +105,8 @@
         footer a { color: var(--accent-color); text-decoration: none; margin: 0 0.5rem; }
         .disclaimer-small { font-size: 0.8rem; color: #A0AEC0; margin-top: 1.5rem; }
 
-        /* =========================================================
-           MEDIA QUERIES (Desktop)
-           ========================================================= */
         @media (min-width: 768px) {
-            .page-header { padding: 5rem 2rem; }
-            .content-section { padding: 5rem 2rem; }
-            
-            /* Karten nebeneinander auf dem PC */
-            .support-grid {
-                grid-template-columns: 1fr 1fr;
-            }
+            .support-grid { grid-template-columns: 1fr 1fr; }
         }
     </style>
 </head>
@@ -138,47 +117,47 @@
         <div class="nav-links">
             <a href="entwurf.html">Startseite</a>
             <a href="features.html">Werkzeuge</a>
+            <a href="about.html">Hinter den Kulissen</a>
             <div class="lang-switcher">
-                <span class="lang-active">DE</span> | <a href="#" aria-label="Switch to English">EN</a>
+                <span class="lang-active">DE</span> | <a href="#">EN</a>
             </div>
         </div>
     </nav>
 
     <header class="page-header">
         <h1>Hinter den Kulissen</h1>
-        <p>Ein Indie-Projekt aus der Schweiz.</p>
+        <p>Ein Indie-Projekt aus der Schweiz</p>
     </header>
 
     <main class="content-section">
         
-        <div class="developer-intro">
+        <div class="developer-box">
             <h2>Hallo, ich bin Dieter Schmidli.</h2>
-            <p>Viativity™ ist keine App eines riesigen Tech-Konzerns. Ich bin Solo-Entwickler und habe dieses Projekt komplett in meiner Freizeit aufgebaut. Mein Ziel war es, eine App zu erschaffen, die ich selbst auf Reisen nutzen möchte: Klar strukturiert, wissenschaftlich fundiert, komplett werbefrei und ohne Datenhunger.</p>
-            <p>Als Einzelperson habe ich kein Budget für riesige Marketingkampagnen. Mein Fokus liegt zu 100 % auf einem fairen, nützlichen Produkt, das den sensorischen Konflikt bei Reiseübelkeit mindert und deine Privatsphäre respektiert.</p>
+            <p>Viativity™ ist keine App eines riesigen Tech-Konzerns. Ich bin Solo-Entwickler und habe dieses Projekt komplett in meiner Freizeit aufgebaut. Mein Ziel war es, eine App zu erschaffen, die ich selbst auf Reisen nutzen möchte: Klar strukturiert, wissenschaftlich fundiert, werbefrei und ohne Datenhunger.</p>
+            <p>Als Einzelperson liegt mein Fokus zu 100 % auf einem fairen Produkt, das den sensorischen Konflikt bei Reiseübelkeit mindert und deine Privatsphäre respektiert.</p>
         </div>
 
-        <h2>Transparenz & Fairness</h2>
-        <p>Wenn man alleine an einer App arbeitet, ist man auf großartige Werkzeuge und Communities angewiesen. Es ist mir wichtig, ganz offen zu kommunizieren, wie Viativity™ entstanden ist:</p>
+        <h2>Transparenz & Kooperation</h2>
+        <p>Ein modernes Projekt wie Viativity™ entsteht heute durch die Kombination aus menschlicher Kreativität und innovativen Werkzeugen. Mir ist wichtig, dies offen zu kommunizieren:</p>
         
         <ul style="margin-left: 1.5rem; margin-bottom: 2rem; color: #4A5568;">
-            <li style="margin-bottom: 0.5rem;"><strong>Visuelles (KI):</strong> Um dir eine moderne und ansprechende Oberfläche zu bieten, wurden die Illustrationen und Bilder auf dieser Webseite sowie innerhalb der App teilweise mit Hilfe von Künstlicher Intelligenz erstellt.</li>
-            <li><strong>Audio (CC0):</strong> Die beruhigenden Klänge und Audio-Modulationen in der App (wie die 100Hz-Töne) stammen aus der fantastischen Open-Source-Community von freesound.org.</li>
+            <li style="margin-bottom: 1rem;"><strong>Konzept & Entwicklung:</strong> Die Ideen, die wissenschaftliche Recherche und das Gesamtkonzept stammen von mir. Bei der technischen Umsetzung, Programmierung und dem Text-Design wurde ich von künstlicher Intelligenz unterstützt.</li>
+            <li style="margin-bottom: 1rem;"><strong>Design & Grafik:</strong> Die Illustrationen und visuellen Elemente wurden teilweise mit KI-Unterstützung generiert, um ein konsistentes Erlebnis zu schaffen.</li>
+            <li><strong>Audio-Inhalte:</strong> Während die technischen Frequenzen (wie 100Hz) direkt in der App generiert werden, stammen die atmosphärischen Hintergrundklänge von der Open-Source-Plattform <strong>freesound.org</strong>.</li>
         </ul>
 
         <div class="support-grid">
-            
             <div class="support-card">
                 <h3>Viativity unterstützen</h3>
-                <p>Ich glaube an faire Software: Einmal kaufen, immer nutzen. Ohne Abos, ohne verstecktes Tracking. Wenn dir die App hilft und du meine Arbeit als Indie-Entwickler wertschätzt, freue ich mich riesig über einen kleinen virtuellen Kaffee!</p>
-                <a href="#" class="btn-outline">☕ Entwickler unterstützen</a>
+                <p>Ich glaube an faire Software ohne Abos. Wenn dir die App hilft und du meine Arbeit als Indie-Entwickler schätzt, freue ich mich über einen virtuellen Kaffee!</p>
+                <a href="#" class="btn-outline">☕ Projekt unterstützen</a>
             </div>
 
-            <div class="support-card secondary">
-                <h3>Freesound unterstützen</h3>
-                <p>Ohne die Plattform Freesound.org wären die Audio-Tools in dieser App nicht möglich gewesen. Alle Klänge sind "CC0" (Public Domain). Wenn dir der Sound der App gefällt, überlege dir, diese tolle Plattform mit einer kleinen Spende am Leben zu erhalten.</p>
-                <a href="https://freesound.org/donations/donate/" target="_blank" rel="noopener noreferrer" class="btn-outline">🎵 An Freesound spenden</a>
+            <div class="support-card" style="border-top-color: var(--accent-color);">
+                <h3>Freesound spenden</h3>
+                <p>Die Community auf Freesound.org ist eine Goldgrube für hochwertige Audio-Inhalte. Wenn dir der Sound gefällt, unterstütze die Plattform gerne mit einer Spende.</p>
+                <a href="https://freesound.org/donations/donate/" target="_blank" rel="noopener" class="btn-outline">🎵 An Freesound spenden</a>
             </div>
-
         </div>
 
     </main>
@@ -187,12 +166,11 @@
         <div style="margin-bottom: 1rem;">
             <a href="entwurf.html">Startseite</a>
             <a href="features.html">Werkzeuge</a>
-            <a href="about.html">Über Viativity</a>
+            <a href="about.html">Hinter den Kulissen</a>
             <a href="mailto:support@viativity.app">Support</a>
             <a href="privacy.html">Datenschutz</a>
         </div>
         <p>© 2026 Viativity™. Entwickelt in der Schweiz.</p>
-        
         <div class="disclaimer-small">
             <strong>KEIN MEDIZINPRODUKT:</strong> Diese App ist kein Medizinprodukt. Sie stellt keine Diagnosen und ersetzt keine ärztliche Behandlung.
         </div>
