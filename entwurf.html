@@ -37,6 +37,7 @@
             justify-content: space-between;
             align-items: center;
             box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            position: sticky; top: 0; z-index: 100;
         }
         .navbar-brand { font-weight: bold; color: var(--primary-color); font-size: 1.2rem; text-decoration: none; }
         .nav-links a { margin-left: 1rem; text-decoration: none; color: var(--text-color); font-weight: 500; }
@@ -136,7 +137,6 @@
                 max-width: 900px; 
                 margin: 0 auto; 
                 border-radius: 0 0 24px 24px; 
-                /* NEUER SCHATTEN: Kräftiger und weiter, damit er auf dem dunklen Blau wirkt! */
                 box-shadow: 0 25px 50px rgba(0, 0, 0, 0.6); 
             }
 
@@ -159,10 +159,10 @@
 <body>
 
     <nav class="navbar">
-        <a href="index.html" class="navbar-brand">Viativity</a>
+        <a href="entwurf.html" class="navbar-brand">Viativity</a>
         <div class="nav-links">
-            <a href="#problem">Konzept</a>
-            <a href="#tools">Werkzeuge</a>
+            <a href="features.html">Werkzeuge</a>
+            <a href="about.html">Über das Projekt</a>
         </div>
     </nav>
 
@@ -200,6 +200,7 @@
     <footer>
         <div style="margin-bottom: 1rem;">
             <a href="features.html">Werkzeuge</a>
+            <a href="about.html">Über Viativity</a>
             <a href="mailto:support@viativity.app">Support</a>
             <a href="privacy.html">Datenschutz</a>
         </div>
