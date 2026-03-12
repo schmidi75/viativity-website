@@ -52,7 +52,7 @@
         
         .hero-image {
             width: 100%;
-            height: auto; /* Behält das Original-Seitenverhältnis */
+            height: auto; 
             display: block;
         }
 
@@ -133,14 +133,15 @@
             
             /* HERO PC-LAYOUT: Bild wird zentriert und begrenzt */
             .hero-image {
-                max-width: 900px; /* Bild wird nie breiter als 900px */
-                margin: 0 auto; /* Zentriert das Bild horizontal */
-                border-radius: 0 0 24px 24px; /* Schöne runde Ecken NUR unten */
-                box-shadow: 0 15px 35px rgba(0,0,0,0.2); /* Gibt dem Bild Tiefe auf dem blauen Grund */
+                max-width: 900px; 
+                margin: 0 auto; 
+                border-radius: 0 0 24px 24px; 
+                /* NEUER SCHATTEN: Kräftiger und weiter, damit er auf dem dunklen Blau wirkt! */
+                box-shadow: 0 25px 50px rgba(0, 0, 0, 0.6); 
             }
 
             .hero-content {
-                padding: 4rem 2rem 5rem 2rem; /* Perfekte Abstände für den PC */
+                padding: 4rem 2rem 5rem 2rem; 
             }
             .hero h1 { font-size: 3.5rem; margin-bottom: 1.5rem; }
             .hero p { font-size: 1.25rem; margin-bottom: 2.5rem; }
