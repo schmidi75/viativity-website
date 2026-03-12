@@ -36,8 +36,23 @@
         .feature-text { flex: 1; }
         .feature-text h2 { font-size: 2rem; color: var(--primary-color); }
         .feature-text h3 { font-size: 1.1rem; color: var(--accent-color); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; }
-        .feature-image-placeholder { flex: 1; width: 100%; max-width: 350px; height: 400px; background: #E2E8F0; border-radius: 20px; display: flex; align-items: center; justify-content: center; color: #718096; font-weight: bold; box-shadow: 0 10px 25px rgba(0,0,0,0.1); overflow: hidden; }
-        .feature-image-placeholder img { width: 100%; height: 100%; object-fit: cover; }
+        
+        /* Neuer Handyrahmen für Features */
+        .phone-frame { 
+            width: 200px; 
+            height: 420px; 
+            background: #E2E8F0; 
+            border-radius: 20px; 
+            border: 6px solid #000000; 
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15); 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            overflow: hidden; 
+            margin: 0 auto;
+            flex-shrink: 0;
+        }
+        .phone-frame img { width: 100%; height: 100%; object-fit: cover; }
 
         .grid-section { background: var(--white); padding: 4rem 1.5rem 2rem 1.5rem; }
         .grid-container { max-width: 1200px; margin: 0 auto; }
@@ -46,20 +61,8 @@
         .grid-card { background: var(--bg-color); padding: 2rem; border-radius: 16px; border-left: 4px solid var(--accent-color); }
         .grid-card h3 { font-size: 1.3rem; margin-bottom: 0.5rem; }
 
-        /* Wissenschafts-Sektion */
-        .science-box {
-            padding: 0 1.5rem 4rem 1.5rem;
-            max-width: 1200px;
-            margin: 0 auto;
-            background: var(--white);
-        }
-        .science-inner {
-            background: #E2E8F0;
-            padding: 2.5rem;
-            border-radius: 20px;
-            text-align: center;
-            border: 1px solid #CBD5E0;
-        }
+        .science-box { padding: 0 1.5rem 4rem 1.5rem; max-width: 1200px; margin: 0 auto; background: var(--white); }
+        .science-inner { background: #E2E8F0; padding: 2.5rem; border-radius: 20px; text-align: center; border: 1px solid #CBD5E0; }
 
         footer { background: #2D3748; color: var(--white); text-align: center; padding: 2rem 1.5rem; }
         footer a { color: var(--accent-color); text-decoration: none; margin: 0 0.5rem; }
@@ -69,7 +72,7 @@
             .feature-row { flex-direction: row; gap: 4rem; margin-bottom: 8rem; }
             .feature-row.reverse { flex-direction: row-reverse; }
             .feature-text { padding: 0 2rem; }
-            .feature-image-placeholder { height: 500px; }
+            .phone-frame { width: 240px; height: 500px; margin: 0; }
             .feature-grid { grid-template-columns: repeat(2, 1fr); }
         }
     </style>
@@ -100,7 +103,7 @@
                 <p>Reiseübelkeit entsteht oft, wenn das Auge Stillstand meldet – zum Beispiel beim Lesen im Auto oder in der fensterlosen Innenkabine eines Kreuzfahrtschiffes –, das Gleichgewichtsorgan aber gleichzeitig die Bewegung spürt. Der künstliche Horizont löst diesen Konflikt auf, indem er die echte Bewegung wieder sichtbar macht.</p>
                 <p><strong>Die Anwendung:</strong> Auf dem Bildschirm siehst du den Bug eines Schiffes und das Meer mit einer Bergkette am Horizont. Während der Bug starr bleibt, bewegt sich das Hintergrundbild basierend auf den Sensordaten deines Smartphones exakt synchron zu den tatsächlichen Schwankungen (Rollen und Stampfen) des Fahrzeugs. Dein Gehirn erhält so die fehlende visuelle Bestätigung der Bewegung zurück.</p>
             </div>
-            <div class="feature-image-placeholder">
+            <div class="phone-frame">
                 <img src="images/Horizont_nacht_de.PNG" alt="Schiffsbug und Künstlicher Horizont">
             </div>
         </div>
@@ -112,7 +115,7 @@
                 <p>Diese Atemtechnik aktiviert gezielt den Ruhe-Nerv des Körpers (Parasympathikus). Die verlängerte Ausatmung signalisiert dem Gehirn absolute Sicherheit und stoppt die 'Kampf-oder-Flucht'-Reaktion. Das senkt effektiv Übelkeit und akuten Stress.</p>
                 <p><strong>Die Anwendung:</strong> Viativity leitet dich visuell und haptisch durch den Rhythmus: 4 Sekunden einatmen, 2 Sekunden halten, 6 Sekunden ausatmen. Wende dies bei akutem Unwohlsein für mindestens 2 Minuten an.</p>
             </div>
-            <div class="feature-image-placeholder">
+            <div class="phone-frame">
                 <img src="images/Atmung_tag_de.PNG" alt="4-2-6 Taktatmung Werkzeug">
             </div>
         </div>
