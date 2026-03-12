@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Viativity | Freue dich auf den Weg, nicht nur auf das Ziel</title>
-    <meta name="description" content="Deine App gegen Reiseübelkeit. Präventives Training, wissenschaftlich fundierte Soforthilfe und clevere Reisetipps.">
+    <title>Viativity | Freue dich auf den Weg</title>
+    <meta name="description" content="Deine App gegen Reiseübelkeit. Präventives Training und Soforthilfe.">
     
     <style>
-        /* --- CSS VARIABLEN (Farben & Fonts) --- */
+        /* --- CSS VARIABLEN --- */
         :root {
             --primary-color: #1A365D;
             --accent-color: #7DA2A9;
@@ -16,7 +16,7 @@
             --white: #FFFFFF;
         }
 
-        /* --- RESET & BASICS --- */
+        /* --- RESET & BASICS (Mobile First) --- */
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -26,39 +26,52 @@
         }
         h1, h2, h3 { color: var(--primary-color); line-height: 1.2; margin-bottom: 1rem; }
         p { margin-bottom: 1rem; }
-        section { padding: 5rem 2rem; max-width: 1200px; margin: 0 auto; }
         
+        /* Basis-Sektionen (Handy) */
+        section { padding: 4rem 1.5rem; max-width: 1200px; margin: 0 auto; }
+        
+        /* --- NAVIGATION --- */
+        .navbar {
+            padding: 1rem 1.5rem;
+            background: var(--white);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .navbar-brand { font-weight: bold; color: var(--primary-color); font-size: 1.2rem; text-decoration: none; }
+        .nav-links a { margin-left: 1rem; text-decoration: none; color: var(--text-color); font-weight: 500; }
+        .nav-links a:hover { color: var(--accent-color); }
+
         /* --- HERO BEREICH --- */
         .hero {
             position: relative;
+            /* Auf dem Handy etwas flacher, damit der Content schnell sichtbar wird */
             min-height: 60vh;
-            padding: 6rem 0; 
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
-            color: var(--white);
-            /* HIER IST DIE MAGIE: center 15% fokussiert das obere Viertel der Bildmitte */
-            background: url('Gemini_Reisen.jpg') no-repeat center 15% / cover;
-            max-width: 100%;
+            padding: 3rem 1.5rem;
+            background: url('Gemini_Reisen.jpg') no-repeat center center;
+            background-size: cover;
         }
-        
         .hero::before {
             content: '';
             position: absolute;
             top: 0; left: 0; right: 0; bottom: 0;
-            background: rgba(26, 54, 93, 0.6); 
+            background: rgba(26, 54, 93, 0.65); /* Leicht abgedunkelt für besseren Kontrast */
         }
         .hero-content {
             position: relative;
             z-index: 1;
             max-width: 800px;
-            padding: 0 2rem;
             width: 100%;
         }
-        .hero h1 { color: var(--white); font-size: 3rem; margin-bottom: 1.5rem; }
-        .hero p { font-size: 1.2rem; margin-bottom: 2rem; }
-        .store-buttons { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+        .hero h1 { color: var(--white); font-size: 2rem; margin-bottom: 1rem; }
+        .hero p { color: var(--white); font-size: 1rem; margin-bottom: 2rem; }
+        
+        .store-buttons { display: flex; flex-direction: column; gap: 1rem; align-items: center; }
         .btn {
             background: var(--white);
             color: var(--primary-color);
@@ -66,208 +79,134 @@
             text-decoration: none;
             border-radius: 8px;
             font-weight: bold;
-            transition: transform 0.2s;
+            transition: transform 0.2s, box-shadow 0.2s;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            max-width: 250px;
         }
-        .btn:hover { transform: translateY(-2px); }
+        .btn:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
 
-        /* --- SEKTION 1: DAS PROBLEM --- */
-        .problem { text-align: center; max-width: 800px; }
-        .problem h2 { font-size: 2.5rem; }
-        .problem p { font-size: 1.1rem; color: #4A5568; }
+        /* --- SEKTIONEN --- */
+        .text-center { text-align: center; }
+        .max-w-800 { max-width: 800px; margin: 0 auto; }
 
-        /* --- SEKTION 2: DIE LÖSUNG (3 Säulen) --- */
-        .solution-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
-        }
-        .card {
-            background: var(--white);
-            padding: 2rem;
-            border-radius: 12px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-            text-align: left;
-            border-top: 4px solid var(--accent-color);
-        }
-        .science-badge {
-            background: #EDF2F7;
-            padding: 1rem;
-            border-radius: 8px;
-            margin-top: 3rem;
-            font-size: 0.9rem;
-            border-left: 4px solid var(--primary-color);
-        }
-
-        /* --- SEKTION 3: WERTE / FAIR PLAY --- */
-        .values {
-            background: var(--primary-color);
-            color: var(--white);
-            text-align: center;
-            max-width: 100%;
-            padding: 4rem 2rem;
-        }
-        .values-content { max-width: 800px; margin: 0 auto; }
-        .values h2 { color: var(--white); }
-        .values-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-        .value-item h3 { color: var(--accent-color); font-size: 1.2rem; }
-
-        /* --- SEKTION 4: APP PREVIEW --- */
-        .preview { text-align: center; }
-        .mockup-container {
+        /* --- JASSKARTEN-MOCKUPS (Teaser) --- */
+        .mockup-showcase {
+            margin-top: 4rem;
+            position: relative;
+            height: 400px; /* Platzhalter-Höhe für Handys */
             display: flex;
             justify-content: center;
-            gap: 2rem;
-            margin-top: 3rem;
-            flex-wrap: wrap;
+            align-items: center;
+            overflow: hidden; /* Verhindert, dass gedrehte Ecken das Layout sprengen */
         }
-        .mockup-placeholder {
-            width: 250px;
-            height: 500px;
+        .jass-card {
+            position: absolute;
+            width: 180px;
+            height: 380px;
             background: #E2E8F0;
-            border-radius: 30px;
-            border: 8px solid #CBD5E0;
+            border-radius: 20px;
+            border: 6px solid #FFFFFF;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
             display: flex;
             align-items: center;
             justify-content: center;
+            font-size: 0.8rem;
             color: #718096;
-            font-weight: bold;
+            transition: transform 0.3s ease;
         }
+        /* Die 3 Karten fächern auf */
+        .card-left { transform: rotate(-15deg) translateX(-40px) translateY(20px); z-index: 1; }
+        .card-center { transform: rotate(0deg); z-index: 3; box-shadow: 0 15px 35px rgba(0,0,0,0.2); }
+        .card-right { transform: rotate(15deg) translateX(40px) translateY(20px); z-index: 2; }
 
         /* --- FOOTER --- */
-        footer {
-            background: #2D3748;
-            color: var(--white);
-            text-align: center;
-            padding: 2rem;
-        }
-        footer a { color: var(--accent-color); text-decoration: none; margin: 0 1rem; }
-        footer a:hover { text-decoration: underline; }
+        footer { background: #2D3748; color: var(--white); text-align: center; padding: 2rem 1.5rem; }
+        footer a { color: var(--accent-color); text-decoration: none; margin: 0 0.5rem; }
         .disclaimer-small { font-size: 0.8rem; color: #A0AEC0; margin-top: 1.5rem; }
 
         /* =========================================================
-           RESPONSIVE DESIGN (Für Smartphones & Tablets)
+           MEDIA QUERIES (Desktop-Erweiterungen - Mobile First!)
            ========================================================= */
-        @media (max-width: 768px) {
+        @media (min-width: 768px) {
+            section { padding: 6rem 2rem; }
+            
+            /* Hero auf Desktop anpassen */
             .hero {
-                padding: 4rem 0; 
-                min-height: 50vh;
+                min-height: 75vh; /* Etwas höher auf Desktop */
+                padding: 6rem 2rem;
             }
-            .hero-content {
-                padding: 0 1.5rem;
-            }
-            .hero h1 {
-                font-size: 2rem; 
-                margin-bottom: 1rem;
-            }
-            .hero p {
-                font-size: 1rem; 
-                margin-bottom: 1.5rem;
-            }
-            section {
-                padding: 3rem 1.5rem; 
-            }
-            .problem h2 {
-                font-size: 2rem;
-            }
-            .mockup-placeholder {
-                width: 100%;
-                max-width: 280px;
+            .hero h1 { font-size: 3.5rem; margin-bottom: 1.5rem; }
+            .hero p { font-size: 1.25rem; }
+            .store-buttons { flex-direction: row; justify-content: center; }
+            
+            /* Jasskarten größer auf Desktop */
+            .mockup-showcase { height: 500px; }
+            .jass-card { width: 240px; height: 500px; font-size: 1rem; }
+            .card-left { transform: rotate(-15deg) translateX(-80px) translateY(30px); }
+            .card-right { transform: rotate(15deg) translateX(80px) translateY(30px); }
+
+            /* Grid für "Werte" oder "Features" */
+            .grid-3 {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 2rem;
+                margin-top: 3rem;
             }
         }
     </style>
 </head>
 <body>
 
+    <nav class="navbar">
+        <a href="index.html" class="navbar-brand">Viativity</a>
+        <div class="nav-links">
+            <a href="#problem">Konzept</a>
+            <a href="#tools">Werkzeuge</a>
+        </div>
+    </nav>
+
     <header class="hero">
         <div class="hero-content">
-            <h1>Freue dich auf den Weg,<br>nicht nur auf das Ziel!</h1>
+            <h1>Freue dich auf den Weg,<br>nicht nur auf das Ziel</h1>
             <p>Viativity™ ist dein smarter Begleiter für unbeschwertes Reisen. Wissenschaftlich fundierte Werkzeuge und präventives Training gegen Reiseübelkeit.</p>
             <div class="store-buttons">
-                <a href="#" class="btn">App Store (iOS)</a>
-                <a href="#" class="btn" style="opacity: 0.7; cursor: not-allowed;">Play Store (Bald verfügbar)</a>
+                <a href="#" class="btn"> App Store</a>
+                <a href="#" class="btn" style="opacity: 0.7; cursor: not-allowed;">▶ Play Store (Bald)</a>
             </div>
         </div>
     </header>
 
-    <section id="problem" class="problem">
-        <h2>Kennst du das?</h2>
-        <p>Du freust dich auf den Urlaub, aber die Fahrt dorthin ist eine Qual. Kinetose (Reiseübelkeit) entsteht durch einen sensorischen Konflikt: Dein Auge meldet Stillstand, während dein Gleichgewichtsorgan Bewegung spürt. Das Resultat ist Stress für dein Gehirn – und Unwohlsein für dich.</p>
-        <p><strong>Viativity setzt genau hier an: Nicht mit Esoterik, sondern mit fundierten, wissenschaftlich belegten Prinzipien.</strong></p>
+    <section id="problem" class="text-center max-w-800">
+        <h2>Schluss mit dem sensorischen Konflikt</h2>
+        <p>Reiseübelkeit entsteht, wenn dein Gehirn widersprüchliche Signale von Auge und Gleichgewichtsorgan erhält. Viativity nutzt wissenschaftlich belegte Prinzipien, um genau diesen Stressor zu minimieren – komplett ohne Medikamente oder Esoterik.</p>
     </section>
 
-    <section id="solution">
-        <h2 style="text-align: center;">Deine Begleiterin für jede Fahrt</h2>
+    <section id="tools" class="text-center">
+        <h2>Deine digitale Reiseapotheke</h2>
+        <p class="max-w-800">Egal ob präventives Training vor dem Urlaub oder Soforthilfe im Auto. Entdecke Werkzeuge, die auf deine aktuelle Situation zugeschnitten sind.</p>
         
-        <div class="solution-grid">
-            <div class="card">
-                <h3>1. Clevere Reisetipps</h3>
-                <p>Egal ob im Auto, Flugzeug oder auf dem Schiff – entdecke bewährte Strategien und verhaltensbasierte Tipps, noch bevor deine Reise überhaupt beginnt. Lerne, wie du dein Umfeld optimal anpasst.</p>
-            </div>
-            
-            <div class="card">
-                <h3>2. Soforthilfe für unterwegs</h3>
-                <p>Dir ist akut übel? Nutze digitale Helfer wie den künstlichen Horizont, die 4-2-6 Atmung oder die 100Hz-Klangmodulation zur schnellen Linderung der Symptome während der Reise.</p>
-            </div>
-            
-            <div class="card">
-                <h3>3. Training & Prävention</h3>
-                <p>Bereite dein Gehirn in Ruhe vor. Nutze Übungen wie das Fokus-Spiel, die Mentale Rotation oder das Körper-Lot einige Wochen vorab, um deine Widerstandsfähigkeit (Habituation) langfristig aufzubauen.</p>
-            </div>
-        </div>
+        <a href="features.html" style="color: var(--primary-color); font-weight: bold; text-decoration: underline; margin-top: 1rem; display: inline-block;">Alle Funktionen im Detail ansehen &rarr;</a>
 
-        <div class="science-badge">
-            <strong>Wissenschaftlich fundiert:</strong> Unsere Methoden basieren auf etablierten Ansätzen und auf wissenschaftlichen Erkenntnissen. Die Quellen sind in der App unter Infos zu finden.
-        </div>
-    </section>
-
-    <div class="values">
-        <div class="values-content">
-            <h2>Fair Play. Ohne Kompromisse.</h2>
-            <p>Dein Wohlbefinden steht im Fokus, nicht deine Daten. Wir glauben an transparente, faire Software.</p>
-            
-            <div class="values-grid">
-                <div class="value-item">
-                    <h3>Keine Abos</h3>
-                    <p>Einmal kaufen, immer nutzen. Keine versteckten Kosten oder monatlichen Gebühren.</p>
-                </div>
-                <div class="value-item">
-                    <h3>100% Datenschutz</h3>
-                    <p>Alle Sensordaten bleiben lokal auf deinem Gerät. Wir sammeln nichts und senden nichts.</p>
-                </div>
-                <div class="value-item">
-                    <h3>Werbefrei</h3>
-                    <p>Keine störenden Pop-ups oder Banner. Nur ein aufgeräumtes, ruhiges Design, das nicht zusätzlich stresst.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <section id="preview" class="preview">
-        <h2>Aufgeräumt. Hell und Dunkel.</h2>
-        <p>Ein Design, das Ruhe ausstrahlt. Passe Viativity mit dem Tag- und Nachtmodus perfekt an deine Umgebung an.</p>
-        
-        <div class="mockup-container">
-            <div class="mockup-placeholder">Screenshot Tagmodus</div>
-            <div class="mockup-placeholder">Screenshot Nachtmodus</div>
+        <div class="mockup-showcase">
+            <div class="jass-card card-left">Modus: Auto</div>
+            <div class="jass-card card-center">Gyro-Horizont</div>
+            <div class="jass-card card-right">4-2-6 Atmung</div>
         </div>
     </section>
 
     <footer>
         <div style="margin-bottom: 1rem;">
+            <a href="features.html">Werkzeuge</a>
             <a href="mailto:support@viativity.app">Support</a>
             <a href="privacy.html">Datenschutz</a>
-            <a href="#">Impressum</a>
         </div>
         <p>© 2026 Viativity™. Entwickelt in der Schweiz.</p>
         
         <div class="disclaimer-small">
-            <strong>Wichtiger Hinweis:</strong> Diese App ist kein Medizinprodukt. Sie stellt keine Diagnosen und ersetzt keine ärztliche Behandlung. Die Nutzung erfolgt auf eigene Gefahr.
+            <strong>Wichtiger Hinweis:</strong> Diese App ist kein Medizinprodukt. Sie stellt keine Diagnosen und ersetzt keine ärztliche Behandlung.
         </div>
     </footer>
 
