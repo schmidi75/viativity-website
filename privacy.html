@@ -3,49 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Datenschutzerklärung | Viativity</title>
+    <title>Datenschutz | Viativity™</title>
     <style>
-        body { 
-            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; 
-            color: #333; 
-            line-height: 1.6; 
-            padding: 40px 20px; 
-            max-width: 800px; 
-            margin: 0 auto; 
-        }
-        h1, h2 { color: #2c3e50; }
-        h2 { margin-top: 30px; font-size: 1.3rem; }
-        a { color: #2c3e50; text-decoration: none; font-weight: bold; }
-        a:hover { text-decoration: underline; }
-        .back-link { display: inline-block; margin-bottom: 30px; border-bottom: 1px solid #2c3e50; }
+        :root { --primary-color: #1A365D; --accent-color: #7DA2A9; --bg-color: #F7FAFC; --text-color: #2D3748; --white: #FFFFFF; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: var(--text-color); background-color: var(--bg-color); }
+        h1, h2, h3 { color: var(--primary-color); margin-top: 2rem; margin-bottom: 1rem; }
+        p { margin-bottom: 1rem; }
+        .navbar { padding: 1rem 1.5rem; background: var(--white); display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 4px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 100; }
+        .navbar-brand { font-weight: bold; color: var(--primary-color); text-decoration: none; }
+        .nav-links a { margin-left: 1rem; text-decoration: none; color: var(--text-color); font-weight: 500; }
+        .lang-switcher { margin-left: 1.5rem; font-size: 0.9rem; border-left: 1px solid #E2E8F0; padding-left: 1rem; display: inline; }
+        .content-section { padding: 4rem 1.5rem; max-width: 800px; margin: 0 auto; background: var(--white); margin-top: 2rem; border-radius: 16px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+        footer { background: #2D3748; color: var(--white); text-align: center; padding: 2rem 1.5rem; margin-top: 4rem; }
+        footer a { color: var(--accent-color); text-decoration: none; margin: 0 0.5rem; }
     </style>
 </head>
 <body>
+    <nav class="navbar">
+        <a href="entwurf.html" class="navbar-brand">Viativity™</a>
+        <div class="nav-links">
+            <a href="entwurf.html">Startseite</a>
+            <a href="features.html">Werkzeuge</a>
+            <a href="about.html">Hinter den Kulissen</a>
+            <div class="lang-switcher"><strong>DE</strong> | <a href="#">EN</a></div>
+        </div>
+    </nav>
 
-    <a href="index.html" class="back-link">&larr; Zurück zur Startseite</a>
+    <main class="content-section">
+        <h1>Datenschutzerklärung</h1>
+        <p>Der Schutz deiner Privatsphäre ist mir ein zentrales Anliegen. Als Indie-Entwickler verfolge ich den Grundsatz der Datensparsamkeit: Ich sammle nur das absolute Minimum an Daten, das für den Betrieb der Webseite und der App technisch zwingend erforderlich ist.</p>
 
-    <h1>Datenschutzerklärung (Privacy Policy)</h1>
-    <p>Zuletzt aktualisiert: März 2026</p>
+        <h2>1. Verantwortlicher</h2>
+        <p>Verantwortlich für die Datenverarbeitung auf dieser Webseite und in der App ist:<br>
+        Dieter Schmidli<br>
+        E-Mail: <a href="mailto:support@viativity.app" style="color: var(--primary-color);">support@viativity.app</a></p>
 
-    <h2>1. Grundlegendes</h2>
-    <p>Die Privatsphäre unserer Nutzer ist uns sehr wichtig. Diese Datenschutzerklärung klärt darüber auf, wie die App "Viativity" mit Daten umgeht. Wir orientieren uns am Schweizer Datenschutzgesetz (DSG) und dem Prinzip der absoluten Datensparsamkeit.</p>
+        <h2>2. Webseiten-Hosting (GitHub Pages)</h2>
+        <p>Diese Webseite wird auf GitHub Pages gehostet (GitHub Inc., USA). Beim Besuch der Seite erhebt GitHub automatisch Informationen, die dein Browser übermittelt (Server-Log-Files). Dazu gehören:</p>
+        <ul style="margin-left: 1.5rem; margin-bottom: 1rem;">
+            <li>IP-Adresse deines Geräts</li>
+            <li>Datum und Uhrzeit des Zugriffs</li>
+            <li>Name und URL der abgerufenen Datei</li>
+            <li>Browsertyp und Betriebssystem</li>
+        </ul>
+        <p>Diese Daten dienen der Sicherheit und Stabilität der Seite. Ich nutze keine externen Tracking-Tools wie Google Analytics und setze keine Marketing-Cookies ein.</p>
 
-    <h2>2. Datenerfassung durch die App</h2>
-    <p>Das Wichtigste zuerst: <strong>Die Viativity-App sammelt, speichert oder überträgt keine persönlichen Nutzerdaten.</strong> Alle Funktionen der App (wie das Körper-Lot und die präventiven Übungen) werden ausschliesslich lokal auf deinem Gerät ausgeführt. Es ist keine Registrierung oder Anmeldung erforderlich.</p>
+        <h2>3. Viativity™ App</h2>
+        <p>Die App Viativity™ respektiert deine Privatsphäre konsequent:</p>
+        <ul style="margin-left: 1.5rem; margin-bottom: 1rem;">
+            <li><strong>Sensordaten:</strong> Alle für die Funktionen (z.B. künstlicher Horizont) benötigten Sensordaten deines Smartphones werden ausschließlich in Echtzeit lokal auf deinem Gerät verarbeitet.</li>
+            <li><strong>Keine Speicherung:</strong> Es werden keine Bewegungs- oder Standortprofile erstellt oder gespeichert.</li>
+            <li><strong>Kein Cloud-Senden:</strong> Es findet kein Datentransfer deiner persönlichen Nutzungsdaten an externe Server statt.</li>
+        </ul>
 
-    <h2>3. Analyse-Tools und Werbung</h2>
-    <p>Wir verwenden in Viativity ganz bewusst <strong>keine Tracking-Tools</strong> und spielen <strong>keine Werbung</strong> aus. Dein Nutzungsverhalten bleibt zu 100 % privat.</p>
+        <h2>4. Kontaktaufnahme</h2>
+        <p>Wenn du mich per E-Mail kontaktierst (support@viativity.app), verwende ich deine Angaben (E-Mail-Adresse, Name, Nachricht) ausschließlich zur Bearbeitung deiner Anfrage. Diese Daten werden nicht ohne deine Einwilligung an Dritte weitergegeben.</p>
 
-    <h2>4. Datenverarbeitung durch App Stores</h2>
-    <p>Beim Herunterladen der App aus dem Apple App Store oder dem Google Play Store werden die dafür notwendigen technischen Informationen an den jeweiligen Store übertragen (z.B. Zeitpunkt des Downloads, Land). Auf diese Datenerhebung haben wir keinen Einfluss. Hierfür gelten die Datenschutzerklärungen von Apple bzw. Google. Opt-in Absturzberichte (Crash-Logs), die uns von den Stores anonymisiert zur Verfügung gestellt werden, nutzen wir ausschliesslich zur Fehlerbehebung der App.</p>
+        <h2>5. Deine Rechte</h2>
+        <p>Du hast jederzeit das Recht auf unentgeltliche Auskunft über deine bei mir gespeicherten Daten sowie ein Recht auf Berichtigung, Sperrung oder Löschung dieser Daten. Bitte kontaktiere mich dazu per E-Mail.</p>
+        
+        <p style="margin-top: 3rem; font-size: 0.9rem; color: #718096;">Stand: März 2026</p>
+    </main>
 
-    <h2>5. Kontaktaufnahme</h2>
-    <p>Wenn du den Support kontaktierst (support@viativity.app), wird deine E-Mail-Adresse und deine Nachricht ausschliesslich zur Bearbeitung deines Anliegens verwendet und nach Abschluss gelöscht. Es erfolgt keine Weitergabe an Dritte.</p>
-
-    <h2>6. Kontakt</h2>
-    <p>Verantwortlich für die App und den Datenschutz:<br>
-    Viativity Support<br>
-    E-Mail: <a href="mailto:support@viativity.app">support@viativity.app</a></p>
-
+    <footer>
+        <div style="margin-bottom: 1rem;">
+            <a href="entwurf.html">Startseite</a>
+            <a href="features.html">Werkzeuge</a>
+            <a href="about.html">Hinter den Kulissen</a>
+            <a href="mailto:support@viativity.app">Support</a>
+            <a href="privacy.html">Datenschutz</a>
+        </div>
+        <p>© 2026 Viativity™. Entwickelt in der Schweiz.</p>
+    </footer>
 </body>
 </html>
