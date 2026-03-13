@@ -42,6 +42,7 @@
         .navbar-brand { font-weight: bold; color: var(--primary-color); font-size: 1.2rem; text-decoration: none; }
         .nav-links { display: flex; align-items: center; }
         .nav-links a { margin-left: 1rem; text-decoration: none; color: var(--text-color); font-weight: 500; }
+        /* Jitter-Prävention: Nur Farbe ändern, kein Font-Weight */
         .nav-links a:hover { color: var(--accent-color); }
         
         .lang-switcher {
@@ -106,7 +107,9 @@
             justify-content: center;
             width: 100%;
             max-width: 280px;
+            transition: background 0.2s;
         }
+        .btn:hover { background: #E2E8F0; }
         
         .btn-disabled { opacity: 0.6; cursor: not-allowed; pointer-events: none; }
 
@@ -184,9 +187,9 @@
                 Freu dich auf den Weg,<br>nicht nur auf das Ziel!
             </h1>
             
-            <div class="offline-badge">100% Offline nutzbar & Mehrsprachig – Ideal für Flugzeug, Schiff und in den Bergen</div>
+            <div class="offline-badge">100% Offline nutzbar & Mehrsprachig – Ideal für Flugzeug, Schiff und Berge</div>
             
-            <p>Dein smarter Begleiter für unbeschwertes Reisen. Nutze digitale Werkzeuge zur Soforthilfe für unterwegs und als präventives Training für zu Hause.</p>
+            <p>Smarte Begleitung für unbeschwertes Reisen. Digitale Werkzeuge bieten Soforthilfe unterwegs und ermöglichen präventives Training zu Hause.</p>
             <div class="store-buttons">
                 <a href="#" class="btn btn-disabled"> App Store (bald erhältlich)</a>
                 <a href="#" class="btn btn-disabled">▶ Play Store (bald erhältlich)</a>
@@ -195,25 +198,25 @@
     </header>
 
     <main>
-        <section id="problem" class="max-w-800" style="margin: 0 auto; padding: 4rem 1.5rem;">
+        <section id="problem" class="max-w-800">
             
             <div style="margin-bottom: 3rem; text-align: center;">
-                <h2>Kennst du das?</h2>
-                <p>Du freust dich auf den Urlaub, aber Reiseübelkeit (Kinetose) und Unwohlsein trüben schon nach kurzer Zeit die Fahrt. Dieses unangenehme Gefühl entsteht durch einen sensorischen Konflikt: Dein Auge meldet Stillstand (z. B. beim Blick auf das Smartphone im Fahrzeuginnenraum), während dein Gleichgewichtsorgan gleichzeitig die Bewegung spürt. Das Gehirn schlägt Alarm.</p>
+                <h2>Bewusster reisen</h2>
+                <p>Urlaubsfreude wird oft getrübt, wenn Reiseübelkeit (Kinetose) schon nach kurzer Zeit die Fahrt belastet. Dieses unangenehme Gefühl entsteht durch einen sensorischen Konflikt: Das Auge meldet Stillstand (z. B. beim Blick auf das Smartphone), während das Gleichgewichtsorgan die Bewegung spürt. Das Gehirn reagiert mit Alarm.</p>
             </div>
 
             <div style="background: var(--white); padding: 2.5rem; border-radius: 16px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border-left: 4px solid var(--accent-color);">
-                <h3 style="color: var(--primary-color); font-size: 1.5rem; margin-bottom: 1rem;">Genau hier setzt Viativity™ an</h3>
-                <p style="margin-bottom: 0;">Anstatt die Symptome nur zu betäuben, nutzt Viativity™ smarte, digitale Werkzeuge. Die App hilft deinem Körper, diesen Widerspruch aufzulösen, störende Reize sanft auszublenden und dein Nervensystem wieder zu beruhigen – wissenschaftlich fundiert und komplett ohne Medikamente.</p>
+                <h3 style="color: var(--primary-color); font-size: 1.5rem; margin-bottom: 1rem;">Hier setzt Viativity™ an</h3>
+                <p style="margin-bottom: 0;">Anstatt Symptome nur zu betäuben, nutzt Viativity™ digitale Werkzeuge. Die App unterstützt den Körper dabei, diesen Widerspruch aufzulösen, störende Reize sanft auszublenden und das Nervensystem zu beruhigen – fundiert und ohne Medikamente.</p>
             </div>
 
         </section>
 
         <section id="tools" class="text-center">
             <h2>Digitale Werkzeuge</h2>
-            <p class="max-w-800">Wähle das Werkzeug aus, das deine aktuelle Situation am besten unterstützt. Egal ob akute Reiseübelkeit unterwegs oder präventives Training vorab: Viativity bietet dir die passende Lösung – fast so vielseitig wie ein Schweizer Taschenmesser.</p>
+            <p class="max-w-800">Die Wahl des passenden Werkzeugs unterstützt die aktuelle Situation. Egal ob akute Reiseübelkeit unterwegs oder präventives Training: Viativity bietet vielseitige Lösungen für eine entspannte Reise.</p>
             
-            <a href="features.html" style="color: var(--primary-color); font-weight: bold; text-decoration: underline; margin-top: 1rem; display: inline-block;">Einige Funktionen im Detail ansehen &rarr;</a>
+            <a href="features.html" style="color: var(--primary-color); font-weight: bold; text-decoration: underline; margin-top: 1rem; display: inline-block;">Funktionen im Detail ansehen &rarr;</a>
 
             <div class="mockup-showcase">
                 <div class="jass-card card-left">
@@ -230,7 +233,7 @@
             </div>
 
             <div style="margin-top: 3rem; max-width: 600px; margin-left: auto; margin-right: auto; padding: 1.5rem; background: var(--white); border-radius: 12px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
-                <p style="font-size: 1.1rem; color: #4A5568; margin-bottom: 0.8rem;"><strong>Viativity™</strong> ist eine digitale Wellness-App gegen Reiseübelkeit. Ob sanfte Soforthilfe unterwegs oder präventives Training zu Hause – dein digitaler Begleiter ist immer und überall griffbereit.</p>
+                <p style="font-size: 1.1rem; color: #4A5568; margin-bottom: 0.8rem;"><strong>Viativity™</strong> ist eine digitale Wellness-App. Ob sanfte Soforthilfe unterwegs oder präventives Training zu Hause – die Begleitung ist überall griffbereit.</p>
                 <p style="font-size: 0.9rem; color: #718096; margin-bottom: 0; font-style: italic;">Viativity verbindet „Via“ (lat. für Weg) mit Vitalität und Aktivität.</p>
             </div>
 
