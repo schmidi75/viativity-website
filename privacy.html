@@ -29,9 +29,14 @@
         .content-section { padding: 4rem 1.5rem; max-width: 800px; margin: 0 auto; }
         h2 { margin-top: 2.5rem; font-size: 1.4rem; }
         ul { margin-left: 1.5rem; margin-bottom: 1rem; }
+        
+        .email-link { color: var(--primary-color); font-weight: bold; }
+        .last-updated { margin-top: 3rem; font-size: 0.9rem; color: #718096; }
 
         footer { background: #2D3748; color: var(--white); text-align: center; padding: 2rem 1.5rem; margin-top: 4rem; }
+        .footer-links { margin-bottom: 1rem; }
         footer a { color: var(--accent-color); text-decoration: none; margin: 0 0.5rem; }
+        .app-latin { font-size: 0.85rem; color: #A0AEC0; margin-top: 0.5rem; font-style: italic; }
         .disclaimer-small { font-size: 0.8rem; color: #A0AEC0; margin-top: 1.5rem; }
     </style>
 </head>
@@ -42,7 +47,7 @@
         <div class="nav-links">
             <a href="index.html">Startseite</a>
             <a href="features.html">Werkzeuge</a>
-            <a href="about.html">Hinter den Kulissen</a>
+            <a href="about.html">Über mich</a>
             <div class="lang-switcher">
                 <span class="lang-active">DE</span> | <a href="en/privacy.html" aria-label="Switch to English">EN</a>
             </div>
@@ -56,7 +61,7 @@
         <h2>1. Verantwortlicher</h2>
         <p>Verantwortlich für die Datenverarbeitung auf dieser Webseite und in der App ist:<br>
         Dieter Schmidli<br>
-        E-Mail: <a href="mailto:support@viativity.app" style="color: var(--primary-color); font-weight: bold;">support@viativity.app</a></p>
+        E-Mail: <a href="mailto:support@viativity.app" class="email-link">support@viativity.app</a></p>
 
         <h2>2. Webseiten-Hosting (GitHub Pages)</h2>
         <p>Diese Webseite wird auf GitHub Pages gehostet (GitHub Inc., USA). Beim Besuch der Seite erhebt GitHub automatisch Informationen, die dein Browser übermittelt (Server-Log-Files). Dazu gehören:</p>
@@ -71,29 +76,30 @@
         <h2>3. Viativity™ App (100% Offline)</h2>
         <p>Die App Viativity™ respektiert deine Privatsphäre konsequent und funktioniert vollständig offline:</p>
         <ul>
-            <li><strong>Sensordaten:</strong> Alle für die Funktionen (z.B. künstlicher Horizont) benötigten Sensordaten deines Smartphones werden ausschließlich in Echtzeit lokal auf deinem Gerät verarbeitet.</li>
+            <li><strong>Sensordaten:</strong> Alle für die Funktionen (z.B. künstlicher Horizont) benötigten Sensordaten deines Smartphones werden ausschliesslich in Echtzeit lokal auf deinem Gerät verarbeitet.</li>
             <li><strong>Keine Speicherung:</strong> Es werden keine Bewegungs- oder Standortprofile erstellt oder gespeichert.</li>
             <li><strong>Kein Cloud-Senden:</strong> Es findet absolut kein Datentransfer deiner Nutzungsdaten an externe Server statt.</li>
         </ul>
 
         <h2>4. Kontaktaufnahme</h2>
-        <p>Wenn du mich per E-Mail kontaktierst (support@viativity.app), verwende ich deine Angaben (E-Mail-Adresse, Name, Nachricht) ausschließlich zur Bearbeitung deiner Anfrage. Diese Daten werden nicht ohne deine Einwilligung an Dritte weitergegeben und nach Abschluss der Bearbeitung gelöscht.</p>
+        <p>Wenn du mich per E-Mail kontaktierst (support@viativity.app), verwende ich deine Angaben (E-Mail-Adresse, Name, Nachricht) ausschliesslich zur Bearbeitung deiner Anfrage. Diese Daten werden nicht ohne deine Einwilligung an Dritte weitergegeben und nach Abschluss der Bearbeitung gelöscht.</p>
 
         <h2>5. Auskunft und Löschung</h2>
         <p>Da ich weder auf der Webseite noch in der App personenbezogene Daten von dir erhebe oder speichere, gibt es systemseitig auch keine Daten, die eingesehen, gesperrt oder gelöscht werden könnten.</p>
         
-        <p style="margin-top: 3rem; font-size: 0.9rem; color: #718096;">Stand: März 2026</p>
+        <p class="last-updated">Stand: März 2026</p>
     </main>
 
     <footer>
-        <div style="margin-bottom: 1rem;">
+        <div class="footer-links">
             <a href="index.html">Startseite</a>
             <a href="features.html">Werkzeuge</a>
-            <a href="about.html">Hinter den Kulissen</a>
+            <a href="about.html">Über mich</a>
             <a href="mailto:support@viativity.app">Support</a>
             <a href="privacy.html">Datenschutz</a>
         </div>
         <p>© 2026 Viativity™. Entwickelt in der Schweiz.</p>
+        <p class="app-latin">Viativity verbindet „Via“ (lat. für Weg) mit Vitalität und Aktivität.</p>
         
         <div class="disclaimer-small">
             <strong>KEIN MEDIZINPRODUKT:</strong> Diese App ist kein Medizinprodukt. Sie stellt keine Diagnosen und ersetzt keine ärztliche Behandlung.
