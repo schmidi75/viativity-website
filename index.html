@@ -109,9 +109,30 @@
         }
         
         .btn-disabled { opacity: 0.6; cursor: not-allowed; pointer-events: none; }
+        .store-subtext { margin-top: 1.5rem; font-size: 0.85rem; color: rgba(255,255,255,0.8); letter-spacing: 0.02em; }
 
         .text-center { text-align: center; }
         .max-w-800 { max-width: 800px; margin: 0 auto; }
+
+        .problem-section { max-width: 800px; margin: 0 auto; padding-top: 4rem; padding-bottom: 4rem; }
+        .problem-header { margin-bottom: 3rem; text-align: center; }
+        .problem-box {
+            background: var(--white);
+            padding: 2.5rem;
+            border-radius: 16px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border-left: 4px solid var(--accent-color);
+        }
+        .problem-box h3 { color: var(--primary-color); font-size: 1.5rem; margin-bottom: 1rem; }
+        .problem-box p { margin-bottom: 0; }
+
+        .feature-link {
+            color: var(--primary-color);
+            font-weight: bold;
+            text-decoration: underline;
+            margin-top: 1rem;
+            display: inline-block;
+        }
 
         .mockup-showcase {
             margin-top: 4rem;
@@ -143,6 +164,37 @@
         .card-center { transform: rotate(0deg); z-index: 3; box-shadow: 0 15px 35px rgba(0,0,0,0.25); }
         .card-right { transform: rotate(22deg) translateX(70px) translateY(20px); z-index: 2; }
 
+        .app-info-box {
+            margin-top: 4rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 2.5rem;
+            background: var(--white);
+            border-radius: 16px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+        .app-info-desc { font-size: 1.1rem; color: #4A5568; margin-bottom: 0.8rem; }
+        .app-info-latin { font-size: 0.9rem; color: #718096; margin-bottom: 2rem; font-style: italic; }
+        
+        .usp-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+            list-style: none;
+        }
+        .usp-list li {
+            background: var(--bg-color);
+            color: var(--primary-color);
+            padding: 0.6rem 1.2rem;
+            border-radius: 50px;
+            font-size: 0.95rem;
+            font-weight: 500;
+            border: 1px solid #E2E8F0;
+        }
+
         footer { background: #2D3748; color: var(--white); text-align: center; padding: 2rem 1.5rem; }
         footer a { color: var(--accent-color); text-decoration: none; margin: 0 0.5rem; }
         .disclaimer-small { font-size: 0.8rem; color: #A0AEC0; margin-top: 1.5rem; }
@@ -159,6 +211,7 @@
             .jass-card { width: 220px; height: 460px; font-size: 1rem; }
             .card-left { transform: rotate(-25deg) translateX(-130px) translateY(30px); }
             .card-right { transform: rotate(25deg) translateX(130px) translateY(30px); }
+            .problem-section { padding-top: 6rem; padding-bottom: 6rem; }
         }
     </style>
 </head>
@@ -191,29 +244,30 @@
                 <a href="#" class="btn btn-disabled"> App Store (bald erhältlich)</a>
                 <a href="#" class="btn btn-disabled">▶ Play Store (bald erhältlich)</a>
             </div>
+            <p class="store-subtext">Keine Abos • Werbefrei • Voller Datenschutz (lokal)</p>
         </div>
     </header>
 
     <main>
-        <section id="problem" class="max-w-800" style="margin: 0 auto; padding: 4rem 1.5rem;">
+        <section id="problem" class="problem-section">
             
-            <div style="margin-bottom: 3rem; text-align: center;">
+            <div class="problem-header">
                 <h2>Kennst du das?</h2>
-                <p>Du freust dich auf den Urlaub, aber Reiseübelkeit (Kinetose) und Unwohlsein trüben schon nach kurzer Zeit die Fahrt. Dieses unangenehme Gefühl entsteht durch einen sensorischen Konflikt: Dein Auge meldet Stillstand (z. B. beim Blick auf das Smartphone im Fahrzeuginnenraum), während dein Gleichgewichtsorgan gleichzeitig die Bewegung spürt. Das Gehirn schlägt Alarm.</p>
+                <p>Du freust dich auf den Urlaub, aber Reiseübelkeit (Kinetose), <strong>Seekrankheit</strong> auf dem Schiff oder <strong>Flugangst</strong> trüben schon nach kurzer Zeit die Fahrt. Dieses unangenehme Gefühl entsteht durch einen sensorischen Konflikt: Dein Auge meldet Stillstand (z. B. beim Blick auf das Smartphone im Fahrzeuginnenraum), während dein <strong>Gleichgewichtsorgan</strong> gleichzeitig die Bewegung spürt. Das Gehirn schlägt Alarm.</p>
             </div>
 
-            <div style="background: var(--white); padding: 2.5rem; border-radius: 16px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border-left: 4px solid var(--accent-color);">
-                <h3 style="color: var(--primary-color); font-size: 1.5rem; margin-bottom: 1rem;">Genau hier setzt Viativity™ an</h3>
-                <p style="margin-bottom: 0;">Anstatt die Symptome nur zu betäuben, nutzt Viativity™ smarte, digitale Werkzeuge. Die App hilft deinem Körper, diesen Widerspruch aufzulösen, störende Reize sanft auszublenden und dein Nervensystem wieder zu beruhigen – wissenschaftlich fundiert und komplett ohne Medikamente.</p>
+            <div class="problem-box">
+                <h3>Genau hier setzt Viativity™ an</h3>
+                <p>Anstatt die Symptome nur zu betäuben, nutzt Viativity™ smarte, digitale Werkzeuge als <strong>Soforthilfe</strong>. Die App hilft deinem Körper, diesen Widerspruch aufzulösen, störende Reize sanft auszublenden und dein Nervensystem wieder zu beruhigen – <strong>wissenschaftlich belegt fundiert</strong> und komplett ohne Medikamente.</p>
             </div>
 
         </section>
 
         <section id="tools" class="text-center">
-            <h2>Digitale Werkzeuge</h2>
-            <p class="max-w-800">Wähle das Werkzeug aus, das deine aktuelle Situation am besten unterstützt. Egal ob akute Reiseübelkeit unterwegs oder präventives Training vorab: Viativity bietet dir die passende Lösung – fast so vielseitig wie ein Schweizer Taschenmesser.</p>
+            <h2>Digitale Werkzeuge & Reise Tipps</h2>
+            <p class="max-w-800">Wähle das Werkzeug aus, das deine aktuelle Situation am besten unterstützt. Egal ob akute Reiseübelkeit unterwegs oder präventives <strong>Training</strong> vorab: Viativity bietet dir die passende Lösung. Nutze den <strong>künstlichen Horizont</strong>, die <strong>4-2-6 Atmung</strong> zur Beruhigung, den <strong>100Hz Ton</strong> für dein Gleichgewicht oder trainiere deine <strong>Mentale Rotation</strong>.</p>
             
-            <a href="features.html" style="color: var(--primary-color); font-weight: bold; text-decoration: underline; margin-top: 1rem; display: inline-block;">Einige Funktionen im Detail ansehen &rarr;</a>
+            <a href="features.html" class="feature-link">Einige Funktionen im Detail ansehen &rarr;</a>
 
             <div class="mockup-showcase">
                 <div class="jass-card card-left">
@@ -229,9 +283,17 @@
                 </div>
             </div>
 
-            <div style="margin-top: 3rem; max-width: 600px; margin-left: auto; margin-right: auto; padding: 1.5rem; background: var(--white); border-radius: 12px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
-                <p style="font-size: 1.1rem; color: #4A5568; margin-bottom: 0.8rem;"><strong>Viativity™</strong> ist eine digitale Wellness-App gegen Reiseübelkeit. Ob sanfte Soforthilfe unterwegs oder präventives Training zu Hause – dein digitaler Begleiter ist immer und überall griffbereit.</p>
-                <p style="font-size: 0.9rem; color: #718096; margin-bottom: 0; font-style: italic;">Viativity verbindet „Via“ (lat. für Weg) mit Vitalität und Aktivität.</p>
+            <div class="app-info-box">
+                <p class="app-info-desc"><strong>Viativity™</strong> ist eine digitale Wellness-App gegen Reiseübelkeit. Ob sanfte Soforthilfe unterwegs oder präventives Training zu Hause – dein digitaler Begleiter ist immer und überall griffbereit.</p>
+                <p class="app-info-latin">Viativity verbindet „Via“ (lat. für Weg) mit Vitalität und Aktivität.</p>
+                
+                <ul class="usp-list">
+                    <li>100% Offline nutzbar</li>
+                    <li>Mehrsprachig</li>
+                    <li>Keine Abos</li>
+                    <li>Werbefrei</li>
+                    <li>Lokale Datenverarbeitung</li>
+                </ul>
             </div>
 
         </section>
