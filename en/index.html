@@ -10,7 +10,6 @@
     <link rel="alternate" hreflang="en" href="https://viativity.app/en/index.html" />
     
     <style>
-        /* --- CSS VARIABLES --- */
         :root {
             --primary-color: #1A365D;
             --accent-color: #7DA2A9;
@@ -19,7 +18,6 @@
             --white: #FFFFFF;
         }
 
-        /* --- RESET & BASICS (Mobile First) --- */
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -32,7 +30,6 @@
         
         section { padding: 4rem 1.5rem; max-width: 1200px; margin: 0 auto; }
         
-        /* --- NAVIGATION --- */
         .navbar {
             padding: 1rem 1.5rem;
             background: var(--white);
@@ -47,7 +44,6 @@
         .nav-links a { margin-left: 1rem; text-decoration: none; color: var(--text-color); font-weight: 500; }
         .nav-links a:hover { color: var(--accent-color); }
         
-        /* Language Switcher */
         .lang-switcher {
             margin-left: 1.5rem;
             font-size: 0.9rem;
@@ -58,7 +54,6 @@
         .lang-switcher a:hover { color: var(--primary-color); }
         .lang-active { font-weight: bold; color: var(--primary-color); margin-left: 0.3rem; }
 
-        /* --- HERO LAYOUT --- */
         .hero {
             display: flex;
             flex-direction: column;
@@ -66,11 +61,7 @@
             color: var(--white);
         }
         
-        .hero-image {
-            width: 100%;
-            height: auto; 
-            display: block;
-        }
+        .hero-image { width: 100%; height: auto; display: block; }
 
         .hero-content {
             padding: 3rem 1.5rem;
@@ -91,7 +82,6 @@
         .hero h1 { color: var(--white); font-size: 2rem; margin-bottom: 1.5rem; margin-top: 0; }
         .hero p { color: var(--white); font-size: 1rem; margin-bottom: 2rem; opacity: 0.9; }
         
-        /* Offline-Badge */
         .offline-badge {
             display: inline-block;
             background: rgba(255,255,255,0.1);
@@ -118,17 +108,32 @@
             max-width: 280px;
         }
         
-        .btn-disabled {
-            opacity: 0.6;
-            cursor: not-allowed;
-            pointer-events: none;
-        }
+        .btn-disabled { opacity: 0.6; cursor: not-allowed; pointer-events: none; }
+        .store-subtext { margin-top: 1.5rem; font-size: 0.85rem; color: rgba(255,255,255,0.8); letter-spacing: 0.02em; }
 
-        /* --- SECTIONS --- */
         .text-center { text-align: center; }
         .max-w-800 { max-width: 800px; margin: 0 auto; }
 
-        /* --- MOCKUP CARDS --- */
+        .problem-section { max-width: 800px; margin: 0 auto; padding-top: 4rem; padding-bottom: 4rem; }
+        .problem-header { margin-bottom: 3rem; text-align: center; }
+        .problem-box {
+            background: var(--white);
+            padding: 2.5rem;
+            border-radius: 16px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border-left: 4px solid var(--accent-color);
+        }
+        .problem-box h3 { color: var(--primary-color); font-size: 1.5rem; margin-bottom: 1rem; }
+        .problem-box p { margin-bottom: 0; }
+
+        .feature-link {
+            color: var(--primary-color);
+            font-weight: bold;
+            text-decoration: underline;
+            margin-top: 1rem;
+            display: inline-block;
+        }
+
         .mockup-showcase {
             margin-top: 4rem;
             position: relative;
@@ -159,7 +164,37 @@
         .card-center { transform: rotate(0deg); z-index: 3; box-shadow: 0 15px 35px rgba(0,0,0,0.25); }
         .card-right { transform: rotate(22deg) translateX(70px) translateY(20px); z-index: 2; }
 
-        /* --- FOOTER --- */
+        .app-info-box {
+            margin-top: 4rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 2.5rem;
+            background: var(--white);
+            border-radius: 16px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+        .app-info-desc { font-size: 1.1rem; color: #4A5568; margin-bottom: 0.8rem; }
+        .app-info-latin { font-size: 0.9rem; color: #718096; margin-bottom: 2rem; font-style: italic; }
+        
+        .usp-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+            list-style: none;
+        }
+        .usp-list li {
+            background: var(--bg-color);
+            color: var(--primary-color);
+            padding: 0.6rem 1.2rem;
+            border-radius: 50px;
+            font-size: 0.95rem;
+            font-weight: 500;
+            border: 1px solid #E2E8F0;
+        }
+
         footer { background: #2D3748; color: var(--white); text-align: center; padding: 2rem 1.5rem; }
         footer a { color: var(--accent-color); text-decoration: none; margin: 0 0.5rem; }
         .disclaimer-small { font-size: 0.8rem; color: #A0AEC0; margin-top: 1.5rem; }
@@ -176,6 +211,7 @@
             .jass-card { width: 220px; height: 460px; font-size: 1rem; }
             .card-left { transform: rotate(-25deg) translateX(-130px) translateY(30px); }
             .card-right { transform: rotate(25deg) translateX(130px) translateY(30px); }
+            .problem-section { padding-top: 6rem; padding-bottom: 6rem; }
         }
     </style>
 </head>
@@ -208,29 +244,30 @@
                 <a href="#" class="btn btn-disabled"> App Store (coming soon)</a>
                 <a href="#" class="btn btn-disabled">▶ Play Store (coming soon)</a>
             </div>
+            <p class="store-subtext">No subscriptions • Ad-free • Full data privacy (local)</p>
         </div>
     </header>
 
     <main>
-        <section id="problem" class="max-w-800" style="margin: 0 auto; padding: 4rem 1.5rem;">
+        <section id="problem" class="problem-section">
             
-            <div style="margin-bottom: 3rem; text-align: center;">
+            <div class="problem-header">
                 <h2>Sound familiar?</h2>
-                <p>You are looking forward to your vacation, but motion sickness (kinetosis) and discomfort soon cloud the journey. This unpleasant feeling arises from a sensory conflict: Your eyes report a standstill (e.g., when looking at a smartphone inside a vehicle), while your balance organ simultaneously feels the movement. The brain sounds the alarm.</p>
+                <p>You are looking forward to your vacation, but motion sickness (kinetosis), <strong>seasickness on a cruise</strong>, or <strong>fear of flying</strong> soon cloud the journey. This unpleasant feeling arises from a sensory conflict: Your eyes report a standstill (e.g., when looking at a smartphone inside a vehicle), while your balance organ simultaneously feels the movement. The brain sounds the alarm.</p>
             </div>
 
-            <div style="background: var(--white); padding: 2.5rem; border-radius: 16px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border-left: 4px solid var(--accent-color);">
-                <h3 style="color: var(--primary-color); font-size: 1.5rem; margin-bottom: 1rem;">This is exactly where Viativity™ comes in</h3>
-                <p style="margin-bottom: 0;">Instead of just numbing the symptoms, Viativity™ uses smart, digital tools. The app helps your body resolve this contradiction, gently fade out disturbing stimuli, and calm your nervous system – scientifically based and completely without medication.</p>
+            <div class="problem-box">
+                <h3>This is exactly where Viativity™ comes in</h3>
+                <p>With smart <strong>immediate relief</strong> and <strong>preventive training</strong>, the app helps your body actively resolve this contradiction. You learn to gently fade out disturbing stimuli and calm your nervous system – <strong>scientifically proven</strong> and completely without medication.</p>
             </div>
 
         </section>
 
         <section id="tools" class="text-center">
-            <h2>Digital Tools</h2>
-            <p class="max-w-800">Choose the tool that best supports your current situation. Whether it's acute motion sickness on the go or preventive training beforehand: Viativity offers you the right solution – almost as versatile as a Swiss Army knife.</p>
+            <h2>Digital Tools & Travel Tips</h2>
+            <p class="max-w-800">Choose the tool that best supports your current situation. Whether it's acute motion sickness on the go or preventive <strong>training</strong> beforehand: Viativity offers you the right solution. Use smart helpers like the <strong>Artificial Horizon</strong>, <strong>4-2-6 Breathing</strong> and the <strong>100Hz Modulation</strong> to calm down, or train your <strong>Body Stability</strong>.</p>
             
-            <a href="features.html" style="color: var(--primary-color); font-weight: bold; text-decoration: underline; margin-top: 1rem; display: inline-block;">View some features in detail &rarr;</a>
+            <a href="features.html" class="feature-link">View some features in detail &rarr;</a>
 
             <div class="mockup-showcase">
                 <div class="jass-card card-left">
@@ -246,9 +283,17 @@
                 </div>
             </div>
 
-            <div style="margin-top: 3rem; max-width: 600px; margin-left: auto; margin-right: auto; padding: 1.5rem; background: var(--white); border-radius: 12px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
-                <p style="font-size: 1.1rem; color: #4A5568; margin-bottom: 0.8rem;"><strong>Viativity™</strong> is a digital wellness app for motion sickness. Whether gentle immediate help on the go or preventive training at home – your digital companion is always ready to hand.</p>
-                <p style="font-size: 0.9rem; color: #718096; margin-bottom: 0; font-style: italic;">Viativity combines "Via" (Latin for way) with vitality and activity.</p>
+            <div class="app-info-box">
+                <p class="app-info-desc"><strong>Viativity™</strong> is a digital <strong>motion sickness app</strong> designed for wellness. Whether gentle immediate help on the go or preventive training at home – your digital companion is always ready to hand.</p>
+                <p class="app-info-latin">Viativity combines "Via" (Latin for way) with vitality and activity.</p>
+                
+                <ul class="usp-list">
+                    <li>100% Offline usable</li>
+                    <li>Multilingual</li>
+                    <li>No subscriptions</li>
+                    <li>Ad-free</li>
+                    <li>Local data processing</li>
+                </ul>
             </div>
 
         </section>
