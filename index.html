@@ -3,80 +3,215 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Werkzeuge | Viativity™</title>
-    <meta name="description" content="Entdecke die digitalen Werkzeuge von Viativity. Soforthilfe für unterwegs und präventives Training gegen Reiseübelkeit.">
+    <title>Viativity™ | Dein smarter Begleiter für unbeschwertes Reisen</title>
+    <meta name="description" content="Nutze digitale Werkzeuge zur Soforthilfe für unterwegs und als präventives Training für zu Hause.">
     
-    <link rel="alternate" hreflang="de" href="https://viativity.app/features.html" />
-    <link rel="alternate" hreflang="en" href="https://viativity.app/en/features.html" />
+    <link rel="alternate" hreflang="de" href="https://viativity.app/index.html" />
+    <link rel="alternate" hreflang="en" href="https://viativity.app/en/index.html" />
     
     <style>
-        :root { --primary-color: #1A365D; --accent-color: #7DA2A9; --bg-color: #F7FAFC; --text-color: #2D3748; --white: #FFFFFF; }
+        :root {
+            --primary-color: #1A365D;
+            --accent-color: #7DA2A9;
+            --bg-color: #F7FAFC;
+            --text-color: #2D3748;
+            --white: #FFFFFF;
+        }
+
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: var(--text-color); background-color: var(--bg-color); }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+        }
         h1, h2, h3 { color: var(--primary-color); line-height: 1.2; margin-bottom: 1rem; }
         p { margin-bottom: 1rem; }
         
-        .navbar { padding: 1rem 1.5rem; background: var(--white); display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 4px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 100; }
+        section { padding: 4rem 1.5rem; max-width: 1200px; margin: 0 auto; }
+        
+        .navbar {
+            padding: 1rem 1.5rem;
+            background: var(--white);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            position: sticky; top: 0; z-index: 100;
+        }
         .navbar-brand { font-weight: bold; color: var(--primary-color); font-size: 1.2rem; text-decoration: none; }
         .nav-links { display: flex; align-items: center; }
         .nav-links a { margin-left: 1rem; text-decoration: none; color: var(--text-color); font-weight: 500; }
         .nav-links a:hover { color: var(--accent-color); }
         
-        .lang-switcher { margin-left: 1.5rem; font-size: 0.9rem; border-left: 1px solid #E2E8F0; padding-left: 1rem; }
+        .lang-switcher {
+            margin-left: 1.5rem;
+            font-size: 0.9rem;
+            border-left: 1px solid #E2E8F0;
+            padding-left: 1rem;
+        }
         .lang-switcher a { margin-left: 0; color: #A0AEC0; text-decoration: none; }
         .lang-switcher a:hover { color: var(--primary-color); }
         .lang-active { font-weight: bold; color: var(--primary-color); margin-right: 0.3rem;}
-        
-        .page-header { background: var(--primary-color); color: var(--white); text-align: center; padding: 4rem 1.5rem; }
-        .page-header h1 { color: var(--white); font-size: 2.5rem; }
-        .page-header p { font-size: 1.1rem; opacity: 0.9; max-width: 600px; margin: 0 auto; }
 
-        .feature-section { padding: 4rem 1.5rem; max-width: 1200px; margin: 0 auto; }
-        .feature-row { display: flex; flex-direction: column; gap: 2rem; margin-bottom: 5rem; align-items: center; }
-        .feature-text { flex: 1; }
-        .feature-text h2 { font-size: 2rem; color: var(--primary-color); }
-        .feature-text h3 { font-size: 1.1rem; color: var(--accent-color); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; }
-        
-        .phone-frame { 
-            width: 200px; 
-            height: 420px; 
-            background: #E2E8F0; 
-            border-radius: 20px; 
-            border: 6px solid #000000; 
-            box-shadow: 0 10px 25px rgba(0,0,0,0.15); 
-            display: flex; 
-            align-items: center; 
-            justify-content: center; 
-            overflow: hidden; 
-            margin: 0 auto;
-            flex-shrink: 0;
+        .hero {
+            display: flex;
+            flex-direction: column;
+            background-color: var(--primary-color);
+            color: var(--white);
         }
-        .phone-frame img { width: 100%; height: 100%; object-fit: cover; }
+        
+        .hero-image { width: 100%; height: auto; display: block; }
 
-        .grid-section { background: var(--white); padding: 4rem 1.5rem 2rem 1.5rem; }
-        .grid-container { max-width: 1200px; margin: 0 auto; }
-        .grid-header { text-align: center; margin-bottom: 3rem; }
-        .feature-grid { display: grid; grid-template-columns: 1fr; gap: 2rem; }
-        .grid-card { background: var(--bg-color); padding: 2rem; border-radius: 16px; border-left: 4px solid var(--accent-color); }
-        .grid-card h3 { font-size: 1.3rem; margin-bottom: 0.5rem; }
+        .hero-content {
+            padding: 3rem 1.5rem;
+            text-align: center;
+            max-width: 900px; 
+            margin: 0 auto;   
+        }
+        
+        .hero-brand {
+            display: block;
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: var(--accent-color);
+            margin-bottom: 0.5rem;
+            letter-spacing: 0.05em;
+        }
 
-        .science-box { padding: 0 1.5rem 4rem 1.5rem; max-width: 1200px; margin: 0 auto; background: var(--white); }
-        .science-inner { background: #E2E8F0; padding: 2.5rem; border-radius: 20px; text-align: center; border: 1px solid #CBD5E0; }
-        .science-inner h3 { color: var(--primary-color); margin-bottom: 1rem; }
-        .science-inner p { margin-bottom: 0; max-width: 800px; margin-left: auto; margin-right: auto; }
+        .hero h1 { color: var(--white); font-size: 2rem; margin-bottom: 1.5rem; margin-top: 0; }
+        .hero p { color: var(--white); font-size: 1rem; margin-bottom: 2rem; opacity: 0.9; }
+        
+        .offline-badge {
+            display: inline-block;
+            background: rgba(255,255,255,0.1);
+            padding: 0.4rem 1.2rem;
+            border-radius: 50px;
+            font-size: 0.95rem;
+            margin-bottom: 2rem;
+            border: 1px solid rgba(255,255,255,0.3);
+            color: var(--white);
+        }
+
+        .store-buttons { display: flex; flex-direction: column; gap: 1rem; align-items: center; }
+        .btn {
+            background: var(--white);
+            color: var(--primary-color);
+            padding: 0.8rem 1.5rem;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            max-width: 280px;
+        }
+        
+        .btn-disabled { opacity: 0.6; cursor: not-allowed; pointer-events: none; }
+        .store-subtext { margin-top: 1.5rem; font-size: 0.85rem; color: rgba(255,255,255,0.8); letter-spacing: 0.02em; }
+
+        .text-center { text-align: center; }
+        .max-w-800 { max-width: 800px; margin: 0 auto; }
+
+        .problem-section { max-width: 800px; margin: 0 auto; padding-top: 4rem; padding-bottom: 4rem; }
+        .problem-header { margin-bottom: 3rem; text-align: center; }
+        .problem-box {
+            background: var(--white);
+            padding: 2.5rem;
+            border-radius: 16px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border-left: 4px solid var(--accent-color);
+        }
+        .problem-box h3 { color: var(--primary-color); font-size: 1.5rem; margin-bottom: 1rem; }
+        .problem-box p { margin-bottom: 0; }
+
+        .feature-link {
+            color: var(--primary-color);
+            font-weight: bold;
+            text-decoration: underline;
+            margin-top: 1rem;
+            display: inline-block;
+        }
+
+        .mockup-showcase {
+            margin-top: 4rem;
+            position: relative;
+            height: 420px; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden; 
+        }
+        .jass-card {
+            position: absolute;
+            width: 180px;
+            height: 380px;
+            background: #E2E8F0;
+            border-radius: 20px;
+            border: 6px solid #000000;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            color: #718096;
+            transition: transform 0.3s ease;
+            overflow: hidden;
+        }
+        .jass-card img { width: 100%; height: 100%; object-fit: cover; }
+        .card-left { transform: rotate(-22deg) translateX(-70px) translateY(20px); z-index: 1; }
+        .card-center { transform: rotate(0deg); z-index: 3; box-shadow: 0 15px 35px rgba(0,0,0,0.25); }
+        .card-right { transform: rotate(22deg) translateX(70px) translateY(20px); z-index: 2; }
+
+        .app-info-box {
+            margin-top: 4rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 2.5rem;
+            background: var(--white);
+            border-radius: 16px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+        .app-info-desc { font-size: 1.1rem; color: #4A5568; margin-bottom: 0.8rem; }
+        .app-info-latin { font-size: 0.9rem; color: #718096; margin-bottom: 2rem; font-style: italic; }
+        
+        .usp-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+            list-style: none;
+        }
+        .usp-list li {
+            background: var(--bg-color);
+            color: var(--primary-color);
+            padding: 0.6rem 1.2rem;
+            border-radius: 50px;
+            font-size: 0.95rem;
+            font-weight: 500;
+            border: 1px solid #E2E8F0;
+        }
 
         footer { background: #2D3748; color: var(--white); text-align: center; padding: 2rem 1.5rem; }
-        .footer-links { margin-bottom: 1rem; }
         footer a { color: var(--accent-color); text-decoration: none; margin: 0 0.5rem; }
-        .app-latin { font-size: 0.85rem; color: #A0AEC0; margin-top: 0.5rem; font-style: italic; }
         .disclaimer-small { font-size: 0.8rem; color: #A0AEC0; margin-top: 1.5rem; }
 
         @media (min-width: 768px) {
-            .feature-row { flex-direction: row; gap: 4rem; margin-bottom: 8rem; }
-            .feature-row.reverse { flex-direction: row-reverse; }
-            .feature-text { padding: 0 2rem; }
-            .phone-frame { width: 240px; height: 500px; margin: 0; }
-            .feature-grid { grid-template-columns: repeat(2, 1fr); }
+            section { padding: 6rem 2rem; }
+            .hero-image { max-width: 900px; margin: 0 auto; border-radius: 0 0 24px 24px; box-shadow: 0 25px 50px rgba(0, 0, 0, 0.6); }
+            .hero-content { padding: 4rem 2rem 5rem 2rem; }
+            .hero-brand { font-size: 1.8rem; margin-bottom: 0.8rem; }
+            .hero h1 { font-size: 3.5rem; margin-bottom: 1.5rem; }
+            .hero p { font-size: 1.25rem; margin-bottom: 2.5rem; }
+            .store-buttons { flex-direction: row; justify-content: center; }
+            .mockup-showcase { height: 500px; }
+            .jass-card { width: 220px; height: 460px; font-size: 1rem; }
+            .card-left { transform: rotate(-25deg) translateX(-130px) translateY(30px); }
+            .card-right { transform: rotate(25deg) translateX(130px) translateY(30px); }
+            .problem-section { padding-top: 6rem; padding-bottom: 6rem; }
         }
     </style>
 </head>
@@ -85,115 +220,93 @@
     <nav class="navbar">
         <a href="index.html" class="navbar-brand">Viativity™</a>
         <div class="nav-links">
-            <a href="index.html">Startseite</a>
+            <a href="features.html">Werkzeuge</a>
             <a href="about.html">Über mich</a>
             <div class="lang-switcher">
-                <span class="lang-active">DE</span> | <a href="en/features.html" aria-label="Switch to English">EN</a>
+                <span class="lang-active">DE</span> | <a href="en/index.html" aria-label="Switch to English">EN</a>
             </div>
         </div>
     </nav>
 
-    <header class="page-header">
-        <h1>Digitale Werkzeuge</h1>
-        <p>Prävention und Soforthilfe in einer App. Entdecke Werkzeuge, die dir helfen, die Fahrt wieder zu genießen.</p>
+    <header class="hero">
+        <img src="Gemini_Reisen.jpg" alt="Unbeschwertes Reisen mit Viativity" class="hero-image">
+        
+        <div class="hero-content">
+            <h1>
+                <span class="hero-brand">Viativity™</span>
+                Freu dich auf den Weg,<br>nicht nur auf das Ziel!
+            </h1>
+            
+            <div class="offline-badge">100% Offline nutzbar & Mehrsprachig – Ideal für Flugzeug, Schiff und in den Bergen</div>
+            
+            <p>Dein smarter Begleiter für unbeschwertes Reisen. Nutze digitale Werkzeuge zur Soforthilfe für unterwegs und als präventives Training für zu Hause.</p>
+            <div class="store-buttons">
+                <a href="#" class="btn btn-disabled"> App Store (bald erhältlich)</a>
+                <a href="#" class="btn btn-disabled">▶ Play Store (bald erhältlich)</a>
+            </div>
+            <p class="store-subtext">Keine Abos • Werbefrei • Voller Datenschutz (lokal)</p>
+        </div>
     </header>
 
-    <main class="feature-section">
-        <div class="feature-row">
-            <div class="feature-text">
-                <h3>Soforthilfe</h3>
-                <h2>Der künstliche Horizont</h2>
-                <p>Reiseübelkeit entsteht oft, wenn das Auge Stillstand meldet – zum Beispiel beim Lesen im Auto oder in der fensterlosen Innenkabine eines Kreuzfahrtschiffes –, das Gleichgewichtsorgan aber gleichzeitig die Bewegung spürt. Der künstliche Horizont löst diesen sensorischen Konflikt auf, indem er die echte Bewegung wieder sichtbar macht.</p>
-                <p><strong>Die Anwendung:</strong> Auf dem Bildschirm siehst du den Bug eines Schiffes und das Meer mit einer Bergkette am Horizont. Während der Bug starr bleibt, bewegt sich das Hintergrundbild basierend auf den Sensordaten deines Smartphones exakt synchron zu den tatsächlichen Schwankungen (Rollen und Stampfen) des Fahrzeugs. Dein Gehirn erhält so die fehlende visuelle Bestätigung der Bewegung (Inertial Cues) zurück.</p>
+    <main>
+        <section id="problem" class="problem-section">
+            
+            <div class="problem-header">
+                <h2>Kennst du das?</h2>
+                <p>Du freust dich auf den Urlaub, aber Reiseübelkeit (Kinetose), <strong>Seekrankheit</strong> auf dem Schiff oder <strong>Flugangst</strong> trüben schon nach kurzer Zeit die Fahrt. Dieses unangenehme Gefühl entsteht durch einen sensorischen Konflikt: Dein Auge meldet Stillstand (z. B. beim Blick auf das Smartphone im Fahrzeuginnenraum), während dein <strong>Gleichgewichtsorgan</strong> gleichzeitig die Bewegung spürt. Das Gehirn schlägt Alarm.</p>
             </div>
-            <div class="phone-frame">
-                <img src="images/Horizont_nacht_de.PNG" alt="Schiffsbug und Künstlicher Horizont">
-            </div>
-        </div>
 
-        <div class="feature-row reverse">
-            <div class="feature-text">
-                <h3>Soforthilfe</h3>
-                <h2>4-2-6 Taktatmung</h2>
-                <p>Diese Atemtechnik spricht gezielt den Ruhe-Nerv des Körpers (Parasympathikus) an. Die verlängerte Ausatmung signalisiert dem Gehirn Sicherheit und hilft dabei, die 'Kampf-oder-Flucht'-Reaktion sanft zu beruhigen. Das fördert deine Entspannung bei akutem Stress oder Übelkeit – und ist auch ein hochwirksamer Begleiter bei akuter Reise- und Flugangst.</p>
-                <p><strong>Die Anwendung:</strong> Viativity leitet dich visuell und haptisch durch den Rhythmus: 4 Sekunden einatmen, 2 Sekunden halten, 6 Sekunden ausatmen. Wende dies bei akutem Unwohlsein oder Stress für mindestens 2 Minuten an.</p>
+            <div class="problem-box">
+                <h3>Genau hier setzt Viativity™ an</h3>
+                <p>Mit smarter <strong>Soforthilfe</strong> und <strong>präventivem Training</strong> hilft die App deinem Körper, diesen Widerspruch aktiv aufzulösen. So lernst du, störende Reize sanft auszublenden und dein Nervensystem wieder zu beruhigen – <strong>wissenschaftlich belegt</strong> und komplett ohne Medikamente.</p>
             </div>
-            <div class="phone-frame">
-                <img src="images/Atmung_nacht_de.PNG" alt="4-2-6 Taktatmung Werkzeug">
-            </div>
-        </div>
 
-        <div class="feature-row">
-            <div class="feature-text">
-                <h3>Prävention</h3>
-                <h2>Mentale Rotation</h2>
-                <p>Ein trainiertes räumliches Vorstellungsvermögen hilft dem Gehirn, Bewegungsdaten effizienter zu verarbeiten und widersprüchliche Signale (Konflikte) schneller aufzulösen. Dieses visuospatiale Training unterstützt dich dabei, deine Widerstandsfähigkeit optimal aufzubauen.</p>
-                <p><strong>Die Anwendung:</strong> Entscheide ganz in Ruhe: Ist die rechte Figur identisch (nur gedreht) oder gespiegelt? Du hast 1 Joker pro Level, um dir die Entscheidung zu erleichtern. WICHTIG: Dies ist ein reines Präventions-Training. Übe täglich 15 Minuten für 2 Wochen <strong>vor</strong> deiner Reise, um dein Gehirn in Ruhe vorzubereiten.</p>
+        </section>
+
+        <section id="tools" class="text-center">
+            <h2>Digitale Werkzeuge & Reise Tipps</h2>
+            <p class="max-w-800">Wähle das Werkzeug aus, das deine aktuelle Situation am besten unterstützt. Egal ob akute Reiseübelkeit unterwegs oder präventives <strong>Training</strong> vorab: Viativity bietet dir die passende Lösung. Nutze smarte Helfer wie den <strong>künstlichen Horizont</strong>, die <strong>4-2-6 Atmung</strong> und den <strong>100Hz Ton</strong> zur Beruhigung, oder trainiere dein <strong>Körperlot</strong>.</p>
+            
+            <a href="features.html" class="feature-link">Einige Funktionen im Detail ansehen &rarr;</a>
+
+            <div class="mockup-showcase">
+                <div class="jass-card card-left">
+                    <img src="images/Werkzeuge_tag_de.PNG" alt="Werkzeuge Übersicht">
+                </div>
+                
+                <div class="jass-card card-center">
+                    <img src="images/Reisetipps_tag_de.PNG" alt="Reisetipps Übersicht">
+                </div>
+                
+                <div class="jass-card card-right">
+                    <img src="images/MRT_tag_de.PNG" alt="MRT 100Hz Werkzeug">
+                </div>
             </div>
-            <div class="phone-frame">
-                <img src="images/MRT_nacht_de.PNG" alt="Mentale Rotation Werkzeug">
+
+            <div class="app-info-box">
+                <p class="app-info-desc"><strong>Viativity™</strong> ist eine digitale Wellness-App gegen Reiseübelkeit. Ob sanfte Soforthilfe unterwegs oder präventives Training zu Hause – dein digitaler Begleiter ist immer und überall griffbereit.</p>
+                <p class="app-info-latin">Viativity verbindet „Via“ (lat. für Weg) mit Vitalität und Aktivität.</p>
+                
+                <ul class="usp-list">
+                    <li>100% Offline nutzbar</li>
+                    <li>Mehrsprachig</li>
+                    <li>Keine Abos</li>
+                    <li>Werbefrei</li>
+                    <li>Lokale Datenverarbeitung</li>
+                </ul>
             </div>
-        </div>
+
+        </section>
     </main>
 
-    <section class="grid-section">
-        <div class="grid-container">
-            <div class="grid-header">
-                <h2>Weitere Werkzeuge & Wissen</h2>
-                <p>Für die langfristige Gewöhnung, Vorbereitung und dein Wohlbefinden unterwegs.</p>
-            </div>
-            
-            <div class="feature-grid">
-                
-                <div class="grid-card">
-                    <h3>🌍 In deiner Sprache</h3>
-                    <p>Stressfreies Reisen bedeutet auch, dass du im Akutfall nicht übersetzen musst. Viativity ist aktuell in <strong>Deutsch, Englisch, Französisch, Italienisch, Spanisch und Japanisch</strong> verfügbar.</p>
-                </div>
-
-                <div class="grid-card">
-                    <h3>P6-Akupressur</h3>
-                    <p>Die sanfte Massage des Nei-Kuan-Punktes sendet beruhigende Signale an den Magen. Die App zeigt dir exakt, wie du den Punkt am Handgelenk findest und leitet dich an, diesen sanft kreisend zu massieren.</p>
-                </div>
-                
-                <div class="grid-card">
-                    <h3>Körper-Lot</h3>
-                    <p>Nach der Theorie der körperlichen Instabilität geht Übelkeit oft ein instabiler Stand voraus. Mit dieser Übung trainierst du deine Rumpfstabilität und dein Gleichgewicht – rein über Audio-Feedback und mit geschlossenen Augen.</p>
-                </div>
-                
-                <div class="grid-card">
-                    <h3>100Hz Klangmodulation</h3>
-                    <p>Spezifische akustische Frequenzen können über das Innenohr (Otolithen) das Gleichgewichtssystem sanft modulieren und Überreaktionen dämpfen. <strong>Wichtig:</strong> Für die korrekte Übertragung der tiefen 100 Hz Frequenz benötigst du zwingend Kopfhörer.</p>
-                </div>
-
-                <div class="grid-card">
-                    <h3>Fokus</h3>
-                    <p>Dieses Spiel erfordert hohe visuelle Fixierung. Das bindet deine Aufmerksamkeit (kognitive Ressourcen) und hilft, störende Bewegungsreize auszublenden. Perfekt als Gewöhnungstraining (Habituation).</p>
-                </div>
-
-                <div class="grid-card">
-                    <h3>Situations-Reisetipps</h3>
-                    <p>Wissen ist die halbe Miete. Viativity enthält eine umfangreiche Bibliothek mit spezifischen, wissenschaftlich fundierten Tipps und Tricks sowie bewährte Hausmittel für verschiedene Transportmittel: Egal ob im Auto, auf dem Schiff, im Flugzeug, im Zug oder in der Seilbahn.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="science-box">
-        <div class="science-inner">
-            <h3>Wissenschaftlich fundiert</h3>
-            <p>Die Werkzeuge in Viativity™ basieren auf etablierten Erkenntnissen der Wissenschaft. Die detaillierten Quellenangaben findest du direkt in der App auf den jeweiligen Hinweisseiten der Werkzeuge.</p>
-        </div>
-    </section>
-
     <footer>
-        <div class="footer-links">
-            <a href="index.html">Startseite</a>
+        <div style="margin-bottom: 1rem;">
+            <a href="features.html">Werkzeuge</a>
             <a href="about.html">Über mich</a>
             <a href="mailto:support@viativity.app">Support</a>
             <a href="privacy.html">Datenschutz</a>
         </div>
         <p>© 2026 Viativity™. Entwickelt in der Schweiz.</p>
-        <p class="app-latin">Viativity verbindet „Via“ (lat. für Weg) mit Vitalität und Aktivität.</p>
         
         <div class="disclaimer-small">
             <strong>KEIN MEDIZINPRODUKT:</strong> Diese App ist kein Medizinprodukt. Sie stellt keine Diagnosen und ersetzt keine ärztliche Behandlung.
