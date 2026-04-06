@@ -1,0 +1,7 @@
+# Viativity Website - robots.txt
+# Version: April 2026
+
+User-agent: *
+Allow: /
+
+Sitemap: https://viativity.app/sitemap.xml
