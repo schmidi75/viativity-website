@@ -55,6 +55,11 @@
         .feature-text h2 { font-size: 2rem; color: var(--primary-color); }
         .feature-text h3 { font-size: 1.1rem; color: var(--accent-color); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; }
         
+        /* Video Link Styling */
+        .video-link { display: inline-flex; align-items: center; gap: 0.5rem; color: var(--accent-color); text-decoration: none; font-weight: 500; margin-top: 0.5rem; transition: color 0.3s ease; }
+        .video-link:hover { color: var(--primary-color); }
+        .video-link svg { width: 20px; height: 20px; fill: currentColor; }
+
         .phone-frame { 
             width: 200px; 
             height: 420px; 
@@ -75,8 +80,9 @@
         .grid-container { max-width: 1200px; margin: 0 auto; }
         .grid-header { text-align: center; margin-bottom: 3rem; }
         .feature-grid { display: grid; grid-template-columns: 1fr; gap: 2rem; }
-        .grid-card { background: var(--bg-color); padding: 2rem; border-radius: 16px; border-left: 4px solid var(--accent-color); }
+        .grid-card { background: var(--bg-color); padding: 2rem; border-radius: 16px; border-left: 4px solid var(--accent-color); display: flex; flex-direction: column; }
         .grid-card h3 { font-size: 1.3rem; margin-bottom: 0.5rem; }
+        .grid-card .video-link { margin-top: auto; padding-top: 1rem; }
 
         .science-box { padding: 0 1.5rem 4rem 1.5rem; max-width: 1200px; margin: 0 auto; background: var(--white); }
         .science-inner { background: #E2E8F0; padding: 2.5rem; border-radius: 20px; text-align: center; border: 1px solid #CBD5E0; }
@@ -130,6 +136,10 @@
                 <h2>The Artificial Horizon</h2>
                 <p>Motion sickness often occurs when the eye reports a standstill – for example, when reading in a car or in the windowless inside cabin of a cruise ship – but the balance organ simultaneously feels the movement. The artificial horizon resolves this sensory conflict by making the real movement visible again.</p>
                 <p><strong>The Application:</strong> On the screen, you see the bow of a ship and the sea with a mountain range on the horizon. While the bow remains rigid, the background image moves based on the sensor data of your smartphone, exactly in sync with the actual sway (roll and pitch) of the vehicle. Your brain thus gets the missing visual confirmation of the movement (inertial cues) back.</p>
+                <a href="https://youtube.com/shorts/7axQsMoPpVQ" class="video-link" target="_blank" rel="noopener" aria-label="Open visual guide for the artificial horizon on YouTube in a new tab">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                    Watch visual guide on YouTube (German audio)
+                </a>
             </div>
             <div class="phone-frame">
                 <img src="../images/Horizont_nacht_en.PNG" alt="Ship bow and artificial horizon">
@@ -154,6 +164,10 @@
                 <h2>Mental Rotation</h2>
                 <p>Trained spatial reasoning helps the brain process movement data more efficiently and resolve conflicting signals faster. This spatial visual training (visuospatial training) helps you optimally build up your <strong>resilience</strong>.</p>
                 <p><strong>The Application:</strong> Decide: Is the right figure identical (just rotated) or mirrored? You have 1 joker per level to help you decide. IMPORTANT: This is purely a preventive training. Practice for 15 minutes daily for 2 weeks <strong>before</strong> your trip to prepare your brain calmly.</p>
+                <a href="https://youtube.com/shorts/QLPDlpZ7l8g" class="video-link" target="_blank" rel="noopener" aria-label="Open visual guide for mental rotation on YouTube in a new tab">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                    Watch visual guide on YouTube (German audio)
+                </a>
             </div>
             <div class="phone-frame">
                 <img src="../images/MRT_nacht_en.PNG" alt="Mental Rotation Tool">
@@ -188,6 +202,10 @@
                 <div class="grid-card">
                     <h3>100Hz Modulation</h3>
                     <p>Specific acoustic frequencies can gently modulate the balance system via the inner ear (otoliths) and dampen overreactions. <strong>Important:</strong> You must use headphones for the correct transmission of the low 100Hz frequency.</p>
+                    <a href="https://youtube.com/shorts/pRfjdk_zgr0" class="video-link" target="_blank" rel="noopener" aria-label="Open visual guide for 100Hz modulation on YouTube in a new tab">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                        Watch visual guide on YouTube (German audio)
+                    </a>
                 </div>
 
                 <div class="grid-card">
