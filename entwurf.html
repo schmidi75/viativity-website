@@ -57,7 +57,6 @@
         .guide-card h3 { font-size: 1.2rem; color: var(--primary-color); margin-bottom: 0.5rem; }
         .guide-card p { font-size: 0.95rem; color: #718096; margin-bottom: 1.5rem; }
         
-        /* Mobile First: 1 Pille pro Zeile, gleich gross */
         .tool-tags { display: grid; grid-template-columns: 1fr; gap: 0.6rem; }
         .tool-tag { 
             background: var(--bg-color); 
@@ -71,7 +70,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            min-height: 44px; /* Touch-freundliche Grösse */
+            min-height: 44px;
         }
 
         .feature-section { padding: 4rem 1.5rem; max-width: 1200px; margin: 0 auto; }
@@ -80,7 +79,6 @@
         .feature-text h2 { font-size: 2rem; color: var(--primary-color); }
         .feature-text h3 { font-size: 1.1rem; color: var(--accent-color); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; }
         
-        /* Video Link Styling */
         .video-link { display: inline-flex; align-items: center; gap: 0.5rem; color: var(--accent-color); text-decoration: none; font-weight: 500; margin-top: 0.5rem; transition: color 0.3s ease; }
         .video-link:hover { color: var(--primary-color); }
         .video-link svg { width: 20px; height: 20px; fill: currentColor; }
@@ -127,11 +125,9 @@
         .app-latin { font-size: 0.85rem; color: #A0AEC0; margin-top: 0.5rem; font-style: italic; }
         .disclaimer-small { font-size: 0.8rem; color: #A0AEC0; margin-top: 1.5rem; }
 
-        /* Media Queries für grössere Bildschirme */
         @media (min-width: 768px) {
             .quick-guide-grid { grid-template-columns: repeat(3, 1fr); }
-            .tool-tags { grid-template-columns: repeat(2, 1fr); } /* 2 Pillen pro Zeile auf PC */
-            
+            .tool-tags { grid-template-columns: repeat(2, 1fr); }
             .feature-row { flex-direction: row; gap: 4rem; margin-bottom: 8rem; }
             .feature-row.reverse { flex-direction: row-reverse; }
             .feature-text { padding: 0 2rem; }
@@ -200,7 +196,7 @@
                 <h3>Soforthilfe</h3>
                 <h2>Der künstliche Horizont</h2>
                 <p>Reiseübelkeit entsteht oft, wenn das Auge Stillstand meldet – zum Beispiel in der fensterlosen Innenkabine eines Kreuzfahrtschiffes –, das Gleichgewichtsorgan aber gleichzeitig die Bewegung spürt. Der künstliche Horizont löst diesen sensorischen Konflikt auf, indem er die echte Bewegung wieder sichtbar macht.</p>
-                <p>Nutze dieses Werkzeug idealerweise auf dem Schiff, insbesondere unter Deck. Die Darstellung einer erdbezogenen Linie liefert dem Gehirn exakt synchron zu den Schwankungen die fehlenden visuellen Bewegungsinformationen zurück und verhindert so die Fehlermeldung, die zu Unwohlsein führt.</p>
+                <p>Nutze dieses Werkzeug idealerweise auf dem Schiff, insbesondere unter Deck. Auf dem Bildschirm siehst du den Bug eines Schiffes und das Meer mit einer Bergkette am Horizont. Während der Bug starr bleibt, bewegt sich das Hintergrundbild basierend auf den Sensordaten deines Smartphones exakt synchron zu den tatsächlichen Schwankungen. Dein Gehirn erhält so die fehlende visuelle Bestätigung der Bewegung zurück.</p>
                 <a href="https://youtube.com/shorts/7axQsMoPpVQ" class="video-link" target="_blank" rel="noopener" aria-label="Erklärvideo zum künstlichen Horizont auf YouTube in einem neuen Tab öffnen">
                     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
                     Erklärvideo auf YouTube ansehen
@@ -216,7 +212,7 @@
                 <h3>Soforthilfe</h3>
                 <h2>4-2-6 Taktatmung</h2>
                 <p>Diese Atemtechnik spricht gezielt den Ruhe-Nerv des Körpers (Parasympathikus) an. Die verlängerte Ausatmung signalisiert dem Gehirn Sicherheit und hilft dabei, die Kampf-oder-Flucht-Reaktion sanft zu beruhigen.</p>
-                <p>Wende die Taktatmung bei akutem Stress, aufsteigender Panik oder als Notbremse bei plötzlichem Unwohlsein an. Sie ist ein idealer Begleiter bei akuter Reise- und Flugangst, da die verlangsamte Atmung die körperliche Erregung dämpft und dein Wohlbefinden sofort unterstützt. Haptische Signale führen dich (blind) durch den Rhythmus.</p>
+                <p>Wende die Taktatmung bei akutem Stress, aufsteigender Panik oder als Notbremse bei plötzlichem Unwohlsein an. Sie ist ein idealer Begleiter bei akuter Reise- und Flugangst, da die verlangsamte Atmung die körperliche Erregung dämpft und dein Wohlbefinden sofort unterstützt. Haptische Signale führen dich (blind) durch den Rhythmus: 4 Sekunden einatmen, 2 Sekunden halten, 6 Sekunden ausatmen.</p>
                 <a href="https://youtube.com/shorts/EFY8Hqnza3M" class="video-link" target="_blank" rel="noopener" aria-label="Erklärvideo zur 4-2-6 Taktatmung auf YouTube in einem neuen Tab öffnen">
                     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
                     Erklärvideo auf YouTube ansehen
@@ -233,6 +229,7 @@
                 <h2>Mentale Rotation</h2>
                 <p>Ein trainiertes räumliches Vorstellungsvermögen hilft dem Gehirn, Bewegungsdaten effizienter zu verarbeiten und widersprüchliche Signale (Konflikte) schneller aufzulösen. Dieses Sehtraining unterstützt dich dabei, deine Widerstandsfähigkeit optimal aufzubauen.</p>
                 <p>WICHTIG: Dies ist ein reines Präventions-Training. Übe täglich für etwa 15 Minuten über zwei Wochen in Ruhe vor der Reise. So bereitest du dein Gehirn vorab auf Reisebewegungen vor und verbesserst die Verarbeitung von Bewegungsdaten nachhaltig.</p>
+                <p><strong>Die Anwendung:</strong> Entscheide: Ist die rechte Figur identisch (nur gedreht) oder gespiegelt? So trainierst du dein Gehirn in Ruhe, Bewegungsdaten effizienter zu verarbeiten.</p>
                 <a href="https://youtube.com/shorts/QLPDlpZ7l8g" class="video-link" target="_blank" rel="noopener" aria-label="Erklärvideo zur Mentalen Rotation auf YouTube in einem neuen Tab öffnen">
                     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
                     Erklärvideo auf YouTube ansehen
@@ -255,12 +252,12 @@
                 
                 <div class="grid-card">
                     <h3>P6-Akupressur</h3>
-                    <p>Die sanfte Massage des Nei-Kuan-Punktes sendet beruhigende Signale an den Magen. Wende diese Technik direkt bei den ersten Anzeichen von Unwohlsein an oder nutze sie vorbeugend kurz vor Reiseantritt. Die Stimulation unterstützt das allgemeine Wohlbefinden des Magens und hilft, aufkommendes Unwohlsein sanft zu begleiten. Die App zeigt dir exakt, wie du den Punkt am Handgelenk findest.</p>
+                    <p>Die sanfte Massage des Nei-Kuan-Punktes sendet beruhigende Signale an den Magen. Wende diese Technik direkt bei den ersten Anzeichen von Unwohlsein an oder nutze sie vorbeugend kurz vor Reiseantritt. Die Stimulation unterstützt das allgemeine Wohlbefinden des Magens und hilft, aufkommendes Unwohlsein sanft zu begleiten.</p>
                 </div>
                 
                 <div class="grid-card">
                     <h3>Körper-Lot</h3>
-                    <p>Nach der Theorie der körperlichen Instabilität geht Unwohlsein oft ein instabiler Stand voraus. Mit dieser Übung trainierst du deine Rumpfstabilität und dein Gleichgewicht – rein über Audio- und Haptikfeedback und mit geschlossenen Augen. Nutze die Übung als tägliche Basis zu Hause auf festem Boden. Wer stabiler steht und seine Haltungskontrolle verbessert, ist auf Reisen deutlich widerstandsfähiger.</p>
+                    <p>Nach der Theorie der körperlichen Instabilität geht Unwohlsein oft ein instabiler Stand voraus. Mit dieser Übung trainierst du deine Rumpfstabilität und dein Gleichgewicht – rein über Audio- und Haptikfeedback und mit geschlossenen Augen. Nutze die Übung als tägliche Basis zu Hause auf festem Boden.</p>
                     <a href="https://youtube.com/shorts/NxpCFCX5dnI" class="video-link" target="_blank" rel="noopener" aria-label="Erklärvideo zum Körper-Lot auf YouTube in einem neuen Tab öffnen">
                         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
                         Erklärvideo auf YouTube ansehen
@@ -269,7 +266,7 @@
                 
                 <div class="grid-card">
                     <h3>100Hz Klangmodulation</h3>
-                    <p>Spezifische akustische Frequenzen können über das Innenohr das Gleichgewichtssystem sanft modulieren und Überreaktionen dämpfen. Höre den Ton präventiv kurz vor Reiseantritt oder während der Reise zur Unterstützung bei erstem Unwohlsein. Die Vibration regt die Sinneszellen an und verringert den sensorischen Konflikt im Gehirn, wodurch der Reiseübelkeit aktiv entgegengewirkt wird. <strong>Wichtig:</strong> Für die Übertragung der tiefen Frequenz benötigst du zwingend Kopfhörer.</p>
+                    <p>Spezifische akustische Frequenzen können über das Innenohr das Gleichgewichtssystem sanft modulieren und Überreaktionen dämpfen. Höre den Ton präventiv kurz vor Reiseantritt oder während der Reise zur Unterstützung bei erstem Unwohlsein. Die Vibration regt die Sinneszellen an und verringert den sensorischen Konflikt im Gehirn, wodurch der Reiseübelkeit aktiv entgegengewirkt wird.</p>
                     <a href="https://youtube.com/shorts/pRfjdk_zgr0" class="video-link" target="_blank" rel="noopener" aria-label="Erklärvideo zur 100Hz Klangmodulation auf YouTube in einem neuen Tab öffnen">
                         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
                         Erklärvideo auf YouTube ansehen
@@ -278,22 +275,22 @@
 
                 <div class="grid-card">
                     <h3>Fokus</h3>
-                    <p>Dieses Spiel erfordert hohe visuelle Fixierung. Das bindet deine Aufmerksamkeit und hilft, störende Bewegungsreize auszublenden, was sanft von aufkommendem Unwohlsein ablenkt. Perfekt als präventives Training vorab oder zur sanften Gewöhnung (Habituation) direkt auf der Reise. Die Fixierung eines stabilen Punktes mildert den sensorischen Konflikt ab.</p>
+                    <p>Dieses Spiel erfordert hohe visuelle Fixierung. Das bindet deine Aufmerksamkeit und hilft, störende Bewegungsreize auszublenden, was sanft von aufkommendem Unwohlsein ablenkt. Perfekt als präventives Training vorab oder zur sanften Gewöhnung (Habituation) direkt auf der Reise.</p>
                 </div>
 
                 <div class="grid-card">
                     <h3>In deiner Sprache</h3>
-                    <p>Stressfreies Reisen bedeutet auch, dass du im Akutfall nicht übersetzen musst. Viativity ist aktuell in <strong>Deutsch und Englisch</strong> verfügbar. Weitere Sprachen sind in Vorbereitung.</p>
+                    <p>Viativity ist aktuell in <strong>Deutsch und Englisch</strong> verfügbar. Stressfreies Reisen bedeutet auch, dass du im Akutfall nicht erst übersetzen musst. Weitere Sprachen sind bereits in Vorbereitung.</p>
                 </div>
 
                 <div class="grid-card">
                     <h3>Reisetipps</h3>
-                    <p>Wissen ist die halbe Miete. Viativity enthält eine umfangreiche Bibliothek mit spezifischen, wissenschaftlich fundierten Tipps und Tricks sowie bewährte Hausmittel für verschiedene Transportmittel: Egal ob im Auto, auf dem Schiff, im Flugzeug, im Zug oder in der Seilbahn.</p>
+                    <p>Wissen ist die halbe Miete. Viativity enthält eine umfangreiche Bibliothek mit spezifischen, wissenschaftlich fundierten Tipps und Tricks für Auto, Schiff, Flugzeug, Zug oder Seilbahn.</p>
                 </div>
 
                 <div class="grid-card">
                     <h3>Sensoren & Hardware</h3>
-                    <p>Um das volle Potenzial von Viativity auszuschöpfen, greift die App auf die Hardware deines Smartphones zurück. Für einige Werkzeuge (wie den künstlichen Horizont oder das Körper-Lot) ist ein Gyroskop-Sensor zwingend erforderlich. Für die 100Hz-Klangmodulation benötigst du Kopfhörer, und das sanfte haptische Feedback variiert je nach Vibrationsmotor deines Geräts.</p>
+                    <p>Um das volle Potenzial auszuschöpfen, greift die App auf das Gyroskop deines Smartphones zurück. Für die 100Hz-Klangmodulation benötigst du zwingend Kopfhörer, um die tiefen Frequenzen korrekt zu übertragen.</p>
                 </div>
             </div>
         </div>
