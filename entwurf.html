@@ -49,15 +49,30 @@
         .page-header h1 { color: var(--white); font-size: 2.5rem; }
         .page-header p { font-size: 1.1rem; opacity: 0.9; max-width: 600px; margin: 0 auto; }
 
-        /* Quick Guide Section - Leicht & Luftig */
+        /* Quick Guide Section - Leicht, Luftig & Einheitliches Grid */
         .quick-guide-section { padding: 4rem 1.5rem 0 1.5rem; max-width: 1200px; margin: 0 auto; }
         .quick-guide-header { text-align: center; margin-bottom: 3rem; }
         .quick-guide-grid { display: grid; grid-template-columns: 1fr; gap: 2rem; }
         .guide-card { background: var(--white); padding: 2rem; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.03); }
         .guide-card h3 { font-size: 1.2rem; color: var(--primary-color); margin-bottom: 0.5rem; }
-        .guide-card p { font-size: 0.95rem; color: #718096; margin-bottom: 1rem; }
-        .tool-tags { display: flex; flex-wrap: wrap; gap: 0.6rem; }
-        .tool-tag { background: var(--bg-color); color: var(--primary-color); padding: 0.4rem 1rem; border-radius: 2rem; font-size: 0.85rem; font-weight: 500; border: 1px solid #E2E8F0; }
+        .guide-card p { font-size: 0.95rem; color: #718096; margin-bottom: 1.5rem; }
+        
+        /* Mobile First: 1 Pille pro Zeile, gleich gross */
+        .tool-tags { display: grid; grid-template-columns: 1fr; gap: 0.6rem; }
+        .tool-tag { 
+            background: var(--bg-color); 
+            color: var(--primary-color); 
+            padding: 0.5rem 0.5rem; 
+            border-radius: 2rem; 
+            font-size: 0.85rem; 
+            font-weight: 500; 
+            border: 1px solid #E2E8F0; 
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 44px; /* Touch-freundliche Grösse */
+        }
 
         .feature-section { padding: 4rem 1.5rem; max-width: 1200px; margin: 0 auto; }
         .feature-row { display: flex; flex-direction: column; gap: 2rem; margin-bottom: 5rem; align-items: center; }
@@ -112,8 +127,11 @@
         .app-latin { font-size: 0.85rem; color: #A0AEC0; margin-top: 0.5rem; font-style: italic; }
         .disclaimer-small { font-size: 0.8rem; color: #A0AEC0; margin-top: 1.5rem; }
 
+        /* Media Queries für grössere Bildschirme */
         @media (min-width: 768px) {
             .quick-guide-grid { grid-template-columns: repeat(3, 1fr); }
+            .tool-tags { grid-template-columns: repeat(2, 1fr); } /* 2 Pillen pro Zeile auf PC */
+            
             .feature-row { flex-direction: row; gap: 4rem; margin-bottom: 8rem; }
             .feature-row.reverse { flex-direction: row-reverse; }
             .feature-text { padding: 0 2rem; }
