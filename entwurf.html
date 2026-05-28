@@ -1,402 +1,436 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Viativity™ | Your smart companion for carefree travel</title>
-    <link rel="icon" type="image/png" href="../images/Viativity_Icon.png" />
-    <link rel="apple-touch-icon" href="../images/Viativity_Icon.png" />
+    <title>Werkzeuge | Viativity™</title>
+    <link rel="icon" type="image/png" href="images/Viativity_Icon.png" />
+    <link rel="apple-touch-icon" href="images/Viativity_Icon.png" />
     
-    <meta name="description" content="Digital immediate help and preventive training for your wellbeing on the go. Viativity™ accompanies you during motion sickness with an artificial horizon and 4-2-6 breathing.">
+    <meta name="description" content="Smarte Soforthilfe und präventives Training für dein Wohlbefinden. Nutze den künstlichen Horizont und die 4-2-6 Atmung zur Begleitung bei Unwohlsein auf Reisen.">
 
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://viativity.app/en/" />
-    <meta property="og:title" content="Viativity™ | Your smart companion for carefree travel" />
-    <meta property="og:description" content="Digital immediate help and preventive training for your wellbeing on the go. Viativity™ accompanies you during motion sickness with an artificial horizon and 4-2-6 breathing." />
+    <meta property="og:url" content="https://viativity.app/features.html" />
+    <meta property="og:title" content="Werkzeuge | Viativity™" />
+    <meta property="og:description" content="Smarte Soforthilfe und präventives Training für dein Wohlbefinden. Nutze den künstlichen Horizont und die 4-2-6 Atmung zur Begleitung bei Unwohlsein auf Reisen." />
     <meta property="og:image" content="https://viativity.app/Gemini_Reisen.jpg" />
-    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale" content="de_CH" />
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:url" content="https://viativity.app/en/" />
-    <meta name="twitter:title" content="Viativity™ | Your smart companion for carefree travel" />
-    <meta name="twitter:description" content="Digital immediate help and preventive training for your wellbeing on the go. Viativity™ accompanies you during motion sickness with an artificial horizon and 4-2-6 breathing." />
-    <meta name="twitter:image" content="https://viativity.app/Gemini_Reisen.jpg" />    
+    <meta name="twitter:url" content="https://viativity.app/features.html" />
+    <meta name="twitter:title" content="Werkzeuge | Viativity™" />
+    <meta name="twitter:description" content="Smarte Soforthilfe und präventives Training für dein Wohlbefinden. Nutze den künstlichen Horizont und die 4-2-6 Atmung zur Begleitung bei Unwohlsein auf Reisen." />
+    <meta name="twitter:image" content="https://viativity.app/Gemini_Reisen.jpg" />
     
-    <link rel="alternate" hreflang="de" href="https://viativity.app/index.html" />
-    <link rel="alternate" hreflang="en" href="https://viativity.app/en/index.html" />
+    <link rel="alternate" hreflang="de" href="https://viativity.app/features.html" />
+    <link rel="alternate" hreflang="en" href="https://viativity.app/en/features.html" />
     
-    <link rel="canonical" href="https://viativity.app/en/" />
+    <link rel="canonical" href="https://viativity.app/features.html" />
     
     <style>
-        :root {
-            --primary-color: #1A365D;
-            --accent-color: #7DA2A9;
-            --bg-color: #F7FAFC;
-            --text-color: #2D3748;
-            --white: #FFFFFF;
-        }
-
+        :root { --primary-color: #1A365D; --accent-color: #7DA2A9; --bg-color: #F7FAFC; --text-color: #2D3748; --white: #FFFFFF; }
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            color: var(--text-color);
-            background-color: var(--bg-color);
-        }
-
-        /* Announcement Banner */
-        .announcement-banner {
-            background-color: var(--primary-color);
-            color: var(--white);
-            text-align: center;
-            padding: 0.6rem 1.5rem;
-            font-size: 0.95rem;
-            font-weight: 500;
-            letter-spacing: 0.02em;
-        }
-
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: var(--text-color); background-color: var(--bg-color); }
         h1, h2, h3 { color: var(--primary-color); line-height: 1.2; margin-bottom: 1rem; }
         p { margin-bottom: 1rem; }
         
-        section { padding: 4rem 1.5rem; max-width: 1200px; margin: 0 auto; }
-        
-        .navbar {
-            padding: 1rem 1.5rem;
-            background: var(--white);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-            position: sticky; top: 0; z-index: 100;
-        }
+        .navbar { padding: 1rem 1.5rem; background: var(--white); display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 4px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 100; }
         .navbar-brand { font-weight: bold; color: var(--primary-color); font-size: 1.2rem; text-decoration: none; }
         .nav-links { display: flex; align-items: center; }
         .nav-links a { margin-left: 1rem; text-decoration: none; color: var(--text-color); font-weight: 500; }
         .nav-links a:hover { color: var(--accent-color); }
         
-        .lang-switcher {
-            margin-left: 1.5rem;
-            font-size: 0.9rem;
-            border-left: 1px solid #E2E8F0;
-            padding-left: 1rem;
-        }
+        .lang-switcher { margin-left: 1.5rem; font-size: 0.9rem; border-left: 1px solid #E2E8F0; padding-left: 1rem; }
         .lang-switcher a { margin-left: 0; color: #A0AEC0; text-decoration: none; }
         .lang-switcher a:hover { color: var(--primary-color); }
-        .lang-active { font-weight: bold; color: var(--primary-color); margin-left: 0.3rem;}
-
-        .hero {
-            display: flex;
-            flex-direction: column;
-            background-color: var(--primary-color);
-            color: var(--white);
-        }
+        .lang-active { font-weight: bold; color: var(--primary-color); margin-right: 0.3rem;}
         
-        .hero-image { width: 100%; height: auto; display: block; }
+        .page-header { background: var(--primary-color); color: var(--white); text-align: center; padding: 4rem 1.5rem; }
+        .page-header h1 { color: var(--white); font-size: 2.5rem; }
+        .page-header p { font-size: 1.1rem; opacity: 0.9; max-width: 600px; margin: 0 auto; }
 
-        .hero-content {
-            padding: 3rem 1.5rem;
+        /* Quick Guide Section - Leicht, Luftig & Einheitliches Grid */
+        .quick-guide-section { padding: 4rem 1.5rem 0 1.5rem; max-width: 1200px; margin: 0 auto; }
+        .quick-guide-header { text-align: center; margin-bottom: 3rem; }
+        .quick-guide-grid { display: grid; grid-template-columns: 1fr; gap: 2rem; }
+        .guide-card { background: var(--white); padding: 2rem; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.03); }
+        .guide-card h3 { font-size: 1.2rem; color: var(--primary-color); margin-bottom: 0.5rem; }
+        .guide-card p { font-size: 0.95rem; color: #718096; margin-bottom: 1.5rem; }
+        
+        .tool-tags { display: grid; grid-template-columns: 1fr; gap: 0.6rem; }
+        .tool-tag { 
+            background: var(--bg-color); 
+            color: var(--primary-color); 
+            padding: 0.5rem 0.5rem; 
+            border-radius: 2rem; 
+            font-size: 0.85rem; 
+            font-weight: 500; 
+            border: 1px solid #E2E8F0; 
             text-align: center;
-            max-width: 900px; 
-            margin: 0 auto;   
-        }
-        
-        .hero-brand {
-            display: block;
-            font-size: 1.4rem;
-            font-weight: bold;
-            color: var(--accent-color);
-            margin-bottom: 0.5rem;
-            letter-spacing: 0.05em;
-        }
-
-        .hero h1 { color: var(--white); font-size: 2rem; margin-bottom: 1.5rem; margin-top: 0; }
-        .hero h2 { color: var(--white); font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem; opacity: 0.95; }
-        .hero p { color: var(--white); font-size: 1rem; margin-bottom: 2rem; opacity: 0.9; }
-        
-        .offline-badge {
-            display: inline-block;
-            background: rgba(255,255,255,0.1);
-            padding: 0.4rem 1.2rem;
-            border-radius: 50px;
-            font-size: 0.95rem;
-            margin-bottom: 2rem;
-            border: 1px solid rgba(255,255,255,0.3);
-            color: var(--white);
-        }
-
-        .store-buttons { display: flex; flex-direction: column; gap: 1rem; align-items: center; }
-        .btn {
-            background: var(--white);
-            color: var(--primary-color);
-            padding: 0.8rem 1.5rem;
-            text-decoration: none;
-            border-radius: 8px;
-            font-weight: bold;
-            display: inline-flex;
+            display: flex;
             align-items: center;
             justify-content: center;
-            gap: 0.6rem;
-            width: 100%;
-            max-width: 280px;
+            min-height: 44px;
         }
-        .btn svg {
-            width: 20px;
-            height: 20px;
-            fill: currentColor;
-        }
+
+        .feature-section { padding: 4rem 1.5rem; max-width: 1200px; margin: 0 auto; }
+        .feature-row { display: flex; flex-direction: column; gap: 2rem; margin-bottom: 5rem; align-items: center; }
+        .feature-text { flex: 1; width: 100%; }
+        .feature-text h2 { font-size: 2rem; color: var(--primary-color); }
+        .feature-text h3 { font-size: 1.1rem; color: var(--accent-color); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; }
         
-        .btn-disabled { opacity: 0.6; cursor: not-allowed; pointer-events: none; }
-        .store-subtext { margin-top: 1.5rem; font-size: 0.85rem; color: rgba(255,255,255,0.8); letter-spacing: 0.02em; }
+        /* Science Dropdown (Progressive Disclosure) */
+        .science-details { margin-top: 1.5rem; margin-bottom: 1rem; background: rgba(125, 162, 169, 0.05); border-radius: 8px; border: 1px solid #E2E8F0; overflow: hidden; }
+        .grid-card .science-details { margin-top: auto; margin-bottom: 0; }
+        .science-summary { padding: 0.8rem 1rem; cursor: pointer; font-weight: 500; color: var(--accent-color); display: flex; align-items: center; justify-content: space-between; list-style: none; font-size: 0.95rem; transition: background-color 0.3s ease, color 0.3s ease; }
+        .science-summary::-webkit-details-marker { display: none; }
+        .science-summary:hover { background-color: rgba(125, 162, 169, 0.1); color: var(--primary-color); }
+        .science-summary svg { width: 20px; height: 20px; fill: currentColor; transition: transform 0.3s ease; }
+        .science-details[open] .science-summary svg { transform: rotate(180deg); }
+        .science-content { padding: 0 1rem 1rem 1rem; font-size: 0.9rem; color: #4A5568; border-top: 1px solid #E2E8F0; margin-top: 0.5rem; padding-top: 1rem; }
+        .science-content p { margin-bottom: 0.75rem; }
+        .science-content p:last-child { margin-bottom: 0; }
+        .science-content strong { color: var(--primary-color); font-weight: 600; }
 
-        .text-center { text-align: center; }
-        .max-w-800 { max-width: 800px; margin: 0 auto; }
+        .video-link { display: inline-flex; align-items: center; gap: 0.5rem; color: var(--accent-color); text-decoration: none; font-weight: 500; margin-top: 0.5rem; padding-top: 0.5rem; transition: color 0.3s ease; }
+        .video-link:hover { color: var(--primary-color); }
+        .video-link svg { width: 20px; height: 20px; fill: currentColor; }
 
-        .problem-section { max-width: 800px; margin: 0 auto; padding-top: 4rem; padding-bottom: 4rem; }
-        .problem-header { margin-bottom: 3rem; text-align: center; }
-        .problem-box {
-            background: var(--white);
-            padding: 2.5rem;
-            border-radius: 16px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-            border-left: 4px solid var(--accent-color);
-        }
-        .problem-box h3 { color: var(--primary-color); font-size: 1.5rem; margin-bottom: 1rem; }
-        .problem-box p { margin-bottom: 0; }
-
-        .feature-link {
-            color: var(--primary-color);
-            font-weight: bold;
-            text-decoration: underline;
-            margin-top: 1rem;
-            display: inline-block;
-        }
-
-        .mockup-showcase {
-            margin-top: 4rem;
-            position: relative;
+        .phone-frame { 
+            width: 200px; 
             height: 420px; 
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            background: #E2E8F0; 
+            border-radius: 20px; 
+            border: 6px solid #000000; 
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15); 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
             overflow: hidden; 
+            margin: 0 auto;
+            flex-shrink: 0;
         }
-        .jass-card {
-            position: absolute;
-            width: 180px;
-            height: 380px;
-            background: #E2E8F0;
-            border-radius: 20px;
-            border: 6px solid #000000;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 0.8rem;
-            color: #718096;
-            transition: transform 0.3s ease;
-            overflow: hidden;
-        }
-        .jass-card img { width: 100%; height: 100%; object-fit: cover; }
-        .card-left { transform: rotate(-22deg) translateX(-70px) translateY(20px); z-index: 1; }
-        .card-center { transform: rotate(0deg); z-index: 3; box-shadow: 0 15px 35px rgba(0,0,0,0.25); }
-        .card-right { transform: rotate(22deg) translateX(70px) translateY(20px); z-index: 2; }
+        .phone-frame img { width: 100%; height: 100%; object-fit: cover; }
 
-        .app-info-box {
-            margin-top: 4rem;
-            max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
-            padding: 2.5rem;
-            background: var(--white);
-            border-radius: 16px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-            text-align: center;
-        }
-        .app-info-desc { font-size: 1.1rem; color: #4A5568; margin-bottom: 0.8rem; }
-        .app-info-latin { font-size: 0.9rem; color: #718096; margin-bottom: 2rem; font-style: italic; }
-        
-        .usp-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
-            justify-content: center;
-            list-style: none;
-        }
-        .usp-list li {
-            background: var(--bg-color);
-            color: var(--primary-color);
-            padding: 0.6rem 1.2rem;
-            border-radius: 50px;
-            font-size: 0.95rem;
-            font-weight: 500;
-            border: 1px solid #E2E8F0;
-        }
+        .grid-section { background: var(--white); padding: 4rem 1.5rem 2rem 1.5rem; }
+        .grid-container { max-width: 1200px; margin: 0 auto; }
+        .grid-header { text-align: center; margin-bottom: 3rem; }
+        .feature-grid { display: grid; grid-template-columns: 1fr; gap: 2rem; }
+        .grid-card { background: var(--bg-color); padding: 2rem; border-radius: 16px; border-left: 4px solid var(--accent-color); display: flex; flex-direction: column; }
+        .grid-card h3 { font-size: 1.3rem; margin-bottom: 0.5rem; }
+
+        .science-box { padding: 0 1.5rem 4rem 1.5rem; max-width: 1200px; margin: 0 auto; background: var(--white); }
+        .science-inner { background: #E2E8F0; padding: 2.5rem; border-radius: 20px; text-align: center; border: 1px solid #CBD5E0; }
+        .science-inner h3 { color: var(--primary-color); margin-bottom: 1rem; }
+        .science-inner p { margin-bottom: 0; max-width: 800px; margin-left: auto; margin-right: auto; }
 
         footer { background: #2D3748; color: var(--white); text-align: center; padding: 3rem 1.5rem 2rem 1.5rem; }
         
-        .social-icons {
-            display: flex;
-            justify-content: center;
-            gap: 1.5rem;
-            margin-bottom: 2rem;
-        }
-        .social-icons a {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--accent-color);
-            transition: color 0.3s ease, transform 0.3s ease;
-            margin: 0;
-        }
-        .social-icons a:hover {
-            color: var(--white);
-            transform: translateY(-2px);
-        }
-        .social-icons svg {
-            width: 24px;
-            height: 24px;
-            fill: currentColor;
-        }
-
+        .social-icons { display: flex; justify-content: center; gap: 1.5rem; margin-bottom: 2rem; }
+        .social-icons a { display: flex; align-items: center; justify-content: center; color: var(--accent-color); transition: color 0.3s ease, transform 0.3s ease; margin: 0; }
+        .social-icons a:hover { color: var(--white); transform: translateY(-2px); }
+        .social-icons svg { width: 24px; height: 24px; fill: currentColor; }
+        
         .footer-links { margin-bottom: 1.5rem; }
         footer a { color: var(--accent-color); text-decoration: none; margin: 0 0.5rem; }
         footer a:hover { color: var(--white); }
+        .app-latin { font-size: 0.85rem; color: #A0AEC0; margin-top: 0.5rem; font-style: italic; }
         .disclaimer-small { font-size: 0.8rem; color: #A0AEC0; margin-top: 1.5rem; }
 
         @media (min-width: 768px) {
-            section { padding: 6rem 2rem; }
-            .hero-image { max-width: 900px; margin: 0 auto; border-radius: 0 0 24px 24px; box-shadow: 0 25px 50px rgba(0, 0, 0, 0.6); }
-            .hero-content { padding: 4rem 2rem 5rem 2rem; }
-            .hero-brand { font-size: 1.8rem; margin-bottom: 0.8rem; }
-            .hero h1 { font-size: 3.5rem; margin-bottom: 1.5rem; }
-            .hero h2 { font-size: 1.5rem; }
-            .hero p { font-size: 1.25rem; margin-bottom: 2.5rem; }
-            .store-buttons { flex-direction: row; justify-content: center; }
-            .mockup-showcase { height: 500px; }
-            .jass-card { width: 220px; height: 460px; font-size: 1rem; }
-            .card-left { transform: rotate(-25deg) translateX(-130px) translateY(30px); }
-            .card-right { transform: rotate(25deg) translateX(130px) translateY(30px); }
-            .problem-section { padding-top: 6rem; padding-bottom: 6rem; }
+            .quick-guide-grid { grid-template-columns: repeat(3, 1fr); }
+            .tool-tags { grid-template-columns: repeat(2, 1fr); }
+            .feature-row { flex-direction: row; gap: 4rem; margin-bottom: 8rem; }
+            .feature-row.reverse { flex-direction: row-reverse; }
+            .feature-text { padding: 0 2rem; }
+            .phone-frame { width: 240px; height: 500px; margin: 0; }
+            .feature-grid { grid-template-columns: repeat(2, 1fr); }
         }
     </style>
 </head>
 <body>
 
-    <div class="announcement-banner">Viativity is available for download on Apple! The release for Google is expected in May.</div>
-
     <nav class="navbar">
         <a href="index.html" class="navbar-brand">Viativity™</a>
         <div class="nav-links">
-            <a href="features.html">Tools</a>
-            <a href="about.html">About Me</a>
+            <a href="index.html">Startseite</a>
+            <a href="about.html">Über mich</a>
             <div class="lang-switcher">
-                <a href="../index.html" aria-label="Switch to German">DE</a> | <span class="lang-active">EN</span>
+                <span class="lang-active">DE</span> | <a href="en/features.html" aria-label="Switch to English">EN</a>
             </div>
         </div>
     </nav>
 
-    <header class="hero">
-        <img src="../Gemini_Reisen.jpg" alt="Carefree travel with Viativity" class="hero-image">
-        
-        <div class="hero-content">
-            <h1>
-                <span class="hero-brand">Viativity™</span>
-                Look forward to the journey,<br>not just the destination!
-            </h1>
-            
-            <div class="offline-badge">100% Offline usable & Multilingual – Ideal for airplanes, ships and the mountains</div>
-            
-            <h2>Digital immediate help for kinetosis, motion sickness, seasickness, and flight anxiety.</h2>
-            <p>Use innovative tools right on the go or train your wellbeing in advance at home – whether in a car, plane, train, or on a ship.</p>
-            
-            <div class="store-buttons">
-                <a href="https://apps.apple.com/us/app/viativity-travel-companion/id6760250773" class="btn" target="_blank" rel="noopener">
-                    <svg viewBox="0 0 384 512" aria-hidden="true"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
-                    App Store
-                </a>
-                <a href="#" class="btn btn-disabled">
-                    <svg viewBox="0 0 512 512" aria-hidden="true"><path d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"/></svg>
-                    Play Store (in May)
-                </a>
-            </div>
-            <p class="store-subtext">Premium one-time purchase (for the price of an airport coffee). Pay once, use forever.<br>No subscriptions • Ad-free • Full privacy (local)</p>
-        </div>
+    <header class="page-header">
+        <h1>Digitale Werkzeuge</h1>
+        <p>Smarte Soforthilfe und präventives Training in einer App. Entdecke Werkzeuge für mehr Wohlbefinden auf Reisen.</p>
     </header>
 
-    <main>
-        <section id="problem" class="problem-section">
-            
-            <div class="problem-header">
-                <h2>Sound familiar?</h2>
-                <p>You look forward to your vacation, but <strong>motion sickness</strong> (kinetosis) or <strong>seasickness</strong> quickly spoil the ride. This unpleasant feeling arises from a sensory conflict: Your eyes report a standstill (e.g., when looking at your smartphone inside a vehicle), while your <strong>balance organ</strong> simultaneously senses the movement. The brain sounds the alarm.</p>
-            </div>
-
-            <div class="problem-box">
-                <h3>This is exactly where Viativity comes in</h3>
-                <p>With smart <strong>immediate help</strong> and <strong>preventive training</strong>, the app helps your body actively resolve this contradiction. You learn to gently fade out disturbing stimuli and calm your nervous system again – <strong>scientifically proven</strong> and completely without medication.</p>
-            </div>
-
-        </section>
-
-        <section id="tools" class="text-center">
-            <h2>Digital Tools & Travel Tips</h2>
-            <p class="max-w-800">Choose the tool that best supports your current situation. Whether it's acute motion sickness on the go or preventive <strong>training</strong> in advance: Viativity offers the right solution and is almost as versatile as a Swiss army knife. Use smart helpers like the <strong>artificial horizon</strong>, the <strong>4-2-6 breathing</strong> technique, and the <strong>100Hz tone</strong> to calm down, or train your <strong>body stability</strong>.</p>
-            
-            <a href="features.html" class="feature-link">View some features in detail &rarr;</a>
-
-            <div class="mockup-showcase">
-                <div class="jass-card card-left">
-                    <img src="../images/Werkzeuge_tag_en.PNG" alt="Tools Overview">
-                </div>
-                
-                <div class="jass-card card-center">
-                    <img src="../images/Reisetipps_tag_en.PNG" alt="Travel Tips Overview">
-                </div>
-                
-                <div class="jass-card card-right">
-                    <img src="../images/MRT_tag_en.PNG" alt="MRT 100Hz Tool">
+    <section class="quick-guide-section">
+        <div class="quick-guide-header">
+            <h2>Der richtige Helfer zur richtigen Zeit</h2>
+            <p>Welches Werkzeug nutzt du in welcher Situation? Hier ist eine schnelle Übersicht für dich:</p>
+        </div>
+        <div class="quick-guide-grid">
+            <div class="guide-card">
+                <h3>1. Bei Reiseübelkeit</h3>
+                <p>Wenn das Verkehrsmittel schwankt und dein Auge fälschlicherweise Stillstand meldet.</p>
+                <div class="tool-tags">
+                    <span class="tool-tag">Künstlicher Horizont</span>
+                    <span class="tool-tag">P6-Akupressur</span>
+                    <span class="tool-tag">100Hz Modulation</span>
+                    <span class="tool-tag">4-2-6 Atmung</span>
                 </div>
             </div>
-
-            <div class="app-info-box">
-                <p class="app-info-desc"><strong>Viativity</strong> is a digital wellness app for more wellbeing on your travels. Your reliable companion for kinetosis is always at hand, anywhere – exactly when you need it.</p>
-                <p class="app-info-latin">Viativity combines "Via" (Latin for way) with vitality and activity.</p>
-                
-                <ul class="usp-list">
-                    <li>100% Offline usable</li>
-                    <li>Multilingual</li>
-                    <li>No subscriptions</li>
-                    <li>Ad-free</li>
-                    <li>Local data processing</li>
-                </ul>
+            <div class="guide-card">
+                <h3>2. Bei Unwohlsein, Stress & Flugangst</h3>
+                <p>Wenn du innere Unruhe spürst, Panik aufsteigt oder eine Reizüberflutung droht.</p>
+                <div class="tool-tags">
+                    <span class="tool-tag">4-2-6 Atmung</span>
+                    <span class="tool-tag">100Hz Modulation</span>
+                </div>
             </div>
+            <div class="guide-card">
+                <h3>3. Präventives Training</h3>
+                <p>Bereite dich schon Wochen vor der Reise in Ruhe auf festem Boden vor.</p>
+                <div class="tool-tags">
+                    <span class="tool-tag">Mentale Rotation</span>
+                    <span class="tool-tag">Körper-Lot</span>
+                    <span class="tool-tag">Fokus-Spiel</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        </section>
+    <main class="feature-section">
+        <div class="feature-row">
+            <div class="feature-text">
+                <h3>Soforthilfe</h3>
+                <h2>Der künstliche Horizont</h2>
+                <p>Reiseübelkeit entsteht oft, wenn das Auge Stillstand meldet – zum Beispiel in der fensterlosen Innenkabine eines Kreuzfahrtschiffes –, das Gleichgewichtsorgan aber gleichzeitig die Bewegung spürt. Der künstliche Horizont löst diesen sensorischen Konflikt auf, indem er die echte Bewegung wieder sichtbar macht.</p>
+                <p>Nutze dieses Werkzeug idealerweise auf dem Schiff, insbesondere unter Deck. Auf dem Bildschirm siehst du den Bug eines Schiffes und das Meer mit einer Bergkette am Horizont. Während der Bug starr bleibt, bewegt sich das Hintergrundbild basierend auf den Sensordaten deines Smartphones exakt synchron zu den tatsächlichen Schwankungen. Dein Gehirn erhält so die fehlende visuelle Bestätigung der Bewegung zurück.</p>
+                
+                <details class="science-details">
+                    <summary class="science-summary">
+                        Wissenschaftlicher Hintergrund & Quellen
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+                    </summary>
+                    <div class="science-content">
+                        <p><strong>Hintergrund:</strong> Die Darstellung einer erdbezogenen Linie liefert dem Gehirn die fehlenden visuellen Bewegungsinformationen (Inertial Cues). Dies löst den sensorischen Konflikt auf und verhindert die Fehlermeldung im Gehirn, die zu Reiseunwohlsein führt.</p>
+                        <p><strong>Quelle:</strong> Bos, J. E., et al. (2005/2012). TNO Human Factors / Vrije Universiteit.</p>
+                    </div>
+                </details>
+
+                <a href="https://youtube.com/shorts/7axQsMoPpVQ" class="video-link" target="_blank" rel="noopener" aria-label="Erklärvideo zum künstlichen Horizont auf YouTube in einem neuen Tab öffnen">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                    Erklärvideo auf YouTube ansehen
+                </a>
+            </div>
+            <div class="phone-frame">
+                <img src="images/Horizont_nacht_de.PNG" alt="Schiffsbug und Künstlicher Horizont">
+            </div>
+        </div>
+
+        <div class="feature-row reverse">
+            <div class="feature-text">
+                <h3>Soforthilfe</h3>
+                <h2>4-2-6 Taktatmung</h2>
+                <p>Diese Atemtechnik spricht gezielt den Ruhe-Nerv des Körpers (Parasympathikus) an. Die verlängerte Ausatmung signalisiert dem Gehirn Sicherheit und hilft dabei, die Kampf-oder-Flucht-Reaktion sanft zu beruhigen.</p>
+                <p>Wende die Taktatmung bei akutem Stress, aufsteigender Panik oder als Notbremse bei plötzlichem Unwohlsein an. Sie ist ein idealer Begleiter bei akuter Reise- und Flugangst, da die verlangsamte Atmung die körperliche Erregung dämpft und dein Wohlbefinden sofort unterstützt. Haptische Signale führen dich (blind) durch den Rhythmus: 4 Sekunden einatmen, 2 Sekunden halten, 6 Sekunden ausatmen.</p>
+                
+                <details class="science-details">
+                    <summary class="science-summary">
+                        Wissenschaftlicher Hintergrund & Quellen
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+                    </summary>
+                    <div class="science-content">
+                        <p><strong>Hintergrund:</strong> Kontrollierte, verlangsamte Atmung (Paced Breathing) stimuliert den Vagusnerv und erhöht die Herzfrequenzvariabilität (HRV). Dies dämpft die körperliche Erregung (Arousal) erheblich und hat sich in Studien zur Begleitung bei unruhigem Reisen sowie in Stresssituationen bewährt.</p>
+                        <p><strong>Quelle:</strong> Yen Pik Sang et al. (2003); Stromberg et al. (2015); Zaccaro et al. (2018) zur Stressregulation.</p>
+                    </div>
+                </details>
+
+                <a href="https://youtube.com/shorts/EFY8Hqnza3M" class="video-link" target="_blank" rel="noopener" aria-label="Erklärvideo zur 4-2-6 Taktatmung auf YouTube in einem neuen Tab öffnen">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                    Erklärvideo auf YouTube ansehen
+                </a>
+            </div>
+            <div class="phone-frame">
+                <img src="images/Atmung_nacht_de.PNG" alt="4-2-6 Taktatmung Werkzeug">
+            </div>
+        </div>
+
+        <div class="feature-row">
+            <div class="feature-text">
+                <h3>Prävention</h3>
+                <h2>Mentale Rotation</h2>
+                <p>Ein trainiertes räumliches Vorstellungsvermögen hilft dem Gehirn, Bewegungsdaten effizienter zu verarbeiten und widersprüchliche Signale (Konflikte) schneller aufzulösen. Dieses Sehtraining unterstützt dich dabei, deine Widerstandsfähigkeit optimal aufzubauen.</p>
+                <p>WICHTIG: Dies ist ein reines Präventions-Training. Übe täglich für etwa 15 Minuten über zwei Wochen in Ruhe vor der Reise. So bereitest du dein Gehirn vorab auf Reisebewegungen vor und verbesserst die Verarbeitung von Bewegungsdaten nachhaltig.</p>
+                <p><strong>Die Anwendung:</strong> Entscheide: Ist die rechte Figur identisch (nur gedreht) oder gespiegelt? Du hast 1 Joker pro Level. Erreiche mindestens 9 von 10 Punkten, um ins nächste Level aufzusteigen.</p>
+                
+                <details class="science-details">
+                    <summary class="science-summary">
+                        Wissenschaftlicher Hintergrund & Quellen
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+                    </summary>
+                    <div class="science-content">
+                        <p><strong>Hintergrund:</strong> Forschungen der University of Warwick (2021) zeigten, dass ein zweiwöchiges räumliches Sehtraining (visuospatiales Training) die Anfälligkeit für Reiseunwohlsein um über 50% reduzieren kann. Ein trainiertes räumliches Vorstellungsvermögen hilft dem Gehirn, Bewegungsdaten effizienter zu verarbeiten.</p>
+                        <p><strong>Quelle:</strong> Smyth, J. et al. (2021). University of Warwick / Applied Ergonomics.</p>
+                    </div>
+                </details>
+
+                <a href="https://youtube.com/shorts/QLPDlpZ7l8g" class="video-link" target="_blank" rel="noopener" aria-label="Erklärvideo zur Mentalen Rotation auf YouTube in einem neuen Tab öffnen">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                    Erklärvideo auf YouTube ansehen
+                </a>
+            </div>
+            <div class="phone-frame">
+                <img src="images/MRT_nacht_de.PNG" alt="Mentale Rotation Werkzeug">
+            </div>
+        </div>
     </main>
+
+    <section class="grid-section">
+        <div class="grid-container">
+            <div class="grid-header">
+                <h2>Weitere Werkzeuge & Wissen</h2>
+                <p>Für die langfristige Gewöhnung, Vorbereitung und dein Wohlbefinden unterwegs.</p>
+            </div>
+            
+            <div class="feature-grid">
+                
+                <div class="grid-card">
+                    <h3>P6-Akupressur</h3>
+                    <p>Die sanfte Massage des Nei-Kuan-Punktes sendet beruhigende Signale an den Magen. Wende diese Technik direkt bei den ersten Anzeichen von Unwohlsein an oder nutze sie vorbeugend kurz vor Reiseantritt. Die Stimulation unterstützt das allgemeine Wohlbefinden des Magens und hilft, aufkommendes Unwohlsein sanft zu begleiten.</p>
+                    
+                    <details class="science-details">
+                        <summary class="science-summary">
+                            Wissenschaftlicher Hintergrund & Quellen
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+                        </summary>
+                        <div class="science-content">
+                            <p><strong>Hintergrund:</strong> Systematische Übersichtsarbeiten (Cochrane-Reviews) bestätigen, dass die Stimulation des P6-Punktes das Auftreten von flauem Gefühl und Unwohlsein signifikant reduzieren kann. Die Wirkung auf das allgemeine Wohlbefinden des Magens ist in Studien umfassend belegt, ganz ohne Begleiterscheinungen.</p>
+                            <p><strong>Quelle:</strong> Lee A, Fan LT. (2009/2015). Cochrane Database of Systematic Reviews.</p>
+                        </div>
+                    </details>
+
+                    <a href="https://youtube.com/shorts/kWxE5XuC2B0" class="video-link" target="_blank" rel="noopener" aria-label="Erklärvideo zur P6-Akupressur auf YouTube in einem neuen Tab öffnen">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                        Erklärvideo auf YouTube ansehen
+                    </a>
+                </div>
+                
+                <div class="grid-card">
+                    <h3>Körper-Lot</h3>
+                    <p>Nach der Theorie der körperlichen Instabilität geht Unwohlsein oft ein instabiler Stand voraus. Mit dieser Übung trainierst du deine Rumpfstabilität und dein Gleichgewicht – rein über Audio- und Haptikfeedback und mit geschlossenen Augen. Nutze die Übung als tägliche Basis zu Hause auf festem Boden.</p>
+                    
+                    <details class="science-details">
+                        <summary class="science-summary">
+                            Wissenschaftlicher Hintergrund & Quellen
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+                        </summary>
+                        <div class="science-content">
+                            <p><strong>Hintergrund:</strong> Biofeedback-Training verbessert die Haltungskontrolle. Studien (Postural Instability Theory) zeigen, dass eine höhere Stabilität (weniger Schwanken) direkt mit einer höheren Resistenz gegen Reiseunwohlsein korreliert.</p>
+                            <p><strong>Quelle:</strong> Riccio & Stoffregen (1991); Stoffregen et al. (2010).</p>
+                        </div>
+                    </details>
+
+                    <a href="https://youtube.com/shorts/NxpCFCX5dnI" class="video-link" target="_blank" rel="noopener" aria-label="Erklärvideo zum Körper-Lot auf YouTube in einem neuen Tab öffnen">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                        Erklärvideo auf YouTube ansehen
+                    </a>
+                </div>
+                
+                <div class="grid-card">
+                    <h3>100Hz Klangmodulation</h3>
+                    <p>Spezifische akustische Frequenzen können über das Innenohr das Gleichgewichtssystem sanft modulieren und Überreaktionen dämpfen. Höre den Ton präventiv kurz vor Reiseantritt oder während der Reise zur Unterstützung bei erstem Unwohlsein. Die Vibration regt die Sinneszellen an und verringert den sensorischen Konflikt im Gehirn, wodurch der Reiseübelkeit aktiv entgegengewirkt wird.</p>
+                    
+                    <details class="science-details">
+                        <summary class="science-summary">
+                            Wissenschaftlicher Hintergrund & Quellen
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+                        </summary>
+                        <div class="science-content">
+                            <p><strong>Hintergrund:</strong> Aktuelle Forschungen der Universität Nagoya (2025) zeigen, dass eine 100Hz-Vibration die Sinneszellen im Ohr (Otolithen-Organe) anregt und das Gleichgewicht (vestibuläre Balance) verbessert. Dadurch wird der sensorische Konflikt im Gehirn verringert und die Anfälligkeit für Reiseunwohlsein signifikant gesenkt.</p>
+                            <p><strong>Quelle:</strong> Takahashi, K., Kato, M. et al. (2025). Nagoya University Graduate School of Medicine.</p>
+                        </div>
+                    </details>
+
+                    <a href="https://youtube.com/shorts/pRfjdk_zgr0" class="video-link" target="_blank" rel="noopener" aria-label="Erklärvideo zur 100Hz Klangmodulation auf YouTube in einem neuen Tab öffnen">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                        Erklärvideo auf YouTube ansehen
+                    </a>
+                </div>
+
+                <div class="grid-card">
+                    <h3>Fokus</h3>
+                    <p>Dieses Spiel erfordert hohe visuelle Fixierung. Das bindet deine Aufmerksamkeit und hilft, störende Bewegungsreize auszublenden, was sanft von aufkommendem Unwohlsein ablenkt. Perfekt als präventives Training vorab oder zur sanften Gewöhnung (Habituation) direkt auf der Reise.</p>
+                    
+                    <details class="science-details">
+                        <summary class="science-summary">
+                            Wissenschaftlicher Hintergrund & Quellen
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+                        </summary>
+                        <div class="science-content">
+                            <p><strong>Hintergrund:</strong> Das Fixieren eines stabilen Punktes unterdrückt den Reflex, der Augen und Gleichgewicht koppelt (vestibulo-okulärer Reflex). Dies mildert den sensorischen Konflikt ab, der in der Wissenschaft als Hauptursache für Reiseunwohlsein gilt.</p>
+                            <p><strong>Quelle:</strong> Reason, J. T., & Brand, J. J. (1975); Bos (2011).</p>
+                        </div>
+                    </details>
+
+                    <a href="https://youtube.com/shorts/T3hnFa3ELmw" class="video-link" target="_blank" rel="noopener" aria-label="Erklärvideo zum Fokus auf YouTube in einem neuen Tab öffnen">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                        Erklärvideo auf YouTube ansehen
+                    </a>
+                </div>
+
+                <div class="grid-card">
+                    <h3>In deiner Sprache</h3>
+                    <p>Viativity ist aktuell in <strong>Deutsch und Englisch</strong> verfügbar. Stressfreies Reisen bedeutet auch, dass du im Akutfall nicht erst übersetzen musst. Weitere Sprachen sind bereits in Vorbereitung.</p>
+                </div>
+
+                <div class="grid-card">
+                    <h3>Reisetipps</h3>
+                    <p>Wissen ist die halbe Miete. Viativity enthält eine umfangreiche Bibliothek mit spezifischen, wissenschaftlich fundierten Tipps und Tricks für Auto, Schiff, Flugzeug, Zug oder Seilbahn.</p>
+                </div>
+
+                <div class="grid-card">
+                    <h3>Sensoren & Hardware</h3>
+                    <p>Um das volle Potenzial auszuschöpfen, greift die App auf das Gyroskop deines Smartphones zurück. Für die 100Hz-Klangmodulation benötigst du zwingend Kopfhörer, um die tiefen Frequenzen korrekt zu übertragen.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="science-box">
+        <div class="science-inner">
+            <h3>Wissenschaftlich fundiert</h3>
+            <p>Die Werkzeuge in Viativity basieren auf etablierten Erkenntnissen der Wissenschaft. Die detaillierten Quellenangaben findest du direkt in den aufklappbaren Info-Bereichen bei den jeweiligen Werkzeugen auf dieser Seite sowie in der App.</p>
+        </div>
+    </section>
 
     <footer>
         <div class="social-icons">
-            <a href="https://www.tiktok.com/@viativity.app" target="_blank" rel="noopener" aria-label="View Viativity on TikTok">
-                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1-2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/></svg>
+            <a href="https://www.tiktok.com/@viativity.app" target="_blank" rel="noopener" aria-label="Viativity auf TikTok ansehen">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/></svg>
             </a>
-            <a href="https://www.instagram.com/viativity.app" target="_blank" rel="noopener" aria-label="View Viativity on Instagram">
+            <a href="https://www.instagram.com/viativity.app" target="_blank" rel="noopener" aria-label="Viativity auf Instagram ansehen">
                 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
             </a>
-            <a href="https://www.youtube.com/@viativity" target="_blank" rel="noopener" aria-label="View Viativity on YouTube">
+            <a href="https://www.youtube.com/@viativity" target="_blank" rel="noopener" aria-label="Viativity auf YouTube ansehen">
                 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
             </a>
         </div>
 
         <div class="footer-links">
-            <a href="features.html">Tools</a>
-            <a href="about.html">About Me</a>
+            <a href="index.html">Startseite</a>
+            <a href="about.html">Über mich</a>
             <a href="mailto:support@viativity.app">Support</a>
-            <a href="privacy.html">Privacy Policy</a>
+            <a href="privacy.html">Datenschutz</a>
         </div>
-        <p>© 2026 Viativity™. Developed in Switzerland.</p>
+        <p>© 2026 Viativity™. Entwickelt in der Schweiz.</p>
+        <p class="app-latin">Viativity verbindet „Via“ (lat. für Weg) mit Vitalität und Aktivität.</p>
         
         <div class="disclaimer-small">
-            <strong>NOT A MEDICAL DEVICE:</strong> This app is not a medical device. It does not provide diagnoses and does not replace medical treatment.
+            <strong>KEIN MEDIZINPRODUKT:</strong> Diese App ist kein Medizinprodukt. Sie stellt keine Diagnosen und ersetzt keine ärztliche Behandlung.
         </div>
     </footer>
 
