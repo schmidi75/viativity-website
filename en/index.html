@@ -20,7 +20,8 @@
     <meta name="twitter:url" content="https://viativity.app/en/" />
     <meta name="twitter:title" content="Viativity™ | Your smart companion for carefree travel" />
     <meta name="twitter:description" content="Digital immediate help and preventive training for your wellbeing on the go. Viativity™ accompanies you during motion sickness with an artificial horizon and 4-2-6 breathing." />
-    <meta name="twitter:image" content="https://viativity.app/Gemini_Reisen.jpg" />    
+    <meta name="twitter:image" content="https://viativity.app/Gemini_Reisen.jpg" />   
+    
     
     <link rel="alternate" hreflang="de" href="https://viativity.app/index.html" />
     <link rel="alternate" hreflang="en" href="https://viativity.app/en/index.html" />
@@ -60,27 +61,27 @@
         
         section { padding: 4rem 1.5rem; max-width: 1200px; margin: 0 auto; }
         
+        /* Navbar Mobile First (under 400px: two lines for e.g. iPhone 8) */
         .navbar {
             padding: 1rem 1.5rem;
             background: var(--white);
             display: flex;
-            justify-content: space-between;
-            align-items: center;
+            flex-direction: column;
             box-shadow: 0 2px 4px rgba(0,0,0,0.05);
             position: sticky; top: 0; z-index: 100;
         }
-        .navbar-brand { font-weight: bold; color: var(--primary-color); font-size: 1.2rem; text-decoration: none; }
-        .nav-links { display: flex; align-items: center; }
-        .nav-links a { margin-left: 1rem; text-decoration: none; color: var(--text-color); font-weight: 500; }
+        .navbar-brand { font-weight: bold; color: var(--primary-color); font-size: 1.2rem; text-decoration: none; align-self: flex-start; }
+        .nav-links { display: flex; align-items: center; justify-content: center; width: 100%; margin-top: 0.8rem; }
+        .nav-links a { margin: 0 0.8rem; text-decoration: none; color: var(--text-color); font-weight: 500; white-space: nowrap; }
         .nav-links a:hover { color: var(--accent-color); }
         
         .lang-switcher {
-            margin-left: 1.5rem;
+            position: absolute;
+            top: 1.15rem;
+            right: 1.5rem;
             font-size: 0.9rem;
-            border-left: 1px solid #E2E8F0;
-            padding-left: 1rem;
         }
-        .lang-switcher a { margin-left: 0; color: #A0AEC0; text-decoration: none; }
+        .lang-switcher a { margin-right: 0.3rem; color: #A0AEC0; text-decoration: none; font-weight: normal; }
         .lang-switcher a:hover { color: var(--primary-color); }
         .lang-active { font-weight: bold; color: var(--primary-color); margin-left: 0.3rem;}
 
@@ -263,7 +264,20 @@
         footer a:hover { color: var(--white); }
         .disclaimer-small { font-size: 0.8rem; color: #A0AEC0; margin-top: 1.5rem; }
 
+        @media (min-width: 400px) {
+            /* Navbar from 400px (e.g. Pixel 6): Single line with slightly reduced spacing */
+            .navbar { flex-direction: row; align-items: center; justify-content: space-between; }
+            .navbar-brand { align-self: auto; }
+            .nav-links { width: auto; margin-top: 0; justify-content: flex-end; }
+            .nav-links a { margin: 0 0 0 0.8rem; }
+            .lang-switcher { position: static; margin-left: 1rem; border-left: 1px solid #E2E8F0; padding-left: 0.8rem; }
+        }
+
         @media (min-width: 768px) {
+            /* Navbar Desktop Reset: Full spacing */
+            .nav-links a { margin: 0 0 0 1rem; }
+            .lang-switcher { margin-left: 1.5rem; padding-left: 1rem; }
+
             section { padding: 6rem 2rem; }
             .hero-image { max-width: 900px; margin: 0 auto; border-radius: 0 0 24px 24px; box-shadow: 0 25px 50px rgba(0, 0, 0, 0.6); }
             .hero-content { padding: 4rem 2rem 5rem 2rem; }
