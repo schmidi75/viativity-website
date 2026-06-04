@@ -1,4 +1,4 @@
-<!-- Version 1.1 - 2026-06-04 - Navbar Mobile Layout auf zweizeilig (Option B) optimiert -->
+<!-- Version 1.2 - 2026-06-04 - Navbar Breakpoint bei 400px für einzeiliges Layout (Pixel 6) eingefügt -->
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -61,7 +61,7 @@
         
         section { padding: 4rem 1.5rem; max-width: 1200px; margin: 0 auto; }
         
-        /* Navbar Mobile First */
+        /* Navbar Mobile First (unter 400px: zweizeilig für z.B. iPhone 8) */
         .navbar {
             padding: 1rem 1.5rem;
             background: var(--white);
@@ -264,13 +264,19 @@
         footer a:hover { color: var(--white); }
         .disclaimer-small { font-size: 0.8rem; color: #A0AEC0; margin-top: 1.5rem; }
 
-        @media (min-width: 768px) {
-            /* Navbar Desktop Reset */
+        @media (min-width: 400px) {
+            /* Navbar ab 400px (z.B. Pixel 6): Einzeilig mit leicht reduzierten Abständen */
             .navbar { flex-direction: row; align-items: center; justify-content: space-between; }
             .navbar-brand { align-self: auto; }
             .nav-links { width: auto; margin-top: 0; justify-content: flex-end; }
+            .nav-links a { margin: 0 0 0 0.8rem; }
+            .lang-switcher { position: static; margin-left: 1rem; border-left: 1px solid #E2E8F0; padding-left: 0.8rem; }
+        }
+
+        @media (min-width: 768px) {
+            /* Navbar Desktop Reset: Volle Abstände */
             .nav-links a { margin: 0 0 0 1rem; }
-            .lang-switcher { position: static; margin-left: 1.5rem; border-left: 1px solid #E2E8F0; padding-left: 1rem; }
+            .lang-switcher { margin-left: 1.5rem; padding-left: 1rem; }
 
             section { padding: 6rem 2rem; }
             .hero-image { max-width: 900px; margin: 0 auto; border-radius: 0 0 24px 24px; box-shadow: 0 25px 50px rgba(0, 0, 0, 0.6); }
