@@ -1,31 +1,31 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Über mich | Viativity™</title>
-    <link rel="icon" type="image/png" href="images/Viativity_Icon.png" />
-    <link rel="apple-touch-icon" href="images/Viativity_Icon.png" />
+    <title>About Me | Viativity™</title>
+    <link rel="icon" type="image/png" href="../images/Viativity_Icon.png" />
+    <link rel="apple-touch-icon" href="../images/Viativity_Icon.png" />
     
-    <meta name="description" content="Erfahre mehr über die Geschichte hinter Viativity™ aus der Schweiz. Eine transparente, faire App für dein Wohlbefinden und zur Begleitung bei Reiseübelkeit.">
+    <meta name="description" content="Learn more about the story behind Viativity™ from Switzerland. A transparent, fair app for your wellbeing and to accompany you during motion sickness.">
 
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://viativity.app/about.html" />
-    <meta property="og:title" content="Über mich | Viativity™" />
-    <meta property="og:description" content="Erfahre mehr über die Geschichte hinter Viativity™ aus der Schweiz. Eine transparente, faire App für dein Wohlbefinden und zur Begleitung bei Reiseübelkeit." />
+    <meta property="og:url" content="https://viativity.app/en/about.html" />
+    <meta property="og:title" content="About Me | Viativity™" />
+    <meta property="og:description" content="Learn more about the story behind Viativity™ from Switzerland. A transparent, fair app for your wellbeing and to accompany you during motion sickness." />
     <meta property="og:image" content="https://viativity.app/Gemini_Reisen.jpg" />
-    <meta property="og:locale" content="de_CH" />
+    <meta property="og:locale" content="en_US" />
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:url" content="https://viativity.app/about.html" />
-    <meta name="twitter:title" content="Über mich | Viativity™" />
-    <meta name="twitter:description" content="Erfahre mehr über die Geschichte hinter Viativity™ aus der Schweiz. Eine transparente, faire App für dein Wohlbefinden und zur Begleitung bei Reiseübelkeit." />
+    <meta name="twitter:url" content="https://viativity.app/en/about.html" />
+    <meta name="twitter:title" content="About Me | Viativity™" />
+    <meta name="twitter:description" content="Learn more about the story behind Viativity™ from Switzerland. A transparent, fair app for your wellbeing and to accompany you during motion sickness." />
     <meta name="twitter:image" content="https://viativity.app/Gemini_Reisen.jpg" />
     
     <link rel="alternate" hreflang="de" href="https://viativity.app/about.html" />
     <link rel="alternate" hreflang="en" href="https://viativity.app/en/about.html" />
     
-    <link rel="canonical" href="https://viativity.app/about.html" />
+    <link rel="canonical" href="https://viativity.app/en/about.html" />
     
     <style>
         :root { --primary-color: #1A365D; --accent-color: #7DA2A9; --bg-color: #F7FAFC; --text-color: #2D3748; --white: #FFFFFF; }
@@ -34,7 +34,7 @@
         h1, h2, h3 { color: var(--primary-color); line-height: 1.2; margin-bottom: 1rem; }
         p { margin-bottom: 1.5rem; }
         
-        /* Navbar Mobile First (unter 400px: zweizeilig) */
+        /* Navbar Mobile First (under 400px: two lines) */
         .navbar {
             padding: 1rem 1.5rem;
             background: var(--white);
@@ -54,9 +54,9 @@
             right: 1.5rem;
             font-size: 0.9rem;
         }
-        .lang-switcher a { margin-left: 0; color: #A0AEC0; text-decoration: none; font-weight: normal; }
+        .lang-switcher a { margin-right: 0.3rem; color: #A0AEC0; text-decoration: none; font-weight: normal; }
         .lang-switcher a:hover { color: var(--primary-color); }
-        .lang-active { font-weight: bold; color: var(--primary-color); margin-right: 0.3rem;}
+        .lang-active { font-weight: bold; color: var(--primary-color); margin-left: 0.3rem;}
 
         .page-header { background: var(--primary-color); color: var(--white); text-align: center; padding: 4rem 1.5rem; }
         .page-header h1 { color: var(--white); font-size: 2.5rem; }
@@ -67,7 +67,7 @@
         .developer-box { background: var(--white); padding: 2.5rem; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); margin-bottom: 3rem; border-left: 4px solid var(--accent-color); }
         .developer-box h2 { color: var(--primary-color); margin-bottom: 1rem; }
         .developer-box p:last-child { margin-bottom: 0; }
-        
+
         .feedback-section { margin-bottom: 4rem; padding: 0 1rem; border-left: 2px solid #E2E8F0; }
         .feedback-section h3 { font-size: 1.3rem; margin-bottom: 0.5rem; }
 
@@ -88,14 +88,15 @@
         .social-icons a { display: flex; align-items: center; justify-content: center; color: var(--accent-color); transition: color 0.3s ease, transform 0.3s ease; margin: 0; }
         .social-icons a:hover { color: var(--white); transform: translateY(-2px); }
         .social-icons svg { width: 24px; height: 24px; fill: currentColor; }
-        
+
         .footer-links { margin-bottom: 1.5rem; }
         footer a { color: var(--accent-color); text-decoration: none; margin: 0 0.5rem; }
         footer a:hover { color: var(--white); }
+        .app-latin { font-size: 0.85rem; color: #A0AEC0; margin-top: 0.5rem; font-style: italic; }
         .disclaimer-small { font-size: 0.8rem; color: #A0AEC0; margin-top: 1.5rem; }
 
         @media (min-width: 400px) {
-            /* Navbar ab 400px (z.B. Pixel 6): Einzeilig */
+            /* Navbar from 400px (e.g. Pixel 6): Single line */
             .navbar { flex-direction: row; align-items: center; justify-content: space-between; }
             .navbar-brand { align-self: auto; }
             .nav-links { width: auto; margin-top: 0; justify-content: flex-end; }
@@ -104,7 +105,7 @@
         }
 
         @media (min-width: 768px) {
-            /* Navbar Desktop Reset: Volle Abstände */
+            /* Navbar Desktop Reset: Full spacing */
             .nav-links a { margin: 0 0 0 1rem; }
             .lang-switcher { margin-left: 1.5rem; padding-left: 1rem; }
 
@@ -117,57 +118,57 @@
     <nav class="navbar">
         <a href="index.html" class="navbar-brand">Viativity™</a>
         <div class="nav-links">
-            <a href="index.html">Startseite</a>
-            <a href="features.html">Werkzeuge</a>
+            <a href="index.html">Home</a>
+            <a href="features.html">Tools</a>
             <div class="lang-switcher">
-                <span class="lang-active">DE</span> | <a href="en/about.html" aria-label="Switch to English">EN</a>
+                <a href="../about.html" aria-label="Switch to German">DE</a> | <span class="lang-active">EN</span>
             </div>
         </div>
     </nav>
 
     <header class="page-header">
-        <h1>Über mich</h1>
-        <p>Viativity™, eine unabhängige App aus der Schweiz.</p>
+        <h1>About Me</h1>
+        <p>Viativity™, an independent app from Switzerland.</p>
     </header>
 
     <main class="content-section">
         
         <div class="developer-box">
-            <h2>Hallo, ich bin Dieter, der Kopf hinter Viativity.</h2>
-            <p>Viativity ist keine App eines riesigen Tech-Konzerns und ich bin auch kein klassischer Softwareentwickler. Ich habe dieses Projekt rein aus persönlichem Interesse und Faszination in meiner Freizeit aufgebaut.</p>
-            <p><strong>Wie alles begann</strong><br>
-            Die Idee entstand durch einen Artikel in der Zeitung <em>20 Minuten</em>. Dort wurde eine Studie vorgestellt, die beschreibt, wie ein spezifischer 100Hz-Ton Reiseübelkeit reduzieren kann. Das hat mich so inspiriert, dass ich beschloss, mithilfe von künstlicher Intelligenz (KI) eine eigene App zu bauen.</p>
-            <p>Schnell wurde mir jedoch klar: Eine App mit nur einem einzigen Werkzeug ist zu wenig. Also habe ich tief recherchiert: Welche weiteren wissenschaftlichen Studien gibt es, die Methoden aufzeigen, um Reisekrankheit (Kinetose) oder Unwohlsein auf Reisen zu begegnen? Basierend auf diesen Erkenntnissen habe ich mir überlegt, wie ich diese Ansätze technisch für ein Smartphone umsetzen kann. Ausserdem habe ich nach etablierten Reisetipps gesucht, die sich in der Praxis bewährt haben.</p>
-            <p>Das Resultat sind die Werkzeuge, die du heute in Viativity findest. Mein Fokus als Einzelperson liegt zu 100 % auf einem fairen Produkt, das dich begleitet, keine Abofallen versteckt und deine Privatsphäre absolut respektiert.</p>
-            <p>Auf meinen Social-Media-Kanälen (TikTok, Instagram, YouTube) zeige ich dir anschaulich, wie Viativity in der Praxis funktioniert. Du findest dort praktische Ansätze für typische Herausforderungen und visuelle Erklärungen, wie du die Werkzeuge auf deinen Reisen optimal nutzt. Die Links dazu findest du ganz unten auf dieser Seite.</p>
+            <h2>Hello, I'm Dieter, the mind behind Viativity.</h2>
+            <p>Viativity is not an app from a giant tech corporation, and I am not a classical software developer either. I built this project entirely out of personal interest and fascination in my free time.</p>
+            <p><strong>How it all started</strong><br>
+            The idea was born from an article in the Swiss newspaper <em>20 Minuten</em>. It presented a study describing how a specific 100Hz tone can reduce motion sickness. This inspired me so much that I decided to build my own app with the help of artificial intelligence (AI).</p>
+            <p>However, I quickly realized: An app with just a single tool is not enough. So I dug deeper: What other scientific studies are out there that show methods to counter motion sickness (kinetosis) or discomfort while traveling? Based on these findings, I thought about how I could technically implement these approaches for a smartphone. In addition, I searched for established travel tips that have proven themselves in practice.</p>
+            <p>The result are the tools you find in Viativity today. As an individual, my focus is 100% on a fair product that accompanies you, hides no subscription traps, and absolutely respects your privacy.</p>
+            <p>On my social media channels (TikTok, Instagram, YouTube), I show you clearly how Viativity works in practice. You will find practical approaches for typical travel challenges and visual explanations on how to optimally use the tools on your journeys. You can find the links at the very bottom of this page.</p>
         </div>
 
         <div class="feedback-section">
-            <h3>Dein Feedback ist mein Antrieb</h3>
-            <p>Wenn dir Viativity geholfen hat, den Blick auf der Fähre wieder entspannt aufs Meer zu richten oder den Flug unbeschwerter zu erleben, freue ich mich riesig über eine kurze Bewertung – das geht ganz einfach direkt in der App. Du hast Anregungen, Wünsche oder Kritik? Schreib mir jederzeit eine Nachricht über den Support-Link ganz unten.</p>
+            <h3>Your feedback is my motivation</h3>
+            <p>If Viativity has helped you to look out at the sea on the ferry relaxed again or to experience your flight more lightheartedly, I would be thrilled to receive a short review – you can do this easily right inside the app. Do you have suggestions, requests, or criticism? Feel free to write me a message anytime via the support link at the bottom.</p>
         </div>
 
-        <h2>Radikale Transparenz & Kooperation</h2>
-        <p>Ein modernes Projekt wie Viativity entsteht heute durch die Kombination aus menschlicher Kreativität und innovativen Werkzeugen. Mir ist eine offene und ehrliche Kommunikation wichtig:</p>
+        <h2>Radical Transparency & Cooperation</h2>
+        <p>A modern project like Viativity is created today through the combination of human creativity and innovative tools. It is important to me to communicate this openly and honestly:</p>
         
         <ul class="transparency-list">
-            <li><strong>Konzept & Entwicklung:</strong> Die Ideen, die wissenschaftliche Recherche und das Gesamtkonzept stammen von mir. Bei der technischen Umsetzung, der Programmierung und dem Text-Design wurde ich von künstlicher Intelligenz unterstützt.</li>
-            <li><strong>Design & Grafik:</strong> Die Illustrationen und visuellen Elemente wurden teilweise mit KI-Unterstützung generiert, um ein konsistentes, beruhigendes Erlebnis für deine Reise zu schaffen.</li>
-            <li><strong>Audio-Inhalte:</strong> Während die technischen Frequenzen (wie die 100Hz Modulation) direkt in der App generiert werden, stammen die atmosphärischen Hintergrundklänge von der grossartigen Open-Source-Community <strong>freesound.org</strong>.</li>
-            <li><strong>Lokalisierung:</strong> Um Viativity für möglichst viele Menschen zugänglich zu machen, habe ich für die Übersetzungen in andere Sprachen künstliche Intelligenz genutzt. Da ich diese Sprachen selbst nicht spreche, stand der direkte Nutzen für dich im Vordergrund – und nicht eine makellose Übersetzung. Bitte sieh mir allfällige sprachliche Holperer nach!</li>
+            <li><strong>Concept & Development:</strong> The ideas, scientific research, and overall concept come from me. For the technical implementation, programming, and copy design, I was supported by artificial intelligence.</li>
+            <li><strong>Design & Graphics:</strong> The illustrations and visual elements were partially generated with AI support to create a consistent, calming experience for your journey.</li>
+            <li><strong>Audio Content:</strong> While the technical frequencies (like the 100Hz modulation) are generated directly in the app, the atmospheric background sounds come from the great open-source community <strong>freesound.org</strong>.</li>
+            <li><strong>Localization:</strong> To make Viativity accessible to as many people as possible, I used artificial intelligence for translations into other languages. Since I do not speak these languages myself, the direct benefit for you was my priority – rather than a flawless translation. Please forgive any linguistic hiccups!</li>
         </ul>
 
         <div class="support-grid">
             <div class="support-card">
-                <h3>Viativity unterstützen</h3>
-                <p>Ich glaube an faire Software ohne Abos. Wenn dir die App hilft und du mein Projekt schätzt, freue ich mich riesig über einen virtuellen Kaffee to go!</p>
-                <a href="https://ko-fi.com/viativity" target="_blank" rel="noopener" class="btn-outline">☕ Projekt unterstützen</a>
+                <h3>Support Viativity</h3>
+                <p>I believe in fair software without subscriptions. If the app helps you and you appreciate my project, I'd be incredibly happy about a virtual coffee to go!</p>
+                <a href="https://ko-fi.com/viativity" target="_blank" rel="noopener" class="btn-outline">☕ Support Project</a>
             </div>
 
             <div class="support-card freesound">
-                <h3>Freesound spenden</h3>
-                <p>Die Community auf Freesound.org ist eine Goldgrube für hochwertige Audio-Inhalte. Wenn dir der Sound in der App gefällt, unterstütze die Plattform gerne mit einer Spende.</p>
-                <a href="https://freesound.org/donations/donate/" target="_blank" rel="noopener" class="btn-outline">🎵 An Freesound spenden</a>
+                <h3>Donate to Freesound</h3>
+                <p>The community on Freesound.org is a goldmine for high-quality audio content. If you like the sound in the app, please consider supporting the platform with a donation.</p>
+                <a href="https://freesound.org/donations/donate/" target="_blank" rel="noopener" class="btn-outline">🎵 Donate to Freesound</a>
             </div>
         </div>
 
@@ -175,28 +176,29 @@
 
     <footer>
         <div class="social-icons">
-            <a href="https://www.tiktok.com/@viativity.app" target="_blank" rel="noopener" aria-label="Viativity auf TikTok ansehen">
+            <a href="https://www.tiktok.com/@viativity.app" target="_blank" rel="noopener" aria-label="View Viativity on TikTok">
                 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1-2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/></svg>
             </a>
-            <a href="https://www.instagram.com/viativity.app" target="_blank" rel="noopener" aria-label="Viativity auf Instagram ansehen">
+            <a href="https://www.instagram.com/viativity.app" target="_blank" rel="noopener" aria-label="View Viativity on Instagram">
                 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
             </a>
-            <a href="https://www.youtube.com/@viativity" target="_blank" rel="noopener" aria-label="Viativity auf YouTube ansehen">
+            <a href="https://www.youtube.com/@viativity" target="_blank" rel="noopener" aria-label="View Viativity on YouTube">
                 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
             </a>
         </div>
 
         <div class="footer-links">
-            <a href="index.html">Startseite</a>
-            <a href="features.html">Werkzeuge</a>
-            <a href="about.html">Über mich</a>
+            <a href="index.html">Home</a>
+            <a href="features.html">Tools</a>
+            <a href="about.html">About Me</a>
             <a href="mailto:support@viativity.app">Support</a>
-            <a href="privacy.html">Impressum & Datenschutz</a>
+            <a href="privacy.html">Legal Notice & Privacy Policy</a>
         </div>
-        <p>© 2026 Viativity™. Entwickelt in der Schweiz.</p>
+        <p>© 2026 Viativity™. Developed in Switzerland.</p>
+        <p class="app-latin">Viativity combines "Via" (Latin for way) with vitality and activity.</p>
         
         <div class="disclaimer-small">
-            <strong>KEIN MEDIZINPRODUKT:</strong> Diese App ist kein Medizinprodukt. Sie stellt keine Diagnosen und ersetzt keine ärztliche Behandlung.
+            <strong>NOT A MEDICAL DEVICE:</strong> This app is not a medical device. It does not provide diagnoses and does not replace medical treatment.
         </div>
     </footer>
 
