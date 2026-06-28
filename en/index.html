@@ -1,4 +1,3 @@
-<!-- Version 1.3 - 2026-06-20 - Google Play Store Release Banner & Link activated -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,19 +7,19 @@
     <link rel="icon" type="image/png" href="../images/Viativity_Icon.png" />
     <link rel="apple-touch-icon" href="../images/Viativity_Icon.png" />
     
-    <meta name="description" content="Digital immediate help and preventive training for your wellbeing on the go. Viativity™ accompanies you during motion sickness with an artificial horizon and 4-2-6 breathing.">
+    <meta name="description" content="Digital support for your wellbeing on the go. Viativity™ accompanies you during motion sickness with scientifically described strategies.">
 
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://viativity.app/en/" />
     <meta property="og:title" content="Viativity™ | Your smart companion for carefree travel" />
-    <meta property="og:description" content="Digital immediate help and preventive training for your wellbeing on the go. Viativity™ accompanies you during motion sickness with an artificial horizon and 4-2-6 breathing." />
+    <meta property="og:description" content="Digital support for your wellbeing on the go. Viativity™ accompanies you during motion sickness with scientifically described strategies." />
     <meta property="og:image" content="https://viativity.app/Gemini_Reisen.jpg" />
     <meta property="og:locale" content="en_US" />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:url" content="https://viativity.app/en/" />
     <meta name="twitter:title" content="Viativity™ | Your smart companion for carefree travel" />
-    <meta name="twitter:description" content="Digital immediate help and preventive training for your wellbeing on the go. Viativity™ accompanies you during motion sickness with an artificial horizon and 4-2-6 breathing." />
+    <meta name="twitter:description" content="Digital support for your wellbeing on the go. Viativity™ accompanies you during motion sickness with scientifically described strategies." />
     <meta name="twitter:image" content="https://viativity.app/Gemini_Reisen.jpg" />   
     
     <link rel="alternate" hreflang="de" href="https://viativity.app/index.html" />
@@ -61,7 +60,7 @@
         
         section { padding: 4rem 1.5rem; max-width: 1200px; margin: 0 auto; }
         
-        /* Navbar Mobile First (under 400px: two lines for e.g. iPhone 8) */
+        /* Navbar Mobile First (under 400px: two lines) */
         .navbar {
             padding: 1rem 1.5rem;
             background: var(--white);
@@ -111,19 +110,7 @@
         }
 
         .hero h1 { color: var(--white); font-size: 2rem; margin-bottom: 1.5rem; margin-top: 0; }
-        .hero h2 { color: var(--white); font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem; opacity: 0.95; }
-        .hero p { color: var(--white); font-size: 1rem; margin-bottom: 2rem; opacity: 0.9; }
-        
-        .offline-badge {
-            display: inline-block;
-            background: rgba(255,255,255,0.1);
-            padding: 0.4rem 1.2rem;
-            border-radius: 50px;
-            font-size: 0.95rem;
-            margin-bottom: 2rem;
-            border: 1px solid rgba(255,255,255,0.3);
-            color: var(--white);
-        }
+        .hero p { color: var(--white); font-size: 1.1rem; margin-bottom: 2rem; opacity: 0.95; line-height: 1.5; }
 
         .store-buttons { display: flex; flex-direction: column; gap: 1rem; align-items: center; }
         .btn {
@@ -146,23 +133,44 @@
             fill: currentColor;
         }
         
-        .btn-disabled { opacity: 0.6; cursor: not-allowed; pointer-events: none; }
-        .store-subtext { margin-top: 1.5rem; font-size: 0.85rem; color: rgba(255,255,255,0.8); letter-spacing: 0.02em; }
+        /* Trust Badges unter Hero Buttons */
+        .trust-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.6rem;
+            justify-content: center;
+            list-style: none;
+            margin-top: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        .trust-list li {
+            font-size: 0.85rem;
+            color: rgba(255,255,255,0.9);
+            background: rgba(255,255,255,0.1);
+            padding: 0.3rem 0.8rem;
+            border-radius: 50px;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .store-subtext { margin-top: 1rem; font-size: 0.85rem; color: rgba(255,255,255,0.7); letter-spacing: 0.02em; }
 
         .text-center { text-align: center; }
         .max-w-800 { max-width: 800px; margin: 0 auto; }
 
         .problem-section { max-width: 800px; margin: 0 auto; padding-top: 4rem; padding-bottom: 4rem; }
         .problem-header { margin-bottom: 3rem; text-align: center; }
+        
         .problem-box {
             background: var(--white);
             padding: 2.5rem;
             border-radius: 16px;
             box-shadow: 0 4px 6px rgba(0,0,0,0.05);
             border-left: 4px solid var(--accent-color);
+            margin-bottom: 2rem;
         }
         .problem-box h3 { color: var(--primary-color); font-size: 1.5rem; margin-bottom: 1rem; }
-        .problem-box p { margin-bottom: 0; }
+        .problem-box p { margin-bottom: 1rem; }
+        .problem-box p:last-child { margin-bottom: 0; }
 
         .feature-link {
             color: var(--primary-color);
@@ -214,25 +222,7 @@
             text-align: center;
         }
         .app-info-desc { font-size: 1.1rem; color: #4A5568; margin-bottom: 0.8rem; }
-        .app-info-latin { font-size: 0.9rem; color: #718096; margin-bottom: 2rem; font-style: italic; }
         
-        .usp-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
-            justify-content: center;
-            list-style: none;
-        }
-        .usp-list li {
-            background: var(--bg-color);
-            color: var(--primary-color);
-            padding: 0.6rem 1.2rem;
-            border-radius: 50px;
-            font-size: 0.95rem;
-            font-weight: 500;
-            border: 1px solid #E2E8F0;
-        }
-
         footer { background: #2D3748; color: var(--white); text-align: center; padding: 3rem 1.5rem 2rem 1.5rem; }
         
         .social-icons {
@@ -265,7 +255,7 @@
         .disclaimer-small { font-size: 0.8rem; color: #A0AEC0; margin-top: 1.5rem; }
 
         @media (min-width: 400px) {
-            /* Navbar from 400px (e.g. Pixel 6): Single line with slightly reduced spacing */
+            /* Navbar from 400px (e.g. Pixel 6): Single line */
             .navbar { flex-direction: row; align-items: center; justify-content: space-between; }
             .navbar-brand { align-self: auto; }
             .nav-links { width: auto; margin-top: 0; justify-content: flex-end; }
@@ -274,7 +264,7 @@
         }
 
         @media (min-width: 768px) {
-            /* Navbar Desktop Reset: Full spacing */
+            /* Navbar Desktop Reset */
             .nav-links a { margin: 0 0 0 1rem; }
             .lang-switcher { margin-left: 1.5rem; padding-left: 1rem; }
 
@@ -283,7 +273,6 @@
             .hero-content { padding: 4rem 2rem 5rem 2rem; }
             .hero-brand { font-size: 1.8rem; margin-bottom: 0.8rem; }
             .hero h1 { font-size: 3.5rem; margin-bottom: 1.5rem; }
-            .hero h2 { font-size: 1.5rem; }
             .hero p { font-size: 1.25rem; margin-bottom: 2.5rem; }
             .store-buttons { flex-direction: row; justify-content: center; }
             .mockup-showcase { height: 500px; }
@@ -296,7 +285,7 @@
 </head>
 <body>
 
-    <div class="announcement-banner">Relaxed summer travel: Your app for motion sickness, seasickness, and flight anxiety – now available for iOS and Android.</div>
+    <div class="announcement-banner">Relaxed summer travel: Your smart companion for motion sickness – now available for iOS and Android.</div>
 
     <nav class="navbar">
         <a href="index.html" class="navbar-brand">Viativity™</a>
@@ -315,13 +304,10 @@
         <div class="hero-content">
             <h1>
                 <span class="hero-brand">Viativity™</span>
-                Look forward to the journey,<br>not just the destination!
+                More joy in traveling.<br>Your smart companion for motion sickness.
             </h1>
             
-            <div class="offline-badge">100% Offline usable & Multilingual – Ideal for airplanes, ships and the mountains</div>
-            
-            <h2>Digital immediate help for kinetosis, motion sickness, seasickness, and flight anxiety.</h2>
-            <p>Use innovative tools right on the go or train your wellbeing in advance at home – whether in a car, plane, train, or on a ship.</p>
+            <p>Viativity accompanies people with motion sickness (kinetosis) with scientifically based strategies for more wellbeing on journeys – whether you are looking for support with travel sickness in the car or train, seasickness on the ferry, or flight anxiety on the plane.</p>
             
             <div class="store-buttons">
                 <a href="https://apps.apple.com/us/app/viativity-travel-companion/id6760250773" class="btn" target="_blank" rel="noopener">
@@ -333,23 +319,42 @@
                     Play Store
                 </a>
             </div>
-            <p class="store-subtext">Premium one-time purchase (for the price of an airport coffee). Pay once, use forever.<br>No subscriptions • Ad-free • Full privacy (local)</p>
+
+            <ul class="trust-list">
+                <li>Developed in Switzerland</li>
+                <li>Scientifically based</li>
+                <li>100% offline usable</li>
+                <li>No subscriptions</li>
+                <li>Local data privacy</li>
+            </ul>
+
+            <p class="store-subtext">Premium one-time purchase (for the price of an airport coffee).</p>
         </div>
     </header>
 
     <main>
-        <section id="problem" class="problem-section">
-            
+        <section id="emotion" class="problem-section">
             <div class="problem-header">
-                <h2>Sound familiar?</h2>
-                <p>You look forward to your vacation, but <strong>motion sickness</strong> (kinetosis), <strong>travel sickness</strong> or <strong>seasickness</strong> quickly spoil the ride. This unpleasant feeling arises from a sensory conflict: Your eyes report a standstill (e.g., when looking at your smartphone inside a vehicle), while your <strong>balance organ</strong> simultaneously senses the movement. The brain sounds the alarm.</p>
+                <h2>Enjoy traveling relaxed again</h2>
+                <p>Motion sickness can make the most beautiful trip a challenge. Don't let travel sickness or discomfort take away the anticipation of your vacation.</p>
             </div>
 
             <div class="problem-box">
-                <h3>This is exactly where Viativity comes in</h3>
-                <p>With smart <strong>immediate help</strong> and <strong>preventive training</strong>, the app helps your body actively resolve this contradiction. You learn to gently fade out disturbing stimuli and calm your nervous system again – <strong>scientifically proven</strong> and completely without medication.</p>
+                <h3>Your companion on the go</h3>
+                <p>Imagine: <strong>Finally looking out at the sea on the ferry again, instead of battling seasickness.</strong> Or sitting relaxed in the plane, completely free of flight anxiety. Viativity combines various scientifically described strategies that can support you during preparation and while traveling.</p>
+            </div>
+        </section>
+
+        <section id="how-it-works" class="problem-section" style="padding-top: 0;">
+            <div class="problem-header">
+                <h2>Why does motion sickness occur?</h2>
+                <p>This unpleasant feeling arises from a sensory conflict: Your eyes report a standstill (e.g., when looking at your smartphone inside a vehicle), while your <strong>balance organ</strong> simultaneously senses the movement. The brain sounds the alarm.</p>
             </div>
 
+            <div class="problem-box">
+                <h3>How Viativity supports you</h3>
+                <p>With smart immediate help and preventive training, the app helps your body actively resolve this contradiction. You learn to gently fade out disturbing stimuli and calm your nervous system again – completely without medication.</p>
+            </div>
         </section>
 
         <section id="tools" class="text-center">
@@ -373,18 +378,8 @@
             </div>
 
             <div class="app-info-box">
-                <p class="app-info-desc"><strong>Viativity</strong> is a digital wellness app for more wellbeing on your travels. Your reliable companion for kinetosis is always at hand, anywhere – exactly when you need it.</p>
-                <p class="app-info-latin">Viativity combines "Via" (Latin for way) with vitality and activity.</p>
-                
-                <ul class="usp-list">
-                    <li>100% Offline usable</li>
-                    <li>Multilingual</li>
-                    <li>No subscriptions</li>
-                    <li>Ad-free</li>
-                    <li>Local data processing</li>
-                </ul>
+                <p class="app-info-desc"><strong>Viativity</strong> is a digital support for more wellbeing on your travels. Your reliable companion for kinetosis is always at hand, anywhere – exactly when you need it.</p>
             </div>
-
         </section>
     </main>
 
