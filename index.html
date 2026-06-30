@@ -227,36 +227,66 @@
         }
         .app-info-desc { font-size: 1.1rem; color: #4A5568; margin-bottom: 0.8rem; }
         
-        footer { background: #2D3748; color: var(--white); text-align: center; padding: 3rem 1.5rem 2rem 1.5rem; }
-        
-        .social-icons {
-            display: flex;
-            justify-content: center;
-            gap: 1.5rem;
-            margin-bottom: 2rem;
-        }
-        .social-icons a {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--accent-color);
-            transition: color 0.3s ease, transform 0.3s ease;
-            margin: 0;
-        }
-        .social-icons a:hover {
-            color: var(--white);
-            transform: translateY(-2px);
-        }
-        .social-icons svg {
-            width: 24px;
-            height: 24px;
-            fill: currentColor;
+        footer { 
+            background: #2D3748; 
+            color: var(--white); 
+            text-align: center; 
+            padding: 3rem 1.5rem 2rem 1.5rem; 
         }
 
-        .footer-links { margin-bottom: 1.5rem; }
-        footer a { color: var(--accent-color); text-decoration: none; margin: 0 0.5rem; }
-        footer a:hover { color: var(--white); }
-        .disclaimer-small { font-size: 0.8rem; color: #A0AEC0; margin-top: 1.5rem; }
+        .social-icons { 
+            display: flex; 
+            justify-content: center; 
+            gap: 1.5rem; 
+            margin-bottom: 2rem; 
+        }
+
+        .social-icons a { 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            color: var(--accent-color); 
+            transition: color 0.3s ease, transform 0.3s ease; 
+            margin: 0; 
+        }
+
+        .social-icons a:hover { 
+            color: var(--white); 
+            transform: translateY(-2px); 
+        }
+
+        .social-icons svg { 
+            width: 24px; 
+            height: 24px; 
+            fill: currentColor; 
+        }
+
+        .footer-links { 
+            margin-bottom: 1.5rem; 
+        }
+
+        footer a { 
+            color: var(--accent-color); 
+            text-decoration: none; 
+            margin: 0 0.5rem; 
+        }
+
+        footer a:hover { 
+            color: var(--white); 
+        }
+
+        .app-latin { 
+            font-size: 0.85rem; 
+            color: #A0AEC0; 
+            margin-top: 0.5rem; 
+            font-style: italic; 
+        }
+
+        .disclaimer-small { 
+            font-size: 0.8rem; 
+            color: #A0AEC0; 
+            margin-top: 1.5rem; 
+        }
 
         @media (min-width: 400px) {
             /* Navbar ab 400px (z.B. Pixel 6): Einzeilig */
@@ -369,7 +399,7 @@
 
             <div class="problem-box text-left mx-auto max-w-800 mt-4 mb-4">
                 <h3>Radikal einfach – aus gutem Grund</h3>
-                <p>Wenn dir plötzlich unwohl und schlecht wird oder Stress aufkommt, hast du keine Geduld für komplizierte Menüs. Deshalb ist Viativity ganz bewusst extrem übersichtlich gehalten. Keine versteckten Menus, keine Ablenkung, kein unnötiger Schnickschnack. Alles ist darauf ausgerichtet, dir ohne Umwege genau das Werkzeug an die Hand zu geben, das dir in der aktuellen Situation hilft. Denn wahre Soforthilfe muss sofort da sein.</p>
+                <p>Wenn dir plötzlich unwohl und schlecht wird oder Stress aufkommt, hast du keine Geduld für komplizierte Menüs. Deshalb ist Viativity ganz bewusst extrem übersichtlich gehalten. Keine versteckten Einstellungen, keine Ablenkung, kein unnötiger Schnickschnack. Alles ist darauf ausgerichtet, dir ohne Umwege genau das Werkzeug an die Hand zu geben, das dir in der aktuellen Situation hilft. Denn wahre Soforthilfe muss sofort da sein.</p>
                 
                 <h3 style="margin-top: 2.5rem;">Hintergrundwissen auf Abruf</h3>
                 <p>Und wenn du entspannt zu Hause bist? Dann bietet dir jedes Werkzeug eine eigene Infoseite. Dort erfährst du in aller Ruhe, wie du es optimal anwendest, in welchen Momenten es am besten wirkt und auf welchen wissenschaftlichen Erkenntnissen und Studien es basiert. So hast du im Ernstfall absolute Einfachheit und davor die volle Transparenz.</p>
@@ -423,6 +453,7 @@
             <a href="privacy.html">Impressum & Datenschutz</a>
         </div>
         <p>© 2026 Viativity™. Entwickelt in der Schweiz.</p>
+        <p class="app-latin">Viativity verbindet „Via“ (lat. für Weg) mit Vitalität und Aktivität.</p>
         
         <div class="disclaimer-small">
             <strong>KEIN MEDIZINPRODUKT:</strong> Diese App ist kein Medizinprodukt. Sie stellt keine Diagnosen und ersetzt keine ärztliche Behandlung.
