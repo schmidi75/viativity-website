@@ -82,17 +82,68 @@
         .btn-outline { display: inline-block; border: 2px solid var(--primary-color); color: var(--primary-color); padding: 0.6rem 1.2rem; text-decoration: none; border-radius: 8px; font-weight: bold; margin-top: 0.5rem; transition: all 0.2s ease;}
         .btn-outline:hover { background: var(--primary-color); color: var(--white); }
 
-        footer { background: #2D3748; color: var(--white); text-align: center; padding: 3rem 1.5rem 2rem 1.5rem; margin-top: 4rem; }
-        
-        .social-icons { display: flex; justify-content: center; gap: 1.5rem; margin-bottom: 2rem; }
-        .social-icons a { display: flex; align-items: center; justify-content: center; color: var(--accent-color); transition: color 0.3s ease, transform 0.3s ease; margin: 0; }
-        .social-icons a:hover { color: var(--white); transform: translateY(-2px); }
-        .social-icons svg { width: 24px; height: 24px; fill: currentColor; }
-        
-        .footer-links { margin-bottom: 1.5rem; }
-        footer a { color: var(--accent-color); text-decoration: none; margin: 0 0.5rem; }
-        footer a:hover { color: var(--white); }
-        .disclaimer-small { font-size: 0.8rem; color: #A0AEC0; margin-top: 1.5rem; }
+        /* Einheitliches Footer CSS */
+        footer { 
+            background: #2D3748; 
+            color: var(--white); 
+            text-align: center; 
+            padding: 3rem 1.5rem 2rem 1.5rem; 
+            margin-top: 4rem; 
+        }
+
+        .social-icons { 
+            display: flex; 
+            justify-content: center; 
+            gap: 1.5rem; 
+            margin-bottom: 2rem; 
+        }
+
+        .social-icons a { 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            color: var(--accent-color); 
+            transition: color 0.3s ease, transform 0.3s ease; 
+            margin: 0; 
+        }
+
+        .social-icons a:hover { 
+            color: var(--white); 
+            transform: translateY(-2px); 
+        }
+
+        .social-icons svg { 
+            width: 24px; 
+            height: 24px; 
+            fill: currentColor; 
+        }
+
+        .footer-links { 
+            margin-bottom: 1.5rem; 
+        }
+
+        footer a { 
+            color: var(--accent-color); 
+            text-decoration: none; 
+            margin: 0 0.5rem; 
+        }
+
+        footer a:hover { 
+            color: var(--white); 
+        }
+
+        .app-latin { 
+            font-size: 0.85rem; 
+            color: #A0AEC0; 
+            margin-top: 0.5rem; 
+            font-style: italic; 
+        }
+
+        .disclaimer-small { 
+            font-size: 0.8rem; 
+            color: #A0AEC0; 
+            margin-top: 1.5rem; 
+        }
 
         @media (min-width: 400px) {
             /* Navbar ab 400px (z.B. Pixel 6): Einzeilig */
@@ -189,7 +240,6 @@
         <div class="footer-links">
             <a href="index.html">Startseite</a>
             <a href="features.html">Werkzeuge</a>
-            <a href="about.html">Über mich</a>
             <a href="mailto:support@viativity.app">Support</a>
             <a href="privacy.html">Impressum & Datenschutz</a>
         </div>
