@@ -61,6 +61,7 @@
         .nav-links { display: flex; align-items: center; justify-content: center; width: 100%; margin-top: 0.8rem; }
         .nav-links a { margin: 0 0.5rem; text-decoration: none; color: var(--text-color); font-weight: 500; white-space: nowrap; font-size: 0.9rem; }
         .nav-links a:hover { color: var(--accent-color); }
+        .nav-links a.active { color: var(--primary-color); font-weight: bold; }
 
         .lang-switcher {
             position: absolute;
@@ -159,7 +160,6 @@
         }
 
         @media (min-width: 400px) {
-            /* Navbar from 400px (e.g. Pixel 6): Single line */
             .navbar { flex-direction: row; align-items: center; justify-content: space-between; }
             .navbar-brand { align-self: auto; }
             .nav-links { width: auto; margin-top: 0; justify-content: flex-end; }
@@ -168,7 +168,6 @@
         }
 
         @media (min-width: 768px) {
-            /* Navbar Desktop Reset: Full spacing */
             .nav-links a { margin: 0 0 0 1rem; }
             .lang-switcher { margin-left: 1.5rem; padding-left: 1rem; }
 
@@ -183,6 +182,8 @@
         <div class="nav-links">
             <a href="index.html">Home</a>
             <a href="features.html">Tools</a>
+            <a href="faq.html">FAQ</a>
+            <a href="about.html" class="active">About Me</a>
             <div class="lang-switcher">
                 <a href="../about.html" aria-label="Switch to German">DE</a> | <span class="lang-active">EN</span>
             </div>
@@ -251,8 +252,9 @@
         </div>
 
         <div class="footer-links">
+            <a href="index.html">Home</a>
             <a href="features.html">Tools</a>
-            <a href="about.html">About Me</a>
+            <a href="faq.html">FAQ</a>
             <a href="mailto:support@viativity.app">Support</a>
             <a href="privacy.html">Legal Notice & Privacy Policy</a>
         </div>
