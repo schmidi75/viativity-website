@@ -1,39 +1,65 @@
-<!-- Viativity Privacy English - Updated July 2026 (Responsive Nav Update) -->
+<!-- Viativity Index English - Updated July 2026 (Responsive Nav Update) -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Legal Notice & Privacy Policy | Viativity™</title>
+    <title>Viativity™ | Your smart companion for carefree travel</title>
     <link rel="icon" type="image/png" href="../images/Viativity_Icon.png" />
     <link rel="apple-touch-icon" href="../images/Viativity_Icon.png" />
     
-    <meta name="description" content="Legal notice and privacy policy for Viativity. Transparency and data minimization are the top priorities for this offline app.">
+    <meta name="description" content="Digital support for your wellbeing on the go. Viativity™ accompanies you through motion sickness with scientifically described strategies.">
 
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://viativity.app/en/privacy.html" />
-    <meta property="og:title" content="Legal Notice & Privacy Policy | Viativity™" />
-    <meta property="og:description" content="Transparency and data minimization are the top priorities for this offline app." />
+    <meta property="og:url" content="https://viativity.app/en/" />
+    <meta property="og:title" content="Viativity™ | Your smart companion for carefree travel" />
+    <meta property="og:description" content="Digital support for your wellbeing on the go. Viativity™ accompanies you through motion sickness with scientifically described strategies." />
     <meta property="og:image" content="https://viativity.app/Gemini_Reisen.jpg" />
     <meta property="og:locale" content="en_US" />
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:url" content="https://viativity.app/en/privacy.html" />
-    <meta name="twitter:title" content="Legal Notice & Privacy Policy | Viativity™" />
-    <meta name="twitter:description" content="Transparency and data minimization are the top priorities for this offline app." />
-    <meta name="twitter:image" content="https://viativity.app/Gemini_Reisen.jpg" />
+    <meta name="twitter:url" content="https://viativity.app/en/" />
+    <meta name="twitter:title" content="Viativity™ | Your smart companion for carefree travel" />
+    <meta name="twitter:description" content="Digital support for your wellbeing on the go. Viativity™ accompanies you through motion sickness with scientifically described strategies." />
+    <meta name="twitter:image" content="https://viativity.app/Gemini_Reisen.jpg" />   
     
-    <link rel="alternate" hreflang="de" href="https://viativity.app/privacy.html" />
-    <link rel="alternate" hreflang="en" href="https://viativity.app/en/privacy.html" />
+    <link rel="alternate" hreflang="de" href="https://viativity.app/index.html" />
+    <link rel="alternate" hreflang="en" href="https://viativity.app/en/index.html" />
     
-    <link rel="canonical" href="https://viativity.app/en/privacy.html" />
+    <link rel="canonical" href="https://viativity.app/en/" />
     
     <style>
-        :root { --primary-color: #1A365D; --accent-color: #7DA2A9; --bg-color: #F7FAFC; --text-color: #2D3748; --white: #FFFFFF; }
+        :root {
+            --primary-color: #1A365D;
+            --accent-color: #7DA2A9;
+            --bg-color: #F7FAFC;
+            --text-color: #2D3748;
+            --white: #FFFFFF;
+        }
+
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: var(--text-color); background-color: var(--bg-color); }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+        }
+
+        /* Announcement Banner */
+        .announcement-banner {
+            background-color: var(--primary-color);
+            color: var(--white);
+            text-align: center;
+            padding: 0.6rem 1.5rem;
+            font-size: 0.95rem;
+            font-weight: 500;
+            letter-spacing: 0.02em;
+        }
+
         h1, h2, h3 { color: var(--primary-color); line-height: 1.2; margin-bottom: 1rem; }
         p { margin-bottom: 1rem; }
+        
+        section { padding: 4rem 1.5rem; max-width: 1200px; margin: 0 auto; }
         
         /* Navbar Mobile First (Soft Wrap) */
         .navbar {
@@ -63,23 +89,186 @@
             right: 1.5rem;
             font-size: 0.9rem;
         }
-        .lang-switcher a { margin-right: 0.3rem; color: #A0AEC0; text-decoration: none; font-weight: normal; }
+        .lang-switcher a { margin-left: 0; color: #A0AEC0; text-decoration: none; font-weight: normal; }
         .lang-switcher a:hover { color: var(--primary-color); }
         .lang-active { font-weight: bold; color: var(--primary-color); margin-left: 0.3rem;}
 
-        .content-section { padding: 4rem 1.5rem; max-width: 800px; margin: 0 auto; }
-        h2 { margin-top: 2.5rem; font-size: 1.4rem; }
-        ul { margin-left: 1.5rem; margin-bottom: 1rem; }
+        .hero {
+            display: flex;
+            flex-direction: column;
+            background-color: var(--primary-color);
+            color: var(--white);
+        }
         
-        .email-link { color: var(--primary-color); font-weight: bold; }
-        .last-updated { margin-top: 3rem; font-size: 0.9rem; color: #718096; }
+        .hero-image { width: 100%; height: auto; display: block; }
 
-        footer { background: #2D3748; color: var(--white); text-align: center; padding: 3rem 1.5rem 2rem 1.5rem; margin-top: 4rem; }
+        .hero-content {
+            padding: 3rem 1.5rem;
+            text-align: center;
+            max-width: 900px; 
+            margin: 0 auto;   
+        }
         
-        .social-icons { display: flex; justify-content: center; gap: 1.5rem; margin-bottom: 2rem; }
-        .social-icons a { display: flex; align-items: center; justify-content: center; color: var(--accent-color); transition: color 0.3s ease, transform 0.3s ease; margin: 0; }
-        .social-icons a:hover { color: var(--white); transform: translateY(-2px); }
-        .social-icons svg { width: 24px; height: 24px; fill: currentColor; }
+        .hero-brand {
+            display: block;
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: var(--accent-color);
+            margin-bottom: 0.5rem;
+            letter-spacing: 0.05em;
+        }
+
+        .hero h1 { color: var(--white); font-size: 2rem; margin-bottom: 1.5rem; margin-top: 0; }
+        .hero p { color: var(--white); font-size: 1.1rem; margin-bottom: 2rem; opacity: 0.95; line-height: 1.5; }
+
+        .store-buttons { display: flex; flex-direction: column; gap: 1rem; align-items: center; }
+        .btn {
+            background: var(--white);
+            color: var(--primary-color);
+            padding: 0.8rem 1.5rem;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.6rem;
+            width: 100%;
+            max-width: 280px;
+        }
+        .btn svg {
+            width: 20px;
+            height: 20px;
+            fill: currentColor;
+        }
+        
+        /* Trust Badges */
+        .trust-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.6rem;
+            justify-content: center;
+            list-style: none;
+            margin-top: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        .trust-list li {
+            font-size: 0.85rem;
+            color: rgba(255,255,255,0.9);
+            background: rgba(255,255,255,0.1);
+            padding: 0.3rem 0.8rem;
+            border-radius: 50px;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .store-subtext { margin-top: 1rem; font-size: 0.85rem; color: rgba(255,255,255,0.7); letter-spacing: 0.02em; }
+
+        .text-center { text-align: center; }
+        .text-left { text-align: left; }
+        .max-w-800 { max-width: 800px; margin: 0 auto; }
+        .mx-auto { margin-left: auto; margin-right: auto; }
+        .mt-4 { margin-top: 3rem; }
+        .mb-4 { margin-bottom: 3rem; }
+
+        .problem-section { max-width: 800px; margin: 0 auto; padding-top: 4rem; padding-bottom: 4rem; }
+        .problem-header { margin-bottom: 3rem; text-align: center; }
+        
+        .problem-box {
+            background: var(--white);
+            padding: 2.5rem;
+            border-radius: 16px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border-left: 4px solid var(--accent-color);
+            margin-bottom: 2rem;
+        }
+        .problem-box h3 { color: var(--primary-color); font-size: 1.5rem; margin-bottom: 1rem; }
+        .problem-box p { margin-bottom: 1rem; }
+        .problem-box p:last-child { margin-bottom: 0; }
+
+        .feature-link {
+            color: var(--primary-color);
+            font-weight: bold;
+            text-decoration: underline;
+            margin-top: 1rem;
+            display: inline-block;
+        }
+
+        .mockup-showcase {
+            margin-top: 4rem;
+            position: relative;
+            height: 420px; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden; 
+        }
+        .jass-card {
+            position: absolute;
+            width: 180px;
+            height: 380px;
+            background: #E2E8F0;
+            border-radius: 20px;
+            border: 6px solid #000000;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            color: #718096;
+            transition: transform 0.3s ease;
+            overflow: hidden;
+        }
+        .jass-card img { width: 100%; height: 100%; object-fit: cover; }
+        .card-left { transform: rotate(-22deg) translateX(-70px) translateY(20px); z-index: 1; }
+        .card-center { transform: rotate(0deg); z-index: 3; box-shadow: 0 15px 35px rgba(0,0,0,0.25); }
+        .card-right { transform: rotate(22deg) translateX(70px) translateY(20px); z-index: 2; }
+
+        .app-info-box {
+            margin-top: 4rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 2.5rem;
+            background: var(--white);
+            border-radius: 16px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+        .app-info-desc { font-size: 1.1rem; color: #4A5568; margin-bottom: 0.8rem; }
+        
+        footer { 
+            background: #2D3748; 
+            color: var(--white); 
+            text-align: center; 
+            padding: 3rem 1.5rem 2rem 1.5rem; 
+        }
+
+        .social-icons { 
+            display: flex; 
+            justify-content: center; 
+            gap: 1.5rem; 
+            margin-bottom: 2rem; 
+        }
+
+        .social-icons a { 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            color: var(--accent-color); 
+            transition: color 0.3s ease, transform 0.3s ease; 
+            margin: 0; 
+        }
+
+        .social-icons a:hover { 
+            color: var(--white); 
+            transform: translateY(-2px); 
+        }
+
+        .social-icons svg { 
+            width: 24px; 
+            height: 24px; 
+            fill: currentColor; 
+        }
 
         .footer-links { 
             margin-bottom: 1.5rem; 
@@ -88,78 +277,171 @@
             justify-content: center;
             gap: 1rem;
         }
-        .footer-links a { color: var(--accent-color); text-decoration: none; margin: 0; }
-        .footer-links a:hover { color: var(--white); }
-        
-        .app-latin { font-size: 0.85rem; color: #A0AEC0; margin-top: 0.5rem; font-style: italic; }
-        .disclaimer-small { font-size: 0.8rem; color: #A0AEC0; margin-top: 1.5rem; }
+
+        footer a { 
+            color: var(--accent-color); 
+            text-decoration: none; 
+            margin: 0; 
+        }
+
+        footer a:hover { 
+            color: var(--white); 
+        }
+
+        .app-latin { 
+            font-size: 0.85rem; 
+            color: #A0AEC0; 
+            margin-top: 0.5rem; 
+            font-style: italic; 
+        }
+
+        .disclaimer-small { 
+            font-size: 0.8rem; 
+            color: #A0AEC0; 
+            margin-top: 1.5rem; 
+        }
 
         @media (min-width: 768px) {
+            /* Navbar Desktop Reset */
             .navbar { flex-direction: row; align-items: center; justify-content: space-between; }
             .navbar-brand { align-self: auto; }
             .nav-links { width: auto; margin-top: 0; justify-content: flex-end; }
             .nav-links a { margin: 0 0 0 1rem; font-size: 1rem; }
             .lang-switcher { position: static; margin-left: 1.5rem; border-left: 1px solid #E2E8F0; padding-left: 1rem; }
+
+            section { padding: 6rem 2rem; }
+            .hero-image { max-width: 900px; margin: 0 auto; border-radius: 0 0 24px 24px; box-shadow: 0 25px 50px rgba(0, 0, 0, 0.6); }
+            .hero-content { padding: 4rem 2rem 5rem 2rem; }
+            .hero-brand { font-size: 1.8rem; margin-bottom: 0.8rem; }
+            .hero h1 { font-size: 3.5rem; margin-bottom: 1.5rem; }
+            .hero p { font-size: 1.25rem; margin-bottom: 2.5rem; }
+            .store-buttons { flex-direction: row; justify-content: center; }
+            .mockup-showcase { height: 500px; }
+            .jass-card { width: 220px; height: 460px; font-size: 1rem; }
+            .card-left { transform: rotate(-25deg) translateX(-130px) translateY(30px); }
+            .card-right { transform: rotate(25deg) translateX(130px) translateY(30px); }
+            .problem-section { padding-top: 6rem; padding-bottom: 6rem; }
         }
     </style>
 </head>
 <body>
 
+    <div class="announcement-banner">Relaxed summer travel: Your smart companion for motion sickness – now available for iOS and Android.</div>
+
     <nav class="navbar">
         <a href="index.html" class="navbar-brand">Viativity™</a>
         <div class="nav-links">
-            <a href="index.html">Home</a>
+            <a href="index.html" class="active">Home</a>
             <a href="features.html">Tools</a>
             <a href="travel-tips.html">Travel Tips</a>
             <a href="faq.html">FAQ</a>
             <a href="about.html">About Me</a>
             <div class="lang-switcher">
-                <a href="../privacy.html" aria-label="Switch to German">DE</a> | <span class="lang-active">EN</span>
+                <a href="../index.html" aria-label="Switch to German">DE</a> | <span class="lang-active">EN</span>
             </div>
         </div>
     </nav>
 
-    <main class="content-section">
-        <h1>Legal Notice & Privacy Policy</h1>
-        <p>Transparency is a central concern of mine. Here you will find all legal information about the operator of this website (legal notice) as well as details on how sparingly information is handled.</p>
-
-        <h2>1. Legal Notice (Provider Identification)</h2>
-        <p>Responsible for the content of this website and the Viativity app is:<br>
-        Dieter Schmidli<br>
-        Steinlerstrasse 23<br>
-        4206 Seewen<br>
-        Switzerland<br>
-        <br>
-        Email: <a href="mailto:support@viativity.app" class="email-link">support@viativity.app</a></p>
-
-        <h2>2. Data Privacy Principle</h2>
-        <p>Data minimization principle: I only collect the absolute minimum of data that is technically necessary for the operation of the website.</p>
-
-        <h2>3. Website Hosting (GitHub Pages)</h2>
-        <p>This website is hosted on GitHub Pages (GitHub Inc., USA). When you visit the site, GitHub automatically collects information transmitted by your browser (server log files). These include:</p>
-        <ul>
-            <li>IP address of your device</li>
-            <li>Date and time of access</li>
-            <li>Name and URL of the accessed file</li>
-            <li>Browser type and operating system</li>
-        </ul>
-        <p>This data is used for the security and stability of the site. I do not use external tracking tools like Google Analytics and do not set marketing cookies.</p>
-
-        <h2>4. Viativity App (100% Offline)</h2>
-        <p>The Viativity app strictly respects your privacy and works completely offline:</p>
-        <ul>
-            <li><strong>Sensor Data:</strong> All sensor data from your smartphone required for the functions (e.g., artificial horizon) is processed exclusively in real-time locally on your device.</li>
-            <li><strong>No Storage:</strong> No movement or location profiles are created or stored.</li>
-            <li><strong>No Cloud Transfer:</strong> There is absolutely no data transfer of your usage data to external servers.</li>
-        </ul>
-
-        <h2>5. Contacting Support</h2>
-        <p>If you contact me via email (support@viativity.app), I will use your details (email address, name, message) exclusively to process your request. This data will not be passed on to third parties without your consent and will be deleted after the inquiry has been resolved.</p>
-
-        <h2>6. Information and Deletion</h2>
-        <p>Since I do not collect or store any personal data from you either on the website or in the app, there is systematically no data that could be accessed, blocked, or deleted.</p>
+    <header class="hero">
+        <img src="../Gemini_Reisen.jpg" alt="Carefree travel with Viativity" class="hero-image">
         
-        <p class="last-updated">Last updated: June 2026</p>
+        <div class="hero-content">
+            <h1>
+                <span class="hero-brand">Viativity™</span>
+                More joy in traveling.<br>Your smart companion for motion sickness.
+            </h1>
+            
+            <p>Viativity accompanies people with motion sickness (kinetosis) with scientifically based strategies for more wellbeing on journeys – whether you are looking for support with travel sickness in the car or train, seasickness on the ferry, or flight anxiety on the plane.</p>
+            
+            <div class="store-buttons">
+                <a href="https://apps.apple.com/us/app/viativity-travel-companion/id6760250773" class="btn" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 384 512" aria-hidden="true"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
+                    App Store
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=app.viativity.reise" class="btn" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 512 512" aria-hidden="true"><path d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"/></svg>
+                    Play Store
+                </a>
+            </div>
+
+            <ul class="trust-list">
+                <li>Buy 1x, share with the whole family</li>
+                <li>Developed in Switzerland</li>
+                <li>Scientifically based</li>
+                <li>100% offline usable</li>
+                <li>No subscriptions</li>
+                <li>Local data privacy</li>
+            </ul>
+
+            <p class="store-subtext">Premium one-time purchase (for the price of an airport coffee).</p>
+        </div>
+    </header>
+
+    <main>
+        <section id="emotion" class="problem-section">
+            <div class="problem-header">
+                <h2>Enjoy traveling relaxed again</h2>
+                <p>Motion sickness can make the most beautiful trip a challenge. Don't let travel sickness or discomfort take away the anticipation of your vacation.</p>
+            </div>
+
+            <div class="problem-box">
+                <h3>Your companion on the go</h3>
+                <p>Imagine: <strong>Finally looking out at the sea on the ferry again, instead of battling seasickness.</strong> Or sitting relaxed in the plane, completely free of flight anxiety. Viativity combines various scientifically described strategies that can support you during preparation and while traveling.</p>
+            </div>
+        </section>
+
+        <section id="how-it-works" class="problem-section" style="padding-top: 0;">
+            <div class="problem-header">
+                <h2>Why does motion sickness occur?</h2>
+                <p>This unpleasant feeling arises from a sensory conflict: Your eyes report a standstill (e.g., when looking at your smartphone inside a vehicle), while your <strong>balance organ</strong> simultaneously senses the movement. The brain sounds the alarm.</p>
+            </div>
+
+            <div class="problem-box">
+                <h3>How Viativity supports you</h3>
+                <p>With smart immediate help and preventive training, the app helps your body actively resolve this contradiction. You learn to gently fade out disturbing stimuli and calm your nervous system again – completely without medication.</p>
+            </div>
+        </section>
+
+        <section id="tools" class="text-center">
+            <h2>Digital Tools & Travel Tips</h2>
+            <p class="max-w-800 mx-auto">Choose the tool that best supports your current situation. Whether it's acute motion sickness on the go or preventive <strong>training</strong> in advance: Viativity offers the right solution and is almost as versatile as a Swiss army knife. Use smart helpers like the <strong>artificial horizon</strong>, the <strong>4-2-6 breathing technique</strong>, and the <strong>100Hz tone</strong> to calm down, or train your <strong>body stability</strong>.</p>
+            
+            <a href="features.html" class="feature-link">View some features in detail &rarr;</a>
+
+            <div class="problem-box text-left mx-auto max-w-800 mt-4 mb-4">
+                <h3>Radically simple – for good reason</h3>
+                <p>When you suddenly feel unwell and sick, or stress arises, you have no patience for complicated menus. That is why Viativity is deliberately kept extremely clear. No hidden settings, no distractions, no unnecessary frills. Everything is designed to give you exactly the tool you need in the current situation without any detours. Because true immediate help must be there instantly.</p>
+                
+                <h3 style="margin-top: 2.5rem;">Background knowledge on demand</h3>
+                <p>And when you are relaxed at home? Then each tool offers you its own info page. There you can find out in peace how to use it optimally, in which moments it works best, and on which scientific findings and studies it is based. This way, you have absolute simplicity in an emergency and full transparency beforehand.</p>
+
+                <h3 style="margin-top: 2.5rem;">Comfort for your senses</h3>
+                <p>Viativity deliberately appeals to all senses to make your journey as pleasant as possible:</p>
+                <ul style="padding-left: 1.5rem; margin-top: 0.8rem;">
+                    <li style="margin-bottom: 0.5rem;"><strong>Close your eyes:</strong> Thanks to gentle vibrations, many helpers can be operated completely blind.</li>
+                    <li style="margin-bottom: 0.5rem;"><strong>Block out noise:</strong> Use calming ocean waves or listen to your own music directly in the app.</li>
+                    <li><strong>Relaxed on the go:</strong> Eye-friendly night mode and 100% usable offline.</li>
+                </ul>
+            </div>
+
+            <div class="mockup-showcase">
+                <div class="jass-card card-left">
+                    <img src="../images/Werkzeuge_tag_de.PNG" alt="Tools Overview">
+                </div>
+                
+                <div class="jass-card card-center">
+                    <img src="../images/Reisetipps_tag_de.PNG" alt="Travel Tips Overview">
+                </div>
+                
+                <div class="jass-card card-right">
+                    <img src="../images/MRT_tag_de.PNG" alt="MRT 100Hz Tool">
+                </div>
+            </div>
+
+            <div class="app-info-box">
+                <p class="app-info-desc"><strong>Viativity</strong> is a digital support for more wellbeing on your travels. Your reliable companion for kinetosis is always at hand, anywhere – exactly when you need it.</p>
+            </div>
+        </section>
     </main>
 
     <footer>
@@ -182,13 +464,13 @@
             <a href="faq.html">FAQ</a>
             <a href="about.html">About Me</a>
             <a href="mailto:support@viativity.app">Support</a>
-            <a href="privacy.html" class="active">Legal Notice & Privacy Policy</a>
+            <a href="privacy.html">Legal Notice & Privacy Policy</a>
         </div>
         <p>© 2026 Viativity™. Developed in Switzerland.</p>
         <p class="app-latin">Viativity combines "Via" (Latin for way) with vitality and activity.</p>
         
         <div class="disclaimer-small">
-            <strong>NOT A MEDICAL DEVICE:</strong> This app is not a medical device. It does not provide diagnoses and does not replace medical treatment.
+            <strong>NOT A MEDICAL DEVICE:</strong> This app is not a medical device. It does not make diagnoses and does not replace medical treatment.
         </div>
     </footer>
 
