@@ -1,4 +1,4 @@
-<!-- Viativity FAQ English - Updated July 2026 (incl. Family Sharing setup instructions) -->
+<!-- Viativity FAQ English - Updated July 2026 (Responsive Nav Update) -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -148,7 +148,7 @@
         h1, h2, h3 { color: var(--primary-color); line-height: 1.2; margin-bottom: 1rem; }
         p { margin-bottom: 1rem; }
         
-        /* Navbar Mobile First (< 400px: 2 rows) */
+        /* Navbar Mobile First (Soft Wrap) */
         .navbar {
             padding: 1rem 1.5rem;
             background: var(--white);
@@ -158,8 +158,15 @@
             position: sticky; top: 0; z-index: 100;
         }
         .navbar-brand { font-weight: bold; color: var(--primary-color); font-size: 1.2rem; text-decoration: none; align-self: flex-start; }
-        .nav-links { display: flex; align-items: center; justify-content: center; width: 100%; margin-top: 0.8rem; }
-        .nav-links a { margin: 0 0.5rem; text-decoration: none; color: var(--text-color); font-weight: 500; white-space: nowrap; font-size: 0.9rem; }
+        .nav-links { 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            flex-wrap: wrap; 
+            width: 100%; 
+            margin-top: 0.5rem; 
+        }
+        .nav-links a { margin: 0.3rem 0.5rem; text-decoration: none; color: var(--text-color); font-weight: 500; white-space: nowrap; font-size: 0.9rem; }
         .nav-links a:hover { color: var(--accent-color); }
         .nav-links a.active { color: var(--primary-color); font-weight: bold; }
         
@@ -171,7 +178,7 @@
         }
         .lang-switcher a { margin-left: 0; color: #A0AEC0; text-decoration: none; font-weight: normal; }
         .lang-switcher a:hover { color: var(--primary-color); }
-        .lang-active { font-weight: bold; color: var(--primary-color); margin-right: 0.3rem;}
+        .lang-active { font-weight: bold; color: var(--primary-color); margin-left: 0.3rem;}
 
         .page-header { background: var(--primary-color); color: var(--white); text-align: center; padding: 4rem 1.5rem; }
         .page-header h1 { color: var(--white); font-size: 2.5rem; }
@@ -261,12 +268,16 @@
 
         .footer-links { 
             margin-bottom: 1.5rem; 
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
         }
 
         footer a { 
             color: var(--accent-color); 
             text-decoration: none; 
-            margin: 0 0.5rem; 
+            margin: 0; 
         }
 
         footer a:hover { 
@@ -286,17 +297,12 @@
             margin-top: 1.5rem; 
         }
 
-        @media (min-width: 400px) {
+        @media (min-width: 768px) {
             .navbar { flex-direction: row; align-items: center; justify-content: space-between; }
             .navbar-brand { align-self: auto; }
             .nav-links { width: auto; margin-top: 0; justify-content: flex-end; }
-            .nav-links a { margin: 0 0 0 0.8rem; font-size: 1rem; }
-            .lang-switcher { position: static; margin-left: 1rem; border-left: 1px solid #E2E8F0; padding-left: 0.8rem; }
-        }
-
-        @media (min-width: 768px) {
-            .nav-links a { margin: 0 0 0 1rem; }
-            .lang-switcher { margin-left: 1.5rem; padding-left: 1rem; }
+            .nav-links a { margin: 0 0 0 1rem; font-size: 1rem; }
+            .lang-switcher { position: static; margin-left: 1.5rem; border-left: 1px solid #E2E8F0; padding-left: 1rem; }
             .faq-section { padding: 6rem 2rem; }
         }
     </style>
@@ -308,6 +314,7 @@
         <div class="nav-links">
             <a href="index.html">Home</a>
             <a href="features.html">Tools</a>
+            <a href="travel-tips.html">Travel Tips</a>
             <a href="faq.html" class="active">FAQ</a>
             <a href="about.html">About Me</a>
             <div class="lang-switcher">
@@ -535,7 +542,9 @@
         </div>
 
         <div class="footer-links">
+            <a href="index.html">Home</a>
             <a href="features.html">Tools</a>
+            <a href="travel-tips.html">Travel Tips</a>
             <a href="faq.html">FAQ</a>
             <a href="about.html">About Me</a>
             <a href="mailto:support@viativity.app">Support</a>
@@ -544,7 +553,7 @@
         <p>© 2026 Viativity™. Developed in Switzerland.</p>
         <p class="app-latin">Viativity combines "Via" (Latin for way) with vitality and activity.</p>
         
-        <div class="disclaimer-small">
+         <div class="disclaimer-small">
             <strong>NOT A MEDICAL DEVICE:</strong> This app is not a medical device. It does not provide diagnoses and does not replace medical treatment.
         </div>
     </footer>
