@@ -51,7 +51,7 @@
         "name": "Reisekrankheit (Kinetose): Welche App bietet smarte Soforthilfe?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Bei Reiseübelkeit entsteht ein sensorischer Konflikt im Gehirn. Moderne Smartphones bieten oft einfache Bewegungspunkte direkt im Betriebssystem. Viativity geht als smarte Begleiter-App einen grossen Schritt weiter: Sie bündelt verschiedene wissenschaftlich beschriebene Werkzeuge wie eine visuelle Horizontsimulation, beruhigende Audiofrequenzen und geführte Atemtechniken in einer einzigen, übersichtlichen Anwendung, um dein Wohlbefinden gezielt zu unterstützen."
+          "text": "Bei Reiseübelkeit entsteht ein sensorischer Konflikt im Gehirn. Moderne Smartphones bieten hierfür einfache Bewegungspunkte (Motion Cues) direkt im Betriebssystem: Aktivierbare Punkte, die auf dem Display eingeblendet werden und sich synchron zu den Fahrzeugbewegungen (Beschleunigen und Bremsen) verschieben, um dem Auge Orientierung zu geben. Viativity geht als smarte Begleiter-App einen grossen Schritt weiter: Sie bündelt verschiedene wissenschaftlich beschriebene Werkzeuge wie eine visuelle Horizontsimulation, beruhigende Audiofrequenzen und geführte Atemtechniken in einer einzigen, übersichtlichen Anwendung. So ist für jede Situation das passende Werkzeug griffbereit, um das Wohlbefinden gezielt zu unterstützen."
         }
       }, {
         "@type": "Question",
@@ -297,12 +297,17 @@
             margin-top: 1.5rem; 
         }
 
-        @media (min-width: 768px) {
+        @media (min-width: 400px) {
             .navbar { flex-direction: row; align-items: center; justify-content: space-between; }
             .navbar-brand { align-self: auto; }
             .nav-links { width: auto; margin-top: 0; justify-content: flex-end; }
-            .nav-links a { margin: 0 0 0 1rem; font-size: 1rem; }
-            .lang-switcher { position: static; margin-left: 1.5rem; border-left: 1px solid #E2E8F0; padding-left: 1rem; }
+            .nav-links a { margin: 0 0 0 0.8rem; font-size: 1rem; }
+            .lang-switcher { position: static; margin-left: 1rem; border-left: 1px solid #E2E8F0; padding-left: 0.8rem; }
+        }
+
+        @media (min-width: 768px) {
+            .nav-links a { margin: 0 0 0 1rem; }
+            .lang-switcher { margin-left: 1.5rem; padding-left: 1rem; }
             .faq-section { padding: 6rem 2rem; }
         }
     </style>
@@ -367,8 +372,8 @@
                     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
                 </summary>
                 <div class="faq-content">
-                    <p>Bei Reiseübelkeit entsteht ein sensorischer Konflikt im Gehirn. Moderne Smartphones bieten oft einfache Bewegungspunkte direkt im Betriebssystem.</p>
-                    <p><strong>Viativity</strong> geht als smarte Begleiter-App einen grossen Schritt weiter: Sie bündelt verschiedene wissenschaftlich beschriebene Werkzeuge wie eine visuelle Horizontsimulation, beruhigende Audiofrequenzen und geführte Atemtechniken in einer einzigen, übersichtlichen Anwendung. So hast du für jede Situation das passende Werkzeug griffbereit, um dein Wohlbefinden gezielt zu unterstützen.</p>
+                    <p>Bei Reiseübelkeit entsteht ein sensorischer Konflikt im Gehirn. Moderne Smartphones bieten hierfür einfache Bewegungspunkte (<strong>Motion Cues</strong>) direkt im Betriebssystem: Aktivierbare Punkte, die auf dem Display eingeblendet werden und sich synchron zu den Fahrzeugbewegungen (<strong>Beschleunigen und Bremsen</strong>) verschieben, um dem Auge Orientierung zu geben.</p>
+                    <p><strong>Viativity</strong> geht als smarte Begleiter-App einen grossen Schritt weiter: Sie bündelt verschiedene wissenschaftlich beschriebene Werkzeuge wie eine visuelle Horizontsimulation, beruhigende Audiofrequenzen und geführte Atemtechniken in einer einzigen, übersichtlichen Anwendung. So ist für jede Situation das passende Werkzeug griffbereit, um das Wohlbefinden gezielt zu unterstützen.</p>
                     <div class="faq-video-container"></div>
                 </div>
             </details>
