@@ -51,7 +51,7 @@
         "name": "Motion sickness (kinetosis): Which app offers smart immediate help?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "With motion sickness, a sensory conflict arises in the brain. Modern smartphones often offer simple motion cues directly in the operating system. Viativity goes a major step further as a smart companion app: It combines various scientifically described tools like a visual horizon simulation, soothing audio frequencies, and guided breathing techniques in a single, clear application to specifically support your wellbeing."
+          "text": "With motion sickness, a sensory conflict arises in the brain. Modern smartphones offer simple motion points (Motion Cues) directly in the operating system for this: Activatable dots that appear on the screen and shift in sync with the vehicle's movements (accelerating and braking) to provide orientation for the eyes. Viativity goes a major step further as a smart companion app: It bundles various scientifically described tools like a visual horizon simulation, soothing audio frequencies, and guided breathing techniques in a single, clear application. This way, you have the right tool at hand for every situation to specifically support your wellbeing."
         }
       }, {
         "@type": "Question",
@@ -178,7 +178,7 @@
         }
         .lang-switcher a { margin-left: 0; color: #A0AEC0; text-decoration: none; font-weight: normal; }
         .lang-switcher a:hover { color: var(--primary-color); }
-        .lang-active { font-weight: bold; color: var(--primary-color); margin-left: 0.3rem;}
+        .lang-active { font-weight: bold; color: var(--primary-color); margin-right: 0.3rem;}
 
         .page-header { background: var(--primary-color); color: var(--white); text-align: center; padding: 4rem 1.5rem; }
         .page-header h1 { color: var(--white); font-size: 2.5rem; }
@@ -297,12 +297,17 @@
             margin-top: 1.5rem; 
         }
 
-        @media (min-width: 768px) {
+        @media (min-width: 400px) {
             .navbar { flex-direction: row; align-items: center; justify-content: space-between; }
             .navbar-brand { align-self: auto; }
             .nav-links { width: auto; margin-top: 0; justify-content: flex-end; }
-            .nav-links a { margin: 0 0 0 1rem; font-size: 1rem; }
-            .lang-switcher { position: static; margin-left: 1.5rem; border-left: 1px solid #E2E8F0; padding-left: 1rem; }
+            .nav-links a { margin: 0 0 0 0.8rem; font-size: 1rem; }
+            .lang-switcher { position: static; margin-left: 1rem; border-left: 1px solid #E2E8F0; padding-left: 0.8rem; }
+        }
+
+        @media (min-width: 768px) {
+            .nav-links a { margin: 0 0 0 1rem; }
+            .lang-switcher { margin-left: 1.5rem; padding-left: 1rem; }
             .faq-section { padding: 6rem 2rem; }
         }
     </style>
@@ -367,8 +372,8 @@
                     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
                 </summary>
                 <div class="faq-content">
-                    <p>With motion sickness, a sensory conflict arises in the brain. Modern smartphones often offer simple motion cues directly in the operating system.</p>
-                    <p><strong>Viativity</strong> goes a major step further as a smart companion app: It combines various scientifically described tools like a visual horizon simulation, soothing audio frequencies, and guided breathing techniques in a single, clear application. This way, you have the right tool at hand for every situation to specifically support your wellbeing.</p>
+                    <p>With motion sickness, a sensory conflict arises in the brain. Modern smartphones offer simple motion points (<strong>Motion Cues</strong>) directly in the operating system for this: Activatable dots that appear on the screen and shift in sync with the vehicle's movements (<strong>accelerating and braking</strong>) to provide orientation for the eyes.</p>
+                    <p><strong>Viativity</strong> goes a major step further as a smart companion app: It bundles various scientifically described tools like a visual horizon simulation, soothing audio frequencies, and guided breathing techniques in a single, clear application. This way, you have the right tool at hand for every situation to specifically support your wellbeing.</p>
                     <div class="faq-video-container"></div>
                 </div>
             </details>
@@ -553,7 +558,7 @@
         <p>© 2026 Viativity™. Developed in Switzerland.</p>
         <p class="app-latin">Viativity combines "Via" (Latin for way) with vitality and activity.</p>
         
-         <div class="disclaimer-small">
+        <div class="disclaimer-small">
             <strong>NOT A MEDICAL DEVICE:</strong> This app is not a medical device. It does not provide diagnoses and does not replace medical treatment.
         </div>
     </footer>
