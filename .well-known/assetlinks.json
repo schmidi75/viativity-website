@@ -1,0 +1,14 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "app.viativity.reise",
+      "sha256_cert_fingerprints": [
+        "56:9F:4E:54:1F:68:0D:C3:7E:E2:6E:9E:0A:3B:50:1D:1A:A8:02:B8:F4:05:B8:86:F4:62:97:D2:74:2A:8F:1B"
+      ]
+    }
+  }
+]
