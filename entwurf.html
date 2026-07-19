@@ -1,4 +1,4 @@
-<!-- Version: Juli 2026 - Update: Perfektionierte Nutzerführung, visuelle Rhythmisierung & starke Viativity-Conversion -->
+<!-- Version: Juli 2026 - Update: Viativity Action-Boxen optimiert & fehlende Werkzeuge ergänzt -->
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -103,9 +103,13 @@
         .viativity-action-box h4 svg { width: 24px; height: 24px; fill: var(--accent-color); flex-shrink: 0; }
         .viativity-action-box > p { color: #E2E8F0; font-size: 0.95rem; margin-bottom: 1.2rem; }
         .viativity-action-box ul { list-style: none; margin-left: 0; }
-        .viativity-action-box li { margin-bottom: 0.6rem; font-size: 0.95rem; color: #E2E8F0; display: flex; align-items: flex-start; gap: 0.5rem; }
-        .viativity-action-box li::before { content: "•"; color: var(--accent-color); font-weight: bold; font-size: 1.2rem; line-height: 1; }
-        .viativity-action-box li strong { color: var(--white); }
+        .viativity-action-box li { margin-bottom: 1rem; font-size: 0.95rem; color: #E2E8F0; display: flex; align-items: flex-start; gap: 0.6rem; }
+        .viativity-action-box li::before { content: "•"; color: var(--accent-color); font-weight: bold; font-size: 1.2rem; line-height: 1.1; margin-top: -0.1rem; }
+        
+        /* Sauber formatierte Action-Texte */
+        .action-text { display: flex; flex-direction: column; }
+        .action-text strong { color: var(--white); font-size: 1.05rem; margin-bottom: 0.2rem; }
+        .action-text span { color: #E2E8F0; }
 
         /* Digital Tools specific styling */
         .tool-block { background: var(--bg-color); padding: 1.8rem; border-radius: 12px; margin-bottom: 1.5rem; border: 1px solid #E2E8F0; }
@@ -245,8 +249,18 @@
                         <h4><svg><use href="#viativity-icon"></use></svg> Bereite dich mit Viativity vor</h4>
                         <p>Die Webseite liefert das Wissen, die App trainiert deinen Körper. Nutze schon Wochen vor der Abreise entspannt auf dem Sofa:</p>
                         <ul>
-                            <li><strong>Mentale Rotation:</strong> Ein visuospatiales Training, das deinem Gehirn hilft, Bewegungen künftig schneller zu verarbeiten.</li>
-                            <li><strong>Körper-Lot:</strong> Eine Audio-Übung, die deine Rumpfstabilität und dein Gleichgewicht bei geschlossenen Augen stärkt.</li>
+                            <li>
+                                <div class="action-text">
+                                    <strong>Mentale Rotation</strong>
+                                    <span>Ein visuospatiales Training, das deinem Gehirn hilft, Bewegungen künftig schneller zu verarbeiten.</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="action-text">
+                                    <strong>Körper-Lot</strong>
+                                    <span>Eine Audio-Übung, die deine Rumpfstabilität und dein Gleichgewicht bei geschlossenen Augen stärkt.</span>
+                                </div>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -307,9 +321,24 @@
                         <h4><svg><use href="#viativity-icon"></use></svg> Noch entspannter mit Viativity</h4>
                         <p>Die Webseite erklärt die Theorie, die App hilft dir als Begleiter unterwegs. Nutze während der Fahrt auf dem Beifahrersitz:</p>
                         <ul>
-                            <li><strong>4-2-6 Atmung:</strong> Baut Stress und innere Unruhe auf kurvigen Passstrassen sanft ab.</li>
-                            <li><strong>P6-Anleitung:</strong> Die diskrete, visuelle Hilfe zur Handgelenks-Massage, wenn es plötzlich flau wird.</li>
-                            <li><strong>100 Hz Klang:</strong> Ein beruhigender Ton über deine Kopfhörer, der dein Gleichgewichtssystem sanft unterstützt.</li>
+                            <li>
+                                <div class="action-text">
+                                    <strong>4-2-6 Atmung</strong>
+                                    <span>Baut Stress und innere Unruhe auf kurvigen Passstrassen sanft ab.</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="action-text">
+                                    <strong>P6-Anleitung</strong>
+                                    <span>Die diskrete, visuelle Hilfe zur Handgelenks-Massage, wenn es plötzlich flau wird.</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="action-text">
+                                    <strong>100 Hz Klang</strong>
+                                    <span>Ein beruhigender Ton über deine Kopfhörer, der dein Gleichgewichtssystem sanft unterstützt.</span>
+                                </div>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -365,8 +394,18 @@
                         <h4><svg><use href="#viativity-icon"></use></svg> Besser fliegen mit Viativity</h4>
                         <p>Gerade wenn es an Bord unruhig wird, hast du mit der App wertvolle Werkzeuge direkt griffbereit:</p>
                         <ul>
-                            <li><strong>4-2-6 Atmung:</strong> Perfekt, um bei plötzlichen Turbulenzen oder aufkommender Flugangst den Puls zu beruhigen.</li>
-                            <li><strong>100 Hz Klang:</strong> Lass diesen Ton sanft im Hintergrund unter deiner Noise-Cancelling-Funktion laufen, um die Reizlast weiter zu minimieren.</li>
+                            <li>
+                                <div class="action-text">
+                                    <strong>4-2-6 Atmung</strong>
+                                    <span>Perfekt, um bei plötzlichen Turbulenzen oder aufkommender Flugangst den Puls zu beruhigen.</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="action-text">
+                                    <strong>100 Hz Klang</strong>
+                                    <span>Lass diesen Ton sanft im Hintergrund unter deiner Noise-Cancelling-Funktion laufen, um die Reizlast weiter zu minimieren.</span>
+                                </div>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -417,8 +456,18 @@
                         <h4><svg><use href="#viativity-icon"></use></svg> Dein Helfer auf hoher See</h4>
                         <p>Wenn du den Ozean nicht sehen kannst, übernimmt Viativity die visuelle Orientierung für dich:</p>
                         <ul>
-                            <li><strong>Künstlicher Horizont:</strong> Besonders hilfreich in fensterlosen Innenkabinen. Er simuliert die Schiffsbewegung auf deinem Display in Echtzeit und löst den Sinneskonflikt auf.</li>
-                            <li><strong>P6-Anleitung:</strong> Die schnelle Orientierung für die beruhigende Handgelenks-Akupressur.</li>
+                            <li>
+                                <div class="action-text">
+                                    <strong>Künstlicher Horizont</strong>
+                                    <span>Besonders hilfreich in fensterlosen Innenkabinen. Er simuliert die Schiffsbewegung auf deinem Display in Echtzeit und löst den Sinneskonflikt auf.</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="action-text">
+                                    <strong>P6-Anleitung</strong>
+                                    <span>Die schnelle Orientierung für die beruhigende Handgelenks-Akupressur.</span>
+                                </div>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -472,10 +521,20 @@
 
                     <div class="viativity-action-box">
                         <h4><svg><use href="#viativity-icon"></use></svg> So unterstützt dich Viativity</h4>
-                        <p>Wenn du im Zug zum Sitzen entgegen der Fahrtrichtung gezwungen bist:</p>
+                        <p>Wenn du im Zug zum Sitzen entgegen der Fahrtrichtung gezwungen bist oder es unruhig wird:</p>
                         <ul>
-                            <li><strong>Künstlicher Horizont:</strong> Löst den Konflikt auf, indem er dir die Fahrtrichtung visuell auf dem Display stabilisiert.</li>
-                            <li><strong>Fokus-Training:</strong> Ein kurzes visuelles Spiel, um dein System zu zentrieren und abzulenken.</li>
+                            <li>
+                                <div class="action-text">
+                                    <strong>100 Hz Klang</strong>
+                                    <span>Ein sanfter Ton über deine Kopfhörer, der das Gleichgewichtssystem beruhigt und Umgebungsgeräusche abschirmt.</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="action-text">
+                                    <strong>Fokus-Training</strong>
+                                    <span>Ein kurzes visuelles Spiel, um dein System zu zentrieren und abzulenken.</span>
+                                </div>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -521,7 +580,12 @@
                         <h4><svg><use href="#viativity-icon"></use></svg> Entspannt ankommen mit Viativity</h4>
                         <p>Wenn die Höhe oder das Schaukeln Nervosität auslöst:</p>
                         <ul>
-                            <li><strong>4-2-6 Atmung:</strong> Gib den Takt vor und bringe deinen Ruhepuls während der kurzen Gondelfahrt schnell wieder unter Kontrolle.</li>
+                            <li>
+                                <div class="action-text">
+                                    <strong>4-2-6 Atmung</strong>
+                                    <span>Gib den Takt vor und bringe deinen Ruhepuls während der kurzen Gondelfahrt schnell wieder unter Kontrolle.</span>
+                                </div>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -562,7 +626,12 @@
                         <h4><svg><use href="#viativity-icon"></use></svg> Viativity für ältere Kinder</h4>
                         <p>Wenn ältere Kinder unter Reiseangst oder innerer Unruhe leiden:</p>
                         <ul>
-                            <li><strong>4-2-6 Taktatmung:</strong> Das gemeinsame Ausführen der Atemübung hat eine wunderbar stabilisierende Wirkung und gibt dem Kind das Gefühl, selbst aktiv etwas zur Besserung beitragen zu können.</li>
+                            <li>
+                                <div class="action-text">
+                                    <strong>4-2-6 Taktatmung</strong>
+                                    <span>Das gemeinsame Ausführen der Atemübung hat eine wunderbar stabilisierende Wirkung und gibt dem Kind das Gefühl, selbst aktiv etwas zur Besserung beitragen zu können.</span>
+                                </div>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -585,11 +654,10 @@
                     <div class="tool-block">
                         <h3>Künstlicher Horizont</h3>
                         <div class="tool-tagline">Ideal, wenn dir die visuelle Orientierung fehlt</div>
-                        <p>In fensterlosen Kabinen oder Zügen weiss das Auge oft nicht, wie sich das Fahrzeug gerade bewegt. Dieses Werkzeug blendet eine virtuelle Linie ein, die sich über die Smartphone-Sensoren in Echtzeit mit den Neigungen synchronisiert. Dein Gehirn erhält so die notwendige visuelle Stabilität zurück.</p>
+                        <p>In fensterlosen Kabinen weiss das Auge oft nicht, wie sich das Fahrzeug gerade bewegt. Dieses Werkzeug blendet eine virtuelle Linie ein, die sich über die Smartphone-Sensoren in Echtzeit mit den Neigungen synchronisiert. Dein Gehirn erhält so die notwendige visuelle Stabilität zurück.</p>
                         <h4>Besonders geeignet für:</h4>
                         <ul>
                             <li>Schiffe & Fähren (Innenkabinen)</li>
-                            <li>Züge (beim Rückwärtssitzen)</li>
                         </ul>
                     </div>
 
@@ -610,8 +678,7 @@
                         <p>Das Gleichgewichtsorgan reagiert empfindlich auf ständige Schwankungen und monotonen Lärm. Eine unaufdringliche, tiefe Audio-Frequenz (100 Hertz) wird über deine Kopfhörer abgespielt, um das Gleichgewichtssystem sanft zu stimulieren und die Anfälligkeit für Schwindel zu verringern.</p>
                         <h4>Besonders geeignet für:</h4>
                         <ul>
-                            <li>Flugzeuge (kombiniert mit Noise-Cancelling)</li>
-                            <li>Lange Autofahrten als Beifahrer</li>
+                            <li>Flugzeuge oder bei Autofahrten als Beifahrer</li>
                         </ul>
                     </div>
 
@@ -632,6 +699,26 @@
                         <h4>Besonders geeignet für:</h4>
                         <ul>
                             <li>Die entspannte Vorbereitung zu Hause auf dem Sofa</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tool-block">
+                        <h3>Körper-Lot</h3>
+                        <div class="tool-tagline">Ideal, um deinen Stand zu stabilisieren</div>
+                        <p>Wer einen stabilen Stand hat, reist erwiesenermassen entspannter. Diese reine Audio-Übung trainiert mit geschlossenen Augen dein Gleichgewicht und die Rumpfstabilität, um dir präventiv mehr Widerstandsfähigkeit zu verleihen.</p>
+                        <h4>Besonders geeignet für:</h4>
+                        <ul>
+                            <li>Das präventive Training zu Hause</li>
+                        </ul>
+                    </div>
+
+                    <div class="tool-block">
+                        <h3>Fokus-Training</h3>
+                        <div class="tool-tagline">Ideal zur visuellen Ablenkung</div>
+                        <p>Durch das Binden deiner visuellen Aufmerksamkeit auf eine anspruchsvolle Aufgabe zwingst du das Gehirn zur Konzentration. Dieses Werkzeug eignet sich wunderbar zur gezielten Ablenkung und sanften Gewöhnung.</p>
+                        <h4>Besonders geeignet für:</h4>
+                        <ul>
+                            <li>Ruhigere Reisephasen oder Wartezeiten</li>
                         </ul>
                     </div>
                 </div>
