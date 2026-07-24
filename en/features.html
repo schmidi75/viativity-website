@@ -28,9 +28,23 @@
     <link rel="canonical" href="https://viativity.app/en/features.html" />
     
     <style>
-        :root { --primary-color: #1A365D; --accent-color: #7DA2A9; --bg-color: #F7FAFC; --text-color: #2D3748; --white: #FFFFFF; }
+        :root { 
+            --primary-color: #1A365D; 
+            --accent-color: #7DA2A9; 
+            --bg-color: #F7FAFC; 
+            --text-color: #2D3748; 
+            --white: #FFFFFF; 
+        }
+        
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: var(--text-color); background-color: var(--bg-color); }
+        
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
+            line-height: 1.6; 
+            color: var(--text-color); 
+            background-color: var(--bg-color); 
+        }
+        
         h1, h2, h3 { color: var(--primary-color); line-height: 1.2; margin-bottom: 1rem; }
         p { margin-bottom: 1rem; }
         
@@ -62,15 +76,15 @@
             right: 1.5rem;
             font-size: 0.9rem;
         }
-        .lang-switcher a { margin-left: 0; color: #A0AEC0; text-decoration: none; font-weight: normal; }
+        .lang-switcher a { margin-right: 0.3rem; color: #A0AEC0; text-decoration: none; font-weight: normal; }
         .lang-switcher a:hover { color: var(--primary-color); }
-        .lang-active { font-weight: bold; color: var(--primary-color); margin-right: 0.3rem;}
+        .lang-active { font-weight: bold; color: var(--primary-color); margin-left: 0.3rem; }
         
         .page-header { background: var(--primary-color); color: var(--white); text-align: center; padding: 4rem 1.5rem; }
         .page-header h1 { color: var(--white); font-size: 2.5rem; }
         .page-header p { font-size: 1.1rem; opacity: 0.9; max-width: 700px; margin: 0 auto; }
 
-        /* Quick Guide Section */
+        /* Quick Guide Section - Light, Airy & Unified Grid */
         .quick-guide-section { padding: 4rem 1.5rem 0 1.5rem; max-width: 1200px; margin: 0 auto; }
         .quick-guide-header { text-align: center; margin-bottom: 3rem; }
         .quick-guide-grid { display: grid; grid-template-columns: 1fr; gap: 2rem; }
@@ -114,7 +128,7 @@
         }
         .viativity-action-box strong { color: var(--accent-color); margin-bottom: 0.3rem; }
 
-        /* Science Dropdown */
+        /* Science Dropdown (Progressive Disclosure) */
         .science-details { margin-top: 1.5rem; margin-bottom: 1rem; background: rgba(125, 162, 169, 0.05); border-radius: 8px; border: 1px solid #E2E8F0; overflow: hidden; }
         .grid-card .science-details { margin-top: auto; margin-bottom: 0; }
         .science-summary { padding: 0.8rem 1rem; cursor: pointer; font-weight: 500; color: var(--accent-color); display: flex; align-items: center; justify-content: space-between; list-style: none; font-size: 0.95rem; transition: background-color 0.3s ease, color 0.3s ease; }
@@ -127,6 +141,7 @@
         .science-content p:last-child { margin-bottom: 0; }
         .science-content strong { color: var(--primary-color); font-weight: 600; }
 
+        /* Video Link Styling */
         .video-link { display: inline-flex; align-items: center; gap: 0.5rem; color: var(--accent-color); text-decoration: none; font-weight: 500; margin-top: 0.5rem; padding-top: 0.5rem; transition: color 0.3s ease; }
         .video-link:hover { color: var(--primary-color); }
         .video-link svg { width: 20px; height: 20px; fill: currentColor; }
@@ -159,21 +174,20 @@
         .science-inner h3 { color: var(--primary-color); margin-bottom: 1rem; }
         .science-inner p { margin-bottom: 0; max-width: 800px; margin-left: auto; margin-right: auto; }
 
-        /* Footer CSS */
         footer { 
             background: #2D3748; 
             color: var(--white); 
             text-align: center; 
             padding: 3rem 1.5rem 2rem 1.5rem; 
         }
-
+        
         .social-icons { 
             display: flex; 
             justify-content: center; 
             gap: 1.5rem; 
             margin-bottom: 2rem; 
         }
-
+        
         .social-icons a { 
             display: flex; 
             align-items: center; 
@@ -182,12 +196,12 @@
             transition: color 0.3s ease, transform 0.3s ease; 
             margin: 0; 
         }
-
+        
         .social-icons a:hover { 
             color: var(--white); 
             transform: translateY(-2px); 
         }
-
+        
         .social-icons svg { 
             width: 24px; 
             height: 24px; 
@@ -201,24 +215,24 @@
             justify-content: center;
             gap: 1rem;
         }
-
+        
         footer a { 
             color: var(--accent-color); 
             text-decoration: none; 
             margin: 0; 
         }
-
+        
         footer a:hover { 
             color: var(--white); 
         }
-
+        
         .app-latin { 
             font-size: 0.85rem; 
             color: #A0AEC0; 
             margin-top: 0.5rem; 
             font-style: italic; 
         }
-
+        
         .disclaimer-small { 
             font-size: 0.8rem; 
             color: #A0AEC0; 
@@ -226,12 +240,13 @@
         }
 
         @media (min-width: 768px) {
+            /* Navbar Desktop Reset */
             .navbar { flex-direction: row; align-items: center; justify-content: space-between; }
             .navbar-brand { align-self: auto; }
             .nav-links { width: auto; margin-top: 0; justify-content: flex-end; }
             .nav-links a { margin: 0 0 0 1rem; font-size: 1rem; }
             .lang-switcher { position: static; margin-left: 1.5rem; border-left: 1px solid #E2E8F0; padding-left: 1rem; }
-
+            
             .quick-guide-grid { grid-template-columns: repeat(3, 1fr); }
             .tool-tags { grid-template-columns: repeat(2, 1fr); }
             .feature-row { flex-direction: row; gap: 4rem; margin-bottom: 8rem; }
@@ -265,13 +280,13 @@
 
     <section class="quick-guide-section">
         <div class="quick-guide-header">
-            <h2>The right tool at the right time</h2>
+            <h2>The right helper at the right time</h2>
             <p>Which method do you use in which situation? Here is a quick overview for you:</p>
         </div>
         <div class="quick-guide-grid">
             <div class="guide-card">
                 <h3>1. For motion sickness</h3>
-                <p>If you suddenly feel sick and nauseous in a car, train, or on a ship, these methods help as direct immediate support. They send soothing signals to your stomach or give your eyes the real movement back so you can enjoy the trip relaxed again.</p>
+                <p>If you suddenly feel sick and nauseous in a car, train, or on a ship, these methods help as direct immediate support. They send soothing signals to your stomach or give your eyes the real movement back so you can relax and enjoy the trip again.</p>
                 <div class="tool-tags">
                     <span class="tool-tag">Artificial Horizon</span>
                     <span class="tool-tag">P6 Acupressure</span>
@@ -289,11 +304,11 @@
             </div>
             <div class="guide-card">
                 <h3>3. Preventive training</h3>
-                <p>Prepare yourself calmly weeks before your vacation so the trip to your destination starts relaxed from the very first minute. With these exercises for at home, you train your stability and help your brain process movement data much more efficiently.</p>
+                <p>Prepare yourself calmly weeks before your vacation, so the trip to your destination begins relaxed from the very first minute. With these at-home exercises, you train your stability and help your brain process movement data much more efficiently.</p>
                 <div class="tool-tags">
                     <span class="tool-tag">Mental Rotation</span>
                     <span class="tool-tag">Body Stability</span>
-                    <span class="tool-tag">Focus Game</span>
+                    <span class="tool-tag">Focus</span>
                 </div>
             </div>
         </div>
@@ -318,13 +333,13 @@
                     </div>
                 </details>
 
-                <a href="https://youtube.com/shorts/7axQsMoPpVQ" class="video-link" target="_blank" rel="noopener" aria-label="Open explainer video for artificial horizon on YouTube in a new tab">
+                <a href="https://youtube.com/shorts/7axQsMoPpVQ" class="video-link" target="_blank" rel="noopener" aria-label="Open explainer video for the artificial horizon on YouTube in a new tab">
                     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
                     Watch explainer video on YouTube
                 </a>
             </div>
             <div class="phone-frame">
-                <img src="../images/Horizont_nacht_de.PNG" alt="Ship bow and Artificial Horizon">
+                <img src="../images/Horizont_nacht_en.PNG" alt="Ship bow and Artificial Horizon">
             </div>
         </div>
 
@@ -341,7 +356,7 @@
                         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
                     </summary>
                     <div class="science-content">
-                        <p><strong>Background:</strong> Controlled, paced breathing stimulates the vagus nerve and increases heart rate variability (HRV). This significantly dampens physical arousal and has proven effective in studies as support for restless travel and in stressful situations.</p>
+                        <p><strong>Background:</strong> Controlled, slowed breathing (paced breathing) stimulates the vagus nerve and increases heart rate variability (HRV). This significantly dampens physical arousal and has proven effective in studies as support for restless travel and in stressful situations.</p>
                         <p><strong>Source:</strong> Yen Pik Sang et al. (2003); Stromberg et al. (2015); Zaccaro et al. (2018) on anxiety regulation.</p>
                     </div>
                 </details>
@@ -352,7 +367,7 @@
                 </a>
             </div>
             <div class="phone-frame">
-                <img src="../images/Atmung_nacht_de.PNG" alt="4-2-6 Paced Breathing Tool">
+                <img src="../images/Atmung_nacht_en.PNG" alt="4-2-6 Paced Breathing Tool">
             </div>
         </div>
 
@@ -360,7 +375,7 @@
             <div class="feature-text">
                 <h3>Preventive training for the journey</h3>
                 <h2>Mental rotation</h2>
-                <p>Prepare yourself weeks before your vacation so the trip to your destination starts relaxed. A trained spatial imagination helps the brain process spatial and movement data on the journey more efficiently. IMPORTANT: This is purely preventive training. Practice calmly for about 15 minutes a day before the trip. The application: Decide in the interactive game whether the right 3D figure is identical (only rotated) or mirrored. You have one joker per level.</p>
+                <p>Prepare yourself weeks before your vacation so the trip to your destination starts relaxed. A trained spatial imagination helps the brain process spatial and movement data on the journey more efficiently. IMPORTANT: This is purely a preventive training. Practice calmly for about 15 minutes a day before the trip. The application: Decide in the interactive game whether the right 3D figure is identical (only rotated) or mirrored. You have one joker per level.</p>
                 <p><strong>Why this helps:</strong> Such spatial vision training trains the brain to resolve conflicting signals and movements much faster. This can significantly lower individual susceptibility to travel discomfort in advance.</p>
                 
                 <details class="science-details">
@@ -380,7 +395,7 @@
                 </a>
             </div>
             <div class="phone-frame">
-                <img src="../images/MRT_nacht_de.PNG" alt="Mental Rotation Game">
+                <img src="../images/MRT_nacht_en.PNG" alt="Mental Rotation Game">
             </div>
         </div>
     </main>
@@ -409,7 +424,7 @@
                             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
                         </summary>
                         <div class="science-content">
-                            <p><strong>Background:</strong> Systematic reviews (Cochrane Reviews) confirm that the stimulation of the P6 point can significantly reduce the occurrence of a queasy feeling and discomfort. The effect on the general wellbeing of the stomach is comprehensively proven in studies, without any side effects.</p>
+                            <p><strong>Background:</strong> Systematic reviews (Cochrane Reviews) confirm that the stimulation of the P6 point can significantly reduce the occurrence of a queasy feeling and discomfort. The effect on the general wellbeing of the stomach is comprehensively proven in studies, entirely without side effects.</p>
                             <p><strong>Source:</strong> Lee A, Fan LT. (2009/2015). Cochrane Database of Systematic Reviews.</p>
                         </div>
                     </details>
@@ -435,7 +450,7 @@
                             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
                         </summary>
                         <div class="science-content">
-                            <p><strong>Background:</strong> Biofeedback training improves posture control. Studies (Postural Instability Theory) show that higher stability (less swaying) correlates directly with a higher resistance to travel discomfort.</p>
+                            <p><strong>Background:</strong> Biofeedback training improves posture control. Studies (Postural Instability Theory) show that higher stability (less swaying) directly correlates with a higher resistance to travel discomfort.</p>
                             <p><strong>Source:</strong> Riccio & Stoffregen (1991); Stoffregen et al. (2010).</p>
                         </div>
                     </details>
@@ -448,7 +463,7 @@
                 
                 <div class="grid-card">
                     <h3>100Hz Tone Modulation</h3>
-                    <p>Specific acoustic frequencies can gently influence the balance system via the inner ear. Listen to the tone preventively shortly before your trip or as support at the first sign of discomfort.</p>
+                    <p>Specific acoustic frequencies can gently influence the balance system via the inner ear. Listen to the tone preventively shortly before your trip or as support at the first signs of discomfort.</p>
                     <p><strong>Why this helps:</strong> The fine vibration stimulates the sensory cells in the ear, improves balance, and thus reduces the sensory conflict in the brain, actively counteracting the queasy feeling.</p>
 
                     <div class="viativity-action-box">
@@ -487,7 +502,7 @@
                             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
                         </summary>
                         <div class="science-content">
-                            <p><strong>Background:</strong> Fixating on a stable point suppresses the reflex that links eyes and balance (vestibulo-ocular reflex). This mitigates the sensory conflict, which is considered the main cause of travel discomfort in science.</p>
+                            <p><strong>Background:</strong> Fixating on a stable point suppresses the reflex that links eyes and balance (vestibulo-ocular reflex). This mitigates the sensory conflict, which is considered in science to be the main cause of travel discomfort.</p>
                             <p><strong>Source:</strong> Reason, J. T., & Brand, J. J. (1975); Bos (2011).</p>
                         </div>
                     </details>
@@ -500,17 +515,17 @@
 
                 <div class="grid-card">
                     <h3>In Your Language</h3>
-                    <p>Viativity is currently available in <strong>English, German, French, Spanish, and Japanese</strong>. Stress-free travel also means that you don't have to translate first in an acute situation. More languages are already in preparation.</p>
+                    <p>Viativity is currently available in <strong>English, German, French, Spanish, and Japanese</strong>. Stress-free travel also means that you don't have to translate first in an acute situation. Additional languages are already in preparation.</p>
                 </div>
 
                 <div class="grid-card">
                     <h3>Travel Tips</h3>
-                    <p>Knowledge is half the battle. Viativity contains over 50 scientifically based tips and tricks for cars, ships, planes, trains, or cable cars.</p>
+                    <p>Knowledge is half the battle. Viativity contains more than 50 scientifically based tips and tricks for car, ship, plane, train, or cable car.</p>
                 </div>
 
                 <div class="grid-card">
                     <h3>Sensors & Hardware</h3>
-                    <p>To fully exploit the potential, the app uses your smartphone's gyroscope. For the 100Hz tone modulation, you absolutely need headphones to correctly transmit the low frequencies.</p>
+                    <p>To unlock the full potential, the app relies on the gyroscope of your smartphone. For the 100Hz tone modulation, you strictly need headphones to transmit the low frequencies correctly.</p>
                 </div>
             </div>
         </div>
