@@ -1,5 +1,5 @@
 # Viativity Website - robots.txt
-# Version: April 2026
+# Version: August 2026
 
 User-agent: *
 Allow: /
