@@ -30,13 +30,13 @@
         <loc>https://viativity.app/about.html</loc>
         <lastmod>2026-08-12</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
+        <priority>0.6</priority>
     </url>
     <url>
         <loc>https://viativity.app/privacy.html</loc>
         <lastmod>2026-08-12</lastmod>
         <changefreq>yearly</changefreq>
-        <priority>0.5</priority>
+        <priority>0.3</priority>
     </url>
 
     <!-- Englische Seiten (/en/) -->
@@ -68,13 +68,13 @@
         <loc>https://viativity.app/en/about.html</loc>
         <lastmod>2026-08-12</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
+        <priority>0.6</priority>
     </url>
     <url>
         <loc>https://viativity.app/en/privacy.html</loc>
         <lastmod>2026-08-12</lastmod>
         <changefreq>yearly</changefreq>
-        <priority>0.5</priority>
+        <priority>0.3</priority>
     </url>
 
 </urlset>
