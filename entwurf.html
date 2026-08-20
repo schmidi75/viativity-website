@@ -1,4 +1,4 @@
-<!-- Viativity Features Deutsch - Updated August 2026 (Quick Guide Anchor Links Update) -->
+<!-- Viativity Features Deutsch - Updated August 2026 (Quick Guide Clickable Pills) -->
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -75,7 +75,7 @@
         .page-header h1 { color: var(--white); font-size: 2.5rem; }
         .page-header p { font-size: 1.1rem; opacity: 0.9; max-width: 700px; margin: 0 auto; }
 
-        /* Quick Guide Section - Anchor Link Style */
+        /* Quick Guide Section - Clickable Pills */
         .quick-guide-section { padding: 4rem 1.5rem 0 1.5rem; max-width: 1200px; margin: 0 auto; }
         .quick-guide-header { text-align: center; margin-bottom: 3rem; }
         .quick-guide-grid { display: grid; grid-template-columns: 1fr; gap: 2rem; }
@@ -83,35 +83,31 @@
         .guide-card h3 { font-size: 1.2rem; color: var(--primary-color); margin-bottom: 0.5rem; }
         .guide-card p { font-size: 0.95rem; color: #718096; margin-bottom: 1.5rem; }
         
-        .tool-links {
-            margin-top: auto;
-            padding-top: 1.2rem;
-            border-top: 1px solid #E2E8F0;
-            display: flex;
-            flex-direction: column;
-            gap: 0.5rem;
+        .tool-tags { 
+            display: flex; 
+            flex-wrap: wrap; 
+            gap: 0.5rem; 
+            margin-top: auto; /* Pusht die Pillen an den unteren Rand der Karte */
+            padding-top: 1rem;
         }
-        .tool-link {
-            color: var(--primary-color);
+        .tool-tag { 
+            background: var(--bg-color); 
+            color: var(--primary-color); 
+            padding: 0.4rem 0.8rem; 
+            border-radius: 2rem; 
+            font-size: 0.8rem; 
+            font-weight: 600; 
+            border: 1px solid #E2E8F0; 
             text-decoration: none;
-            font-weight: 500;
-            font-size: 0.9rem;
             display: inline-flex;
             align-items: center;
-            transition: color 0.3s ease;
+            transition: all 0.2s ease;
         }
-        .tool-link:hover {
-            color: var(--accent-color);
-        }
-        .tool-link svg {
-            width: 16px;
-            height: 16px;
-            margin-right: 0.4rem;
-            fill: var(--accent-color);
-            transition: transform 0.3s ease;
-        }
-        .tool-link:hover svg {
-            transform: translateX(3px) translateY(3px);
+        .tool-tag:hover {
+            background: var(--accent-color);
+            color: var(--white);
+            border-color: var(--accent-color);
+            transform: translateY(-2px);
         }
 
         .feature-section { padding: 4rem 1.5rem; max-width: 1200px; margin: 0 auto; }
@@ -254,7 +250,6 @@
             .lang-switcher { position: static; margin-left: 1.5rem; border-left: 1px solid #E2E8F0; padding-left: 1rem; }
 
             .quick-guide-grid { grid-template-columns: repeat(3, 1fr); }
-            .tool-links { flex-direction: row; flex-wrap: wrap; gap: 1rem; }
             
             .feature-row { flex-direction: row; gap: 4rem; margin-bottom: 8rem; }
             .feature-row.reverse { flex-direction: row-reverse; }
@@ -297,11 +292,11 @@
                 <h3>1. Bei Reiseübelkeit</h3>
                 <p>Wenn dir im Auto, Zug oder auf dem Schiff plötzlich schlecht und übel wird, helfen dir diese Methoden als direkte Soforthilfe. Sie senden beruhigende Signale an deinen Magen oder geben deinem Auge die echte Bewegung zurück, damit du die Reise wieder entspannt geniessen kannst.</p>
                 
-                <div class="tool-links">
-                    <a href="#horizont" class="tool-link"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5v2h6.59L4 18.59 5.41 20 17 8.41V15h2V5H9z"/></svg>Künstlicher Horizont</a>
-                    <a href="#p6" class="tool-link"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5v2h6.59L4 18.59 5.41 20 17 8.41V15h2V5H9z"/></svg>P6-Akupressur</a>
-                    <a href="#100hz" class="tool-link"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5v2h6.59L4 18.59 5.41 20 17 8.41V15h2V5H9z"/></svg>100Hz Modulation</a>
-                    <a href="#atmung" class="tool-link"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5v2h6.59L4 18.59 5.41 20 17 8.41V15h2V5H9z"/></svg>4-2-6 Atmung</a>
+                <div class="tool-tags">
+                    <a href="#horizont" class="tool-tag">Künstlicher Horizont</a>
+                    <a href="#p6" class="tool-tag">P6-Akupressur</a>
+                    <a href="#100hz" class="tool-tag">100Hz Modulation</a>
+                    <a href="#atmung" class="tool-tag">4-2-6 Atmung</a>
                 </div>
             </div>
             
@@ -310,9 +305,9 @@
                 <h3>2. Bei Unwohlsein, Stress & Flugangst</h3>
                 <p>Wenn du innere Unruhe spürst, die Flugangst aufsteigt oder du bei aufkommendem Unwohlsein einen starken Anker zur Beruhigung brauchst. Diese Begleiter holen dich sanft aus der Reizüberflutung und helfen dir dabei, deinen Ruhe-Nerv gezielt zu aktivieren.</p>
                 
-                <div class="tool-links">
-                    <a href="#atmung" class="tool-link"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5v2h6.59L4 18.59 5.41 20 17 8.41V15h2V5H9z"/></svg>4-2-6 Atmung</a>
-                    <a href="#100hz" class="tool-link"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5v2h6.59L4 18.59 5.41 20 17 8.41V15h2V5H9z"/></svg>100Hz Modulation</a>
+                <div class="tool-tags">
+                    <a href="#atmung" class="tool-tag">4-2-6 Atmung</a>
+                    <a href="#100hz" class="tool-tag">100Hz Modulation</a>
                 </div>
             </div>
             
@@ -321,10 +316,10 @@
                 <h3>3. Präventives Training</h3>
                 <p>Bereite dich schon Wochen vor dem Urlaub in aller Ruhe vor, damit die Fahrt ans Ziel von der ersten Minute an entspannt beginnt. Mit diesen Übungen für zu Hause trainierst du deine Stabilität und hilfst deinem Gehirn, Bewegungsdaten deutlich effizienter zu verarbeiten.</p>
                 
-                <div class="tool-links">
-                    <a href="#mrt" class="tool-link"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5v2h6.59L4 18.59 5.41 20 17 8.41V15h2V5H9z"/></svg>Mentale Rotation</a>
-                    <a href="#lot" class="tool-link"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5v2h6.59L4 18.59 5.41 20 17 8.41V15h2V5H9z"/></svg>Körper-Lot</a>
-                    <a href="#fokus" class="tool-link"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5v2h6.59L4 18.59 5.41 20 17 8.41V15h2V5H9z"/></svg>Fokus</a>
+                <div class="tool-tags">
+                    <a href="#mrt" class="tool-tag">Mentale Rotation</a>
+                    <a href="#lot" class="tool-tag">Körper-Lot</a>
+                    <a href="#fokus" class="tool-tag">Fokus</a>
                 </div>
             </div>
             
