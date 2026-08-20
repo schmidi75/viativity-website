@@ -1,4 +1,4 @@
-<!-- Viativity Features Deutsch - Updated August 2026 (SEO URL Update) -->
+<!-- Viativity Features Deutsch - Updated August 2026 (Quick Guide Clickable Pills) -->
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -31,6 +31,10 @@
     <style>
         :root { --primary-color: #1A365D; --accent-color: #7DA2A9; --bg-color: #F7FAFC; --text-color: #2D3748; --white: #FFFFFF; }
         * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        /* Smooth Scrolling für die Anchor-Links */
+        html { scroll-behavior: smooth; }
+        
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: var(--text-color); background-color: var(--bg-color); }
         h1, h2, h3 { color: var(--primary-color); line-height: 1.2; margin-bottom: 1rem; }
         p { margin-bottom: 1rem; }
@@ -71,32 +75,44 @@
         .page-header h1 { color: var(--white); font-size: 2.5rem; }
         .page-header p { font-size: 1.1rem; opacity: 0.9; max-width: 700px; margin: 0 auto; }
 
-        /* Quick Guide Section */
+        /* Quick Guide Section - Clickable Pills */
         .quick-guide-section { padding: 4rem 1.5rem 0 1.5rem; max-width: 1200px; margin: 0 auto; }
         .quick-guide-header { text-align: center; margin-bottom: 3rem; }
         .quick-guide-grid { display: grid; grid-template-columns: 1fr; gap: 2rem; }
-        .guide-card { background: var(--white); padding: 2rem; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.03); }
+        .guide-card { background: var(--white); padding: 2rem; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.03); display: flex; flex-direction: column; }
         .guide-card h3 { font-size: 1.2rem; color: var(--primary-color); margin-bottom: 0.5rem; }
         .guide-card p { font-size: 0.95rem; color: #718096; margin-bottom: 1.5rem; }
         
-        .tool-tags { display: grid; grid-template-columns: 1fr; gap: 0.6rem; }
+        .tool-tags { 
+            display: flex; 
+            flex-wrap: wrap; 
+            gap: 0.5rem; 
+            margin-top: auto; /* Pusht die Pillen an den unteren Rand der Karte */
+            padding-top: 1rem;
+        }
         .tool-tag { 
             background: var(--bg-color); 
             color: var(--primary-color); 
-            padding: 0.5rem 0.5rem; 
+            padding: 0.4rem 0.8rem; 
             border-radius: 2rem; 
-            font-size: 0.85rem; 
-            font-weight: 500; 
+            font-size: 0.8rem; 
+            font-weight: 600; 
             border: 1px solid #E2E8F0; 
-            text-align: center;
-            display: flex;
+            text-decoration: none;
+            display: inline-flex;
             align-items: center;
-            justify-content: center;
-            min-height: 44px;
+            transition: all 0.2s ease;
+        }
+        .tool-tag:hover {
+            background: var(--accent-color);
+            color: var(--white);
+            border-color: var(--accent-color);
+            transform: translateY(-2px);
         }
 
         .feature-section { padding: 4rem 1.5rem; max-width: 1200px; margin: 0 auto; }
-        .feature-row { display: flex; flex-direction: column; gap: 2rem; margin-bottom: 5rem; align-items: center; }
+        /* scroll-margin-top sorgt dafür, dass der Navbar-Abstand beim Anspringen gewahrt bleibt */
+        .feature-row { display: flex; flex-direction: column; gap: 2rem; margin-bottom: 5rem; align-items: center; scroll-margin-top: 120px; }
         .feature-text { flex: 1; width: 100%; }
         .feature-text h2 { font-size: 2rem; color: var(--primary-color); }
         .feature-text h3 { font-size: 1.1rem; color: var(--accent-color); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; }
@@ -152,7 +168,7 @@
         .grid-container { max-width: 1200px; margin: 0 auto; }
         .grid-header { text-align: center; margin-bottom: 3rem; }
         .feature-grid { display: grid; grid-template-columns: 1fr; gap: 2rem; }
-        .grid-card { background: var(--bg-color); padding: 2rem; border-radius: 16px; border-left: 4px solid var(--accent-color); display: flex; flex-direction: column; }
+        .grid-card { background: var(--bg-color); padding: 2rem; border-radius: 16px; border-left: 4px solid var(--accent-color); display: flex; flex-direction: column; scroll-margin-top: 120px; }
         .grid-card h3 { font-size: 1.3rem; margin-bottom: 0.5rem; }
 
         .science-box { padding: 0 1.5rem 4rem 1.5rem; max-width: 1200px; margin: 0 auto; background: var(--white); }
@@ -234,7 +250,7 @@
             .lang-switcher { position: static; margin-left: 1.5rem; border-left: 1px solid #E2E8F0; padding-left: 1rem; }
 
             .quick-guide-grid { grid-template-columns: repeat(3, 1fr); }
-            .tool-tags { grid-template-columns: repeat(2, 1fr); }
+            
             .feature-row { flex-direction: row; gap: 4rem; margin-bottom: 8rem; }
             .feature-row.reverse { flex-direction: row-reverse; }
             .feature-text { padding: 0 2rem; }
@@ -270,42 +286,52 @@
             <p>Welche Methode nutzt du in welcher Situation? Hier ist eine schnelle Übersicht für dich:</p>
         </div>
         <div class="quick-guide-grid">
+            
+            <!-- Card 1 -->
             <div class="guide-card">
                 <h3>1. Bei Reiseübelkeit</h3>
                 <p>Wenn dir im Auto, Zug oder auf dem Schiff plötzlich schlecht und übel wird, helfen dir diese Methoden als direkte Soforthilfe. Sie senden beruhigende Signale an deinen Magen oder geben deinem Auge die echte Bewegung zurück, damit du die Reise wieder entspannt geniessen kannst.</p>
+                
                 <div class="tool-tags">
-                    <span class="tool-tag">Künstlicher Horizont</span>
-                    <span class="tool-tag">P6-Akupressur</span>
-                    <span class="tool-tag">100Hz Modulation</span>
-                    <span class="tool-tag">4-2-6 Atmung</span>
+                    <a href="#horizont" class="tool-tag">Künstlicher Horizont</a>
+                    <a href="#p6" class="tool-tag">P6-Akupressur</a>
+                    <a href="#100hz" class="tool-tag">100Hz Modulation</a>
+                    <a href="#atmung" class="tool-tag">4-2-6 Atmung</a>
                 </div>
             </div>
+            
+            <!-- Card 2 -->
             <div class="guide-card">
                 <h3>2. Bei Unwohlsein, Stress & Flugangst</h3>
                 <p>Wenn du innere Unruhe spürst, die Flugangst aufsteigt oder du bei aufkommendem Unwohlsein einen starken Anker zur Beruhigung brauchst. Diese Begleiter holen dich sanft aus der Reizüberflutung und helfen dir dabei, deinen Ruhe-Nerv gezielt zu aktivieren.</p>
+                
                 <div class="tool-tags">
-                    <span class="tool-tag">4-2-6 Atmung</span>
-                    <span class="tool-tag">100Hz Modulation</span>
+                    <a href="#atmung" class="tool-tag">4-2-6 Atmung</a>
+                    <a href="#100hz" class="tool-tag">100Hz Modulation</a>
                 </div>
             </div>
+            
+            <!-- Card 3 -->
             <div class="guide-card">
                 <h3>3. Präventives Training</h3>
                 <p>Bereite dich schon Wochen vor dem Urlaub in aller Ruhe vor, damit die Fahrt ans Ziel von der ersten Minute an entspannt beginnt. Mit diesen Übungen für zu Hause trainierst du deine Stabilität und hilfst deinem Gehirn, Bewegungsdaten deutlich effizienter zu verarbeiten.</p>
+                
                 <div class="tool-tags">
-                    <span class="tool-tag">Mentale Rotation</span>
-                    <span class="tool-tag">Körper-Lot</span>
-                    <span class="tool-tag">Fokus</span>
+                    <a href="#mrt" class="tool-tag">Mentale Rotation</a>
+                    <a href="#lot" class="tool-tag">Körper-Lot</a>
+                    <a href="#fokus" class="tool-tag">Fokus</a>
                 </div>
             </div>
+            
         </div>
     </section>
 
     <main class="feature-section">
-        <div class="feature-row">
+        <div class="feature-row" id="horizont">
             <div class="feature-text">
                 <h3>Soforthilfe bei Seekrankheit</h3>
                 <h2>Der künstliche Horizont</h2>
-                <p>Seekrankheit entsteht durch einen sensorischen Konflikt: Das Auge meldet Stillstand – zum Beispiel in der fensterlosen Innenkabine eines Schiffes – während das Gleichgewichtsorgan gleichzeitig die Bewegung spürt. Der künstliche Horizont gleicht diesen Konflikt sanft aus, indem er die echte Bewegung auf dem Display sichtbar macht. Nutze diese Methode idealerweise auf dem Schiff unter Deck.</p>
+                <p>Seekrankheit entsteht durch einen sensorischen Konflikt: Das Auge meldet Stillstand – zum Beispiel in der fensterlosen Innenkabine eines Schiffes – während das Gleichgewichtsorgan gleichzeitig die Bewegung spürt. Manche Schiffsreisende behelfen sich unter Deck bisher mit einer halb gefüllten Wasserflasche auf dem Tisch, um die Schiffsbewegung für das Auge wieder sichtbar zu machen. Der künstliche Horizont in der App ist quasi die moderne, digitale Übersetzung dieses Prinzips direkt auf dem Display. Er gleicht den Konflikt sanft aus, indem er die echte Bewegung synchron sichtbar macht. Nutze diese Methode idealerweise auf dem Schiff unter Deck.</p>
                 <p><strong>Warum das hilft:</strong> Die Darstellung einer erdbezogenen Linie liefert dem Gehirn die fehlenden visuellen Bewegungsinformationen zurück. Auf dem Bildschirm siehst du den Bug eines Schiffes und das Meer mit einer Bergkette am Horizont. Während der Bug starr bleibt, neigt sich das Hintergrundbild basierend auf den Sensordaten deines Smartphones exakt synchron zu den tatsächlichen Schwankungen. Dein Gehirn erhält so die fehlende visuelle Bestätigung der Bewegung zurück, was das flaue Gefühl im Magen sanft lindert.</p>
                 
                 <details class="science-details">
@@ -329,7 +355,7 @@
             </div>
         </div>
 
-        <div class="feature-row reverse">
+        <div class="feature-row reverse" id="atmung">
             <div class="feature-text">
                 <h3>Beruhigung bei Flugangst & Stress</h3>
                 <h2>4-2-6 Taktatmung</h2>
@@ -357,7 +383,7 @@
             </div>
         </div>
 
-        <div class="feature-row">
+        <div class="feature-row" id="mrt">
             <div class="feature-text">
                 <h3>Präventives Training für die Reise</h3>
                 <h2>Mentale Rotation</h2>
@@ -395,7 +421,7 @@
             
             <div class="feature-grid">
                 
-                <div class="grid-card">
+                <div class="grid-card" id="p6">
                     <h3>P6-Akupressur</h3>
                     <p>Die sanfte Massage des Nei-Kuan-Punktes sendet beruhigende Signale an den Magen. Wende diese manuelle Technik direkt bei den ersten Anzeichen von Reiseübelkeit an oder nutze sie vorbeugend kurz vor Reiseantritt.</p>
                     <p><strong>Warum das hilft:</strong> Die Massage dieses Punktes hat sich bewährt, um das Auftreten von Unwohlsein auf Reisen spürbar zu reduzieren und das allgemeine Wohlbefinden des Magens zu unterstützen.</p>
@@ -421,7 +447,7 @@
                     </a>
                 </div>
                 
-                <div class="grid-card">
+                <div class="grid-card" id="lot">
                     <h3>Körper-Lot</h3>
                     <p>Einem Unwohlsein auf Reisen geht oft ein unsicherer Stand voraus. Mit dieser Übung trainierst du deine Rumpfstabilität auf festem Boden – rein über Audio- und Haptikfeedback bei geschlossenen Augen.</p>
                     <p><strong>Warum das hilft:</strong> Das interaktive Training verbessert deine Haltungskontrolle. Eine höhere körperliche Stabilität (weniger Schwanken) führt zu einer weitaus geringeren Anfälligkeit für Reiseunwohlsein.</p>
@@ -447,7 +473,7 @@
                     </a>
                 </div>
                 
-                <div class="grid-card">
+                <div class="grid-card" id="100hz">
                     <h3>100Hz Klangmodulation</h3>
                     <p>Spezifische akustische Frequenzen können über das Innenohr das Gleichgewichtssystem sanft beeinflussen. Höre den Ton präventiv kurz vor Reiseantritt oder zur Unterstützung bei erstem Unwohlsein.</p>
                     <p><strong>Warum das hilft:</strong> Die feine Vibration regt die Sinneszellen im Ohr an, verbessert die Balance und verringert so den sensorischen Konflikt im Gehirn, was dem flauen Gefühl aktiv entgegenwirkt.</p>
@@ -473,7 +499,7 @@
                     </a>
                 </div>
 
-                <div class="grid-card">
+                <div class="grid-card" id="fokus">
                     <h3>Fokus</h3>
                     <p>Diese Übung erfordert eine hohe visuelle Konzentration. Sie eignet sich perfekt als präventives Training vorab oder zur sanften Gewöhnung direkt auf der Reise.</p>
                     <p><strong>Warum das hilft:</strong> Das ständige Fixieren eines kleinen Punktes bindet deine Aufmerksamkeit, blendet störende Bewegungsreize aus und mildert so den Konflikt zwischen Auge und Gleichgewichtssinn ab.</p>
