@@ -1,4 +1,4 @@
-<!-- Viativity Features Deutsch - Updated August 2026 (Copywriting Update Wasserflasche) -->
+<!-- Viativity Features Deutsch - Updated August 2026 (Quick Guide Wellness-Matrix) -->
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -71,28 +71,62 @@
         .page-header h1 { color: var(--white); font-size: 2.5rem; }
         .page-header p { font-size: 1.1rem; opacity: 0.9; max-width: 700px; margin: 0 auto; }
 
-        /* Quick Guide Section */
-        .quick-guide-section { padding: 4rem 1.5rem 0 1.5rem; max-width: 1200px; margin: 0 auto; }
-        .quick-guide-header { text-align: center; margin-bottom: 3rem; }
-        .quick-guide-grid { display: grid; grid-template-columns: 1fr; gap: 2rem; }
-        .guide-card { background: var(--white); padding: 2rem; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.03); }
-        .guide-card h3 { font-size: 1.2rem; color: var(--primary-color); margin-bottom: 0.5rem; }
-        .guide-card p { font-size: 0.95rem; color: #718096; margin-bottom: 1.5rem; }
+        /* Quick Guide Section - Wellness Matrix */
+        .quick-guide-section { padding: 4rem 1.5rem 0 1.5rem; max-width: 1000px; margin: 0 auto; }
+        .quick-guide-header { text-align: center; margin-bottom: 2.5rem; }
         
-        .tool-tags { display: grid; grid-template-columns: 1fr; gap: 0.6rem; }
-        .tool-tag { 
-            background: var(--bg-color); 
-            color: var(--primary-color); 
-            padding: 0.5rem 0.5rem; 
-            border-radius: 2rem; 
-            font-size: 0.85rem; 
-            font-weight: 500; 
-            border: 1px solid #E2E8F0; 
+        .matrix-wrapper {
+            background: var(--white);
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+            padding: 1.5rem;
+            overflow-x: auto;
+            border-left: 4px solid var(--accent-color);
+        }
+        .feature-matrix {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 500px;
+        }
+        .feature-matrix th {
+            color: var(--primary-color);
+            font-weight: bold;
             text-align: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            min-height: 44px;
+            padding: 1rem 0.5rem;
+            border-bottom: 2px solid #E2E8F0;
+            font-size: 0.95rem;
+            line-height: 1.3;
+        }
+        .feature-matrix th:first-child {
+            text-align: left;
+            padding-left: 1rem;
+        }
+        .feature-matrix td {
+            padding: 1rem 0.5rem;
+            text-align: center;
+            border-bottom: 1px solid #E2E8F0;
+            color: #4A5568;
+            font-size: 0.95rem;
+            transition: background-color 0.2s ease;
+        }
+        .feature-matrix td:first-child {
+            text-align: left;
+            font-weight: 600;
+            color: var(--primary-color);
+            padding-left: 1rem;
+        }
+        .feature-matrix tr:last-child td {
+            border-bottom: none;
+        }
+        .feature-matrix tbody tr:hover td {
+            background-color: #F8FAFC;
+        }
+        .matrix-check {
+            width: 24px;
+            height: 24px;
+            fill: var(--accent-color);
+            display: inline-block;
+            vertical-align: middle;
         }
 
         .feature-section { padding: 4rem 1.5rem; max-width: 1200px; margin: 0 auto; }
@@ -233,8 +267,7 @@
             .nav-links a { margin: 0 0 0 1rem; font-size: 1rem; }
             .lang-switcher { position: static; margin-left: 1.5rem; border-left: 1px solid #E2E8F0; padding-left: 1rem; }
 
-            .quick-guide-grid { grid-template-columns: repeat(3, 1fr); }
-            .tool-tags { grid-template-columns: repeat(2, 1fr); }
+            .matrix-wrapper { padding: 2rem; }
             .feature-row { flex-direction: row; gap: 4rem; margin-bottom: 8rem; }
             .feature-row.reverse { flex-direction: row-reverse; }
             .feature-text { padding: 0 2rem; }
@@ -269,34 +302,62 @@
             <h2>Das richtige Hilfsmittel zur richtigen Zeit</h2>
             <p>Welche Methode nutzt du in welcher Situation? Hier ist eine schnelle Übersicht für dich:</p>
         </div>
-        <div class="quick-guide-grid">
-            <div class="guide-card">
-                <h3>1. Bei Reiseübelkeit</h3>
-                <p>Wenn dir im Auto, Zug oder auf dem Schiff plötzlich schlecht und übel wird, helfen dir diese Methoden als direkte Soforthilfe. Sie senden beruhigende Signale an deinen Magen oder geben deinem Auge die echte Bewegung zurück, damit du die Reise wieder entspannt geniessen kannst.</p>
-                <div class="tool-tags">
-                    <span class="tool-tag">Künstlicher Horizont</span>
-                    <span class="tool-tag">P6-Akupressur</span>
-                    <span class="tool-tag">100Hz Modulation</span>
-                    <span class="tool-tag">4-2-6 Atmung</span>
-                </div>
-            </div>
-            <div class="guide-card">
-                <h3>2. Bei Unwohlsein, Stress & Flugangst</h3>
-                <p>Wenn du innere Unruhe spürst, die Flugangst aufsteigt oder du bei aufkommendem Unwohlsein einen starken Anker zur Beruhigung brauchst. Diese Begleiter holen dich sanft aus der Reizüberflutung und helfen dir dabei, deinen Ruhe-Nerv gezielt zu aktivieren.</p>
-                <div class="tool-tags">
-                    <span class="tool-tag">4-2-6 Atmung</span>
-                    <span class="tool-tag">100Hz Modulation</span>
-                </div>
-            </div>
-            <div class="guide-card">
-                <h3>3. Präventives Training</h3>
-                <p>Bereite dich schon Wochen vor dem Urlaub in aller Ruhe vor, damit die Fahrt ans Ziel von der ersten Minute an entspannt beginnt. Mit diesen Übungen für zu Hause trainierst du deine Stabilität und hilfst deinem Gehirn, Bewegungsdaten deutlich effizienter zu verarbeiten.</p>
-                <div class="tool-tags">
-                    <span class="tool-tag">Mentale Rotation</span>
-                    <span class="tool-tag">Körper-Lot</span>
-                    <span class="tool-tag">Fokus</span>
-                </div>
-            </div>
+        
+        <div class="matrix-wrapper">
+            <table class="feature-matrix">
+                <thead>
+                    <tr>
+                        <th>Werkzeug</th>
+                        <th>Bei Übelkeit<br>(Soforthilfe)</th>
+                        <th>Bei Stress &<br>Flugangst</th>
+                        <th>Präventives<br>Training</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Künstlicher Horizont</td>
+                        <td><svg class="matrix-check" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>P6-Akupressur</td>
+                        <td><svg class="matrix-check" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>100Hz Modulation</td>
+                        <td><svg class="matrix-check" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></td>
+                        <td><svg class="matrix-check" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>4-2-6 Atmung</td>
+                        <td><svg class="matrix-check" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></td>
+                        <td><svg class="matrix-check" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Mentale Rotation</td>
+                        <td></td>
+                        <td></td>
+                        <td><svg class="matrix-check" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></td>
+                    </tr>
+                    <tr>
+                        <td>Körper-Lot</td>
+                        <td></td>
+                        <td></td>
+                        <td><svg class="matrix-check" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></td>
+                    </tr>
+                    <tr>
+                        <td>Fokus</td>
+                        <td></td>
+                        <td></td>
+                        <td><svg class="matrix-check" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </section>
 
