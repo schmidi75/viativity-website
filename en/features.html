@@ -1,4 +1,4 @@
-<!-- Viativity Features English - Updated August 2026 (SEO URL Update) -->
+<!-- Viativity Features English - Updated August 2026 (Quick Guide Clickable Pills & Water Bottle Metaphor) -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -38,6 +38,9 @@
         }
         
         * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        /* Smooth Scrolling for Anchor Links */
+        html { scroll-behavior: smooth; }
         
         body { 
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
@@ -85,32 +88,44 @@
         .page-header h1 { color: var(--white); font-size: 2.5rem; }
         .page-header p { font-size: 1.1rem; opacity: 0.9; max-width: 700px; margin: 0 auto; }
 
-        /* Quick Guide Section - Light, Airy & Unified Grid */
+        /* Quick Guide Section - Clickable Pills */
         .quick-guide-section { padding: 4rem 1.5rem 0 1.5rem; max-width: 1200px; margin: 0 auto; }
         .quick-guide-header { text-align: center; margin-bottom: 3rem; }
         .quick-guide-grid { display: grid; grid-template-columns: 1fr; gap: 2rem; }
-        .guide-card { background: var(--white); padding: 2rem; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.03); }
+        .guide-card { background: var(--white); padding: 2rem; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.03); display: flex; flex-direction: column; }
         .guide-card h3 { font-size: 1.2rem; color: var(--primary-color); margin-bottom: 0.5rem; }
         .guide-card p { font-size: 0.95rem; color: #718096; margin-bottom: 1.5rem; }
         
-        .tool-tags { display: grid; grid-template-columns: 1fr; gap: 0.6rem; }
+        .tool-tags { 
+            display: flex; 
+            flex-wrap: wrap; 
+            gap: 0.5rem; 
+            margin-top: auto; 
+            padding-top: 1rem;
+        }
         .tool-tag { 
             background: var(--bg-color); 
             color: var(--primary-color); 
-            padding: 0.5rem 0.5rem; 
+            padding: 0.4rem 0.8rem; 
             border-radius: 2rem; 
-            font-size: 0.85rem; 
-            font-weight: 500; 
+            font-size: 0.8rem; 
+            font-weight: 600; 
             border: 1px solid #E2E8F0; 
-            text-align: center;
-            display: flex;
+            text-decoration: none;
+            display: inline-flex;
             align-items: center;
-            justify-content: center;
-            min-height: 44px;
+            transition: all 0.2s ease;
+        }
+        .tool-tag:hover {
+            background: var(--accent-color);
+            color: var(--white);
+            border-color: var(--accent-color);
+            transform: translateY(-2px);
         }
 
         .feature-section { padding: 4rem 1.5rem; max-width: 1200px; margin: 0 auto; }
-        .feature-row { display: flex; flex-direction: column; gap: 2rem; margin-bottom: 5rem; align-items: center; }
+        /* scroll-margin-top keeps distance to fixed navbar when jumping to anchor */
+        .feature-row { display: flex; flex-direction: column; gap: 2rem; margin-bottom: 5rem; align-items: center; scroll-margin-top: 120px; }
         .feature-text { flex: 1; width: 100%; }
         .feature-text h2 { font-size: 2rem; color: var(--primary-color); }
         .feature-text h3 { font-size: 1.1rem; color: var(--accent-color); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; }
@@ -167,7 +182,7 @@
         .grid-container { max-width: 1200px; margin: 0 auto; }
         .grid-header { text-align: center; margin-bottom: 3rem; }
         .feature-grid { display: grid; grid-template-columns: 1fr; gap: 2rem; }
-        .grid-card { background: var(--bg-color); padding: 2rem; border-radius: 16px; border-left: 4px solid var(--accent-color); display: flex; flex-direction: column; }
+        .grid-card { background: var(--bg-color); padding: 2rem; border-radius: 16px; border-left: 4px solid var(--accent-color); display: flex; flex-direction: column; scroll-margin-top: 120px; }
         .grid-card h3 { font-size: 1.3rem; margin-bottom: 0.5rem; }
 
         .science-box { padding: 0 1.5rem 4rem 1.5rem; max-width: 1200px; margin: 0 auto; background: var(--white); }
@@ -249,7 +264,7 @@
             .lang-switcher { position: static; margin-left: 1.5rem; border-left: 1px solid #E2E8F0; padding-left: 1rem; }
             
             .quick-guide-grid { grid-template-columns: repeat(3, 1fr); }
-            .tool-tags { grid-template-columns: repeat(2, 1fr); }
+            
             .feature-row { flex-direction: row; gap: 4rem; margin-bottom: 8rem; }
             .feature-row.reverse { flex-direction: row-reverse; }
             .feature-text { padding: 0 2rem; }
@@ -289,38 +304,38 @@
                 <h3>1. For motion sickness</h3>
                 <p>If you suddenly feel sick and nauseous in a car, train, or on a ship, these methods help as direct immediate support. They send soothing signals to your stomach or give your eyes the real movement back so you can relax and enjoy the trip again.</p>
                 <div class="tool-tags">
-                    <span class="tool-tag">Artificial Horizon</span>
-                    <span class="tool-tag">P6 Acupressure</span>
-                    <span class="tool-tag">100Hz Modulation</span>
-                    <span class="tool-tag">4-2-6 Breathing</span>
+                    <a href="#horizon" class="tool-tag">Artificial Horizon</a>
+                    <a href="#p6" class="tool-tag">P6 Acupressure</a>
+                    <a href="#100hz" class="tool-tag">100Hz Modulation</a>
+                    <a href="#breathing" class="tool-tag">4-2-6 Breathing</a>
                 </div>
             </div>
             <div class="guide-card">
                 <h3>2. For discomfort, stress & fear of flying</h3>
                 <p>If you feel inner restlessness, fear of flying rises, or you need a strong anchor to calm down when discomfort sets in. These companions gently bring you out of sensory overload and help you specifically activate your resting nerve.</p>
                 <div class="tool-tags">
-                    <span class="tool-tag">4-2-6 Breathing</span>
-                    <span class="tool-tag">100Hz Modulation</span>
+                    <a href="#breathing" class="tool-tag">4-2-6 Breathing</a>
+                    <a href="#100hz" class="tool-tag">100Hz Modulation</a>
                 </div>
             </div>
             <div class="guide-card">
                 <h3>3. Preventive training</h3>
                 <p>Prepare yourself calmly weeks before your vacation, so the trip to your destination begins relaxed from the very first minute. With these at-home exercises, you train your stability and help your brain process movement data much more efficiently.</p>
                 <div class="tool-tags">
-                    <span class="tool-tag">Mental Rotation</span>
-                    <span class="tool-tag">Body Stability</span>
-                    <span class="tool-tag">Focus</span>
+                    <a href="#mrt" class="tool-tag">Mental Rotation</a>
+                    <a href="#stability" class="tool-tag">Body Stability</a>
+                    <a href="#focus" class="tool-tag">Focus</a>
                 </div>
             </div>
         </div>
     </section>
 
     <main class="feature-section">
-        <div class="feature-row">
+        <div class="feature-row" id="horizon">
             <div class="feature-text">
                 <h3>Immediate support for seasickness</h3>
                 <h2>The artificial horizon</h2>
-                <p>Seasickness is caused by a sensory conflict: The eye reports a standstill – for example, in a windowless inner cabin of a ship – while the balance organ simultaneously feels the movement. The artificial horizon gently balances this conflict by making the real movement visible on the screen. Ideally, use this method on a ship below deck.</p>
+                <p>Seasickness is caused by a sensory conflict: The eye reports a standstill – for example, in a windowless inner cabin of a ship – while the balance organ simultaneously feels the movement. Some ship passengers currently use a half-filled water bottle on the table below deck to make the ship's movement visible to the eye again. The artificial horizon in the app is essentially the modern, digital translation of this principle directly on the display. It gently balances the conflict by making the real movement synchronously visible. Ideally, use this method on a ship below deck.</p>
                 <p><strong>Why this helps:</strong> The display of an earth-referenced line provides the brain with the missing visual movement information. On the screen, you see the bow of a ship and the sea with a mountain range on the horizon. While the bow remains rigid, the background image tilts exactly in sync with the actual swaying based on your smartphone's sensor data. Your brain thus gets the missing visual confirmation of the movement back, which gently soothes the queasy feeling in your stomach.</p>
                 
                 <details class="science-details">
@@ -344,7 +359,7 @@
             </div>
         </div>
 
-        <div class="feature-row reverse">
+        <div class="feature-row reverse" id="breathing">
             <div class="feature-text">
                 <h3>Calming for fear of flying & stress</h3>
                 <h2>4-2-6 paced breathing</h2>
@@ -372,7 +387,7 @@
             </div>
         </div>
 
-        <div class="feature-row">
+        <div class="feature-row" id="mrt">
             <div class="feature-text">
                 <h3>Preventive training for the journey</h3>
                 <h2>Mental rotation</h2>
@@ -410,7 +425,7 @@
             
             <div class="feature-grid">
                 
-                <div class="grid-card">
+                <div class="grid-card" id="p6">
                     <h3>P6 Acupressure</h3>
                     <p>The gentle massage of the Nei-Kuan point sends soothing signals to the stomach. Use this manual technique right at the first signs of motion sickness or preventively shortly before the journey begins.</p>
                     <p><strong>Why this helps:</strong> The massage of this point is proven to noticeably reduce the occurrence of travel discomfort and support the general wellbeing of the stomach.</p>
@@ -436,7 +451,7 @@
                     </a>
                 </div>
                 
-                <div class="grid-card">
+                <div class="grid-card" id="stability">
                     <h3>Body Stability</h3>
                     <p>Discomfort while traveling is often preceded by an insecure stance. With this exercise, you train your core stability on solid ground – purely via audio and haptic feedback with closed eyes.</p>
                     <p><strong>Why this helps:</strong> The interactive training improves your posture control. Higher physical stability (less swaying) leads to a much lower susceptibility to travel discomfort.</p>
@@ -462,7 +477,7 @@
                     </a>
                 </div>
                 
-                <div class="grid-card">
+                <div class="grid-card" id="100hz">
                     <h3>100Hz Tone Modulation</h3>
                     <p>Specific acoustic frequencies can gently influence the balance system via the inner ear. Listen to the tone preventively shortly before your trip or as support at the first signs of discomfort.</p>
                     <p><strong>Why this helps:</strong> The fine vibration stimulates the sensory cells in the ear, improves balance, and thus reduces the sensory conflict in the brain, actively counteracting the queasy feeling.</p>
@@ -488,7 +503,7 @@
                     </a>
                 </div>
 
-                <div class="grid-card">
+                <div class="grid-card" id="focus">
                     <h3>Focus</h3>
                     <p>This exercise requires high visual concentration. It is perfectly suited as preventive training in advance or for gentle habituation directly during the journey.</p>
                     <p><strong>Why this helps:</strong> Constantly fixating on a small dot binds your attention, fades out disturbing movement stimuli, and thus mitigates the conflict between your eyes and your sense of balance.</p>
