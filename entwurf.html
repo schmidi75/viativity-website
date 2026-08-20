@@ -1,4 +1,4 @@
-<!-- Viativity Features Deutsch - Updated August 2026 (Quick Guide Wellness-Matrix) -->
+<!-- Viativity Features Deutsch - Updated August 2026 (Quick Guide Anchor Links Update) -->
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -31,6 +31,10 @@
     <style>
         :root { --primary-color: #1A365D; --accent-color: #7DA2A9; --bg-color: #F7FAFC; --text-color: #2D3748; --white: #FFFFFF; }
         * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        /* Smooth Scrolling für die Anchor-Links */
+        html { scroll-behavior: smooth; }
+        
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: var(--text-color); background-color: var(--bg-color); }
         h1, h2, h3 { color: var(--primary-color); line-height: 1.2; margin-bottom: 1rem; }
         p { margin-bottom: 1rem; }
@@ -71,66 +75,48 @@
         .page-header h1 { color: var(--white); font-size: 2.5rem; }
         .page-header p { font-size: 1.1rem; opacity: 0.9; max-width: 700px; margin: 0 auto; }
 
-        /* Quick Guide Section - Wellness Matrix */
-        .quick-guide-section { padding: 4rem 1.5rem 0 1.5rem; max-width: 1000px; margin: 0 auto; }
-        .quick-guide-header { text-align: center; margin-bottom: 2.5rem; }
+        /* Quick Guide Section - Anchor Link Style */
+        .quick-guide-section { padding: 4rem 1.5rem 0 1.5rem; max-width: 1200px; margin: 0 auto; }
+        .quick-guide-header { text-align: center; margin-bottom: 3rem; }
+        .quick-guide-grid { display: grid; grid-template-columns: 1fr; gap: 2rem; }
+        .guide-card { background: var(--white); padding: 2rem; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.03); display: flex; flex-direction: column; }
+        .guide-card h3 { font-size: 1.2rem; color: var(--primary-color); margin-bottom: 0.5rem; }
+        .guide-card p { font-size: 0.95rem; color: #718096; margin-bottom: 1.5rem; }
         
-        .matrix-wrapper {
-            background: var(--white);
-            border-radius: 16px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.03);
-            padding: 1.5rem;
-            overflow-x: auto;
-            border-left: 4px solid var(--accent-color);
+        .tool-links {
+            margin-top: auto;
+            padding-top: 1.2rem;
+            border-top: 1px solid #E2E8F0;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
         }
-        .feature-matrix {
-            width: 100%;
-            border-collapse: collapse;
-            min-width: 500px;
-        }
-        .feature-matrix th {
+        .tool-link {
             color: var(--primary-color);
-            font-weight: bold;
-            text-align: center;
-            padding: 1rem 0.5rem;
-            border-bottom: 2px solid #E2E8F0;
-            font-size: 0.95rem;
-            line-height: 1.3;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.9rem;
+            display: inline-flex;
+            align-items: center;
+            transition: color 0.3s ease;
         }
-        .feature-matrix th:first-child {
-            text-align: left;
-            padding-left: 1rem;
+        .tool-link:hover {
+            color: var(--accent-color);
         }
-        .feature-matrix td {
-            padding: 1rem 0.5rem;
-            text-align: center;
-            border-bottom: 1px solid #E2E8F0;
-            color: #4A5568;
-            font-size: 0.95rem;
-            transition: background-color 0.2s ease;
-        }
-        .feature-matrix td:first-child {
-            text-align: left;
-            font-weight: 600;
-            color: var(--primary-color);
-            padding-left: 1rem;
-        }
-        .feature-matrix tr:last-child td {
-            border-bottom: none;
-        }
-        .feature-matrix tbody tr:hover td {
-            background-color: #F8FAFC;
-        }
-        .matrix-check {
-            width: 24px;
-            height: 24px;
+        .tool-link svg {
+            width: 16px;
+            height: 16px;
+            margin-right: 0.4rem;
             fill: var(--accent-color);
-            display: inline-block;
-            vertical-align: middle;
+            transition: transform 0.3s ease;
+        }
+        .tool-link:hover svg {
+            transform: translateX(3px) translateY(3px);
         }
 
         .feature-section { padding: 4rem 1.5rem; max-width: 1200px; margin: 0 auto; }
-        .feature-row { display: flex; flex-direction: column; gap: 2rem; margin-bottom: 5rem; align-items: center; }
+        /* scroll-margin-top sorgt dafür, dass der Navbar-Abstand beim Anspringen gewahrt bleibt */
+        .feature-row { display: flex; flex-direction: column; gap: 2rem; margin-bottom: 5rem; align-items: center; scroll-margin-top: 120px; }
         .feature-text { flex: 1; width: 100%; }
         .feature-text h2 { font-size: 2rem; color: var(--primary-color); }
         .feature-text h3 { font-size: 1.1rem; color: var(--accent-color); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; }
@@ -186,7 +172,7 @@
         .grid-container { max-width: 1200px; margin: 0 auto; }
         .grid-header { text-align: center; margin-bottom: 3rem; }
         .feature-grid { display: grid; grid-template-columns: 1fr; gap: 2rem; }
-        .grid-card { background: var(--bg-color); padding: 2rem; border-radius: 16px; border-left: 4px solid var(--accent-color); display: flex; flex-direction: column; }
+        .grid-card { background: var(--bg-color); padding: 2rem; border-radius: 16px; border-left: 4px solid var(--accent-color); display: flex; flex-direction: column; scroll-margin-top: 120px; }
         .grid-card h3 { font-size: 1.3rem; margin-bottom: 0.5rem; }
 
         .science-box { padding: 0 1.5rem 4rem 1.5rem; max-width: 1200px; margin: 0 auto; background: var(--white); }
@@ -267,7 +253,9 @@
             .nav-links a { margin: 0 0 0 1rem; font-size: 1rem; }
             .lang-switcher { position: static; margin-left: 1.5rem; border-left: 1px solid #E2E8F0; padding-left: 1rem; }
 
-            .matrix-wrapper { padding: 2rem; }
+            .quick-guide-grid { grid-template-columns: repeat(3, 1fr); }
+            .tool-links { flex-direction: row; flex-wrap: wrap; gap: 1rem; }
+            
             .feature-row { flex-direction: row; gap: 4rem; margin-bottom: 8rem; }
             .feature-row.reverse { flex-direction: row-reverse; }
             .feature-text { padding: 0 2rem; }
@@ -302,67 +290,49 @@
             <h2>Das richtige Hilfsmittel zur richtigen Zeit</h2>
             <p>Welche Methode nutzt du in welcher Situation? Hier ist eine schnelle Übersicht für dich:</p>
         </div>
-        
-        <div class="matrix-wrapper">
-            <table class="feature-matrix">
-                <thead>
-                    <tr>
-                        <th>Werkzeug</th>
-                        <th>Bei Übelkeit<br>(Soforthilfe)</th>
-                        <th>Bei Stress &<br>Flugangst</th>
-                        <th>Präventives<br>Training</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Künstlicher Horizont</td>
-                        <td><svg class="matrix-check" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>P6-Akupressur</td>
-                        <td><svg class="matrix-check" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>100Hz Modulation</td>
-                        <td><svg class="matrix-check" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></td>
-                        <td><svg class="matrix-check" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>4-2-6 Atmung</td>
-                        <td><svg class="matrix-check" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></td>
-                        <td><svg class="matrix-check" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>Mentale Rotation</td>
-                        <td></td>
-                        <td></td>
-                        <td><svg class="matrix-check" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></td>
-                    </tr>
-                    <tr>
-                        <td>Körper-Lot</td>
-                        <td></td>
-                        <td></td>
-                        <td><svg class="matrix-check" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></td>
-                    </tr>
-                    <tr>
-                        <td>Fokus</td>
-                        <td></td>
-                        <td></td>
-                        <td><svg class="matrix-check" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></td>
-                    </tr>
-                </tbody>
-            </table>
+        <div class="quick-guide-grid">
+            
+            <!-- Card 1 -->
+            <div class="guide-card">
+                <h3>1. Bei Reiseübelkeit</h3>
+                <p>Wenn dir im Auto, Zug oder auf dem Schiff plötzlich schlecht und übel wird, helfen dir diese Methoden als direkte Soforthilfe. Sie senden beruhigende Signale an deinen Magen oder geben deinem Auge die echte Bewegung zurück, damit du die Reise wieder entspannt geniessen kannst.</p>
+                
+                <div class="tool-links">
+                    <a href="#horizont" class="tool-link"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5v2h6.59L4 18.59 5.41 20 17 8.41V15h2V5H9z"/></svg>Künstlicher Horizont</a>
+                    <a href="#p6" class="tool-link"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5v2h6.59L4 18.59 5.41 20 17 8.41V15h2V5H9z"/></svg>P6-Akupressur</a>
+                    <a href="#100hz" class="tool-link"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5v2h6.59L4 18.59 5.41 20 17 8.41V15h2V5H9z"/></svg>100Hz Modulation</a>
+                    <a href="#atmung" class="tool-link"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5v2h6.59L4 18.59 5.41 20 17 8.41V15h2V5H9z"/></svg>4-2-6 Atmung</a>
+                </div>
+            </div>
+            
+            <!-- Card 2 -->
+            <div class="guide-card">
+                <h3>2. Bei Unwohlsein, Stress & Flugangst</h3>
+                <p>Wenn du innere Unruhe spürst, die Flugangst aufsteigt oder du bei aufkommendem Unwohlsein einen starken Anker zur Beruhigung brauchst. Diese Begleiter holen dich sanft aus der Reizüberflutung und helfen dir dabei, deinen Ruhe-Nerv gezielt zu aktivieren.</p>
+                
+                <div class="tool-links">
+                    <a href="#atmung" class="tool-link"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5v2h6.59L4 18.59 5.41 20 17 8.41V15h2V5H9z"/></svg>4-2-6 Atmung</a>
+                    <a href="#100hz" class="tool-link"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5v2h6.59L4 18.59 5.41 20 17 8.41V15h2V5H9z"/></svg>100Hz Modulation</a>
+                </div>
+            </div>
+            
+            <!-- Card 3 -->
+            <div class="guide-card">
+                <h3>3. Präventives Training</h3>
+                <p>Bereite dich schon Wochen vor dem Urlaub in aller Ruhe vor, damit die Fahrt ans Ziel von der ersten Minute an entspannt beginnt. Mit diesen Übungen für zu Hause trainierst du deine Stabilität und hilfst deinem Gehirn, Bewegungsdaten deutlich effizienter zu verarbeiten.</p>
+                
+                <div class="tool-links">
+                    <a href="#mrt" class="tool-link"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5v2h6.59L4 18.59 5.41 20 17 8.41V15h2V5H9z"/></svg>Mentale Rotation</a>
+                    <a href="#lot" class="tool-link"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5v2h6.59L4 18.59 5.41 20 17 8.41V15h2V5H9z"/></svg>Körper-Lot</a>
+                    <a href="#fokus" class="tool-link"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5v2h6.59L4 18.59 5.41 20 17 8.41V15h2V5H9z"/></svg>Fokus</a>
+                </div>
+            </div>
+            
         </div>
     </section>
 
     <main class="feature-section">
-        <div class="feature-row">
+        <div class="feature-row" id="horizont">
             <div class="feature-text">
                 <h3>Soforthilfe bei Seekrankheit</h3>
                 <h2>Der künstliche Horizont</h2>
@@ -390,7 +360,7 @@
             </div>
         </div>
 
-        <div class="feature-row reverse">
+        <div class="feature-row reverse" id="atmung">
             <div class="feature-text">
                 <h3>Beruhigung bei Flugangst & Stress</h3>
                 <h2>4-2-6 Taktatmung</h2>
@@ -418,7 +388,7 @@
             </div>
         </div>
 
-        <div class="feature-row">
+        <div class="feature-row" id="mrt">
             <div class="feature-text">
                 <h3>Präventives Training für die Reise</h3>
                 <h2>Mentale Rotation</h2>
@@ -456,7 +426,7 @@
             
             <div class="feature-grid">
                 
-                <div class="grid-card">
+                <div class="grid-card" id="p6">
                     <h3>P6-Akupressur</h3>
                     <p>Die sanfte Massage des Nei-Kuan-Punktes sendet beruhigende Signale an den Magen. Wende diese manuelle Technik direkt bei den ersten Anzeichen von Reiseübelkeit an oder nutze sie vorbeugend kurz vor Reiseantritt.</p>
                     <p><strong>Warum das hilft:</strong> Die Massage dieses Punktes hat sich bewährt, um das Auftreten von Unwohlsein auf Reisen spürbar zu reduzieren und das allgemeine Wohlbefinden des Magens zu unterstützen.</p>
@@ -482,7 +452,7 @@
                     </a>
                 </div>
                 
-                <div class="grid-card">
+                <div class="grid-card" id="lot">
                     <h3>Körper-Lot</h3>
                     <p>Einem Unwohlsein auf Reisen geht oft ein unsicherer Stand voraus. Mit dieser Übung trainierst du deine Rumpfstabilität auf festem Boden – rein über Audio- und Haptikfeedback bei geschlossenen Augen.</p>
                     <p><strong>Warum das hilft:</strong> Das interaktive Training verbessert deine Haltungskontrolle. Eine höhere körperliche Stabilität (weniger Schwanken) führt zu einer weitaus geringeren Anfälligkeit für Reiseunwohlsein.</p>
@@ -508,7 +478,7 @@
                     </a>
                 </div>
                 
-                <div class="grid-card">
+                <div class="grid-card" id="100hz">
                     <h3>100Hz Klangmodulation</h3>
                     <p>Spezifische akustische Frequenzen können über das Innenohr das Gleichgewichtssystem sanft beeinflussen. Höre den Ton präventiv kurz vor Reiseantritt oder zur Unterstützung bei erstem Unwohlsein.</p>
                     <p><strong>Warum das hilft:</strong> Die feine Vibration regt die Sinneszellen im Ohr an, verbessert die Balance und verringert so den sensorischen Konflikt im Gehirn, was dem flauen Gefühl aktiv entgegenwirkt.</p>
@@ -534,7 +504,7 @@
                     </a>
                 </div>
 
-                <div class="grid-card">
+                <div class="grid-card" id="fokus">
                     <h3>Fokus</h3>
                     <p>Diese Übung erfordert eine hohe visuelle Konzentration. Sie eignet sich perfekt als präventives Training vorab oder zur sanften Gewöhnung direkt auf der Reise.</p>
                     <p><strong>Warum das hilft:</strong> Das ständige Fixieren eines kleinen Punktes bindet deine Aufmerksamkeit, blendet störende Bewegungsreize aus und mildert so den Konflikt zwischen Auge und Gleichgewichtssinn ab.</p>
