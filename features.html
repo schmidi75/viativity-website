@@ -1,4 +1,4 @@
-<!-- Viativity Features Deutsch - Updated August 2026 (Quick Guide Clickable Pills) -->
+<!-- Viativity Features Deutsch - Updated August 2026 (Quick Guide & Social Proof) -->
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -87,7 +87,7 @@
             display: flex; 
             flex-wrap: wrap; 
             gap: 0.5rem; 
-            margin-top: auto; /* Pusht die Pillen an den unteren Rand der Karte */
+            margin-top: auto;
             padding-top: 1rem;
         }
         .tool-tag { 
@@ -117,6 +117,29 @@
         .feature-text h2 { font-size: 2rem; color: var(--primary-color); }
         .feature-text h3 { font-size: 1.1rem; color: var(--accent-color); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; }
         
+        /* Info Box für Social Proof */
+        .info-box {
+            background-color: var(--white);
+            border: 1px solid #E2E8F0;
+            border-left: 4px solid var(--accent-color);
+            padding: 1.2rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+            font-size: 0.95rem;
+            color: #4A5568;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+        }
+        .info-box-link {
+            display: inline-block;
+            margin-top: 0.5rem;
+            color: var(--primary-color);
+            font-weight: bold;
+            text-decoration: underline;
+            text-decoration-color: var(--accent-color);
+            text-decoration-thickness: 2px;
+            text-underline-offset: 4px;
+        }
+
         /* Viativity Action Box */
         .viativity-action-box {
             background-color: #2D3748;
@@ -334,6 +357,12 @@
                 <p>Seekrankheit entsteht durch einen sensorischen Konflikt: Das Auge meldet Stillstand – zum Beispiel in der fensterlosen Innenkabine eines Schiffes – während das Gleichgewichtsorgan gleichzeitig die Bewegung spürt. Manche Schiffsreisende behelfen sich unter Deck bisher mit einer halb gefüllten Wasserflasche auf dem Tisch, um die Schiffsbewegung für das Auge wieder sichtbar zu machen. Der künstliche Horizont in der App ist quasi die moderne, digitale Übersetzung dieses Prinzips direkt auf dem Display. Er gleicht den Konflikt sanft aus, indem er die echte Bewegung synchron sichtbar macht. Nutze diese Methode idealerweise auf dem Schiff unter Deck.</p>
                 <p><strong>Warum das hilft:</strong> Die Darstellung einer erdbezogenen Linie liefert dem Gehirn die fehlenden visuellen Bewegungsinformationen zurück. Auf dem Bildschirm siehst du den Bug eines Schiffes und das Meer mit einer Bergkette am Horizont. Während der Bug starr bleibt, neigt sich das Hintergrundbild basierend auf den Sensordaten deines Smartphones exakt synchron zu den tatsächlichen Schwankungen. Dein Gehirn erhält so die fehlende visuelle Bestätigung der Bewegung zurück, was das flaue Gefühl im Magen sanft lindert.</p>
                 
+                <!-- Neue Info-Box für Cruisetricks -->
+                <div class="info-box">
+                    💡 <strong>Gut zu wissen:</strong> Laut dem Kreuzfahrt-Blog Cruisetricks ist dieses Werkzeug besonders praktisch für Passagiere in einer Innenkabine oder im Restaurant ohne Fensterblick.<br>
+                    <a href="https://www.cruisetricks.de/seekrank-kreuzfahrt/#h-smartphone-app-gegen-seekrankheit" target="_blank" rel="noopener" class="info-box-link">Artikel lesen</a>
+                </div>
+                
                 <details class="science-details">
                     <summary class="science-summary">
                         Wissenschaftlicher Hintergrund & Quellen
@@ -514,7 +543,7 @@
                             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
                         </summary>
                         <div class="science-content">
-                            <p><strong>Hintergrund:</strong> Das Fixieren eines stabilen Punktes unterdrückt den Reflex, der Augen und Gleichgewicht koppelt (vestibulo-okulärer Reflex). Dies mildert den sensorischen Konflikt ab, der in der Wissenschaft als Hauptursache für Reiseunwohlsein gilt.</p>
+                            <p><strong>Hintergrund:</strong> Das Fixieren eines stabilen Punktes unterdrückt den Reflex, die Augen und Gleichgewicht koppelt (vestibulo-okulärer Reflex). Dies mildert den sensorischen Konflikt ab, der in der Wissenschaft als Hauptursache für Reiseunwohlsein gilt.</p>
                             <p><strong>Quelle:</strong> Reason, J. T., & Brand, J. J. (1975); Bos (2011).</p>
                         </div>
                     </details>
