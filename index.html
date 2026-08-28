@@ -1,4 +1,4 @@
-<!-- Viativity Index Deutsch - Updated August 2026 (SEO URL Update) -->
+<!-- Viativity Index Deutsch - Updated August 2026 (SEO URL Update & Social Proof) -->
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -185,6 +185,67 @@
         .problem-box p { margin-bottom: 1rem; }
         .problem-box p:last-child { margin-bottom: 0; }
 
+        /* Social Proof Band */
+        .proof-wrapper {
+            background: var(--white);
+            border-top: 1px solid #E2E8F0;
+            border-bottom: 1px solid #E2E8F0;
+            margin: 2rem 0 4rem 0;
+            padding: 4rem 1.5rem;
+        }
+        .proof-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .proof-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+        .proof-card {
+            background: var(--bg-color);
+            border: 1px solid #E2E8F0;
+            border-radius: 12px;
+            padding: 1.5rem;
+            text-align: left;
+            flex: 1 1 280px;
+            max-width: 350px;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.3s ease;
+        }
+        .proof-card:hover {
+            transform: translateY(-3px);
+        }
+        .proof-title {
+            font-size: 1.2rem;
+            color: var(--primary-color);
+            margin-bottom: 0.3rem;
+            margin-top: 0;
+        }
+        .proof-subtitle {
+            font-size: 0.9rem;
+            color: #718096;
+            margin-bottom: 1.5rem;
+            flex-grow: 1;
+        }
+        .proof-link {
+            font-size: 0.95rem;
+            color: var(--primary-color);
+            font-weight: bold;
+            text-decoration: underline;
+            text-decoration-color: var(--accent-color);
+            text-decoration-thickness: 2px;
+            text-underline-offset: 4px;
+            transition: color 0.2s ease;
+        }
+        .proof-link:hover {
+            color: var(--accent-color);
+        }
+
         .feature-link {
             color: var(--primary-color);
             font-weight: bold;
@@ -316,6 +377,9 @@
             .hero h1 { font-size: 3.5rem; margin-bottom: 1.5rem; }
             .hero p { font-size: 1.25rem; margin-bottom: 2.5rem; }
             .store-buttons { flex-direction: row; justify-content: center; }
+            
+            .proof-wrapper { padding: 5rem 2rem; }
+
             .mockup-showcase { height: 500px; }
             .jass-card { width: 220px; height: 460px; font-size: 1rem; }
             .card-left { transform: rotate(-25deg) translateX(-130px) translateY(30px); }
@@ -402,6 +466,20 @@
                 <p>Mit smarter Soforthilfe und präventivem Training hilft die App deinem Körper, diesen Widerspruch aktiv aufzulösen. So lernst du, störende Reize sanft auszublenden und dein Nervensystem wieder zu beruhigen – komplett ohne Medikamente.</p>
             </div>
         </section>
+
+        <!-- Neu: Social Proof Band (nach der Problem/Lösungs-Erklärung) -->
+        <div class="proof-wrapper">
+            <div class="proof-container">
+                <h2>Was andere sagen</h2>
+                <div class="proof-grid">
+                    <div class="proof-card">
+                        <h3 class="proof-title">Cruisetricks.de</h3>
+                        <p class="proof-subtitle">Der renommierte Kreuzfahrt-Blog</p>
+                        <a href="https://www.cruisetricks.de/seekrank-kreuzfahrt/#h-smartphone-app-gegen-seekrankheit" target="_blank" rel="noopener" class="proof-link">Artikel lesen</a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <section id="tools" class="text-center">
             <h2>Digitale Werkzeuge & Reise Tipps</h2>
