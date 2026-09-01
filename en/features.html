@@ -1,4 +1,4 @@
-<!-- Viativity Features English - Updated August 2026 (Quick Guide Clickable Pills & Social Proof) -->
+<!-- Viativity Features English - Updated September 2026 (Situational Breathing Techniques) -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,26 +29,13 @@
     <link rel="canonical" href="https://viativity.app/en/features.html" />
     
     <style>
-        :root { 
-            --primary-color: #1A365D; 
-            --accent-color: #7DA2A9; 
-            --bg-color: #F7FAFC; 
-            --text-color: #2D3748; 
-            --white: #FFFFFF; 
-        }
-        
+        :root { --primary-color: #1A365D; --accent-color: #7DA2A9; --bg-color: #F7FAFC; --text-color: #2D3748; --white: #FFFFFF; }
         * { margin: 0; padding: 0; box-sizing: border-box; }
         
-        /* Smooth Scrolling for Anchor Links */
+        /* Smooth Scrolling for Anchor-Links */
         html { scroll-behavior: smooth; }
         
-        body { 
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
-            line-height: 1.6; 
-            color: var(--text-color); 
-            background-color: var(--bg-color); 
-        }
-        
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: var(--text-color); background-color: var(--bg-color); }
         h1, h2, h3 { color: var(--primary-color); line-height: 1.2; margin-bottom: 1rem; }
         p { margin-bottom: 1rem; }
         
@@ -82,7 +69,7 @@
         }
         .lang-switcher a { margin-right: 0.3rem; color: #A0AEC0; text-decoration: none; font-weight: normal; }
         .lang-switcher a:hover { color: var(--primary-color); }
-        .lang-active { font-weight: bold; color: var(--primary-color); margin-left: 0.3rem; }
+        .lang-active { font-weight: bold; color: var(--primary-color); margin-left: 0.3rem;}
         
         .page-header { background: var(--primary-color); color: var(--white); text-align: center; padding: 4rem 1.5rem; }
         .page-header h1 { color: var(--white); font-size: 2.5rem; }
@@ -100,7 +87,7 @@
             display: flex; 
             flex-wrap: wrap; 
             gap: 0.5rem; 
-            margin-top: auto; 
+            margin-top: auto;
             padding-top: 1rem;
         }
         .tool-tag { 
@@ -124,7 +111,7 @@
         }
 
         .feature-section { padding: 4rem 1.5rem; max-width: 1200px; margin: 0 auto; }
-        /* scroll-margin-top keeps distance to fixed navbar when jumping to anchor */
+        /* scroll-margin-top ensures the navbar spacing is maintained when jumping to an anchor */
         .feature-row { display: flex; flex-direction: column; gap: 2rem; margin-bottom: 5rem; align-items: center; scroll-margin-top: 120px; }
         .feature-text { flex: 1; width: 100%; }
         .feature-text h2 { font-size: 2rem; color: var(--primary-color); }
@@ -167,7 +154,7 @@
         }
         .viativity-action-box strong { color: var(--accent-color); margin-bottom: 0.3rem; }
 
-        /* Science Dropdown (Progressive Disclosure) */
+        /* Science Dropdown */
         .science-details { margin-top: 1.5rem; margin-bottom: 1rem; background: rgba(125, 162, 169, 0.05); border-radius: 8px; border: 1px solid #E2E8F0; overflow: hidden; }
         .grid-card .science-details { margin-top: auto; margin-bottom: 0; }
         .science-summary { padding: 0.8rem 1rem; cursor: pointer; font-weight: 500; color: var(--accent-color); display: flex; align-items: center; justify-content: space-between; list-style: none; font-size: 0.95rem; transition: background-color 0.3s ease, color 0.3s ease; }
@@ -180,7 +167,6 @@
         .science-content p:last-child { margin-bottom: 0; }
         .science-content strong { color: var(--primary-color); font-weight: 600; }
 
-        /* Video Link Styling */
         .video-link { display: inline-flex; align-items: center; gap: 0.5rem; color: var(--accent-color); text-decoration: none; font-weight: 500; margin-top: 0.5rem; padding-top: 0.5rem; transition: color 0.3s ease; }
         .video-link:hover { color: var(--primary-color); }
         .video-link svg { width: 20px; height: 20px; fill: currentColor; }
@@ -213,20 +199,21 @@
         .science-inner h3 { color: var(--primary-color); margin-bottom: 1rem; }
         .science-inner p { margin-bottom: 0; max-width: 800px; margin-left: auto; margin-right: auto; }
 
+        /* Footer CSS */
         footer { 
             background: #2D3748; 
             color: var(--white); 
             text-align: center; 
             padding: 3rem 1.5rem 2rem 1.5rem; 
         }
-        
+
         .social-icons { 
             display: flex; 
             justify-content: center; 
             gap: 1.5rem; 
             margin-bottom: 2rem; 
         }
-        
+
         .social-icons a { 
             display: flex; 
             align-items: center; 
@@ -235,12 +222,12 @@
             transition: color 0.3s ease, transform 0.3s ease; 
             margin: 0; 
         }
-        
+
         .social-icons a:hover { 
             color: var(--white); 
             transform: translateY(-2px); 
         }
-        
+
         .social-icons svg { 
             width: 24px; 
             height: 24px; 
@@ -254,24 +241,24 @@
             justify-content: center;
             gap: 1rem;
         }
-        
+
         footer a { 
             color: var(--accent-color); 
             text-decoration: none; 
             margin: 0; 
         }
-        
+
         footer a:hover { 
             color: var(--white); 
         }
-        
+
         .app-latin { 
             font-size: 0.85rem; 
             color: #A0AEC0; 
             margin-top: 0.5rem; 
             font-style: italic; 
         }
-        
+
         .disclaimer-small { 
             font-size: 0.8rem; 
             color: #A0AEC0; 
@@ -285,7 +272,7 @@
             .nav-links { width: auto; margin-top: 0; justify-content: flex-end; }
             .nav-links a { margin: 0 0 0 1rem; font-size: 1rem; }
             .lang-switcher { position: static; margin-left: 1.5rem; border-left: 1px solid #E2E8F0; padding-left: 1rem; }
-            
+
             .quick-guide-grid { grid-template-columns: repeat(3, 1fr); }
             
             .feature-row { flex-direction: row; gap: 4rem; margin-bottom: 8rem; }
@@ -314,56 +301,66 @@
 
     <header class="page-header">
         <h1>Your smart companions for carefree travel</h1>
-        <p>Take the wheel again. Discover practical techniques and exercises for motion sickness (kinetosis), seasickness, and fear of flying, so you can focus on what matters again: your journey.</p>
+        <p>Take the wheel again. Discover practical techniques and exercises for motion sickness (kinetosis), seasickness, and fear of flying, so you can concentrate on what's essential again: your journey.</p>
     </header>
 
     <section class="quick-guide-section">
         <div class="quick-guide-header">
-            <h2>The right helper at the right time</h2>
+            <h2>The right tool at the right time</h2>
             <p>Which method do you use in which situation? Here is a quick overview for you:</p>
         </div>
         <div class="quick-guide-grid">
+            
+            <!-- Card 1 -->
             <div class="guide-card">
                 <h3>1. For motion sickness</h3>
-                <p>If you suddenly feel sick and nauseous in a car, train, or on a ship, these methods help as direct immediate support. They send soothing signals to your stomach or give your eyes the real movement back so you can relax and enjoy the trip again.</p>
+                <p>If you suddenly feel sick and nauseous in the car, train, or on the ship, these methods help you as direct immediate help. They send calming signals to your stomach or give your eye real movement back, so you can enjoy the journey relaxed again.</p>
+                
                 <div class="tool-tags">
-                    <a href="#horizon" class="tool-tag">Artificial Horizon</a>
+                    <a href="#horizont" class="tool-tag">Artificial Horizon</a>
                     <a href="#p6" class="tool-tag">P6 Acupressure</a>
                     <a href="#100hz" class="tool-tag">100Hz Modulation</a>
-                    <a href="#breathing" class="tool-tag">4-2-6 Breathing</a>
+                    <a href="#atmung" class="tool-tag">Breathing Techniques</a>
                 </div>
             </div>
+            
+            <!-- Card 2 -->
             <div class="guide-card">
                 <h3>2. For discomfort, stress & fear of flying</h3>
-                <p>If you feel inner restlessness, fear of flying rises, or you need a strong anchor to calm down when discomfort sets in. These companions gently bring you out of sensory overload and help you specifically activate your resting nerve.</p>
+                <p>If you feel inner restlessness, fear of flying arises, or you need a strong anchor to calm down when discomfort sets in. These companions gently bring you out of sensory overload and help you specifically activate your resting nerve.</p>
+                
                 <div class="tool-tags">
-                    <a href="#breathing" class="tool-tag">4-2-6 Breathing</a>
+                    <a href="#atmung" class="tool-tag">Breathing Techniques</a>
                     <a href="#100hz" class="tool-tag">100Hz Modulation</a>
                 </div>
             </div>
+            
+            <!-- Card 3 -->
             <div class="guide-card">
-                <h3>3. Preventive training</h3>
-                <p>Prepare yourself calmly weeks before your vacation, so the trip to your destination begins relaxed from the very first minute. With these at-home exercises, you train your stability and help your brain process movement data much more efficiently.</p>
+                <h3>3. Preventive Training</h3>
+                <p>Prepare yourself in peace weeks before the vacation so that the trip to your destination starts relaxed from the very first minute. With these exercises for home, you train your stability and help your brain process movement data much more efficiently.</p>
+                
                 <div class="tool-tags">
-                    <a href="#mrt" class="tool-tag">Mental Rotation</a>
-                    <a href="#stability" class="tool-tag">Body Stability</a>
-                    <a href="#focus" class="tool-tag">Focus</a>
+                    <a href="#mrt" class="tool-tag">Visual Training</a>
+                    <a href="#lot" class="tool-tag">Body Stability</a>
+                    <a href="#fokus" class="tool-tag">Focus</a>
                 </div>
             </div>
+            
         </div>
     </section>
 
     <main class="feature-section">
-        <div class="feature-row" id="horizon">
+        <div class="feature-row" id="horizont">
             <div class="feature-text">
-                <h3>Immediate support for seasickness</h3>
+                <h3>Immediate help for seasickness</h3>
                 <h2>The artificial horizon</h2>
-                <p>Seasickness is caused by a sensory conflict: The eye reports a standstill – for example, in a windowless inner cabin of a ship – while the balance organ simultaneously feels the movement. Some ship passengers currently use a half-filled water bottle on the table below deck to make the ship's movement visible to the eye again. The artificial horizon in the app is essentially the modern, digital translation of this principle directly on the display. It gently balances the conflict by making the real movement synchronously visible. Ideally, use this method on a ship below deck.</p>
-                <p><strong>Why this helps:</strong> The display of an earth-referenced line provides the brain with the missing visual movement information. On the screen, you see the bow of a ship and the sea with a mountain range on the horizon. While the bow remains rigid, the background image tilts exactly in sync with the actual swaying based on your smartphone's sensor data. Your brain thus gets the missing visual confirmation of the movement back, which gently soothes the queasy feeling in your stomach.</p>
+                <p>Seasickness is caused by a sensory conflict: The eye reports a standstill – for example in the windowless inner cabin of a ship – while the balance organ simultaneously senses the movement. Some ship travelers currently manage below deck with a half-filled water bottle on the table to make the ship's movement visible to the eye again. The artificial horizon in the app is essentially the modern, digital translation of this principle directly on the screen. It gently balances the conflict by making real movement synchronously visible. Use this method ideally on the ship below deck.</p>
+                <p><strong>Why this helps:</strong> The display of an earth-referenced line provides the brain with the missing visual movement information back. On the screen, you see the bow of a ship and the sea with a mountain range on the horizon. While the bow remains rigid, the background image tilts exactly synchronously to the actual swaying based on the sensor data of your smartphone. Your brain thus gets the missing visual confirmation of the movement back, which gently relieves the queasy feeling in the stomach.</p>
                 
-                <!-- Social Proof Info Box -->
+                <!-- Info-Box for Cruisetricks -->
                 <div class="info-box">
-                    💡 <strong>Good to know:</strong> According to the cruise blog Cruisetricks, this tool is particularly practical for passengers in an inner cabin or in the restaurant without a window view.<br>
+                    💡 <strong>Good to know:</strong> According to the cruise blog Cruisetricks, this tool is particularly practical for passengers in an inside cabin or in a restaurant without a window view.<br>
                     <a href="https://www.cruisetricks.de/seekrank-kreuzfahrt/#h-smartphone-app-gegen-seekrankheit" target="_blank" rel="noopener" class="info-box-link">Read article</a>
                 </div>
                 
@@ -384,16 +381,26 @@
                 </a>
             </div>
             <div class="phone-frame">
-                <img src="../images/Horizont_nacht_en.PNG" alt="Ship bow and Artificial Horizon">
+                <img src="../images/Horizont_nacht_de.PNG" alt="Ship bow and Artificial Horizon">
             </div>
         </div>
 
-        <div class="feature-row reverse" id="breathing">
+        <div class="feature-row reverse" id="atmung">
             <div class="feature-text">
-                <h3>Calming for fear of flying & stress</h3>
-                <h2>4-2-6 paced breathing</h2>
-                <p>Find your inner balance again. Use paced breathing when you urgently need an anchor on a plane or bus. It is an ideal companion for motion sickness and rising fear of flying, as it immediately supports your wellbeing. Haptic signals guide you completely blindly through the rhythm: inhale for 4 seconds, hold for 2 seconds, exhale for 6 seconds.</p>
-                <p><strong>Why this helps:</strong> The conscious and prolonged exhalation specifically activates your body's resting nerve. This signals safety to the brain, gently winds down acute stress reactions and feelings of panic, and noticeably dampens the urge to vomit.</p>
+                <h3>Calming for nausea, fear of flying, inner restlessness, or feelings of panic</h3>
+                <h2>Situational Breathing Techniques</h2>
+                <p>Find your inner balance again. Whether your stomach gets queasy on winding roads, you are nervous while boarding the plane, or you feel a sudden wave of panic – your breath is your strongest anchor. Viativity offers you four targeted rhythms in the "Breathing Techniques" tool, which are matched exactly to your current state.</p>
+                
+                <p>Gentle haptic vibrations guide you blindly through the rhythm. So you can close your eyes and concentrate entirely on your relaxation:</p>
+                
+                <ul style="margin-left: 1.5rem; margin-bottom: 1.5rem; color: #4A5568;">
+                    <li style="margin-bottom: 0.5rem;"><strong>For motion sickness (4-2-6 rhythm):</strong> Inhale for 4 seconds, hold for 2 seconds, exhale for 6 seconds. Gently calms the stomach and circulation and relieves the queasy feeling in the stomach.</li>
+                    <li style="margin-bottom: 0.5rem;"><strong>For fear of flying (4-7-8 rhythm):</strong> Inhale for 4 seconds, hold for 7 seconds, exhale for 8 seconds. The extra-long exhalation signals safety to the body and immediately dampens acute feelings of anxiety.</li>
+                    <li style="margin-bottom: 0.5rem;"><strong>For inner restlessness (4-4-4-4 Box Breathing):</strong> Evenly inhale, hold, exhale, and hold empty for 4 seconds each. Relieves stress without making you tired.</li>
+                    <li><strong>For feelings of panic (3-1-8 Physiological Sigh):</strong> Inhale for 3 seconds and fill your lungs to 70%, inhale again for 1 second and fill your lungs completely, exhale with an audible sigh for 8 seconds. Breaks through acute tension in seconds.</li>
+                </ul>
+                
+                <p><strong>Why this helps:</strong> Consciously controlling and prolonging your exhalation specifically activates your body's resting nerve. This gently dials down stress reactions, signals relaxation to the brain, and noticeably dampens the urge to vomit while traveling.</p>
                 
                 <details class="science-details">
                     <summary class="science-summary">
@@ -401,27 +408,27 @@
                         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
                     </summary>
                     <div class="science-content">
-                        <p><strong>Background:</strong> Controlled, slowed breathing (paced breathing) stimulates the vagus nerve and increases heart rate variability (HRV). This significantly dampens physical arousal and has proven effective in studies as support for restless travel and in stressful situations.</p>
-                        <p><strong>Source:</strong> Yen Pik Sang et al. (2003); Stromberg et al. (2015); Zaccaro et al. (2018) on anxiety regulation.</p>
+                        <p><strong>Background:</strong> Controlled, slowed breathing (Paced Breathing) stimulates the vagus nerve and increases heart rate variability (HRV). This significantly dampens physical arousal and has proven effective for accompanying restless travel as well as in stressful situations.</p>
+                        <p><strong>Source:</strong> Stromberg et al. (2015); Russell et al. (2014); Yılmaz & Çırpan (2022); Vierra et al. (2022); Feneberg & Nater (2026); Balban et al. (2023) on kinetosis, stress, and anxiety regulation.</p>
                     </div>
                 </details>
 
-                <a href="https://youtube.com/shorts/EFY8Hqnza3M" class="video-link" target="_blank" rel="noopener" aria-label="Open explainer video for 4-2-6 breathing on YouTube in a new tab">
+                <a href="https://youtube.com/shorts/EFY8Hqnza3M" class="video-link" target="_blank" rel="noopener" aria-label="Open explainer video for the breathing techniques on YouTube in a new tab">
                     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
                     Watch explainer video on YouTube
                 </a>
             </div>
             <div class="phone-frame">
-                <img src="../images/Atmung_nacht_en.PNG" alt="4-2-6 Paced Breathing Tool">
+                <img src="../images/Atmung_nacht_de.PNG" alt="Situational Breathing Techniques Companion">
             </div>
         </div>
 
         <div class="feature-row" id="mrt">
             <div class="feature-text">
-                <h3>Preventive training for the journey</h3>
-                <h2>Mental rotation</h2>
-                <p>Prepare yourself weeks before your vacation so the trip to your destination starts relaxed. A trained spatial imagination helps the brain process spatial and movement data on the journey more efficiently. IMPORTANT: This is purely a preventive training. Practice calmly for about 15 minutes a day before the trip. The application: Decide in the interactive game whether the right 3D figure is identical (only rotated) or mirrored. You have one joker per level.</p>
-                <p><strong>Why this helps:</strong> Such spatial vision training trains the brain to resolve conflicting signals and movements much faster. This can significantly lower individual susceptibility to travel discomfort in advance.</p>
+                <h3>Preventive Training for the Journey</h3>
+                <h2>Visual Training</h2>
+                <p>Prepare yourself weeks before the vacation so that the trip to your destination starts relaxed. A trained spatial imagination helps the brain process spatial and movement data more efficiently on the journey. IMPORTANT: This is purely preventive training. Practice daily for about 15 minutes in peace before the trip. Application: Decide in the interactive game whether the right 3D figure is identical (just rotated) or mirrored. You have one joker per level.</p>
+                <p><strong>Why this helps:</strong> Such spatial visual training trains the brain to resolve conflicting signals and movements much faster. This can significantly reduce individual susceptibility to travel discomfort in advance.</p>
                 
                 <details class="science-details">
                     <summary class="science-summary">
@@ -434,13 +441,13 @@
                     </div>
                 </details>
 
-                <a href="https://youtube.com/shorts/QLPDlpZ7l8g" class="video-link" target="_blank" rel="noopener" aria-label="Open explainer video for mental rotation on YouTube in a new tab">
-                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122-2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                <a href="https://youtube.com/shorts/QLPDlpZ7l8g" class="video-link" target="_blank" rel="noopener" aria-label="Open explainer video for visual training on YouTube in a new tab">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
                     Watch explainer video on YouTube
                 </a>
             </div>
             <div class="phone-frame">
-                <img src="../images/MRT_nacht_en.PNG" alt="Mental Rotation Game">
+                <img src="../images/MRT_nacht_de.PNG" alt="Visual Training Game">
             </div>
         </div>
     </main>
@@ -456,11 +463,11 @@
                 
                 <div class="grid-card" id="p6">
                     <h3>P6 Acupressure</h3>
-                    <p>The gentle massage of the Nei-Kuan point sends soothing signals to the stomach. Use this manual technique right at the first signs of motion sickness or preventively shortly before the journey begins.</p>
-                    <p><strong>Why this helps:</strong> The massage of this point is proven to noticeably reduce the occurrence of travel discomfort and support the general wellbeing of the stomach.</p>
+                    <p>The gentle massage of the Nei-Kuan point sends calming signals to the stomach. Apply this manual technique directly at the first signs of motion sickness or use it preventively shortly before starting the journey.</p>
+                    <p><strong>Why this helps:</strong> Massaging this point has proven effective in noticeably reducing the occurrence of discomfort on journeys and supporting the general wellbeing of the stomach.</p>
                     
                     <div class="viativity-action-box">
-                        <strong>In the app:</strong> Viativity provides a detailed guide on exactly how to find the point on your wrist, as well as an interactive timer for the perfect massage duration.
+                        <strong>In the app:</strong> Viativity provides you with detailed instructions on exactly how to find the point on your wrist as well as an interactive timer for the perfect massage duration.
                     </div>
                     
                     <details class="science-details">
@@ -469,24 +476,24 @@
                             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
                         </summary>
                         <div class="science-content">
-                            <p><strong>Background:</strong> Systematic reviews (Cochrane Reviews) confirm that the stimulation of the P6 point can significantly reduce the occurrence of a queasy feeling and discomfort. The effect on the general wellbeing of the stomach is comprehensively proven in studies, entirely without side effects.</p>
+                            <p><strong>Background:</strong> Systematic reviews (Cochrane Reviews) confirm that stimulation of the P6 point can significantly reduce the occurrence of a queasy feeling and discomfort. The effect on general stomach wellbeing is comprehensively proven in studies, entirely without side effects.</p>
                             <p><strong>Source:</strong> Lee A, Fan LT. (2009/2015). Cochrane Database of Systematic Reviews.</p>
                         </div>
                     </details>
 
-                    <a href="https://youtube.com/shorts/kWxE5XuC2B0" class="video-link" target="_blank" rel="noopener" aria-label="Open explainer video for P6 acupressure on YouTube in a new tab">
-                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                    <a href="https://youtube.com/shorts/kWxE5XuC2B0" class="video-link" target="_blank" rel="noopener" aria-label="Open explainer video for P6 Acupressure on YouTube in a new tab">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122-2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
                         Watch explainer video on YouTube
                     </a>
                 </div>
                 
-                <div class="grid-card" id="stability">
+                <div class="grid-card" id="lot">
                     <h3>Body Stability</h3>
-                    <p>Discomfort while traveling is often preceded by an insecure stance. With this exercise, you train your core stability on solid ground – purely via audio and haptic feedback with closed eyes.</p>
-                    <p><strong>Why this helps:</strong> The interactive training improves your posture control. Higher physical stability (less swaying) leads to a much lower susceptibility to travel discomfort.</p>
+                    <p>Discomfort on journeys is often preceded by an insecure stance. With this exercise, you train your core stability on solid ground – purely via audio and haptic feedback with your eyes closed.</p>
+                    <p><strong>Why this helps:</strong> The interactive training improves your posture control. Higher physical stability (less swaying) leads to a significantly lower susceptibility to travel discomfort.</p>
                     
                     <div class="viativity-action-box">
-                        <strong>In the app:</strong> You press the smartphone slightly against your breastbone and close your eyes. Viativity gives you real-time feedback on your swaying via gentle vibrations, helping you learn to find your inner center.
+                        <strong>In the app:</strong> You press the smartphone gently against your breastbone and close your eyes. Viativity gives you real-time feedback on your swaying through gentle vibrations so you learn to find your inner center.
                     </div>
                     
                     <details class="science-details">
@@ -495,24 +502,24 @@
                             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
                         </summary>
                         <div class="science-content">
-                            <p><strong>Background:</strong> Biofeedback training improves posture control. Studies (Postural Instability Theory) show that higher stability (less swaying) directly correlates with a higher resistance to travel discomfort.</p>
+                            <p><strong>Background:</strong> Biofeedback training improves posture control. Studies (Postural Instability Theory) show that higher stability (less swaying) correlates directly with a higher resistance to travel discomfort.</p>
                             <p><strong>Source:</strong> Riccio & Stoffregen (1991); Stoffregen et al. (2010).</p>
                         </div>
                     </details>
 
-                    <a href="https://youtube.com/shorts/NxpCFCX5dnI" class="video-link" target="_blank" rel="noopener" aria-label="Open explainer video for body stability on YouTube in a new tab">
+                    <a href="https://youtube.com/shorts/NxpCFCX5dnI" class="video-link" target="_blank" rel="noopener" aria-label="Open explainer video for Body Stability on YouTube in a new tab">
                         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122-2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
                         Watch explainer video on YouTube
                     </a>
                 </div>
                 
                 <div class="grid-card" id="100hz">
-                    <h3>100Hz Tone Modulation</h3>
-                    <p>Specific acoustic frequencies can gently influence the balance system via the inner ear. Listen to the tone preventively shortly before your trip or as support at the first signs of discomfort.</p>
-                    <p><strong>Why this helps:</strong> The fine vibration stimulates the sensory cells in the ear, improves balance, and thus reduces the sensory conflict in the brain, actively counteracting the queasy feeling.</p>
+                    <h3>100Hz Sound Modulation</h3>
+                    <p>Specific acoustic frequencies can gently influence the balance system via the inner ear. Listen to the tone preventively shortly before starting your journey or for support during initial discomfort.</p>
+                    <p><strong>Why this helps:</strong> The fine vibration stimulates the sensory cells in the ear, improves balance, and thus reduces the sensory conflict in the brain, which actively counteracts the queasy feeling.</p>
 
                     <div class="viativity-action-box">
-                        <strong>In the app:</strong> A 100Hz generator delivers the pure tone directly to your own headphones – available anytime and completely offline.
+                        <strong>In the app:</strong> A 100Hz generator delivers the pure tone directly to your own headphones – anytime and completely offline available.
                     </div>
                     
                     <details class="science-details">
@@ -521,24 +528,24 @@
                             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
                         </summary>
                         <div class="science-content">
-                            <p><strong>Background:</strong> Current research from Nagoya University (2025) shows that a 100Hz vibration stimulates the sensory cells in the ear (otolith organs) and improves vestibular balance. This reduces the sensory conflict in the brain and significantly lowers susceptibility to travel discomfort.</p>
+                            <p><strong>Background:</strong> Current research by Nagoya University (2025) shows that a 100Hz vibration stimulates the sensory cells in the ear (otolith organs) and improves balance (vestibular balance). As a result, the sensory conflict in the brain is reduced and susceptibility to travel discomfort is significantly lowered.</p>
                             <p><strong>Source:</strong> Kagawa, T., Kato, M. et al. (2025). Nagoya University Graduate School of Medicine.</p>
                         </div>
                     </details>
 
-                    <a href="https://youtube.com/shorts/pRfjdk_zgr0" class="video-link" target="_blank" rel="noopener" aria-label="Open explainer video for 100Hz tone modulation on YouTube in a new tab">
+                    <a href="https://youtube.com/shorts/pRfjdk_zgr0" class="video-link" target="_blank" rel="noopener" aria-label="Open explainer video for 100Hz Sound Modulation on YouTube in a new tab">
                         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122-2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
                         Watch explainer video on YouTube
                     </a>
                 </div>
 
-                <div class="grid-card" id="focus">
+                <div class="grid-card" id="fokus">
                     <h3>Focus</h3>
-                    <p>This exercise requires high visual concentration. It is perfectly suited as preventive training in advance or for gentle habituation directly during the journey.</p>
-                    <p><strong>Why this helps:</strong> Constantly fixating on a small dot binds your attention, fades out disturbing movement stimuli, and thus mitigates the conflict between your eyes and your sense of balance.</p>
+                    <p>This exercise requires high visual concentration. It is perfectly suitable as preventive training in advance or for gentle habituation directly on the journey.</p>
+                    <p><strong>Why this helps:</strong> Constantly fixating on a small dot binds your attention, blocks out disturbing movement stimuli, and thus mitigates the conflict between eye and sense of balance.</p>
 
                     <div class="viativity-action-box">
-                        <strong>In the app:</strong> An interactive game requires your full concentration to keep a small circle exactly in the center, effectively distracting you from emerging discomfort.
+                        <strong>In the app:</strong> An interactive game demands your full concentration to keep a small circle exactly in the center, effectively distracting you from emerging discomfort.
                     </div>
                     
                     <details class="science-details">
@@ -547,30 +554,30 @@
                             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
                         </summary>
                         <div class="science-content">
-                            <p><strong>Background:</strong> Fixating on a stable point suppresses the reflex that links eyes and balance (vestibulo-ocular reflex). This mitigates the sensory conflict, which is considered in science to be the main cause of travel discomfort.</p>
+                            <p><strong>Background:</strong> Fixating on a stable point suppresses the reflex that links the eyes and balance (vestibulo-ocular reflex). This mitigates the sensory conflict, which is considered in science to be the main cause of travel discomfort.</p>
                             <p><strong>Source:</strong> Reason, J. T., & Brand, J. J. (1975); Bos (2011).</p>
                         </div>
                     </details>
 
-                    <a href="https://youtube.com/shorts/T3hnFa3ELmw" class="video-link" target="_blank" rel="noopener" aria-label="Open explainer video for focus game on YouTube in a new tab">
+                    <a href="https://youtube.com/shorts/T3hnFa3ELmw" class="video-link" target="_blank" rel="noopener" aria-label="Open explainer video for Focus on YouTube in a new tab">
                         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122-2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
                         Watch explainer video on YouTube
                     </a>
                 </div>
 
                 <div class="grid-card">
-                    <h3>In Your Language</h3>
-                    <p>Viativity is currently available in <strong>English, German, French, Spanish, Japanese and Portuguese</strong>. Stress-free travel also means that you don't have to translate first in an acute situation. Additional languages are already in preparation.</p>
+                    <h3>In your language</h3>
+                    <p>Viativity is currently available in <strong>German, English, French, Spanish, Japanese, and Portuguese</strong>. Stress-free traveling also means that you don't have to translate first in an emergency. More languages are already in preparation.</p>
                 </div>
 
                 <div class="grid-card">
                     <h3>Travel Tips</h3>
-                    <p>Knowledge is half the battle. Viativity contains more than 50 scientifically based tips and tricks for car, ship, plane, train, or cable car.</p>
+                    <p>Knowledge is half the battle. Viativity contains over 50 scientifically based tips and tricks for the car, ship, plane, train, or cable car.</p>
                 </div>
 
                 <div class="grid-card">
                     <h3>Sensors & Hardware</h3>
-                    <p>To unlock the full potential, the app relies on the gyroscope of your smartphone. For the 100Hz tone modulation, you strictly need headphones to transmit the low frequencies correctly.</p>
+                    <p>To exhaust the full potential, the app accesses your smartphone's gyroscope. For the 100Hz sound modulation, you imperatively need headphones to transmit the low frequencies correctly.</p>
                 </div>
             </div>
         </div>
@@ -579,7 +586,7 @@
     <section class="science-box">
         <div class="science-inner">
             <h3>Scientifically Based</h3>
-            <p>The methods in Viativity are based on established scientific findings. You can find detailed source information directly in the expandable info sections on this page as well as anytime in the app.</p>
+            <p>The methods in Viativity are based on established scientific findings. You can find the detailed references directly in the expandable info sections on this page as well as accessible at any time in the app.</p>
         </div>
     </section>
 
