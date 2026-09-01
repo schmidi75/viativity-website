@@ -1,41 +1,67 @@
-<!-- Viativity Reisetipps Deutsch - Updated September 2026 (Situative Atemtechniken & Quellen) -->
+<!-- Viativity Index English - Updated September 2026 (Situational Breathing Techniques) -->
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reisetipps bei Reiseübelkeit | Viativity™</title>
-    <link rel="icon" type="image/png" href="images/Viativity_Icon.png" />
-    <link rel="apple-touch-icon" href="images/Viativity_Icon.png" />
+    <title>Viativity™ | Your app for motion sickness & seasickness</title>
+    <link rel="icon" type="image/png" href="../images/Viativity_Icon.png" />
+    <link rel="apple-touch-icon" href="../images/Viativity_Icon.png" />
     
-    <meta name="description" content="Clever reisen und entspannter ankommen. Die besten fundierten Tipps gegen Reiseübelkeit (Kinetose) im Auto, Flugzeug, Schiff und Zug.">
+    <meta name="description" content="Your smart companion on the go. Viativity™ is your app to support you with motion sickness and seasickness using well-founded strategies.">
 
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://viativity.app/reisetipps.html" />
-    <meta property="og:title" content="Reisetipps bei Reiseübelkeit | Viativity™" />
-    <meta property="og:description" content="Clever reisen und entspannter ankommen. Dein fundierter Ratgeber bei Reisekrankheit im Auto, Flugzeug, Schiff und Zug." />
+    <meta property="og:url" content="https://viativity.app/en/" />
+    <meta property="og:title" content="Viativity™ | Your app for motion sickness & seasickness" />
+    <meta property="og:description" content="Your smart companion on the go. Viativity™ is your app to support you with motion sickness and seasickness using well-founded strategies." />
     <meta property="og:image" content="https://viativity.app/Gemini_Reisen.jpg" />
-    <meta property="og:locale" content="de_CH" />
+    <meta property="og:locale" content="en_US" />
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:url" content="https://viativity.app/reisetipps.html" />
-    <meta name="twitter:title" content="Reisetipps bei Reiseübelkeit | Viativity™" />
-    <meta name="twitter:description" content="Clever reisen und entspannter ankommen. Dein fundierter Ratgeber bei Reisekrankheit im Auto, Flugzeug, Schiff und Zug." />
-    <meta name="twitter:image" content="https://viativity.app/Gemini_Reisen.jpg" />
+    <meta name="twitter:url" content="https://viativity.app/en/" />
+    <meta name="twitter:title" content="Viativity™ | Your app for motion sickness & seasickness" />
+    <meta name="twitter:description" content="Your smart companion on the go. Viativity™ is your app to support you with motion sickness and seasickness using well-founded strategies." />
+    <meta name="twitter:image" content="https://viativity.app/Gemini_Reisen.jpg" />   
     
-    <link rel="alternate" hreflang="de" href="https://viativity.app/reisetipps.html" />
-    <link rel="alternate" hreflang="en" href="https://viativity.app/en/travel-tips.html" />
+    <link rel="alternate" hreflang="de" href="https://viativity.app/" />
+    <link rel="alternate" hreflang="en" href="https://viativity.app/en/" />
     
-    <link rel="canonical" href="https://viativity.app/reisetipps.html" />
+    <link rel="canonical" href="https://viativity.app/en/" />
     
     <style>
-        :root { --primary-color: #1A365D; --accent-color: #7DA2A9; --bg-color: #F7FAFC; --text-color: #2D3748; --white: #FFFFFF; --success-color: #48BB78; }
+        :root {
+            --primary-color: #1A365D;
+            --accent-color: #7DA2A9;
+            --bg-color: #F7FAFC;
+            --text-color: #2D3748;
+            --white: #FFFFFF;
+        }
+
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: var(--text-color); background-color: var(--bg-color); }
-        h1, h2, h3, h4 { color: var(--primary-color); line-height: 1.3; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+        }
+
+        /* Announcement Banner */
+        .announcement-banner {
+            background-color: var(--primary-color);
+            color: var(--white);
+            text-align: center;
+            padding: 0.6rem 1.5rem;
+            font-size: 0.95rem;
+            font-weight: 500;
+            letter-spacing: 0.02em;
+        }
+
+        h1, h2, h3 { color: var(--primary-color); line-height: 1.2; margin-bottom: 1rem; }
         p { margin-bottom: 1rem; }
         
-        /* Navbar Mobile First */
+        section { padding: 4rem 1.5rem; max-width: 1200px; margin: 0 auto; }
+        
+        /* Navbar Mobile First (Soft Wrap) */
         .navbar {
             padding: 1rem 1.5rem;
             background: var(--white);
@@ -46,747 +72,484 @@
         }
         .navbar-brand { font-weight: bold; color: var(--primary-color); font-size: 1.2rem; text-decoration: none; align-self: flex-start; }
         .nav-links { 
-            display: flex; align-items: center; justify-content: center; 
-            flex-wrap: wrap; width: 100%; margin-top: 0.5rem; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            flex-wrap: wrap; 
+            width: 100%; 
+            margin-top: 0.5rem; 
         }
         .nav-links a { margin: 0.3rem 0.5rem; text-decoration: none; color: var(--text-color); font-weight: 500; white-space: nowrap; font-size: 0.9rem; }
         .nav-links a:hover { color: var(--accent-color); }
         .nav-links a.active { color: var(--primary-color); font-weight: bold; }
         
-        .lang-switcher { position: absolute; top: 1.15rem; right: 1.5rem; font-size: 0.9rem; }
+        .lang-switcher {
+            position: absolute;
+            top: 1.15rem;
+            right: 1.5rem;
+            font-size: 0.9rem;
+        }
         .lang-switcher a { margin-left: 0; color: #A0AEC0; text-decoration: none; font-weight: normal; }
         .lang-switcher a:hover { color: var(--primary-color); }
-        .lang-active { font-weight: bold; color: var(--primary-color); margin-right: 0.3rem;}
-        
-        .page-header { background: var(--primary-color); color: var(--white); text-align: center; padding: 4rem 1.5rem; }
-        .page-header h1 { color: var(--white); font-size: 2.5rem; margin-bottom: 1rem; }
-        .page-header p { font-size: 1.1rem; opacity: 0.9; max-width: 800px; margin: 0 auto; }
+        .lang-active { font-weight: bold; color: var(--primary-color); margin-left: 0.3rem;}
 
-        .content-section { padding: 4rem 1.5rem; max-width: 900px; margin: 0 auto; }
+        .hero {
+            display: flex;
+            flex-direction: column;
+            background-color: var(--primary-color);
+            color: var(--white);
+        }
         
-        .intro-text { font-size: 1.1rem; color: #4A5568; margin-bottom: 3rem; }
-        .intro-text h2 { font-size: 1.8rem; margin-top: 2rem; margin-bottom: 1rem; }
+        .hero-image { width: 100%; height: auto; display: block; }
 
-        /* Accordion Styling */
-        .accordion-container { display: flex; flex-direction: column; gap: 1rem; }
-        .category-details { background: var(--white); border-radius: 16px; box-shadow: 0 4px 15px rgba(0,0,0,0.03); border: 1px solid #E2E8F0; overflow: hidden; }
-        .category-summary { padding: 1.5rem; cursor: pointer; display: flex; align-items: center; justify-content: space-between; list-style: none; transition: background-color 0.3s ease; }
-        .category-summary::-webkit-details-marker { display: none; }
-        .category-summary:hover { background: #EDF2F7; }
-        .category-summary h2 { margin: 0; font-size: 1.5rem; display: flex; align-items: center; gap: 1rem; }
-        .category-summary svg.icon { width: 32px; height: 32px; fill: var(--primary-color); flex-shrink: 0; }
-        .category-summary svg.chevron { width: 24px; height: 24px; fill: var(--accent-color); transition: transform 0.3s ease; flex-shrink: 0; }
-        .category-details[open] .category-summary { border-bottom: 1px solid #E2E8F0; }
-        .category-details[open] .category-summary svg.chevron { transform: rotate(180deg); }
+        .hero-content {
+            padding: 3rem 1.5rem;
+            text-align: center;
+            max-width: 900px; 
+            margin: 0 auto;    
+        }
         
-        .category-content { padding: 2rem 1.5rem; animation: fadeIn 0.4s ease-in-out; }
-        @keyframes fadeIn { from { opacity: 0; transform: translateY(-10px); } to { opacity: 1; transform: translateY(0); } }
-        
-        .category-intro { font-size: 1.05rem; color: #4A5568; margin-bottom: 2.5rem; padding-bottom: 1.5rem; border-bottom: 1px dashed #CBD5E0; }
-        
-        /* Tip Styling (Checklist Style) */
-        .tip-grid { display: grid; grid-template-columns: 1fr; gap: 1.5rem; margin-bottom: 2rem; }
-        .tip-block { padding: 0.5rem 0; }
-        .check-title { font-size: 1.2rem; margin-bottom: 0.4rem; color: var(--primary-color); display: flex; align-items: flex-start; gap: 0.6rem; }
-        .check-title svg { width: 22px; height: 22px; fill: var(--success-color); flex-shrink: 0; margin-top: 0.15rem; }
-        .tip-block p { color: #4A5568; margin-bottom: 0; margin-left: 2.2rem; }
+        .hero-brand {
+            display: block;
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: var(--accent-color);
+            margin-bottom: 0.5rem;
+            letter-spacing: 0.05em;
+        }
 
-        /* Wow Box / Info Box */
-        .info-box { background: #EDF2F7; border-left: 4px solid var(--accent-color); padding: 1.5rem; border-radius: 0 12px 12px 0; margin: 2.5rem 0; }
-        .info-box h4 { font-size: 1.1rem; color: var(--primary-color); margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem; }
-        .info-box h4 svg { width: 20px; height: 20px; fill: var(--accent-color); flex-shrink: 0; }
-        .info-box p { margin-bottom: 0; font-size: 0.95rem; color: #2D3748; }
+        .hero h1 { color: var(--white); font-size: 2rem; margin-bottom: 1.5rem; margin-top: 0; }
+        .hero p { color: var(--white); font-size: 1.1rem; margin-bottom: 2rem; opacity: 0.95; line-height: 1.5; }
+
+        .store-buttons { display: flex; flex-direction: column; gap: 1rem; align-items: center; }
+        .btn {
+            background: var(--white);
+            color: var(--primary-color);
+            padding: 0.8rem 1.5rem;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.6rem;
+            width: 100%;
+            max-width: 280px;
+        }
+        .btn svg {
+            width: 20px;
+            height: 20px;
+            fill: currentColor;
+        }
         
-        /* Viativity Action Box (Conversion) */
-        .viativity-action-box { background: #1A365D; color: var(--white); padding: 1.8rem; border-radius: 12px; margin-top: 2rem; box-shadow: 0 4px 12px rgba(26, 54, 93, 0.15); }
-        .viativity-action-box h4 { color: var(--white); font-size: 1.2rem; margin-bottom: 0.8rem; display: flex; align-items: center; gap: 0.6rem; }
-        .viativity-action-box h4 svg { width: 24px; height: 24px; fill: var(--accent-color); flex-shrink: 0; }
-        .viativity-action-box > p { color: #E2E8F0; font-size: 0.95rem; margin-bottom: 1.2rem; }
-        .viativity-action-box ul { list-style: none; margin-left: 0; }
-        .viativity-action-box li { margin-bottom: 1rem; font-size: 0.95rem; color: #E2E8F0; display: flex; align-items: flex-start; gap: 0.6rem; }
-        .viativity-action-box li::before { content: "•"; color: var(--accent-color); font-weight: bold; font-size: 1.2rem; line-height: 1.1; margin-top: -0.1rem; }
+        /* Trust Badges */
+        .trust-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.6rem;
+            justify-content: center;
+            list-style: none;
+            margin-top: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        .trust-list li {
+            font-size: 0.85rem;
+            color: rgba(255,255,255,0.9);
+            background: rgba(255,255,255,0.1);
+            padding: 0.3rem 0.8rem;
+            border-radius: 50px;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .store-subtext { margin-top: 1rem; font-size: 0.85rem; color: rgba(255,255,255,0.7); letter-spacing: 0.02em; }
+
+        .text-center { text-align: center; }
+        .text-left { text-align: left; }
+        .max-w-800 { max-width: 800px; margin: 0 auto; }
+        .mx-auto { margin-left: auto; margin-right: auto; }
+        .mt-4 { margin-top: 3rem; }
+        .mb-4 { margin-bottom: 3rem; }
+
+        .problem-section { max-width: 800px; margin: 0 auto; padding-top: 4rem; padding-bottom: 4rem; }
+        .problem-header { margin-bottom: 3rem; text-align: center; }
         
-        /* Sauber formatierte Action-Texte */
-        .action-text { display: flex; flex-direction: column; }
-        .action-text strong { color: var(--white); font-size: 1.05rem; margin-bottom: 0.2rem; }
-        .action-text span { color: #E2E8F0; }
+        .problem-box {
+            background: var(--white);
+            padding: 2.5rem;
+            border-radius: 16px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border-left: 4px solid var(--accent-color);
+            margin-bottom: 2rem;
+        }
+        .problem-box h3 { color: var(--primary-color); font-size: 1.5rem; margin-bottom: 1rem; }
+        .problem-box p { margin-bottom: 1rem; }
+        .problem-box p:last-child { margin-bottom: 0; }
 
-        /* Digital Tools specific styling */
-        .tool-block { background: var(--bg-color); padding: 1.8rem; border-radius: 12px; margin-bottom: 1.5rem; border: 1px solid #E2E8F0; }
-        .tool-block h3 { font-size: 1.3rem; margin-bottom: 0.5rem; color: var(--primary-color); }
-        .tool-tagline { font-size: 0.95rem; font-weight: bold; color: var(--accent-color); margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 0.5px; }
-        .tool-block p { color: #4A5568; margin-bottom: 1rem; }
-        .tool-block h4 { font-size: 1rem; color: var(--primary-color); margin-top: 1.5rem; margin-bottom: 0.5rem; }
-        .tool-block ul { margin-left: 1.5rem; margin-bottom: 0; color: #4A5568; }
-        .tool-block li { margin-bottom: 0.2rem; font-size: 0.95rem; }
+        /* Social Proof Band */
+        .proof-wrapper {
+            background: var(--white);
+            border-top: 1px solid #E2E8F0;
+            border-bottom: 1px solid #E2E8F0;
+            margin: 2rem 0 4rem 0;
+            padding: 4rem 1.5rem;
+        }
+        .proof-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .proof-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+        .proof-card {
+            background: var(--bg-color);
+            border: 1px solid #E2E8F0;
+            border-radius: 12px;
+            padding: 1.5rem;
+            text-align: left;
+            flex: 1 1 280px;
+            max-width: 350px;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.3s ease;
+        }
+        .proof-card:hover {
+            transform: translateY(-3px);
+        }
+        .proof-title {
+            font-size: 1.2rem;
+            color: var(--primary-color);
+            margin-bottom: 0.3rem;
+            margin-top: 0;
+        }
+        .proof-subtitle {
+            font-size: 0.9rem;
+            color: #718096;
+            margin-bottom: 1.5rem;
+            flex-grow: 1;
+        }
+        .proof-link {
+            font-size: 0.95rem;
+            color: var(--primary-color);
+            font-weight: bold;
+            text-decoration: underline;
+            text-decoration-color: var(--accent-color);
+            text-decoration-thickness: 2px;
+            text-underline-offset: 4px;
+            transition: color 0.2s ease;
+        }
+        .proof-link:hover {
+            color: var(--accent-color);
+        }
 
-        .source-list { margin-top: 4rem; padding-top: 2rem; border-top: 1px solid #E2E8F0; }
-        .source-list h3 { font-size: 1.5rem; margin-bottom: 1.5rem; }
-        .source-list h4 { font-size: 1.1rem; color: var(--primary-color); margin-top: 1.5rem; margin-bottom: 0.8rem; }
-        .source-list ul { list-style-type: disc; margin-left: 1.5rem; color: #718096; font-size: 0.95rem; margin-bottom: 1.5rem; }
-        .source-list li { margin-bottom: 0.4rem; }
+        .feature-link {
+            color: var(--primary-color);
+            font-weight: bold;
+            text-decoration: underline;
+            margin-top: 1rem;
+            display: inline-block;
+        }
 
-        footer { background: #2D3748; color: var(--white); text-align: center; padding: 3rem 1.5rem 2rem 1.5rem; }
-        .social-icons { display: flex; justify-content: center; gap: 1.5rem; margin-bottom: 2rem; }
-        .social-icons a { display: flex; align-items: center; justify-content: center; color: var(--accent-color); transition: color 0.3s ease, transform 0.3s ease; margin: 0; }
-        .social-icons a:hover { color: var(--white); transform: translateY(-2px); }
-        .social-icons svg { width: 24px; height: 24px; fill: currentColor; }
-        .footer-links { margin-bottom: 1.5rem; display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; }
-        footer a { color: var(--accent-color); text-decoration: none; margin: 0; }
-        footer a:hover { color: var(--white); }
-        .app-latin { font-size: 0.85rem; color: #A0AEC0; margin-top: 0.5rem; font-style: italic; }
-        .disclaimer-small { font-size: 0.8rem; color: #A0AEC0; margin-top: 1.5rem; }
+        .mockup-showcase {
+            margin-top: 4rem;
+            position: relative;
+            height: 420px; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden; 
+        }
+        .jass-card {
+            position: absolute;
+            width: 180px;
+            height: 380px;
+            background: #E2E8F0;
+            border-radius: 20px;
+            border: 6px solid #000000;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            color: #718096;
+            transition: transform 0.3s ease;
+            overflow: hidden;
+        }
+        .jass-card img { width: 100%; height: 100%; object-fit: cover; }
+        .card-left { transform: rotate(-22deg) translateX(-70px) translateY(20px); z-index: 1; }
+        .card-center { transform: rotate(0deg); z-index: 3; box-shadow: 0 15px 35px rgba(0,0,0,0.25); }
+        .card-right { transform: rotate(22deg) translateX(70px) translateY(20px); z-index: 2; }
+
+        .app-info-box {
+            margin-top: 4rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 2.5rem;
+            background: var(--white);
+            border-radius: 16px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+        .app-info-desc { font-size: 1.1rem; color: #4A5568; margin-bottom: 0.8rem; }
+        
+        footer { 
+            background: #2D3748; 
+            color: var(--white); 
+            text-align: center; 
+            padding: 3rem 1.5rem 2rem 1.5rem; 
+        }
+
+        .social-icons { 
+            display: flex; 
+            justify-content: center; 
+            gap: 1.5rem; 
+            margin-bottom: 2rem; 
+        }
+
+        .social-icons a { 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            color: var(--accent-color); 
+            transition: color 0.3s ease, transform 0.3s ease; 
+            margin: 0; 
+        }
+
+        .social-icons a:hover { 
+            color: var(--white); 
+            transform: translateY(-2px); 
+        }
+
+        .social-icons svg { 
+            width: 24px; 
+            height: 24px; 
+            fill: currentColor; 
+        }
+
+        .footer-links { 
+            margin-bottom: 1.5rem; 
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        footer a { 
+            color: var(--accent-color); 
+            text-decoration: none; 
+            margin: 0; 
+        }
+
+        footer a:hover { 
+            color: var(--white); 
+        }
+
+        .app-latin { 
+            font-size: 0.85rem; 
+            color: #A0AEC0; 
+            margin-top: 0.5rem; 
+            font-style: italic; 
+        }
+
+        .disclaimer-small { 
+            font-size: 0.8rem; 
+            color: #A0AEC0; 
+            margin-top: 1.5rem; 
+        }
 
         @media (min-width: 768px) {
+            /* Navbar Desktop Reset */
             .navbar { flex-direction: row; align-items: center; justify-content: space-between; }
             .navbar-brand { align-self: auto; }
             .nav-links { width: auto; margin-top: 0; justify-content: flex-end; }
             .nav-links a { margin: 0 0 0 1rem; font-size: 1rem; }
             .lang-switcher { position: static; margin-left: 1.5rem; border-left: 1px solid #E2E8F0; padding-left: 1rem; }
+
+            section { padding: 6rem 2rem; }
+            .hero-image { max-width: 900px; margin: 0 auto; border-radius: 0 0 24px 24px; box-shadow: 0 25px 50px rgba(0, 0, 0, 0.6); }
+            .hero-content { padding: 4rem 2rem 5rem 2rem; }
+            .hero-brand { font-size: 1.8rem; margin-bottom: 0.8rem; }
+            .hero h1 { font-size: 3.5rem; margin-bottom: 1.5rem; }
+            .hero p { font-size: 1.25rem; margin-bottom: 2.5rem; }
+            .store-buttons { flex-direction: row; justify-content: center; }
             
-            .category-summary { padding: 2rem; }
-            .category-content { padding: 2rem 3rem 3rem 3rem; }
-            .tip-grid { grid-template-columns: 1fr 1fr; gap: 2.5rem 2rem; }
+            .proof-wrapper { padding: 5rem 2rem; }
+
+            .mockup-showcase { height: 500px; }
+            .jass-card { width: 220px; height: 460px; font-size: 1rem; }
+            .card-left { transform: rotate(-25deg) translateX(-130px) translateY(30px); }
+            .card-right { transform: rotate(25deg) translateX(130px) translateY(30px); }
+            .problem-section { padding-top: 6rem; padding-bottom: 6rem; }
         }
     </style>
 </head>
 <body>
 
-    <!-- SVG Definitions for reuse -->
-    <svg style="display: none;">
-        <symbol id="check-icon" viewBox="0 0 24 24">
-            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-        </symbol>
-        <symbol id="info-icon" viewBox="0 0 24 24">
-            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/>
-        </symbol>
-        <symbol id="viativity-icon" viewBox="0 0 24 24">
-            <path d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14z"/>
-        </symbol>
-    </svg>
+    <div class="announcement-banner">Enjoy the journey, not just the destination: Your smart companion for travel sickness.</div>
 
     <nav class="navbar">
-        <a href="/" class="navbar-brand">Viativity™</a>
+        <a href="/en/" class="navbar-brand">Viativity™</a>
         <div class="nav-links">
-            <a href="/">Startseite</a>
-            <a href="features.html">Werkzeuge</a>
-            <a href="reisetipps.html" class="active">Reisetipps</a>
+            <a href="/en/" class="active">Home</a>
+            <a href="features.html">Tools</a>
+            <a href="travel-tips.html">Travel Tips</a>
             <a href="faq.html">FAQ</a>
-            <a href="about.html">Über mich</a>
+            <a href="about.html">About Me</a>
             <div class="lang-switcher">
-                <span class="lang-active">DE</span> | <a href="/en/travel-tips.html" aria-label="Switch to English">EN</a>
+                <a href="/" aria-label="Switch to German">DE</a> | <span class="lang-active">EN</span>
             </div>
         </div>
     </nav>
 
-    <header class="page-header">
-        <h1>Die besten Tipps bei Reiseübelkeit</h1>
-        <p>Clever reisen. Entspannter ankommen. Dein fundierter Ratgeber für Auto, Flugzeug, Schiff und Zug.</p>
+    <header class="hero">
+        <img src="../Gemini_Reisen.jpg" alt="Carefree travel with Viativity" class="hero-image">
+        
+        <div class="hero-content">
+            <h1>
+                <span class="hero-brand">Viativity™</span>
+                More joy in traveling.<br>Your app for motion sickness and seasickness.
+            </h1>
+            
+            <p>Viativity accompanies people with motion sickness (kinetosis) with scientifically based strategies for more wellbeing on journeys – whether you are looking for support with travel sickness in the car or train, seasickness on the ferry, or flight anxiety on the plane.</p>
+            
+            <div class="store-buttons">
+                <a href="https://apps.apple.com/us/app/viativity-travel-companion/id6760250773" class="btn" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 384 512" aria-hidden="true"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
+                    App Store
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=app.viativity.reise" class="btn" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 512 512" aria-hidden="true"><path d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"/></svg>
+                    Play Store
+                </a>
+            </div>
+
+            <ul class="trust-list">
+                <li>Buy 1x, share with the whole family</li>
+                <li>Developed in Switzerland</li>
+                <li>Scientifically based</li>
+                <li>100% offline usable</li>
+                <li>No subscriptions</li>
+                <li>Local data privacy</li>
+                <li>Multilingual (DE, EN, FR, ES, JP, PT)</li>
+            </ul>
+
+            <p class="store-subtext">Premium one-time purchase (for the price of an airport coffee).</p>
+        </div>
     </header>
 
-    <main class="content-section">
-        
-        <div class="intro-text">
-            <p>Kennst du das? Kaum fährt das Auto los oder das Schiff verlässt den Hafen, wird dir flau im Magen. Damit bist du nicht allein! Reiseübelkeit – in der Fachsprache als <strong>Kinetose</strong> oder international als <strong>Motion Sickness</strong> bezeichnet – kann die Vorfreude auf den Urlaub schnell eintrüben.</p>
-            <p>Meistens handelt es sich dabei um ein simples Missverständnis im Körper: Deine Augen nehmen im Wageninneren Stillstand wahr, aber dein Gleichgewichtsorgan im Innenohr spürt jede noch so feine Kurve.</p>
-            <p>Die Symptome entstehen, weil das Gehirn diese widersprüchlichen Signale von Augen und Gleichgewichtssystem verarbeitet. Genau dort setzen auch die besten Bewältigungsstrategien an. Entdecke hier die wirksamsten, wissenschaftlich fundierten Tipps, um deine Fahrten wieder entspannt zu geniessen.</p>
+    <main>
+        <section id="emotion" class="problem-section">
+            <div class="problem-header">
+                <h2>Enjoy traveling relaxed again</h2>
+                <p>Motion sickness can make the most beautiful trip a challenge. Don't let travel sickness or discomfort take away the anticipation of your vacation.</p>
+            </div>
+
+            <div class="problem-box">
+                <h3>Your companion on the go</h3>
+                <p>Imagine: Finally relaxing and enjoying the scenery in the car or train again, instead of battling motion sickness. Looking out at the sea on the ferry or sitting calmly in the plane. Viativity combines various scientifically described strategies that can support you during preparation and while traveling.</p>
+            </div>
+        </section>
+
+        <section id="how-it-works" class="problem-section" style="padding-top: 0;">
+            <div class="problem-header">
+                <h2>Why does motion sickness occur?</h2>
+                <p>This unpleasant feeling arises from a sensory conflict: Your eyes report a standstill (e.g., when looking at your smartphone inside a vehicle), while your <strong>balance organ</strong> simultaneously senses the movement. The brain sounds the alarm.</p>
+            </div>
+
+            <div class="problem-box">
+                <h3>How Viativity supports you</h3>
+                <p>With smart immediate help and preventive training, the app helps your body actively resolve this contradiction. You learn to gently fade out disturbing stimuli and calm your nervous system again – completely without medication.</p>
+            </div>
+        </section>
+
+        <!-- Social Proof Band -->
+        <div class="proof-wrapper">
+            <div class="proof-container">
+                <h2>What others say</h2>
+                <div class="proof-grid">
+                    <div class="proof-card">
+                        <h3 class="proof-title">Cruisetricks.de</h3>
+                        <p class="proof-subtitle">The renowned cruise blog</p>
+                        <a href="https://www.cruisetricks.de/seekrank-kreuzfahrt/#h-smartphone-app-gegen-seekrankheit" target="_blank" rel="noopener" class="proof-link">Read article</a>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="accordion-container">
-
-            <!-- Kategorie: Allgemeine Tipps -->
-            <details class="category-details">
-                <summary class="category-summary">
-                    <h2>
-                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
-                        Allgemeine Tipps für jede Reise
-                    </h2>
-                    <svg class="chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
-                </summary>
-                <div class="category-content">
-                    <div class="category-intro">
-                        <p>Gut vorbereitet reist es sich am besten. Diese grundlegenden Ratschläge bilden das Fundament und gelten unabhängig davon, mit welchem Verkehrsmittel du unterwegs bist.</p>
-                    </div>
-                    
-                    <div class="info-box">
-                        <h4><svg><use href="#info-icon"></use></svg> Wusstest du?</h4>
-                        <p>Fast jeder Mensch kann reisekrank werden. Je stärker und ungewohnter die Bewegungsreize sind (zum Beispiel bei sehr starkem Seegang), desto höher ist die Wahrscheinlichkeit – selbst bei Personen, die im Alltag normalerweise nie Probleme haben.</p>
-                    </div>
-
-                    <div class="tip-grid">
-                        <div class="tip-block">
-                            <h3 class="check-title"><svg><use href="#check-icon"></use></svg> Schlafe dich gut aus</h3>
-                            <p>Ein ausgeruhter Körper ist widerstandsfähiger. Schlafmangel senkt die persönliche Toleranzgrenze spürbar, während ein erholtes Nervensystem deutlich mehr Kapazitäten besitzt, um ungewohnte Bewegungsreize souverän zu verarbeiten.</p>
-                        </div>
-
-                        <div class="tip-block">
-                            <h3 class="check-title"><svg><use href="#check-icon"></use></svg> Reise mit leichtem Magen</h3>
-                            <p>Ein komplett leerer Magen ist oft besonders empfindlich. Eine kleine, gut verträgliche Mahlzeit vor dem Start (wie eine Banane oder etwas Brot) stabilisiert die Verdauung, ohne den Magen zusätzlich schwer zu belasten.</p>
-                        </div>
-
-                        <div class="tip-block">
-                            <h3 class="check-title"><svg><use href="#check-icon"></use></svg> Bleibe hydriert</h3>
-                            <p>Trinke regelmässig stilles Wasser. Ein gut hydrierter Organismus kann den Blutdruck besser regulieren, was allgemeinem Schwindel auf langen Strecken effektiv entgegenwirkt.</p>
-                        </div>
-
-                        <div class="tip-block">
-                            <h3 class="check-title"><svg><use href="#check-icon"></use></svg> Probiere etwas Ingwer</h3>
-                            <p>Ingwer gehört zu den besterforschten natürlichen Helfern. Die darin enthaltenen Gingerole wirken leicht beruhigend auf die Magenschleimhaut – egal ob du ihn als Tee, Bonbon oder Kapsel zu dir nimmst.</p>
-                        </div>
-
-                        <div class="tip-block">
-                            <h3 class="check-title"><svg><use href="#check-icon"></use></svg> Nutze Akupressur-Bänder</h3>
-                            <p>Sogenannte Sea-Bands üben sanften Druck auf den P6-Punkt am Handgelenk aus. Diese gezielte Stimulation sendet beruhigende Impulse an den Magen und ist in der Reisemedizin fest etabliert. Hast du dein Sea-Band zu Hause vergessen? Viativity illustriert auf einer Infografik genau, wie du den P6-Punkt (Nei-Kuan) an deinem Handgelenk selber finden kannst, und stellt dir einen Timer für die perfekte Massage-Zeit zur Verfügung.</p>
-                        </div>
-
-                        <div class="tip-block">
-                            <h3 class="check-title"><svg><use href="#check-icon"></use></svg> Gewöhne dich an die Bewegung</h3>
-                            <p>Unser Gehirn ist lernfähig. Durch den Prozess der sogenannten Habituation speichert der Gleichgewichtssinn neue Bewegungsmuster nach und nach als normal ab. Regelmässige, kurze Fahrten im Vorfeld können daher wahre Wunder wirken.</p>
-                        </div>
-                    </div>
-
-                    <div class="viativity-action-box">
-                        <h4><svg><use href="#viativity-icon"></use></svg> Bereite dich mit Viativity vor</h4>
-                        <p>Die App trainiert deinen Körper. Nutze schon Wochen vor der Abreise entspannt auf dem Sofa:</p>
-                        <ul>
-                            <li>
-                                <div class="action-text">
-                                    <strong>Mentale Rotation</strong>
-                                    <span>Ein Sehtraining, das deinem Gehirn hilft, Bewegungen künftig schneller zu verarbeiten.</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="action-text">
-                                    <strong>Körper-Lot</strong>
-                                    <span>Eine Übung, die deine Rumpfstabilität und dein Gleichgewicht bei geschlossenen Augen stärkt.</span>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </details>
-
-            <!-- Kategorie: Auto & Bus -->
-            <details class="category-details">
-                <summary class="category-summary">
-                    <h2>
-                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"/></svg>
-                        Im Auto und Bus
-                    </h2>
-                    <svg class="chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
-                </summary>
-                <div class="category-content">
-                    <div class="category-intro">
-                        <p>Autoübelkeit oder Schwindel bei Busreisen treten sehr häufig auf. Besonders auf dem Beifahrersitz oder auf der Rückbank kämpfen viele mit dem flauen Gefühl. So machst du die Fahrt entspannter:</p>
-                    </div>
-                    
-                    <div class="info-box">
-                        <h4><svg><use href="#info-icon"></use></svg> Gut zu wissen</h4>
-                        <p>Als Fahrer wird fast niemand reisekrank. Das Gehirn kennt die geplante Lenk- oder Bremsbewegung bereits exakt in dem Moment, bevor sie stattfindet. Die Sinne arbeiten dadurch harmonisch zusammen.</p>
-                    </div>
-
-                    <div class="tip-grid">
-                        <div class="tip-block">
-                            <h3 class="check-title"><svg><use href="#check-icon"></use></svg> Nimm auf dem Beifahrersitz Platz</h3>
-                            <p>Falls du nicht selbst fährst, ist der Beifahrersitz im Auto oder die vorderste Reihe im Bus die beste Wahl. Der weite Blick durch die Frontscheibe auf den Horizont unterstützt die Orientierung und reduziert widersprüchliche Sinneseindrücke sofort.</p>
-                        </div>
-
-                        <div class="tip-block">
-                            <h3 class="check-title"><svg><use href="#check-icon"></use></svg> Vermeide Bildschirme und Bücher</h3>
-                            <p>Das Lesen von Nachrichten am Handy gehört zu den häufigsten Auslösern. Verzichte auf starre Inhalte, da das Auge sonst einen Stillstand fixiert, während der Körper in Bewegung ist. Hörbücher oder Musik sind die weitaus bessere Alternative.</p>
-                        </div>
-
-                        <div class="tip-block">
-                            <h3 class="check-title"><svg><use href="#check-icon"></use></svg> Sorge für frische Luft</h3>
-                            <p>Oft hilft es bereits, das Fenster einen Spalt zu öffnen oder die Lüftung leicht auf das Gesicht zu richten. Kühle, frische Zugluft verbessert das subjektive Wohlbefinden bei aufsteigender Hitze meist innerhalb weniger Sekunden.</p>
-                        </div>
-
-                        <div class="tip-block">
-                            <h3 class="check-title"><svg><use href="#check-icon"></use></svg> Fahre vorausschauend und sanft</h3>
-                            <p>Ruckartiges Bremsen ist Gift für empfindliche Mägen. Reduziere bei Elektroautos zudem die Rekuperation (One Pedal Driving). Gleichmässige Beschleunigungskräfte halten die feine Flüssigkeit im Innenohr ruhig.</p>
-                        </div>
-
-                        <div class="tip-block">
-                            <h3 class="check-title"><svg><use href="#check-icon"></use></svg> Halte deinen Kopf stabil</h3>
-                            <p>Ein Nackenkissen oder das bewusste, ruhige Anlehnen an die Kopfstütze minimiert ungewollte, zusätzliche Kopfbewegungen in den Kurven und schont so das Gleichgewichtsorgan massgeblich.</p>
-                        </div>
-
-                        <div class="tip-block">
-                            <h3 class="check-title"><svg><use href="#check-icon"></use></svg> Plane regelmässige Pausen ein</h3>
-                            <p>Mache spätestens alle zwei Stunden Halt. Kurz aussteigen, frische Luft atmen und ein paar Schritte gehen, kalibriert den Gleichgewichtssinn gewissermassen neu und senkt das aufgestaute Stresslevel.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="viativity-action-box">
-                        <h4><svg><use href="#viativity-icon"></use></svg> Noch entspannter mit Viativity</h4>
-                        <p>Die App hilft dir als Begleiter unterwegs. Nutze während der Fahrt auf dem Beifahrersitz:</p>
-                        <ul>
-                            <li>
-                                <div class="action-text">
-                                    <strong>Atemtechniken (4-2-6 Rhythmus)</strong>
-                                    <span>Beruhigt sanft Magen und Kreislauf, wenn dir auf kurvigen Passstrassen flau wird.</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="action-text">
-                                    <strong>P6-Akupressur</strong>
-                                    <span>Die diskrete, visuelle Hilfe zur Handgelenks-Massage, wenn dir übel wird.</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="action-text">
-                                    <strong>100 Hz Klang</strong>
-                                    <span>Lass diesen Ton sanft im Hintergrund laufen, um die Reizlast weiter zu minimieren.</span>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </details>
-
-            <!-- Kategorie: Flugzeug -->
-            <details class="category-details">
-                <summary class="category-summary">
-                    <h2>
-                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"/></svg>
-                        Im Flugzeug
-                    </h2>
-                    <svg class="chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
-                </summary>
-                <div class="category-content">
-                    <div class="category-intro">
-                        <p>Druckschwankungen, Luftlöcher und die fehlende Sicht können Übelkeit beim Fliegen (Flugkrankheit) auslösen. Mit diesen Ansätzen bleibt der Flug angenehm:</p>
-                    </div>
-
-                    <div class="tip-grid">
-                        <div class="tip-block">
-                            <h3 class="check-title"><svg><use href="#check-icon"></use></svg> Wähle einen Platz am Flügel</h3>
-                            <p>Die Platzwahl im Flugzeug ist entscheidend. Buche deinen Sitz nach Möglichkeit direkt auf Höhe der Tragflächen, da sich dort der physikalische Schwerpunkt der Maschine und Turbulenzen am geringsten spürbar sind.</p>
-                        </div>
-
-                        <div class="tip-block">
-                            <h3 class="check-title"><svg><use href="#check-icon"></use></svg> Blicke aus dem Fenster</h3>
-                            <p>Ein Fensterplatz ist bei Kinetose-Anfälligkeit stets dem Gangplatz vorzuziehen. Der weite Blick auf die Wolkendecke oder den Horizont gibt dem Auge einen verlässlichen Bezugspunkt für die tatsächliche Neigung des Flugzeugs.</p>
-                        </div>
-
-                        <div class="tip-block">
-                            <h3 class="check-title"><svg><use href="#check-icon"></use></svg> Lüftung gezielt nutzen</h3>
-                            <p>Die kleine Düse über deinem Sitz ist sehr effektiv. Öffne sie leicht und richte sie auf dein Gesicht. Der kühle Luftzug aktiviert thermische Rezeptoren, was bei aufkommendem Unwohlsein fast immer als sehr lindernd empfunden wird.</p>
-                        </div>
-
-                        <div class="tip-block">
-                            <h3 class="check-title"><svg><use href="#check-icon"></use></svg> Nutze Noise-Cancelling Kopfhörer</h3>
-                            <p>Das ständige, laute Dröhnen der Triebwerke in der Kabine ist ein unterschätzter Stressfaktor. Eine aktive Geräuschunterdrückung reduziert die sensorische Reizlast und hilft dem Körper spürbar beim Entspannen.</p>
-                        </div>
-
-                        <div class="tip-block">
-                            <h3 class="check-title"><svg><use href="#check-icon"></use></svg> Achte auf den Druckausgleich</h3>
-                            <p>Druckunterschiede im Ohr können Schwindel auslösen. Kaugummikauen öffnet die Eustachische Röhre (die Verbindung zum Mittelohr) und gleicht den Luftdruck während des Steig- und Sinkflugs zuverlässig aus.</p>
-                        </div>
-
-                        <div class="tip-block">
-                            <h3 class="check-title"><svg><use href="#check-icon"></use></svg> Trage bequeme Kleidung</h3>
-                            <p>Verzichte auf enge Hosenbünde oder einschnürende Gürtel. Das verhindert zusätzlichen physischen Druck auf den Bauchraum, wodurch sich die Bauchdecke beim stundenlangen Sitzen besser entspannen kann.</p>
-                        </div>
-                    </div>
-
-                    <div class="viativity-action-box">
-                        <h4><svg><use href="#viativity-icon"></use></svg> Besser fliegen mit Viativity</h4>
-                        <p>Die App hilft dir als Begleiter unterwegs. Nutze während des Flugs:</p>
-                        <ul>
-                            <li>
-                                <div class="action-text">
-                                    <strong>Atemtechniken (4-7-8 Rhythmus)</strong>
-                                    <span>Das extra lange Ausatmen signalisiert Sicherheit und dämpft akute Flugangst sofort.</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="action-text">
-                                    <strong>Atemtechniken (4-4-4-4 Box-Breathing)</strong>
-                                    <span>Fährt innere Unruhe bei unerwarteten Turbulenzen spürbar herunter.</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="action-text">
-                                    <strong>100 Hz Klang</strong>
-                                    <span>Lass diesen Ton sanft im Hintergrund laufen, um die Reizlast weiter zu minimieren.</span>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </details>
-
-            <!-- Kategorie: Schiff -->
-            <details class="category-details">
-                <summary class="category-summary">
-                    <h2>
-                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 21c-1.39 0-2.78-.47-4-1.32-2.44 1.71-5.56 1.71-8 0C6.78 20.53 5.39 21 4 21H2v2h2c1.38 0 2.74-.35 4-.99 2.52 1.29 5.48 1.29 8 0 1.26.65 2.62.99 4 .99h2v-2h-2zM3.95 19H4c1.6 0 3.02-.88 4-2 .98 1.12 2.4 2 4 2s3.02-.88 4-2c.98 1.12 2.4 2 4 2h.05l1.89-6.68c.08-.26.06-.54-.06-.78s-.34-.42-.6-.5L20 10.62V6c0-1.1-.9-2-2-2h-3V1H9v3H6c-1.1 0-2 .9-2 2v4.62l-1.29.42c-.26.08-.48.26-.6.5s-.15.52-.06.78L3.95 19zM6 6h12v3.97L12 8 6 9.97V6z"/></svg>
-                        Auf dem Schiff (Fähre & Kreuzfahrt)
-                    </h2>
-                    <svg class="chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
-                </summary>
-                <div class="category-content">
-                    <div class="category-intro">
-                        <p>Die Seekrankheit ist wohl die bekannteste Form der Kinetose. Besonders in geschlossenen Innenkabinen oder bei schwerem Seegang wird das Gleichgewichtssystem stark gefordert.</p>
-                    </div>
-
-                    <div class="tip-grid">
-                        <div class="tip-block">
-                            <h3 class="check-title"><svg><use href="#check-icon"></use></svg> Suche die Schiffsmitte auf</h3>
-                            <p>Am Bug (vorne) und ganz oben auf den Aussendecks sind die Ausschläge bei Seegang am stärksten. Begib dich stattdessen in die Mitte des Schiffes auf einem der unteren Decks, da du dich dort am nächsten am physikalischen Drehpunkt befindest.</p>
-                        </div>
-
-                        <div class="tip-block">
-                            <h3 class="check-title"><svg><use href="#check-icon"></use></svg> Gehe raus an die frische Luft</h3>
-                            <p>Eine Kabine ohne Fenster ist bei Seegang tückisch. Verlasse das Schiffsinnere und suche dir einen Platz mit freier Sicht nach draussen, damit das visuelle System das wahrgenommene Schaukeln korrekt einordnen kann.</p>
-                        </div>
-
-                        <div class="tip-block">
-                            <h3 class="check-title"><svg><use href="#check-icon"></use></svg> Setze dich in Fahrtrichtung</h3>
-                            <p>Positioniere deinen Stuhl auf dem Deck oder im Speisesaal so, dass du nach vorne schaust. Seitliche Bewegungen (Querrollen) werden vom Gehirn oft als deutlich irritierender empfunden als vorhersehbare Vorwärtsbewegungen.</p>
-                        </div>
-
-                        <div class="tip-block">
-                            <h3 class="check-title"><svg><use href="#check-icon"></use></svg> Lege dich bei Bedarf hin</h3>
-                            <p>Manchmal hilft es, der Schwerkraft einfach nachzugeben, anstatt krampfhaft gegen das Rollen des Schiffes anzukämpfen. Im Liegen muss der Körper nicht aktiv balancieren, was das Gleichgewichtsorgan spürbar entlastet.</p>
-                        </div>
-
-                        <div class="tip-block">
-                            <h3 class="check-title"><svg><use href="#check-icon"></use></svg> Wähle leichte, stärkehaltige Kost</h3>
-                            <p>Verzichte bei starkem Wellengang auf extrem fettige Speisen. Trockene Nahrung wie Brot, Reis oder Cracker ruht besser im Magen, ist leicht verdaulich und forciert die Verdauung bei ohnehin hoher Belastung weniger stark.</p>
-                        </div>
-                    </div>
-
-                    <div class="viativity-action-box">
-                        <h4><svg><use href="#viativity-icon"></use></svg> Dein Helfer auf hoher See</h4>
-                        <p>Wenn du den Ozean nicht sehen kannst, übernimmt Viativity die visuelle Orientierung für dich:</p>
-                        <ul>
-                            <li>
-                                <div class="action-text">
-                                    <strong>Künstlicher Horizont</strong>
-                                    <span>Besonders hilfreich in fensterlosen Innenkabinen. Er simuliert die Schiffsbewegung auf deinem Display in Echtzeit und löst den Sinneskonflikt auf.</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="action-text">
-                                    <strong>P6-Akupressur</strong>
-                                    <span>Die schnelle Orientierung für die beruhigende Handgelenks-Akupressur.</span>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </details>
-
-            <!-- Kategorie: Zug -->
-            <details class="category-details">
-                <summary class="category-summary">
-                    <h2>
-                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2c-4.42 0-8 .5-8 4v9.5C4 17.43 5.57 19 7.5 19L6 20.5v.5h12v-.5L16.5 19c1.93 0 3.5-1.57 3.5-3.5V6c0-3.5-3.58-4-8-4zM7.5 17c-.83 0-1.5-.67-1.5-1.5S6.67 14 7.5 14s1.5.67 1.5 1.5S8.33 17 7.5 17zm3.5-7H6V6h5v4zm5.5 7c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm1.5-7h-5V6h5v4z"/></svg>
-                        Im Zug
-                    </h2>
-                    <svg class="chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
-                </summary>
-                <div class="category-content">
-                    <div class="category-intro">
-                        <p>Schwindel im Zug entsteht häufig durch rasend schnelle Lichtwechsel oder das Sitzen entgegen der Fahrtrichtung. Mit diesen Tipps fährst du gelassener:</p>
-                    </div>
-
-                    <div class="tip-grid">
-                        <div class="tip-block">
-                            <h3 class="check-title"><svg><use href="#check-icon"></use></svg> Setze dich in Fahrtrichtung</h3>
-                            <p>Achte bereits bei der Sitzplatzreservierung auf die Ausrichtung der Sitze. Rückwärtsfahren widerspricht der natürlichen Erwartung des Gehirns und macht sensible Menschen anfälliger für Unwohlsein.</p>
-                        </div>
-
-                        <div class="tip-block">
-                            <h3 class="check-title"><svg><use href="#check-icon"></use></svg> Richte den Blick in die Ferne</h3>
-                            <p>Vermeide es, direkt auf die schnell vorbeiziehenden Masten zu schauen. Der schnelle optische Fluss naher Objekte strengt die Augen enorm an, während der weit entfernte Horizont visuelle Stabilität bietet.</p>
-                        </div>
-
-                        <div class="tip-block">
-                            <h3 class="check-title"><svg><use href="#check-icon"></use></svg> Vermeide das Arbeiten am Laptop</h3>
-                            <p>Texte lesen oder konzentriert am Bildschirm arbeiten ist in Zügen oft der Auslöser Nummer eins, da das Auge statische Inhalte fokussiert, während der Körper die Vibrationen des Waggons spürt.</p>
-                        </div>
-
-                        <div class="tip-block">
-                            <h3 class="check-title"><svg><use href="#check-icon"></use></svg> Entspanne bei einem Hörbuch</h3>
-                            <p>Als Alternative zum Lesen oder Arbeiten am Laptop sind Podcasts und Hörbücher ideal. Sie entspannen den Geist wunderbar, ohne die Augen bei ständigen Rucklern im Waggon zusätzlich zu fordern.</p>
-                        </div>
-
-                        <div class="tip-block">
-                            <h3 class="check-title"><svg><use href="#check-icon"></use></svg> Wähle einen Platz in der Waggon-Mitte</h3>
-                            <p>Meide Sitzplätze, die sich direkt über den Drehgestellen (den Rädern am Anfang und Ende des Waggons) befinden, da in der Mitte des Waggons harte Stösse am besten abgefedert werden.</p>
-                        </div>
-
-                        <div class="tip-block">
-                            <h3 class="check-title"><svg><use href="#check-icon"></use></svg> Bewege dich ab und zu im Gang</h3>
-                            <p>Steh auf langen Bahnreisen gelegentlich auf und gehe vorsichtig ein paar Schritte durch den Zug. Es aktiviert den Kreislauf und erleichtert es dem Körper, sich aktiv auf die Schwankungen einzustellen.</p>
-                        </div>
-                    </div>
-
-                    <div class="viativity-action-box">
-                        <h4><svg><use href="#viativity-icon"></use></svg> So unterstützt dich Viativity</h4>
-                        <p>Die App hilft dir als Begleiter unterwegs. Nutze während der Fahrt:</p>
-                        <ul>
-                            <li>
-                                <div class="action-text">
-                                    <strong>100 Hz Klang</strong>
-                                    <span>Lass diesen Ton sanft im Hintergrund laufen, um die Reizlast weiter zu minimieren und Umgebungsgeräusche abzuschirmen.</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="action-text">
-                                    <strong>Fokus-Training</strong>
-                                    <span>Ein kurzes visuelles Spiel, um dein System zu zentrieren und abzulenken.</span>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </details>
-
-            <!-- Kategorie: Seilbahn -->
-            <details class="category-details">
-                <summary class="category-summary">
-                    <h2>
-                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 14h2v2H4zm3-2h2v4H7zm3 2h2v2h-2zm9-6V6H5V4l16 3h-2zm-3.5 2h-11C6.67 10 6 10.67 6 11.5v7.64c0 .65.42 1.23 1.04 1.43L8 21h2l-1-2h6l-1 2h2l1-1.43c.62-.2 1.04-.78 1.04-1.43V11.5c0-.83-.67-1.5-1.5-1.5zM16 16H8v-4h8v4z"/></svg>
-                        In der Seilbahn
-                    </h2>
-                    <svg class="chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
-                </summary>
-                <div class="category-content">
-                    <div class="category-intro">
-                        <p>Schnelle Höhenunterschiede, plötzliches Pendeln an den Stützen und der Blick in die Tiefe fordern unsere Sinne beim Gondelfahren heraus. So bleibst du stabil:</p>
-                    </div>
-
-                    <div class="tip-grid">
-                        <div class="tip-block">
-                            <h3 class="check-title"><svg><use href="#check-icon"></use></svg> Stelle dich in die Kabinenmitte</h3>
-                            <p>Rücke in grossen Steh-Gondeln von den Panoramafenstern am Rand etwas weiter in die Mitte. Dort fallen die seitlichen Pendelbewegungen wesentlich geringer aus, was das Gleichgewicht schont.</p>
-                        </div>
-
-                        <div class="tip-block">
-                            <h3 class="check-title"><svg><use href="#check-icon"></use></svg> Blicke hoch zur Bergstation</h3>
-                            <p>Der Blick tief nach unten in das Tal kann leicht unangenehmen Höhenschwindel auslösen. Der Blick nach oben zur Station oder zum Berggipfel bietet dem Auge hingegen ein klares, stabiles Ziel.</p>
-                        </div>
-
-                        <div class="tip-block">
-                            <h3 class="check-title"><svg><use href="#check-icon"></use></svg> Halte dich gut fest</h3>
-                            <p>Nutze die Haltestangen im Inneren der Kabine. Das Festhalten liefert dem Gehirn über die Hände ein wichtiges haptisches Signal für Sicherheit und hilft, plötzliches Ruckeln abzufedern.</p>
-                        </div>
-
-                        <div class="tip-block">
-                            <h3 class="check-title"><svg><use href="#check-icon"></use></svg> Federe Stösse mit den Knien ab</h3>
-                            <p>Wenn du stehst, achte darauf, die Kniegelenke niemals starr durchzudrücken. Leicht gebeugte Beine wirken wie natürliche, körpereigene Stossdämpfer gegen unvermitteltes Schaukeln.</p>
-                        </div>
-                    </div>
-
-                    <div class="viativity-action-box">
-                        <h4><svg><use href="#viativity-icon"></use></svg> Entspannt ankommen mit Viativity</h4>
-                        <p>Wenn die Höhe oder das Schaukeln Nervosität auslöst:</p>
-                        <ul>
-                            <li>
-                                <div class="action-text">
-                                    <strong>Atemtechniken (3-1-8 Seufzer)</strong>
-                                    <span>Durchbricht akute Anspannung in Sekunden, falls der Blick in die Tiefe plötzliche Panik auslöst.</span>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </details>
-
-            <!-- Kategorie: Kinder -->
-            <details class="category-details">
-                <summary class="category-summary">
-                    <h2>
-                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
-                        Mit Kindern reisen
-                    </h2>
-                    <svg class="chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
-                </summary>
-                <div class="category-content">
-                    <div class="category-intro">
-                        <p>Viele Eltern kennen es: Ausgerechnet auf dem Weg in die Ferien wird dem Nachwuchs auf der Rückbank unwohl. Mit etwas Vorbereitung lassen sich viele unschöne Momente vermeiden.</p>
-                    </div>
-
-                    <div class="info-box">
-                        <h4><svg><use href="#info-icon"></use></svg> Spannend</h4>
-                        <p>Kinder zwischen 2 und 12 Jahren sind besonders häufig von Reiseübelkeit betroffen. Der Grund dafür ist plausibel: Ihr Gleichgewichtssystem im Innenohr befindet sich noch in der Entwicklung und reagiert auf ungewohnte Reize wesentlich empfindlicher als bei Erwachsenen.</p>
-                    </div>
-
-                    <div class="tip-grid">
-                        <div class="tip-block">
-                            <h3 class="check-title"><svg><use href="#check-icon"></use></svg> Der richtige Kindersitz und gute Sicht</h3>
-                            <p>Kinder müssen aus Sicherheitsgründen immer korrekt gesichert sein. Sobald Alter und Körpergrösse es jedoch erlauben, hilft ein Sitzplatz mit freier Sicht nach vorne (z.B. in der Mitte der Rückbank) enorm, um die Bewegung der Reise visuell nachzuvollziehen.</p>
-                        </div>
-
-                        <div class="tip-block">
-                            <h3 class="check-title"><svg><use href="#check-icon"></use></svg> Hörspiele statt Tablets</h3>
-                            <p>Filme und Spiele auf dem Tablet sind bei Reiseübelkeit absolut kontraproduktiv. Spannende Hörspiele lenken den Kopf wunderbar ab, während die Augen frei schweifen können, anstatt starr auf einen Bildschirm im wackelnden Auto zu fokussieren.</p>
-                        </div>
-                    </div>
-
-                    <div class="viativity-action-box">
-                        <h4><svg><use href="#viativity-icon"></use></svg> In der App</h4>
-                        <p>Viativity ist komplett werbefrei, sammelt keine Daten und ist so intuitiv aufgebaut, dass Kinder sie völlig sicher nutzen können. Ob der künstliche Horizont für die visuelle Orientierung auf dem Schiff oder die beruhigende Taktatmung im Auto – die Methoden geben deinem Kind das stärkende Gefühl, selbst aktiv etwas zur Besserung beitragen zu können.</p>
-                    </div>
-                </div>
-            </details>
-
-            <!-- Kategorie: Digitale Werkzeuge -->
-            <details class="category-details">
-                <summary class="category-summary">
-                    <h2>
-                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14z"/></svg>
-                        Die digitalen Werkzeuge
-                    </h2>
-                    <svg class="chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
-                </summary>
-                <div class="category-content">
-                    <div class="category-intro">
-                        <p>Manche Tipps helfen sofort. Andere trainieren deinen Körper langfristig. Genau dafür wurde Viativity entwickelt: Ein Set aus Werkzeugen, das den Sinneskonflikt gezielt adressiert oder deine Widerstandsfähigkeit trainiert.</p>
-                    </div>
-
-                    <div class="tool-block">
-                        <h3>Künstlicher Horizont</h3>
-                        <div class="tool-tagline">Ideal, wenn dir die visuelle Orientierung fehlt</div>
-                        <p>In fensterlosen Kabinen weiss das Auge oft nicht, wie sich das Fahrzeug gerade bewegt. Dieses Werkzeug blendet einen Horizont ein, der sich über die Smartphone-Sensoren in Echtzeit mit den Neigungen synchronisiert. Dein Gehirn erhält so die notwendige visuelle Stabilität zurück.</p>
-                        <h4>Besonders geeignet für:</h4>
-                        <ul>
-                            <li>Schiffe & Fähren (Innenkabinen)</li>
-                        </ul>
-                    </div>
-
-                    <div class="tool-block">
-                        <h3>Situative Atemtechniken</h3>
-                        <div class="tool-tagline">Ideal, wenn Übelkeit, Flugangst, innere Unruhe oder Panikgefühl aufsteigen</div>
-                        <p>Aufsteigendes Unwohlsein und Stress versetzen den Körper in Alarmbereitschaft. Viativity bietet dir im Werkzeug "Atemtechniken" vier spezifische Rhythmen, deren Wirksamkeit in klinischen Studien für exakt diese Ausnahmesituationen belegt wurde. Sanfte haptische Vibrationen leiten dich blind durch den Takt, sodass du die Augen schliessen kannst.</p>
-                        <h4>Besonders geeignet bei:</h4>
-                        <ul>
-                            <li><strong>Reiseübelkeit:</strong> Der 4-2-6 Rhythmus beruhigt sanft den Magen sowie Kreislauf und lindert das flaue Gefühl im Bauch (z.B. im Auto oder auf dem Schiff).</li>
-                            <li><strong>Flugangst:</strong> Der 4-7-8 Rhythmus senkt akute Angstzustände und den Puls unmittelbar.</li>
-                            <li><strong>Innerer Unruhe:</strong> Das 4-4-4-4 Box-Breathing (eine gleichmässige symmetrische Atmung) reduziert Stress bei unerwarteten Turbulenzen, hält dich aber fokussiert.</li>
-                            <li><strong>Panikgefühl:</strong> Der 3-1-8 Seufzer durchbricht plötzliche Panikwellen in Sekunden.</li>
-                        </ul>
-                    </div>
-
-                    <div class="tool-block">
-                        <h3>100 Hz Klangmodulation</h3>
-                        <div class="tool-tagline">Ideal, um das Innenohr sanft abzuschirmen</div>
-                        <p>Das Gleichgewichtsorgan reagiert empfindlich auf ständige Schwankungen und monotonen Lärm. Eine unaufdringliche, tiefe Audio-Frequenz (100 Hertz) wird über deine Kopfhörer abgespielt, um das Gleichgewichtssystem sanft zu stimulieren und die Anfälligkeit für Schwindel zu verringern.</p>
-                        <h4>Besonders geeignet für:</h4>
-                        <ul>
-                            <li>Flugzeuge oder bei Autofahrten als Beifahrer</li>
-                        </ul>
-                    </div>
-
-                    <div class="tool-block">
-                        <h3>P6-Akupressur</h3>
-                        <div class="tool-tagline">Ideal, wenn sich der Magen plötzlich meldet</div>
-                        <p>Wenn es schnell gehen muss, braucht man eine diskrete und medikamentenfreie Soforthilfe. Die App führt dich präzise an, den Nei-Kuan-Punkt (P6) am Handgelenk selbst zu finden und sanft zu massieren, um beruhigende Impulse an die Verdauung zu senden.</p>
-                        <h4>Besonders geeignet für:</h4>
-                        <ul>
-                            <li>Erste Anzeichen von Kinetose, jederzeit anwendbar</li>
-                        </ul>
-                    </div>
-
-                    <div class="tool-block">
-                        <h3>Mentale Rotation (Training)</h3>
-                        <div class="tool-tagline">Ideal, um dich Wochen vorher vorzubereiten</div>
-                        <p>Ein untrainiertes visuelles System ist oft schneller mit komplexen Bewegungen überfordert. Mit diesem Sehtraining löst du spielerisch räumliche Aufgaben. Ein geschultes räumliches Denken hilft dem Gehirn nachweislich, Bewegungsdaten später effizienter zu verarbeiten.</p>
-                        <h4>Besonders geeignet für:</h4>
-                        <ul>
-                            <li>Die entspannte Vorbereitung zu Hause auf dem Sofa</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="tool-block">
-                        <h3>Körper-Lot</h3>
-                        <div class="tool-tagline">Ideal, um deinen Stand zu stabilisieren</div>
-                        <p>Wer einen stabilen Stand hat, reist erwiesenermassen entspannter. Diese Übung trainiert mit geschlossenen Augen dein Gleichgewicht und die Rumpfstabilität, um dir präventiv mehr Widerstandsfähigkeit zu verleihen.</p>
-                        <h4>Besonders geeignet für:</h4>
-                        <ul>
-                            <li>Das präventive Training zu Hause</li>
-                        </ul>
-                    </div>
-
-                    <div class="tool-block">
-                        <h3>Fokus-Training</h3>
-                        <div class="tool-tagline">Ideal zur visuellen Ablenkung</div>
-                        <p>Durch das Binden deiner visuellen Aufmerksamkeit auf eine anspruchsvolle Aufgabe zwingst du das Gehirn zur Konzentration. Dieses Werkzeug eignet sich wunderbar zur gezielten Ablenkung und sanften Gewöhnung.</p>
-                        <h4>Besonders geeignet für:</h4>
-                        <ul>
-                            <li>Ruhigere Reisephasen oder Wartezeiten</li>
-                        </ul>
-                    </div>
-                </div>
-            </details>
-
-        </div>
-
-        <!-- Start CTA -->
-        <div class="info-box" style="border-left: none; border-bottom: 4px solid var(--accent-color); border-radius: 12px; text-align: center; background: #EDF2F7; margin-top: 3rem;">
-            <h4 style="justify-content: center;"><svg><use href="#viativity-icon"></use></svg> Dein smarter Begleiter</h4>
-            <p style="margin-top: 0.5rem; font-size: 1.05rem;">Möchtest du alle diese digitalen Werkzeuge und Tipps gebündelt und zu 100 % offline auf deiner Reise dabei haben? <br><br><strong><a href="/" style="color: var(--primary-color); text-decoration: underline;">Lade dir Viativity herunter.</a></strong></p>
-        </div>
-        <!-- End CTA -->
-
-        <div class="source-list">
-            <h3>Wissenschaftliche Grundlagen und Quellen</h3>
-            <p>Die Ratschläge und Werkzeuge auf dieser Seite basieren auf etablierten Erkenntnissen der Reisemedizin, der Gleichgewichtsforschung sowie auf Guidelines internationaler Gesundheitsorganisationen.</p>
+        <section id="tools" class="text-center">
+            <h2>Digital Tools & Travel Tips</h2>
+            <p class="max-w-800 mx-auto">Choose the tool that best supports your current situation. Whether it's acute motion sickness on the go or preventive <strong>training</strong> in advance: Viativity offers the right solution and is almost as versatile as a Swiss army knife. Use smart helpers like the <strong>artificial horizon</strong>, situational <strong>breathing techniques</strong>, and the <strong>100Hz tone</strong> to calm down, or train your <strong>body stability</strong>.</p>
             
-            <h4>Internationale Empfehlungen</h4>
-            <ul>
-                <li>Centers for Disease Control and Prevention (CDC): Motion Sickness Guidelines</li>
-                <li>World Health Organization (WHO): International Travel and Health Recommendations</li>
-            </ul>
+            <a href="features.html" class="feature-link">View some features in detail &rarr;</a>
 
-            <h4>Wissenschaftliche Literatur & Reviews</h4>
-            <ul>
-                <li>Reason JT, Brand JJ – <em>Motion Sickness</em> (Grundlagen des sensorischen Konflikts)</li>
-                <li>Bos JE – <em>Motion sickness: a review</em> (Habituation und Einflüsse des visuellen Systems)</li>
-                <li>Golding JF – <em>Motion sickness susceptibility</em> (Einflussfaktoren und individuelle Anfälligkeit)</li>
-                <li>Lee & Fan – <em>Cochrane Review</em> (Wirksamkeit der P6-Akupressur)</li>
-                <li>Smyth et al. (University of Warwick) – <em>Visuospatiales Training zur Prävention von Kinetose</em></li>
-                <li>Kagawa, T., Kato, M. et al. (Nagoya University) – <em>Einfluss von 100-Hz vestibulärer Stimulation</em></li>
-                <li>Zaccaro et al. (2018); Stromberg et al. (2015) – <em>Paced Breathing</em> (Wirksamkeit von Taktatmung auf das Nervensystem und bei Kinetose)</li>
-                <li>Yılmaz & Çırpan (2022); Vierra et al. (2022) – <em>4-7-8 Atmung</em> (Wirkung auf Angstzustände und Puls)</li>
-                <li>Balban et al. (2023) – <em>Brief structured respiration practices</em> (Vergleich von Box-Breathing und physiologischem Seufzer zur Stressregulation)</li>
-                <li>Feneberg & Nater (2026) – <em>Box Breathing</em> (Stressabbau unter Aufrechterhaltung der Aufmerksamkeit)</li>
-            </ul>
-        </div>
-        
+            <div class="problem-box text-left mx-auto max-w-800 mt-4 mb-4">
+                <h3>Radically simple – for good reason</h3>
+                <p>When you suddenly feel unwell and sick, or stress arises, you have no patience for complicated menus. That is why Viativity is deliberately kept extremely clear. No hidden settings, no distractions, no unnecessary frills. Everything is designed to give you exactly the tool you need in the current situation without any detours. Because true immediate help must be there instantly.</p>
+                
+                <h3 style="margin-top: 2.5rem;">Background knowledge on demand</h3>
+                <p>And when you are relaxed at home? Then each tool offers you its own info page. There you can find out in peace how to use it optimally, in which moments it works best, and on which scientific findings and studies it is based. This way, you have absolute simplicity in an emergency and full transparency beforehand.</p>
+
+                <h3 style="margin-top: 2.5rem;">Comfort for your senses</h3>
+                <p>Viativity deliberately appeals to all senses to make your journey as pleasant as possible:</p>
+                <ul style="padding-left: 1.5rem; margin-top: 0.8rem;">
+                    <li style="margin-bottom: 0.5rem;"><strong>Close your eyes:</strong> Thanks to gentle vibrations, many helpers can be operated completely blind.</li>
+                    <li style="margin-bottom: 0.5rem;"><strong>Block out noise:</strong> Use calming ocean waves or listen to your own music directly in the app.</li>
+                    <li><strong>Relaxed on the go:</strong> Eye-friendly night mode and 100% usable offline.</li>
+                </ul>
+            </div>
+
+            <div class="mockup-showcase">
+                <div class="jass-card card-left">
+                    <img src="../images/Werkzeuge_tag_de.PNG" alt="Tools Overview">
+                </div>
+                
+                <div class="jass-card card-center">
+                    <img src="../images/Reisetipps_tag_de.PNG" alt="Travel Tips Overview">
+                </div>
+                
+                <div class="jass-card card-right">
+                    <img src="../images/MRT_tag_de.PNG" alt="MRT 100Hz Tool">
+                </div>
+            </div>
+
+            <div class="app-info-box">
+                <p class="app-info-desc"><strong>Viativity</strong> is a digital support for more wellbeing on your travels. Your reliable companion for kinetosis is always at hand, anywhere – exactly when you need it.</p>
+            </div>
+        </section>
     </main>
 
     <footer>
         <div class="social-icons">
-            <a href="https://www.tiktok.com/@viativity.app" target="_blank" rel="noopener" aria-label="Viativity auf TikTok ansehen">
+            <a href="https://www.tiktok.com/@viativity.app" target="_blank" rel="noopener" aria-label="Watch Viativity on TikTok">
                 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1-2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/></svg>
             </a>
-            <a href="https://www.instagram.com/viativity.app" target="_blank" rel="noopener" aria-label="Viativity auf Instagram ansehen">
+            <a href="https://www.instagram.com/viativity.app" target="_blank" rel="noopener" aria-label="Watch Viativity on Instagram">
                 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
             </a>
-            <a href="https://www.youtube.com/@viativity" target="_blank" rel="noopener" aria-label="Viativity auf YouTube ansehen">
+            <a href="https://www.youtube.com/@viativity" target="_blank" rel="noopener" aria-label="Watch Viativity on YouTube">
                 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
             </a>
         </div>
 
         <div class="footer-links">
-            <a href="/">Startseite</a>
-            <a href="features.html">Werkzeuge</a>
-            <a href="reisetipps.html">Reisetipps</a>
+            <a href="/en/">Home</a>
+            <a href="features.html">Tools</a>
+            <a href="travel-tips.html">Travel Tips</a>
             <a href="faq.html">FAQ</a>
-            <a href="about.html">Über mich</a>
+            <a href="about.html">About Me</a>
             <a href="mailto:support@viativity.app">Support</a>
-            <a href="privacy.html">Impressum & Datenschutz</a>
+            <a href="privacy.html">Legal Notice & Privacy Policy</a>
         </div>
-        <p>© 2026 Viativity™. Entwickelt in der Schweiz.</p>
-        <p class="app-latin">Viativity verbindet „Via“ (lat. für Weg) mit Vitalität und Aktivität.</p>
+        <p>© 2026 Viativity™. Developed in Switzerland.</p>
+        <p class="app-latin">Viativity combines "Via" (Latin for way) with vitality and activity.</p>
         
         <div class="disclaimer-small">
-            <strong>KEIN MEDIZINPRODUKT:</strong> Diese App ist kein Medizinprodukt. Sie stellt keine Diagnosen und ersetzt keine ärztliche Behandlung.
+            <strong>NOT A MEDICAL DEVICE:</strong> This app is not a medical device. It does not provide diagnoses and does not replace medical treatment.
         </div>
     </footer>
 
