@@ -1,4 +1,4 @@
-<!-- Viativity Index Deutsch - Updated September 2026 (Travelnews Integration) -->
+<!-- Viativity Index Deutsch - Updated September 2026 (Social Proof Styling) -->
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -185,9 +185,9 @@
         .problem-box p { margin-bottom: 1rem; }
         .problem-box p:last-child { margin-bottom: 0; }
 
-        /* Social Proof Band */
+        /* Social Proof Band (Hintergrund abgedunkelt) */
         .proof-wrapper {
-            background: var(--white);
+            background: #EDF2F7; /* Softes Hellgrau für das Band */
             border-top: 1px solid #E2E8F0;
             border-bottom: 1px solid #E2E8F0;
             margin: 2rem 0 4rem 0;
@@ -205,8 +205,10 @@
             justify-content: center;
             margin-top: 2rem;
         }
+        
+        /* Kacheln (Strahlendes Weiss für maximalen Kontrast) */
         .proof-card {
-            background: var(--bg-color);
+            background: var(--white); /* Weiss, damit die Inhalte leuchten */
             border: 1px solid #E2E8F0;
             border-radius: 12px;
             padding: 1.5rem;
@@ -215,11 +217,14 @@
             max-width: 350px;
             display: flex;
             flex-direction: column;
-            transition: transform 0.3s ease;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.03); /* Dezent schwebender Effekt */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
         .proof-card:hover {
             transform: translateY(-3px);
+            box-shadow: 0 6px 16px rgba(0,0,0,0.08);
         }
+        
         .proof-title {
             font-size: 1.2rem;
             color: var(--primary-color);
