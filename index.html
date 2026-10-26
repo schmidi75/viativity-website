@@ -1,4 +1,4 @@
-<!-- Viativity Index Deutsch - Updated Oktober 2026 (Wellness-App Integration) -->
+<!-- Viativity Index Deutsch - Updated Oktober 2026 (SEO Schema & Mobile Fix) -->
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -27,6 +27,23 @@
     <link rel="alternate" hreflang="en" href="https://viativity.app/en/" />
     
     <link rel="canonical" href="https://viativity.app/" />
+
+    <!-- Unsichtbares SEO Schema für Apps -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Viativity™",
+      "operatingSystem": "iOS, Android",
+      "applicationCategory": "HealthAndFitnessApplication",
+      "offers": {
+        "@type": "Offer",
+        "price": "5.00",
+        "priceCurrency": "CHF"
+      },
+      "description": "Viativity ist eine medikamentenfreie Wellness-App, die dich bei Reisekrankheit (Kinetose) mit wissenschaftlich fundierten Strategien begleitet."
+    }
+    </script>
     
     <style>
         :root {
@@ -43,6 +60,7 @@
             line-height: 1.6;
             color: var(--text-color);
             background-color: var(--bg-color);
+            overflow-x: hidden; /* Verhindert horizontales Scrollen auf Mobile */
         }
 
         /* Announcement Banner */
@@ -208,7 +226,7 @@
         
         /* Kacheln (Strahlendes Weiss für maximalen Kontrast) */
         .proof-card {
-            background: var(--white); /* Weiss, damit die Inhalte leuchten */
+            background: var(--white);
             border: 1px solid #E2E8F0;
             border-radius: 12px;
             padding: 1.5rem;
@@ -217,7 +235,7 @@
             max-width: 350px;
             display: flex;
             flex-direction: column;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.03); /* Dezent schwebender Effekt */
+            box-shadow: 0 4px 12px rgba(0,0,0,0.03);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
         .proof-card:hover {
