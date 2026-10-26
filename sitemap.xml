@@ -4,7 +4,7 @@
     <!-- Deutsche Seiten (Root) -->
     <url>
         <loc>https://viativity.app/</loc>
-        <lastmod>2026-10-14</lastmod>
+        <lastmod>2026-10-26</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
     </url>
@@ -22,7 +22,7 @@
     </url>
     <url>
         <loc>https://viativity.app/faq.html</loc>
-        <lastmod>2026-10-24</lastmod>
+        <lastmod>2026-10-26</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
@@ -42,7 +42,7 @@
     <!-- Englische Seiten (/en/) -->
     <url>
         <loc>https://viativity.app/en/</loc>
-        <lastmod>2026-10-14</lastmod>
+        <lastmod>2026-10-26</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
     </url>
@@ -60,7 +60,7 @@
     </url>
     <url>
         <loc>https://viativity.app/en/faq.html</loc>
-        <lastmod>2026-10-24</lastmod>
+        <lastmod>2026-10-26</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
