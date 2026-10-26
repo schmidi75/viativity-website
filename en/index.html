@@ -1,4 +1,4 @@
-<!-- Viativity Index English - Updated October 2026 (Wellness-App Integration) -->
+<!-- Viativity Index English - Updated October 2026 (SEO Schema & Mobile Fix) -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,6 +27,23 @@
     <link rel="alternate" hreflang="en" href="https://viativity.app/en/" />
     
     <link rel="canonical" href="https://viativity.app/en/" />
+
+    <!-- Invisible SEO Schema for Apps -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Viativity™",
+      "operatingSystem": "iOS, Android",
+      "applicationCategory": "HealthAndFitnessApplication",
+      "offers": {
+        "@type": "Offer",
+        "price": "5.00",
+        "priceCurrency": "USD"
+      },
+      "description": "Viativity is a drug-free wellness app that accompanies you during motion sickness (kinetosis) with scientifically based strategies."
+    }
+    </script>
     
     <style>
         :root {
@@ -43,6 +60,7 @@
             line-height: 1.6;
             color: var(--text-color);
             background-color: var(--bg-color);
+            overflow-x: hidden; /* Prevents horizontal scrolling on mobile */
         }
 
         /* Announcement Banner */
